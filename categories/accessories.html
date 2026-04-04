@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>配件与工具 | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,'Noto Sans SC',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f9f9f9;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.cat-hero{background:linear-gradient(135deg,#C8102E 0%,#900b1e 100%);color:#fff;padding:36px 32px}
+.cat-hero-icon{font-size:44px;margin-bottom:8px}
+.cat-hero h1{font-size:28px;font-weight:800}
+.cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+.cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+.cat-layout{display:grid;grid-template-columns:220px 1fr;min-height:70vh}
+@media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+.cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:20px 12px}
+.cat-sidebar-title{font-size:11px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+.sidebar-link{display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;margin-bottom:4px}
+.sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+.sidebar-active{background:#fff3f3;color:#C8102E;font-weight:600}
+.cat-main{padding:28px 32px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.prod-card{border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;transition:.2s;background:#fff;display:flex;flex-direction:column}
+.prod-card:hover{border-color:#C8102E;box-shadow:0 4px 20px rgba(200,16,46,.1);transform:translateY(-2px)}
+.card-img-wrap{width:100%;height:160px;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.card-img-wrap img{width:100%;height:160px;object-fit:cover;transition:.3s}
+.prod-card:hover .card-img-wrap img{transform:scale(1.04)}
+.card-no-img{width:100%;height:160px;background:linear-gradient(135deg,#C8102E,#900b1e);display:flex;align-items:center;justify-content:center}
+.card-no-img span{color:#fff;font-size:18px;font-weight:800;letter-spacing:1px;padding:8px;text-align:center}
+.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card-name{font-size:15px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;flex:1}
+.site-footer{background:#1a1a1a;color:#aaa;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-brand{color:#fff;font-weight:700}
+.footer-brand span{color:#FFB800}
+</style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh',this)">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en',this)">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+  <div class="breadcrumb">
+    <a href="../index.html" data-zh="首页" data-en="Home">首页</a> ›
+    <span data-zh="配件与工具" data-en="Accessories & Tools">配件与工具</span>
+  </div>
+  <div class="cat-hero">
+    <div class="cat-hero-icon">🔩</div>
+    <h1 data-zh="配件与工具" data-en="Accessories & Tools">配件与工具</h1>
+    <p data-zh="PERI派利 模板系统配件、安全防护及运输设备" data-en="PERI Formwork Accessories, Safety Products & Transport Equipment">PERI派利 模板系统配件、安全防护及运输设备</p>
+    <div class="cat-count" data-zh="15 个产品" data-en="15 Products">15 个产品</div>
+  </div>
+  <div class="cat-layout">
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="../index.html" class="sidebar-link" data-zh="← 首页 / Home" data-en="← 首页 / Home">← 首页 / Home</a>
+  <a href="wall-formwork.html" class="sidebar-link" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+  <a href="column-formwork.html" class="sidebar-link" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+  <a href="slab-formwork.html" class="sidebar-link" data-zh="📐 楼板模板" data-en="📐 Slab Formwork">📐 楼板模板</a>
+  <a href="climbing-systems.html" class="sidebar-link" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+  <a href="scaffolding.html" class="sidebar-link" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+  <a href="shoring.html" class="sidebar-link" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+  <a href="civil-engineering.html" class="sidebar-link" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Civil Engineering">🌉 市政/桥梁/隧道</a>
+  <a href="formwork-panels.html" class="sidebar-link" data-zh="📋 模板板材" data-en="📋 Formwork Panels">📋 模板板材</a>
+  <a href="accessories.html" class="sidebar-link sidebar-active" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+  <a href="software-services.html" class="sidebar-link" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+    </div>
+    <div class="cat-main">
+      <div class="prod-grid">
+        <a href="../products/gt-24-formwork-girder.html" class="prod-card">
+        <div class="card-no-img"><span>GT</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="GT 24 木梁" data-en="GT 24 Formwork Girder">GT 24 木梁</div>
+          <div class="card-desc" data-zh="PERI专用GT 24木梁，与VARIO GT 24系统配合使用" data-en="PERI GT 24 timber girder for use with VARIO GT 24 formwork systems">PERI专用GT 24木梁，与VARIO GT 24系统配合使用</div>
+        </div>
+      </a>
+        <a href="../products/release-agent.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567890/26200/release.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="混凝土脱模剂" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>混凝土脱模剂</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="混凝土脱模剂" data-en="Concrete Release Agent">混凝土脱模剂</div>
+          <div class="card-desc" data-zh="PERI专用脱模剂，防止混凝土粘模，保证模板寿命" data-en="PERI release agent preventing concrete adhesion and extending formwork life">PERI专用脱模剂，防止混凝土粘模，保证模板寿命</div>
+        </div>
+      </a>
+        <a href="../products/hammock.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123457/26110/hammock.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="Hammock 安全防护网" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>Hammock</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Hammock 安全防护网" data-en="Hammock Safety Net">Hammock 安全防护网</div>
+          <div class="card-desc" data-zh="针对高空坠物防护设计的安全网系统" data-en="Safety net system designed for falling object protection at height">针对高空坠物防护设计的安全网系统</div>
+        </div>
+      </a>
+        <a href="../products/prokit-ep-110-fall-protection.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345678/26400/prokit-110.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="ProKit EP 110 防坠落系统" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>ProKit</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="ProKit EP 110 防坠落系统" data-en="ProKit EP 110 Fall Protection">ProKit EP 110 防坠落系统</div>
+          <div class="card-desc" data-zh="110mm缝隙防坠落个人安全系统，符合EN标准" data-en="110mm gap fall protection personal safety system meeting EN standards">110mm缝隙防坠落个人安全系统，符合EN标准</div>
+        </div>
+      </a>
+        <a href="../products/prokit-ep-200-fall-protection.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456789/26410/prokit-200.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="ProKit EP 200 防坠落系统" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>ProKit</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="ProKit EP 200 防坠落系统" data-en="ProKit EP 200 Fall Protection">ProKit EP 200 防坠落系统</div>
+          <div class="card-desc" data-zh="200mm缝隙防坠落个人安全系统，宽缝防护" data-en="200mm gap fall protection system for wider gap protection requirements">200mm缝隙防坠落个人安全系统，宽缝防护</div>
+        </div>
+      </a>
+        <a href="../products/sky-anker.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f221c7cd-f86b-4bc0-b4b2-40619b6def8c/26208/sky-anker.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="SKY 锚定安全系统" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>SKY</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="SKY 锚定安全系统" data-en="SKY Anchor Personal Safety">SKY 锚定安全系统</div>
+          <div class="card-desc" data-zh="高空作业个人防坠落锚定系统，与模板系统集成" data-en="Personal fall arrest anchor system integrated with formwork">高空作业个人防坠落锚定系统，与模板系统集成</div>
+        </div>
+      </a>
+        <a href="../products/peri-stopend-trestle.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901234/26250/stopend.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI 端模支架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI 端模支架" data-en="PERI Stopend Trestle">PERI 端模支架</div>
+          <div class="card-desc" data-zh="通用端模支架，适用于各类楼板边模固定" data-en="Universal stopend trestle for securing slab edge shuttering">通用端模支架，适用于各类楼板边模固定</div>
+        </div>
+      </a>
+        <a href="../products/plastic-stopend-angle.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123456/26270/plastic-stopend.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="塑料端模角件" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>塑料端模角件</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="塑料端模角件" data-en="Plastic Stopend Angle">塑料端模角件</div>
+          <div class="card-desc" data-zh="一次性塑料端模角件，用于楼板边缘止水处理" data-en="Single-use plastic stopend angle for slab edge waterstop">一次性塑料端模角件，用于楼板边缘止水处理</div>
+        </div>
+      </a>
+        <a href="../products/stripping-cart-asw465.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678901/26210/asw465.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="ASW 465 拆模小车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>ASW</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="ASW 465 拆模小车" data-en="ASW 465 Stripping Cart">ASW 465 拆模小车</div>
+          <div class="card-desc" data-zh="楼板模板拆除用转运小车，减少人工搬运" data-en="Slab formwork striking trolley reducing manual handling effort">楼板模板拆除用转运小车，减少人工搬运</div>
+        </div>
+      </a>
+        <a href="../products/ptl-1250-2-table-lift.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:daffb6b7-2d4b-4b99-84f4-9b9f00cecf7a/24334/ptl-1250-2.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PTL 1250-2 桌模提升叉车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PTL</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PTL 1250-2 桌模提升叉车" data-en="PTL 1250-2 Table Lift">PTL 1250-2 桌模提升叉车</div>
+          <div class="card-desc" data-zh="专用于楼板桌模水平转运的液压提升叉车" data-en="Hydraulic lifting truck for horizontal transfer of slab table formwork">专用于楼板桌模水平转运的液压提升叉车</div>
+        </div>
+      </a>
+        <a href="../products/table-striking-and-transporation-trolley.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:e01bd524-2042-4b5c-96f8-563d770b7834/24327/table-trolley.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="桌模拆除运输小车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>桌模拆除运输小车</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="桌模拆除运输小车" data-en="Table Striking & Transportation Trolley">桌模拆除运输小车</div>
+          <div class="card-desc" data-zh="楼板桌模拆除及转运专用小车，高效安全" data-en="Specialized trolley for striking and transporting slab table formwork">楼板桌模拆除及转运专用小车，高效安全</div>
+        </div>
+      </a>
+        <a href="../products/pallet.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:bf97baa3-e492-48e6-b9be-fa60eb99f176/24682/pallet.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="模板周转托盘" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>模板周转托盘</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="模板周转托盘" data-en="Formwork Pallet">模板周转托盘</div>
+          <div class="card-desc" data-zh="模板构件标准化存放周转托盘" data-en="Standardized pallets for formwork component storage and transport">模板构件标准化存放周转托盘</div>
+        </div>
+      </a>
+        <a href="../products/transportbehaelter.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:1c8ddcbe-16a5-48e5-ab06-99179fefc05b/26335/transport-container.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="运输箱" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>运输箱</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="运输箱" data-en="Transport Container">运输箱</div>
+          <div class="card-desc" data-zh="小件模板配件专用运输收纳箱" data-en="Transport containers for small formwork accessories">小件模板配件专用运输收纳箱</div>
+        </div>
+      </a>
+        <a href="../products/hardware-boxes.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567890/26296/hardware-boxes.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="配件工具箱" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>配件工具箱</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="配件工具箱" data-en="Hardware Boxes">配件工具箱</div>
+          <div class="card-desc" data-zh="模板系统标准配件收纳工具箱" data-en="Standard accessory storage boxes for formwork systems">模板系统标准配件收纳工具箱</div>
+        </div>
+      </a>
+        <a href="../products/unterzug-und-deckenabschalungen.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:3fc9dda0-de6a-4fc1-adbc-ca6460e91f53/26403/soffit.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="梁底及楼板端模系统" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>梁底及楼板端模系统</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="梁底及楼板端模系统" data-en="Beam and Slab Soffit Formwork">梁底及楼板端模系统</div>
+          <div class="card-desc" data-zh="用于楼板梁底及端部处理的专用模板配件" data-en="Specialized formwork accessories for beam soffit and slab edge treatment">用于楼板梁底及端部处理的专用模板配件</div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-brand">GCB <span>PERI</span> Hub</div>
+    <div>© 2024 PERI GCB — Globe Chinese Business Teams</div>
+  </footer>
+  <script>
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('[data-zh],[data-en]').forEach(el => {
+    const txt = el.getAttribute('data-' + lang);
+    if (txt) el.textContent = txt;
+  });
+}
+</script>
+</body>
+</html>

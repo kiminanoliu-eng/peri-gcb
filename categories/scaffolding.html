@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>脚手架系统 | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,'Noto Sans SC',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f9f9f9;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.cat-hero{background:linear-gradient(135deg,#C8102E 0%,#900b1e 100%);color:#fff;padding:36px 32px}
+.cat-hero-icon{font-size:44px;margin-bottom:8px}
+.cat-hero h1{font-size:28px;font-weight:800}
+.cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+.cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+.cat-layout{display:grid;grid-template-columns:220px 1fr;min-height:70vh}
+@media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+.cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:20px 12px}
+.cat-sidebar-title{font-size:11px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+.sidebar-link{display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;margin-bottom:4px}
+.sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+.sidebar-active{background:#fff3f3;color:#C8102E;font-weight:600}
+.cat-main{padding:28px 32px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.prod-card{border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;transition:.2s;background:#fff;display:flex;flex-direction:column}
+.prod-card:hover{border-color:#C8102E;box-shadow:0 4px 20px rgba(200,16,46,.1);transform:translateY(-2px)}
+.card-img-wrap{width:100%;height:160px;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.card-img-wrap img{width:100%;height:160px;object-fit:cover;transition:.3s}
+.prod-card:hover .card-img-wrap img{transform:scale(1.04)}
+.card-no-img{width:100%;height:160px;background:linear-gradient(135deg,#C8102E,#900b1e);display:flex;align-items:center;justify-content:center}
+.card-no-img span{color:#fff;font-size:18px;font-weight:800;letter-spacing:1px;padding:8px;text-align:center}
+.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card-name{font-size:15px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;flex:1}
+.site-footer{background:#1a1a1a;color:#aaa;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-brand{color:#fff;font-weight:700}
+.footer-brand span{color:#FFB800}
+</style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh',this)">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en',this)">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+  <div class="breadcrumb">
+    <a href="../index.html" data-zh="首页" data-en="Home">首页</a> ›
+    <span data-zh="脚手架系统" data-en="Scaffolding Systems">脚手架系统</span>
+  </div>
+  <div class="cat-hero">
+    <div class="cat-hero-icon">🔧</div>
+    <h1 data-zh="脚手架系统" data-en="Scaffolding Systems">脚手架系统</h1>
+    <p data-zh="PERI UP 模块化脚手架全系列产品" data-en="PERI UP Modular Scaffold System - Full Product Range">PERI UP 模块化脚手架全系列产品</p>
+    <div class="cat-count" data-zh="11 个产品" data-en="11 Products">11 个产品</div>
+  </div>
+  <div class="cat-layout">
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="../index.html" class="sidebar-link" data-zh="← 首页 / Home" data-en="← 首页 / Home">← 首页 / Home</a>
+  <a href="wall-formwork.html" class="sidebar-link" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+  <a href="column-formwork.html" class="sidebar-link" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+  <a href="slab-formwork.html" class="sidebar-link" data-zh="📐 楼板模板" data-en="📐 Slab Formwork">📐 楼板模板</a>
+  <a href="climbing-systems.html" class="sidebar-link" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+  <a href="scaffolding.html" class="sidebar-link sidebar-active" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+  <a href="shoring.html" class="sidebar-link" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+  <a href="civil-engineering.html" class="sidebar-link" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Civil Engineering">🌉 市政/桥梁/隧道</a>
+  <a href="formwork-panels.html" class="sidebar-link" data-zh="📋 模板板材" data-en="📋 Formwork Panels">📋 模板板材</a>
+  <a href="accessories.html" class="sidebar-link" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+  <a href="software-services.html" class="sidebar-link" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+    </div>
+    <div class="cat-main">
+      <div class="prod-grid">
+        <a href="../products/peri-up-flex-system-scaffold.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901235/24800/peri-up-flex.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP Flex 灵活脚手架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP Flex 灵活脚手架" data-en="PERI UP Flex System Scaffold">PERI UP Flex 灵活脚手架</div>
+          <div class="card-desc" data-zh="模块化脚手架系统，灵活适应各种复杂结构" data-en="Modular scaffold system adapting to complex structures with maximum flexibility">模块化脚手架系统，灵活适应各种复杂结构</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-rosett-r-scaffold-system.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345679/24840/peri-up-rosett.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP Rosett 扣件脚手架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP Rosett 扣件脚手架" data-en="PERI UP Rosett Scaffold System">PERI UP Rosett 扣件脚手架</div>
+          <div class="card-desc" data-zh="Rosett扣件连接，承载能力强，适用于各类重型工程" data-en="Rosett coupler connection with high load capacity for heavy-duty applications">Rosett扣件连接，承载能力强，适用于各类重型工程</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-working-platforms.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:b5cae175-3939-4ec6-8738-3ab710a74f0c/24561/peri-up-working-platforms.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP 操作平台" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP 操作平台" data-en="PERI UP Working Platforms">PERI UP 操作平台</div>
+          <div class="card-desc" data-zh="多种规格操作平台，配合脚手架系统，安全高效" data-en="Multiple working platform options for safe and efficient scaffold operations">多种规格操作平台，配合脚手架系统，安全高效</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-reinforcement-scaffold.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:dd7771d3-91ca-4a7d-8a0f-23018d5debde/24389/peri-up-reinforcement.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP 钢筋绑扎脚手架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP 钢筋绑扎脚手架" data-en="PERI UP Reinforcement Scaffold">PERI UP 钢筋绑扎脚手架</div>
+          <div class="card-desc" data-zh="专为钢筋工程设计，提供安全的操作面" data-en="Designed for rebar installation works with safe working surfaces">专为钢筋工程设计，提供安全的操作面</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-suspended-scaffold.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:55949aac-045d-449c-b7ff-55f933184d16/25271/peri-up-suspended.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP 悬挂脚手架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP 悬挂脚手架" data-en="PERI UP Suspended Scaffold">PERI UP 悬挂脚手架</div>
+          <div class="card-desc" data-zh="悬挂式施工平台，适用于桥梁底部及高空维护作业" data-en="Suspended working platform for bridge soffit and elevated maintenance work">悬挂式施工平台，适用于桥梁底部及高空维护作业</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-t-frame-working-scaffold.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:6499ca27-ba81-40ed-8025-d08faf3e1234/24850/peri-up-tframe.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP T型脚手架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP T型脚手架" data-en="PERI UP T-Frame Working Scaffold">PERI UP T型脚手架</div>
+          <div class="card-desc" data-zh="T型框架脚手架，快速组装，适用于标准楼层施工" data-en="T-frame scaffold for rapid assembly in standard floor construction">T型框架脚手架，快速组装，适用于标准楼层施工</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-facade-scaffolding.html" class="prod-card">
+        <div class="card-no-img"><span>PERI</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP 外墙脚手架" data-en="PERI UP Facade Scaffolding">PERI UP 外墙脚手架</div>
+          <div class="card-desc" data-zh="适用于建筑外墙施工的标准化脚手架系统" data-en="Standardized scaffold system for building facade construction">适用于建筑外墙施工的标准化脚手架系统</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-easy-frame-scaffolding.html" class="prod-card">
+        <div class="card-no-img"><span>PERI</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP Easy 框架脚手架" data-en="PERI UP Easy Frame Scaffolding">PERI UP Easy 框架脚手架</div>
+          <div class="card-desc" data-zh="简便快捷的框架脚手架，适合小型工程" data-en="Simple and fast frame scaffolding for smaller projects">简便快捷的框架脚手架，适合小型工程</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-weather-protection-roof.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901235/24910/weather-roof.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP 防雨棚盖" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP 防雨棚盖" data-en="PERI UP Weather Protection Roof">PERI UP 防雨棚盖</div>
+          <div class="card-desc" data-zh="可移动式防风雨保护屋面，适应全天候施工" data-en="Relocatable weather protection roof for all-weather construction">可移动式防风雨保护屋面，适应全天候施工</div>
+        </div>
+      </a>
+        <a href="../products/peri-up-working-platform-lgs-150.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:4c5cb513-0653-45c7-9cfe-76e38d73b409/25245/peri-up-lgs150.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="PERI UP LGS 150 工作平台" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>PERI</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI UP LGS 150 工作平台" data-en="PERI UP LGS 150 Working Platform">PERI UP LGS 150 工作平台</div>
+          <div class="card-desc" data-zh="150kN/m²超高承载能力工作平台，适用于重型设备操作" data-en="150kN/m² ultra-high load capacity working platform for heavy equipment">150kN/m²超高承载能力工作平台，适用于重型设备操作</div>
+        </div>
+      </a>
+        <a href="../products/asg-narrow-working-platform.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d6e7f8a9-b0c1-2345-defa-456789012347/25260/asg.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="ASG 狭小空间操作平台" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>ASG</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="ASG 狭小空间操作平台" data-en="ASG Narrow Working Platform">ASG 狭小空间操作平台</div>
+          <div class="card-desc" data-zh="专为地下室、狭小空间设计的爬升操作平台" data-en="Climbing working platform designed for basement and restricted spaces">专为地下室、狭小空间设计的爬升操作平台</div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-brand">GCB <span>PERI</span> Hub</div>
+    <div>© 2024 PERI GCB — Globe Chinese Business Teams</div>
+  </footer>
+  <script>
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('[data-zh],[data-en]').forEach(el => {
+    const txt = el.getAttribute('data-' + lang);
+    if (txt) el.textContent = txt;
+  });
+}
+</script>
+</body>
+</html>

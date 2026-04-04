@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>通用配件 — 建筑模板系统 — PERI GCB</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--red:#e3000f;--yellow:#f5a800;--dark:#1a1a1a;--grey:#f4f4f4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--dark);background:#fff}
+a{color:inherit;text-decoration:none}
+/* NAV */
+.nav{background:var(--dark);display:flex;align-items:center;padding:0 32px;height:60px;position:sticky;top:0;z-index:100}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.nav-logo img{height:32px}
+.nav-logo span{color:#fff;font-size:15px;font-weight:600}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:#ccc;font-size:13px;transition:.2s}
+.nav-links a:hover{color:#fff}
+.lang-bar{display:flex;gap:8px;margin-left:24px}
+.lang-bar button{background:none;border:1px solid #555;color:#aaa;padding:2px 8px;border-radius:3px;font-size:11px;cursor:pointer;transition:.2s}
+.lang-bar button:hover,.lang-bar button.active{background:var(--red);border-color:var(--red);color:#fff}
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#2d2d2d 100%);color:#fff;padding:48px 32px;text-align:center;border-bottom:4px solid var(--red)}
+.hero h1{font-size:2.2rem;margin-bottom:12px}
+.hero p{font-size:1rem;color:#ccc;max-width:560px;margin:0 auto}
+/* BREADCRUMB */
+.breadcrumb{padding:12px 32px;font-size:13px;color:#888;border-bottom:1px solid #eee;background:#fafafa}
+.breadcrumb a{color:var(--red)}
+.breadcrumb a:hover{text-decoration:underline}
+/* CARDS */
+.grid{display:grid;gap:24px;padding:32px;max-width:1200px;margin:0 auto}
+.grid-3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0;display:block}
+.card-img-placeholder{width:100%;height:180px;background:linear-gradient(135deg,#e8e8e8,#d0d0d0);display:flex;align-items:center;justify-content:center;font-size:40px;color:#aaa}
+.card-body{padding:16px}
+.card-badge{display:inline-block;background:var(--yellow);color:var(--dark);font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
+.card-badge-red{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.card-title{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;margin-bottom:12px}
+.card-count{font-size:11px;color:#999}
+/* SUBCATEGORY STRIP */
+.subcat-strip{padding:8px 32px;background:#f9f9f9;border-bottom:1px solid #eee;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.subcat-strip span{font-size:12px;color:#888}
+.subcat-chip{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:var(--yellow);color:var(--dark);cursor:pointer;transition:.15s}
+.subcat-chip:hover{background:var(--red);color:#fff}
+/* SECTION TITLE */
+.sec{padding:24px 32px 0}
+.sec h2{font-size:1.4rem;border-left:4px solid var(--red);padding-left:12px}
+.sec p{color:#666;font-size:13px;margin-top:6px}
+/* BTN */
+.btn{display:inline-block;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;border:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#b8000b}
+.btn-outline{background:none;border:2px solid var(--red);color:var(--red)}
+.btn-outline:hover{background:var(--red);color:#fff}
+/* PRODUCT PAGE */
+.prod-hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1100px;margin:0 auto;padding:32px}
+.prod-img{width:100%;max-height:400px;object-fit:contain;border-radius:8px;background:#f5f5f5}
+.prod-info h1{font-size:1.8rem;margin-bottom:12px}
+.prod-info .badge{background:var(--red);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px}
+.prod-info .badge-subcat{background:var(--yellow);color:var(--dark);padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px;margin-left:6px}
+.prod-info p{color:#555;line-height:1.7;margin-bottom:20px}
+.prod-cta{display:flex;gap:12px;flex-wrap:wrap}
+/* INQUIRY FORM */
+.inquiry-box{background:var(--grey);border-radius:8px;padding:24px;margin-top:32px}
+.inquiry-box h3{margin-bottom:16px;font-size:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-row input,.form-row select,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px}
+textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px;resize:vertical;min-height:80px;margin-bottom:12px}
+/* FOOTER */
+footer{background:var(--dark);color:#aaa;text-align:center;padding:32px;font-size:12px;margin-top:64px}
+footer a{color:var(--yellow)}
+/* SEARCH */
+.search-bar{display:flex;gap:8px;max-width:500px;margin:20px auto 0}
+.search-bar input{flex:1;padding:10px 16px;border:2px solid #555;background:rgba(255,255,255,.1);color:#fff;border-radius:4px;font-size:14px}
+.search-bar input::placeholder{color:#999}
+.search-bar button{padding:10px 20px;background:var(--red);color:#fff;border:none;border-radius:4px;cursor:pointer}
+#search-results{padding:24px 32px;max-width:1200px;margin:0 auto}
+/* YOUTUBE */
+.yt-section{max-width:1100px;margin:0 auto;padding:0 32px 40px}
+.yt-section h3{font-size:1.05rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;border-left:4px solid #ff0000;padding-left:12px}
+.yt-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.yt-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.btn-yt{background:#ff0000;color:#fff;display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;transition:.2s}
+.btn-yt:hover{background:#cc0000;color:#fff}
+/* CLICKABLE IMAGE HINT */
+.prod-img-link{display:block;position:relative}
+.prod-img-link::after{content:'↗ cn.peri.com';position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 8px;border-radius:3px;opacity:0;transition:.2s}
+.prod-img-link:hover::after{opacity:1}
+@media(max-width:700px){
+  .prod-hero{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .grid-3,.grid-4{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo">
+    <svg width="48" height="20" viewBox="0 0 120 50"><rect width="120" height="50" fill="#e3000f"/><text x="10" y="38" font-family="Arial" font-weight="900" font-size="38" fill="white">PERI</text></svg>
+    <span>GCB Hub</span>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a>
+    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China">中文官网</a>
+  </div>
+  <div class="lang-bar">
+    <button data-l="zh" onclick="setLang('zh')">中文</button>
+    <button data-l="en" onclick="setLang('en')">EN</button>
+    <button data-l="es" onclick="setLang('es')">ES</button>
+    <button data-l="de" onclick="setLang('de')">DE</button>
+  </div>
+</nav>
+<div class="breadcrumb">
+  <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a> ›
+  <a href="../categories/building-formwork.html" data-zh="建筑模板系统" data-en="Building Formwork Systems" data-es="Sistemas de Encofrado" data-de="Schalungssysteme">建筑模板系统</a> ›
+  <span data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</span>
+</div>
+<div class="hero" style="padding:32px">
+  <h1 data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</h1>
+  <p data-zh="各类模板配套配件、工具及安全设备" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">各类模板配套配件、工具及安全设备</p>
+</div>
+<div class="sec">
+  <h2 data-zh="共 30 个产品" data-en="30 Products"
+      data-es="30 Productos" data-de="30 Produkte">共 30 个产品</h2>
+</div>
+<div class="grid grid-4">
+  
+    <div class="card" onclick="location.href='../products/maximo-mxp.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:7a82934e-0787-41d4-9a99-bc4b27e38e4a/26382/mxp-%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F.jpg" alt="MAXIMO MXP 平台系统" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">MAXIMO MXP 平台系统</div>
+        <div class="card-desc">专为MAXIMO 和 TRIO墙模系统设计的、模块化可靠的平台系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/mxk-bracket-system.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f8a9b0c1-d2e3-4567-fabc-678901234567/26300/mxk.jpg" alt="MAXIMO MXK 支架系统" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">MAXIMO MXK 支架系统</div>
+        <div class="card-desc">用于MAXIMO模板系统的多功能支架系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/sky-anker.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f221c7cd-f86b-4bc0-b4b2-40619b6def8c/26208/untitled.jpg" alt="SKY-Anker 个人安全设备" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">SKY-Anker 个人安全设备</div>
+        <div class="card-desc">可以作为个人安全防护装置的锚固点，避免工人坠落。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/prokit-ep-110-fall-protection.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345678/26400/prokit-ep110.jpg" alt="PROKIT EP 110 防坠落护栏" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PROKIT EP 110 防坠落护栏</div>
+        <div class="card-desc">模板系统配套的安全防护装置。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/prokit-ep-200-fall-protection.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456789/26410/prokit-ep200.jpg" alt="PROKIT EP 200 防坠落护栏" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PROKIT EP 200 防坠落护栏</div>
+        <div class="card-desc">更高防护等级的安全防坠落系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/release-agent.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567890/26200/release-agent.jpg" alt="脱模剂" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">脱模剂</div>
+        <div class="card-desc">高效脱模，保证混凝土墙面质量。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/stripping-cart-asw465.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678901/26210/asw465.jpg" alt="ASW 465 拆模车" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">ASW 465 拆模车</div>
+        <div class="card-desc">快速、安全地完成楼板模板的拆模工作。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/vt-20k-formwork-girder.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e3f4a5b6-c7d8-9012-efab-123456789012/24600/vt20k.jpg" alt="VT 20K 模板木梁" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">VT 20K 模板木梁</div>
+        <div class="card-desc">高质量模板木梁，适用于各类模板系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/gt-24-formwork-girder.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890123/24610/gt24.jpg" alt="GT 24 模板木梁" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">GT 24 模板木梁</div>
+        <div class="card-desc">经典的GT 24模板木梁，久经考验。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-stopend-trestle.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901234/26250/stopend.jpg" alt="模板端模支架" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">模板端模支架</div>
+        <div class="card-desc">专业的模板端部支撑系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-elevating-platform-290.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012345/26260/platform290.jpg" alt="PERI 290 升降平台" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PERI 290 升降平台</div>
+        <div class="card-desc">安全高效的施工升降平台。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/plastic-stopend-angle.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123456/26270/plastic-stopend.jpg" alt="复合材料端模支架" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">复合材料端模支架</div>
+        <div class="card-desc">轻质的复合材料端模支撑角件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/table-lifting-fork.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d8e9f0a1-b2c3-4567-defa-678901234567/26280/lifting-fork.jpg" alt="转运叉" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">转运叉</div>
+        <div class="card-desc">用于台模转运的专用叉车附件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/crate-pallet.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e9f0a1b2-c3d4-5678-efab-789012345678/26290/crate.jpg" alt="格式托架框" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">格式托架框</div>
+        <div class="card-desc">用于整齐存放和运输小型模板配件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/door-and-vario-box-out.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456789/26295/boxout.jpg" alt="门窗造型框与VARIO造型框" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">门窗造型框与VARIO造型框</div>
+        <div class="card-desc">用于门、窗和特殊造型的模板组件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/hardware-boxes.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567890/26296/hardware-boxes.jpg" alt="小组件托架框" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">小组件托架框</div>
+        <div class="card-desc">用于收纳和运输模板小配件的标准箱。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-ankertechnik.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:06b2bc93-d6cd-4693-aa2b-ce15082b0ba3/24172/%E6%B4%BE%E5%88%A9%E6%8B%89%E6%9D%86%E6%8A%80%E6%9C%AF.jpg" alt="PERI 拉杆技术" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PERI 拉杆技术</div>
+        <div class="card-desc">可靠密水性处理的拉杆系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/rs-push-pull-props.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:b2c3d4e5-f6a7-8901-bcde-012345678901/24180/rs-props.jpg" alt="RS 斜撑" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">RS 斜撑</div>
+        <div class="card-desc">标准斜撑，用于固定墙模垂直度。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:c3d4e5f6-a7b8-9012-cdef-123456789012/26310/tools.jpg" alt="工具组合" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">工具组合</div>
+        <div class="card-desc">专业模板施工工具套装。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/transportbehaelter.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:1c8ddcbe-16a5-48e5-ab06-99179fefc05b/26335/%E6%B4%BE%E5%88%A9%E8%BF%90%E8%BE%93%E5%B7%A5%E5%85%B7.jpg" alt="材料运输工具" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">材料运输工具</div>
+        <div class="card-desc">材料运输工具能够确保派利材料快速、安全、经济地运输。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/pallet.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:bf97baa3-e492-48e6-b9be-fa60eb99f176/24682/%E6%89%98%E6%9E%B6.jpg" alt="托架" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">托架</div>
+        <div class="card-desc">整体镀锌的托架，用于堆放、运输模板和脚手架零件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/ptl-1250-2-table-lift.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:daffb6b7-2d4b-4b99-84f4-9b9f00cecf7a/24334/%E5%8F%B0%E6%A8%A1%E5%8D%87%E9%99%8D%E6%9C%BAptl-1250-2.jpg" alt="PTL 1250-2 台模升降机" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PTL 1250-2 台模升降机</div>
+        <div class="card-desc">灵活、便于转向的台模转运装置。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/table-striking-and-transporation-trolley.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e01bd524-2042-4b5c-96f8-563d770b7834/24327/%E5%8F%B0%E6%A8%A1-%E8%BD%AC%E8%BF%90%E8%BD%A6.jpg" alt="台模转运车" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">台模转运车</div>
+        <div class="card-desc">轻松进行台模转运。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/ftf-fassadenschalung.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890124/24190/ftf.jpg" alt="FTF 外立面模板" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">FTF 外立面模板</div>
+        <div class="card-desc">适用于外立面浇筑的专用模板系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/isc-temperaturueberwachungs-und-betonfestigkeits-set.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f9677be7-eda0-43c2-a741-d7014dcfecde/25509/temperatur-sensor.jpg" alt="InSite 派利混凝土检测套件" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">InSite 派利混凝土检测套件</div>
+        <div class="card-desc">监测现浇混凝土温度、准确测量混凝土强度。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/concrete-maturity-computer.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d0954559-dddd-458e-b86e-bf10f6cc8320/23962/%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%BC%BA%E5%BA%A6%E6%B5%8B%E8%AF%95%E4%BB%AA.jpg" alt="混凝土强度测试仪" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">混凝土强度测试仪</div>
+        <div class="card-desc">混凝土强度测试仪为模板的早拆提供可靠的依据。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/isc-sono-wz-analyser.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901235/25520/sono-wz.jpg" alt="SONO WZ 水灰比分析仪" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">SONO WZ 水灰比分析仪</div>
+        <div class="card-desc">精确测量新拌混凝土水灰比的分析仪器。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/richtstuetze-ft-360.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e9421be9-5203-4e10-ae76-4b350120d168/25872/ft-360.png" alt="FT 360 斜撑" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">FT 360 斜撑</div>
+        <div class="card-desc">FT 360斜撑可在2.15至3.60米之间调节，适用于预制结构。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/abrollcontainer.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012346/26100/container.jpg" alt="PERI UP Easy 集装箱" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">PERI UP Easy 集装箱</div>
+        <div class="card-desc">用于PERI UP Easy脚手架材料的标准集装箱。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/hammock.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123457/26110/hammock.jpg" alt="HAMMOCK 安全系统" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-badge-red" data-zh="通用配件" data-en="Formwork Accessories" data-es="Accesorios de Encofrado" data-de="Schalungszubehör">通用配件</div>
+        <div class="card-title">HAMMOCK 安全系统</div>
+        <div class="card-desc">安全吊网系统，保护施工人员安全。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+</div>
+<footer>
+  <p data-zh="© PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队"
+     data-en="© PERI GCB Product Information Hub | South America, Eastern Europe, Africa Teams"
+     data-es="© PERI GCB Centro de Información de Productos | Equipos de América del Sur, Europa del Este, África"
+     data-de="© PERI GCB Produktinformationszentrum | Teams Südamerika, Osteuropa, Afrika">
+     © PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队</p>
+  <p style="margin-top:8px">
+    <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
+  </p>
+</footer>
+<script>
+const LANG_DATA={};
+function setLang(l){
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.textContent=el.dataset[l]});
+  document.querySelectorAll('.lang-bar button').forEach(b=>b.classList.toggle('active',b.dataset.l===l));
+  localStorage.setItem('periLang',l);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved=localStorage.getItem('periLang')||'zh';
+  setLang(saved);
+});
+</script>
+</body></html>

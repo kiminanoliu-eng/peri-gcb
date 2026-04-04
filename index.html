@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCB — PERI Product Information Hub</title>
+<style>
+/* =====================
+   RESET & BASE
+===================== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --red: #C8102E;
+  --yellow: #FFB800;
+  --black: #1a1a1a;
+  --gray-dark: #333;
+  --gray: #666;
+  --gray-light: #f5f5f5;
+  --gray-border: #e0e0e0;
+  --white: #fff;
+  --max-w: 1200px;
+  --font: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* =====================
+   UTILITY
+===================== */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
+.sr-only { position: absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+
+/* =====================
+   TOP BAR
+===================== */
+.topbar {
+  background: var(--black);
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  padding: 7px 0;
+  letter-spacing: 0.3px;
+}
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-left { display: flex; align-items: center; gap: 20px; }
+.topbar-left a { color: rgba(255,255,255,0.6); transition: color 0.2s; }
+.topbar-left a:hover { color: var(--yellow); }
+
+/* Language switcher */
+.lang-switch { display: flex; gap: 2px; }
+.lang-btn {
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.5);
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+.lang-btn.active, .lang-btn:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* =====================
+   HEADER / NAV
+===================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-border);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.peri-logo {
+  height: 36px;
+  width: auto;
+}
+.divider-v {
+  width: 1px;
+  height: 30px;
+  background: var(--gray-border);
+}
+.gcb-brand {
+  display: flex;
+  flex-direction: column;
+}
+.gcb-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 0.5px;
+}
+.gcb-sub {
+  font-size: 10px;
+  color: var(--gray);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-dark);
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width 0.3s;
+}
+.nav-link:hover { color: var(--red); }
+.nav-link:hover::after { width: 100%; }
+
+.search-btn {
+  width: 38px; height: 38px;
+  border: 1.5px solid var(--gray-border);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--gray);
+  transition: all 0.2s;
+}
+.search-btn:hover { border-color: var(--red); color: var(--red); }
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+  transition: transform 8s ease;
+}
+.hero:hover .hero-bg { transform: scale(1.03); }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+}
+.hero-content {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+}
+.hero-content .container { }
+.hero-tag {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  max-width: 700px;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero h1 em { color: var(--yellow); font-style: normal; }
+.hero p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+/* Search bar inside hero */
+.hero-search {
+  margin-top: 32px;
+  display: flex;
+  max-width: 520px;
+}
+.hero-search input {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.95);
+  color: var(--black);
+}
+.hero-search button {
+  padding: 14px 28px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.5px;
+}
+.hero-search button:hover { background: #a00d25; }
+
+/* =====================
+   STATS BAR
+===================== */
+.stats-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-border);
+  padding: 28px 0;
+}
+.stats-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--red);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 12px;
+  color: var(--gray);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.stat-divider { width: 1px; height: 40px; background: var(--gray-border); }
+
+/* =====================
+   SECTION HEADER
+===================== */
+.section { padding: 80px 0; }
+.section-header { margin-bottom: 48px; }
+.section-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+}
+.section-header p {
+  font-size: 16px;
+  color: var(--gray);
+  margin-top: 12px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+.section-line {
+  width: 48px;
+  height: 3px;
+  background: var(--red);
+  margin-top: 16px;
+}
+
+/* =====================
+   CATEGORY GRID
+===================== */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gray-border);
+  border: 1px solid var(--gray-border);
+}
+.cat-card {
+  background: var(--white);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.cat-card:hover { background: var(--gray-light); }
+.cat-card:hover::before { transform: scaleX(1); }
+
+.cat-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+.cat-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+.cat-names {
+  font-size: 12px;
+  color: var(--gray);
+  line-height: 1.5;
+}
+.cat-desc {
+  font-size: 14px;
+  color: var(--gray-dark);
+  line-height: 1.6;
+  flex: 1;
+}
+.cat-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 0.3px;
+}
+.cat-arrow {
+  font-size: 18px;
+  color: var(--gray-border);
+  align-self: flex-end;
+  transition: all 0.3s;
+}
+.cat-card:hover .cat-arrow { color: var(--red); transform: translateX(4px); }
+
+/* =====================
+   FEATURED PRODUCTS
+===================== */
+.product-scroll {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--gray-border);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.product-card:hover {
+  border-color: var(--red);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+.product-img {
+  width: 100%;
+  height: 200px;
+  background: var(--gray-light);
+  overflow: hidden;
+  position: relative;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-img img { transform: scale(1.05); }
+.product-img .no-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--gray-border);
+}
+.product-cat-tag {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+}
+.product-body { padding: 18px 20px; }
+.product-body h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--black);
+}
+.product-body .cn-name {
+  font-size: 12px;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+.product-body p {
+  font-size: 13px;
+  color: var(--gray-dark);
+  line-height: 1.55;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.product-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.btn-primary { background: var(--red); color: var(--white); }
+.btn-primary:hover { background: #a00d25; }
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid var(--gray-border);
+  color: var(--gray-dark);
+}
+.btn-ghost:hover { border-color: var(--black); color: var(--black); }
+.btn-yellow { background: var(--yellow); color: var(--black); }
+.btn-yellow:hover { background: #e6a600; }
+
+/* =====================
+   PROJECT VIDEO SECTION
+===================== */
+.section-dark {
+  background: var(--black);
+  color: var(--white);
+  padding: 80px 0;
+}
+.section-dark .section-tag { color: var(--yellow); }
+.section-dark .section-header h2 { color: var(--white); }
+.section-dark .section-header p { color: rgba(255,255,255,0.6); }
+.section-dark .section-line { background: var(--yellow); }
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.video-card {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.video-thumb {
+  width: 100%;
+  height: 200px;
+  background: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+.video-card:hover .video-thumb img { opacity: 0.4; transform: scale(1.05); }
+.play-btn {
+  position: absolute;
+  width: 52px; height: 52px;
+  background: var(--red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 20px rgba(200,16,46,0.4);
+}
+.video-card:hover .play-btn { transform: scale(1.1); }
+.video-info { padding: 16px 0; }
+.video-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.video-info p { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+/* ADD VIDEO slot */
+.video-add {
+  border: 1.5px dashed rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.video-add:hover { border-color: var(--yellow); }
+.video-add-icon { font-size: 28px; color: rgba(255,255,255,0.3); margin-bottom: 8px; }
+.video-add-text { font-size: 13px; color: rgba(255,255,255,0.4); text-align: center; }
+
+/* =====================
+   INQUIRY CTA
+===================== */
+.cta-section {
+  background: var(--gray-light);
+  padding: 80px 0;
+}
+.cta-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.cta-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.cta-left p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.cta-info { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+.cta-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+.cta-info-icon {
+  width: 36px; height: 36px;
+  background: var(--red);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Form */
+.form-group { margin-bottom: 16px; }
+.form-label { font-size: 13px; font-weight: 600; color: var(--black); display: block; margin-bottom: 6px; }
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-border);
+  font-size: 14px;
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--black);
+  transition: border-color 0.2s;
+  outline: none;
+  appearance: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--red); }
+.form-textarea { resize: vertical; min-height: 100px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: var(--black);
+  color: rgba(255,255,255,0.6);
+  padding: 48px 0 24px;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 24px;
+}
+.footer-brand h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.footer-brand p { font-size: 13px; line-height: 1.7; }
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul li a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s;
+}
+.footer-col ul li a:hover { color: var(--yellow); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.footer-logo { display: flex; align-items: center; gap: 10px; }
+.footer-logo img { height: 24px; filter: brightness(0) invert(1) opacity(0.6); }
+
+/* =====================
+   AI CHAT WIDGET
+===================== */
+.chat-widget { position: fixed; bottom: 32px; right: 32px; z-index: 1000; }
+.chat-fab {
+  width: 56px; height: 56px;
+  background: var(--red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(200,16,46,0.4);
+  transition: transform 0.2s;
+  border: none;
+  font-size: 22px;
+}
+.chat-fab:hover { transform: scale(1.08); }
+.chat-popup {
+  display: none;
+  position: absolute;
+  bottom: 68px; right: 0;
+  width: 320px;
+  background: var(--white);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+  border: 1px solid var(--gray-border);
+  overflow: hidden;
+}
+.chat-popup.open { display: block; }
+.chat-head {
+  background: var(--red);
+  color: var(--white);
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.chat-ai-badge {
+  font-size: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.chat-close { cursor: pointer; opacity: 0.7; font-size: 16px; border: none; background: none; color: white; }
+.chat-messages {
+  height: 200px;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fafafa;
+}
+.msg { font-size: 13px; padding: 9px 12px; max-width: 85%; line-height: 1.5; }
+.msg-bot { background: var(--white); border: 1px solid var(--gray-border); align-self: flex-start; }
+.msg-user { background: var(--red); color: var(--white); align-self: flex-end; }
+.chat-input-area {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--gray-border);
+}
+.chat-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  font-size: 13px;
+  font-family: var(--font);
+  outline: none;
+}
+.chat-send {
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.chat-send:hover { background: #a00d25; }
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1024px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-scroll { grid-template-columns: repeat(2, 1fr); }
+  .video-grid { grid-template-columns: repeat(2, 1fr); }
+  .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .hero { height: 400px; }
+  .hero h1 { font-size: 30px; }
+  .header-nav { display: none; }
+  .cat-grid { grid-template-columns: 1fr; }
+  .product-scroll { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; }
+  .stats-inner { flex-wrap: wrap; gap: 28px; }
+  .stat-divider { display: none; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .topbar .topbar-left { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a href="https://cn.peri.com" target="_blank">🇨🇳 cn.peri.com</a>
+      <span>|</span>
+      <span>Globe Chinese Business Teams</span>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
+      <button class="lang-btn" onclick="setLang('es',this)">ES</button>
+      <button class="lang-btn" onclick="setLang('de',this)">DE</button>
+      <button class="lang-btn" onclick="setLang('zh',this)">中文</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-group">
+        <img class="peri-logo" src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span style="display:none; font-size:22px; font-weight:900; color:#C8102E; letter-spacing:1px;">[PERI]</span>
+        <div class="divider-v"></div>
+        <div class="gcb-brand">
+          <div class="gcb-name">GCB Product Hub</div>
+          <div class="gcb-sub" id="gcb-sub-text">Globe Chinese Business Teams</div>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="#categories" class="nav-link" data-en="Products" data-es="Productos" data-de="Produkte" data-zh="产品">Products</a>
+        <a href="#projects" class="nav-link" data-en="Projects" data-es="Proyectos" data-de="Projekte" data-zh="项目">Projects</a>
+        <a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto" data-de="Kontakt" data-zh="联系">Contact</a>
+        <button class="search-btn" title="Search">🔍</button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg" src="https://cdn.peri.cloud/dam/jcr:53e3559b-cf25-4eef-a2a5-ac38db3fa423/23717/trio-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg?width=1600&height=900&fit=bounds&format=pjpg&auto=webp" alt="PERI Construction" onerror="this.src=''; this.style.display='none'">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-tag" id="hero-tag">PERI Formwork & Scaffolding</div>
+      <h1 id="hero-title">Chinese Product<br><em>Information Center</em></h1>
+      <p id="hero-sub">Browse 189 PERI products in your language. Direct links to official PERI China pages, product videos, and technical brochures.</p>
+      <div class="hero-search">
+        <input type="text" id="hero-search-input" placeholder="Search: TRIO, MAXIMO, PERI UP, ACS…">
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-num">189</div>
+        <div class="stat-label" id="stat1">Products</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label" id="stat2">Categories</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label" id="stat3">Languages</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">50+</div>
+        <div class="stat-label" id="stat4">Countries Served</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT CATEGORIES -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="cat-tag">PRODUCT RANGE</div>
+      <h2 id="cat-title">All Product Categories</h2>
+      <p id="cat-sub">Click any category to browse products with full specifications, videos, and direct links to the official PERI China website.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cat-grid">
+
+      <div class="cat-card" onclick="location.href='categories/wall-formwork.html'">
+        <div class="cat-icon">🏗️</div>
+        <div class="cat-title" data-en="Wall Formwork" data-es="Encofrado de Muros" data-de="Wandschalung" data-zh="墙模板系统">Wall Formwork</div>
+        <div class="cat-names">墙模板 · Encofrado de Muros · Wandschalung</div>
+        <div class="cat-desc">TRIO, MAXIMO, DOMINO, LIWA and more. Panel and girder systems for walls of all shapes and sizes.</div>
+        <div class="cat-count">12 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/slab-formwork.html'">
+        <div class="cat-icon">⬛</div>
+        <div class="cat-title">Slab Formwork</div>
+        <div class="cat-names">楼板模板 · Encofrado de Losas · Deckenschalung</div>
+        <div class="cat-desc">SKYDECK, MULTIFLEX, GRIDFLEX, SKYMAX. Efficient floor forming for every slab requirement.</div>
+        <div class="cat-count">10 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/column-formwork.html'">
+        <div class="cat-icon">🔩</div>
+        <div class="cat-title">Column Formwork</div>
+        <div class="cat-names">柱模 · Encofrado de Columnas · Säulenschalung</div>
+        <div class="cat-desc">TRIO, VARIO, RAPID, QUATTRO, LICO, SRS. For square, rectangular and circular columns.</div>
+        <div class="cat-count">7 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/climbing-systems.html'">
+        <div class="cat-icon">⬆️</div>
+        <div class="cat-title">Climbing Systems</div>
+        <div class="cat-names">爬架系统 · Sistemas Trepantes · Klettersysteme</div>
+        <div class="cat-desc">ACS, RCS, RCS MAX, SCS, CB. Self-climbing and rail systems for high-rise construction.</div>
+        <div class="cat-count">8 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/scaffolding.html'">
+        <div class="cat-icon">🦺</div>
+        <div class="cat-title">Scaffolding Systems</div>
+        <div class="cat-names">脚手架 · Andamios · Gerüstsysteme</div>
+        <div class="cat-desc">PERI UP Flex, Easy, Rosett. Modular scaffolding for facade, industrial, stair and access applications.</div>
+        <div class="cat-count">23 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/shoring.html'">
+        <div class="cat-icon">🏛️</div>
+        <div class="cat-title">Shoring & Props</div>
+        <div class="cat-names">支撑系统 · Apuntalamiento · Stützensysteme</div>
+        <div class="cat-desc">MULTIPROP, PD 5, PD 8, HD 200, ST 100. Load-bearing towers and slab props.</div>
+        <div class="cat-count">11 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/civil-engineering.html'">
+        <div class="cat-icon">🌉</div>
+        <div class="cat-title">Civil Engineering</div>
+        <div class="cat-names">市政工程 · Ingeniería Civil · Ingenieurbau</div>
+        <div class="cat-desc">VARIOKIT, ALPHAKIT. Bridge, tunnel and special structure formwork solutions.</div>
+        <div class="cat-count">9 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/formwork-panels.html'">
+        <div class="cat-icon">🪵</div>
+        <div class="cat-title">Formwork Panels</div>
+        <div class="cat-names">模板板材 · Paneles · Schalungsplatten</div>
+        <div class="cat-desc">FinPly, PERI Birch, Maxiform, RusPly and 20+ more. Panels for every concrete surface requirement.</div>
+        <div class="cat-count">24 Products →</div>
+      </div>
+
+      <div class="cat-card" onclick="location.href='categories/accessories.html'">
+        <div class="cat-icon">🔧</div>
+        <div class="cat-title">Accessories & Tools</div>
+        <div class="cat-names">配件工具 · Accesorios · Zubehör</div>
+        <div class="cat-desc">GT 24, VT 20K girders, tie systems, safety equipment, working platforms and more.</div>
+        <div class="cat-count">11 Products →</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" style="background:var(--gray-light); padding-top:0; padding-bottom:80px;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FEATURED PRODUCTS</div>
+      <h2>Most Requested Products</h2>
+      <p>The most frequently inquired PERI products by our international customers.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="product-scroll">
+
+      <!-- TRIO -->
+      <div class="product-card">
+        <div class="product-img" style="background:linear-gradient(135deg,#C8102E,#900b1e);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#fff;font-size:36px;font-weight:900;letter-spacing:2px;text-shadow:0 2px 8px rgba(0,0,0,.3)">TRIO</span>
+          <div class="product-cat-tag" data-en="Wall Formwork" data-zh="墙模板">墙模板</div>
+        </div>
+        <div class="product-body">
+          <h4 data-en="TRIO Panel Formwork" data-zh="TRIO 框式模板">TRIO 框式模板</h4>
+          <div class="cn-name">TRIO Framed Formwork</div>
+          <p data-en="Universal wall formwork with 6 standard widths. BFD Coupler for all connections. Max 80 kN/m²." data-zh="6种标准宽度，BFD夹具连接，最大混凝土侧压力80 kN/m²，多功能施工利器。">6种标准宽度，BFD夹具连接，最大混凝土侧压力80 kN/m²。</p>
+          <div class="product-actions">
+            <a href="products/trio-rahmenschalung.html" class="btn btn-primary" data-en="Details" data-zh="查看详情">查看详情</a>
+            <a href="https://cn.peri.com/products/trio-rahmenschalung.html" target="_blank" class="btn btn-ghost">🇨🇳 官网</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAXIMO -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://cdn.peri.cloud/dam/jcr:b5b05b47-5e25-4c1f-a8d5-4e4a31e0a0e0/23570/maximo-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg?width=600&height=400&fit=bounds&format=pjpg&auto=webp" alt="MAXIMO 框式模板" loading="lazy"
+               onerror="this.parentNode.style.background='linear-gradient(135deg,#C8102E,#900b1e)';this.parentNode.innerHTML='<span style=\'color:#fff;font-size:28px;font-weight:900;letter-spacing:1px;\'>MAXIMO</span><div class=\'product-cat-tag\'>墙模板</div>'">
+          <div class="product-cat-tag" data-en="Wall Formwork" data-zh="墙模板">墙模板</div>
+        </div>
+        <div class="product-body">
+          <h4 data-en="MAXIMO Panel Formwork" data-zh="MAXIMO 框式模板">MAXIMO 框式模板</h4>
+          <div class="cn-name">MAXIMO Panel Formwork</div>
+          <p data-en="MX one-sided tie technology. Up to 50% faster installation. 40% fewer tie rods." data-zh="MX单侧拉杆技术，施工速度提高50%，减少40%拉杆数量，可与TRIO兼容。">MX单侧拉杆技术，施工速度提高50%，减少40%拉杆数量。</p>
+          <div class="product-actions">
+            <a href="products/maximo-panel-formwork.html" class="btn btn-primary" data-en="Details" data-zh="查看详情">查看详情</a>
+            <a href="https://cn.peri.com/products/maximo-panel-formwork.html" target="_blank" class="btn btn-ghost">🇨🇳 官网</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKYDECK -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://cdn.peri.cloud/dam/jcr:b4c5d6e7-f8a9-0123-bcde-234567890123/23810/skydeck.jpg?width=600&height=400&fit=bounds&format=pjpg&auto=webp" alt="SKYDECK 模块化楼板模板" loading="lazy"
+               onerror="this.parentNode.style.background='linear-gradient(135deg,#1a5faa,#0d3f7a)';this.parentNode.innerHTML='<span style=\'color:#fff;font-size:24px;font-weight:900;letter-spacing:1px;\'>SKYDECK</span><div class=\'product-cat-tag\'>楼板模板</div>'">
+          <div class="product-cat-tag" data-en="Slab Formwork" data-zh="楼板模板">楼板模板</div>
+        </div>
+        <div class="product-body">
+          <h4 data-en="SKYDECK Slab Formwork" data-zh="SKYDECK 模块化楼板模板">SKYDECK 模块化楼板模板</h4>
+          <div class="cn-name">SKYDECK Modular Slab Formwork</div>
+          <p data-en="Aluminum panel system. Shortest setting times. Drop head for early stripping." data-zh="铝制面板早拆头设计，拆模最快，大幅缩短施工周期。">铝制面板早拆头设计，拆模最快，大幅缩短施工周期。</p>
+          <div class="product-actions">
+            <a href="products/skydeck-slab-formwork.html" class="btn btn-primary" data-en="Details" data-zh="查看详情">查看详情</a>
+            <a href="https://cn.peri.com/products/skydeck-deckenschalung.html" target="_blank" class="btn btn-ghost">🇨🇳 官网</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERI UP Flex -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901234/24800/peri-up-flex.jpg?width=600&height=400&fit=bounds&format=pjpg&auto=webp" alt="PERI UP Flex 模块化脚手架" loading="lazy"
+               onerror="this.parentNode.style.background='linear-gradient(135deg,#2d5a27,#1a3a18)';this.parentNode.innerHTML='<span style=\'color:#fff;font-size:18px;font-weight:900;letter-spacing:1px;text-align:center;\'>PERI UP Flex</span><div class=\'product-cat-tag\'>脚手架</div>'">
+          <div class="product-cat-tag" data-en="Scaffolding" data-zh="脚手架">脚手架</div>
+        </div>
+        <div class="product-body">
+          <h4 data-en="PERI UP Flex Scaffolding" data-zh="PERI UP Flex 模块化脚手架">PERI UP Flex 模块化脚手架</h4>
+          <div class="cn-name">PERI UP Flex Modular Scaffolding</div>
+          <p data-en="25 cm modular grid. Gravity lock connections. Suitable for any application." data-zh="25cm模数网格，重力锁扣连接，适用于任何施工场景。">25cm模数网格，重力锁扣连接，适用于任何施工场景。</p>
+          <div class="product-actions">
+            <a href="products/peri-up-modular-scaffold.html" class="btn btn-primary" data-en="Details" data-zh="查看详情">查看详情</a>
+            <a href="https://cn.peri.com/products/peri-up-flex-system-scaffold.html" target="_blank" class="btn btn-ghost">🇨🇳 官网</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHINA PROJECT VIDEOS -->
+<section class="section-dark" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">REFERENCE PROJECTS</div>
+      <h2>China Project Showcase</h2>
+      <p>Real projects completed with PERI systems in China. Click to watch project videos.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-thumb">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="video-info">
+          <h4>Beijing CBD Tower — ACS Climbing System</h4>
+          <p>自动爬架系统 · High-rise core wall construction</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="video-info">
+          <h4>Shanghai Bridge — VARIOKIT</h4>
+          <p>市政桥梁模板 · Custom bridge formwork solution</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb" style="border:1.5px dashed rgba(255,255,255,0.15);">
+          <div class="video-add-icon">＋</div>
+          <div class="video-add-text">Add your project video<br>添加项目视频</div>
+        </div>
+        <div class="video-info">
+          <h4 style="color:rgba(255,255,255,0.4);">Your Project Here</h4>
+          <p>Upload a YouTube link or video file</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY / CONTACT -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <div class="section-tag">GET IN TOUCH</div>
+        <h2>Have a Question?<br>Leave Us a Message.</h2>
+        <p>Our local team will respond in your language. For technical enquiries, our engineers will review and get back to you.</p>
+        <div class="section-line"></div>
+        <div class="cta-info">
+          <div class="cta-info-item">
+            <div class="cta-info-icon">🌍</div>
+            <span>Available for: South America, Eastern Europe, Africa</span>
+          </div>
+          <div class="cta-info-item">
+            <div class="cta-info-icon">💬</div>
+            <span>Languages: EN / ES / DE / 中文</span>
+          </div>
+          <div class="cta-info-item">
+            <div class="cta-info-icon">⏱️</div>
+            <span>Response within 24 hours</span>
+          </div>
+        </div>
+      </div>
+      <div class="cta-right">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name / 姓名</label>
+              <input class="form-input" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Company / 公司</label>
+              <input class="form-input" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" placeholder="email@company.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Country / 国家</label>
+              <input class="form-input" placeholder="e.g. Colombia">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Product Interest / 感兴趣的产品</label>
+            <input class="form-input" placeholder="e.g. TRIO, MAXIMO, PERI UP…">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message / 留言</label>
+            <textarea class="form-textarea" placeholder="Your question or enquiry…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="padding:13px 36px; font-size:14px;">
+            Send Message / 发送
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>GCB — Globe Chinese Business Teams</h3>
+        <p>A product information hub for PERI formwork and scaffolding systems. Connecting Chinese manufacturers with local markets across South America, Eastern Europe and Africa.</p>
+        <div style="margin-top:16px; display:flex; align-items:center; gap:10px;">
+          <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" style="height:22px; filter:brightness(0) invert(1) opacity(0.5);" alt="PERI" onerror="this.style.display='none'">
+          <span style="font-size:12px; color:rgba(255,255,255,0.3);">Authorized information partner</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Wall Formwork / 墙模板</a></li>
+          <li><a href="#">Slab Formwork / 楼板模板</a></li>
+          <li><a href="#">Climbing Systems / 爬架</a></li>
+          <li><a href="#">Scaffolding / 脚手架</a></li>
+          <li><a href="#">Civil Engineering / 市政</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://cn.peri.com" target="_blank">PERI China Website</a></li>
+          <li><a href="https://www.youtube.com/@perigroup" target="_blank">PERI YouTube</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GCB Globe Chinese Business Teams</span>
+      <span>Information source: <a href="https://cn.peri.com" target="_blank" style="color:rgba(255,255,255,0.4)">cn.peri.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- AI CHAT WIDGET -->
+<div class="chat-widget">
+  <div class="chat-popup" id="chatBox">
+    <div class="chat-head">
+      <span>Product Enquiry <span class="chat-ai-badge">AI</span></span>
+      <button class="chat-close" onclick="document.getElementById('chatBox').classList.remove('open')">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMsgs">
+      <div class="msg msg-bot">👋 Hello! Ask me about any PERI product — specifications, applications, or compatibility. / 您好，请问有什么关于PERI产品的问题？</div>
+    </div>
+    <div class="chat-input-area">
+      <input class="chat-input" id="chatIn" placeholder="Ask about TRIO, MAXIMO, PERI UP…" onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+  <button class="chat-fab" onclick="document.getElementById('chatBox').classList.toggle('open')">💬</button>
+</div>
+
+<script>
+/* ---- Language switch ---- */
+const t = {
+  en: {
+    heroTag:'PERI Formwork & Scaffolding',
+    heroTitle:'Chinese Product<br><em>Information Center</em>',
+    heroSub:'Browse 189 PERI products in your language. Direct links to official PERI China pages, product videos and brochures.',
+    gcbSub:'Globe Chinese Business Teams',
+    stat1:'Products', stat2:'Categories', stat3:'Languages', stat4:'Countries Served',
+    catTag:'PRODUCT RANGE', catTitle:'All Product Categories', catSub:'Click any category to browse products with full specifications, videos, and direct links to the PERI China website.'
+  },
+  es: {
+    heroTag:'Encofrado y Andamios PERI',
+    heroTitle:'Centro de Información de<br><em>Productos en Chino</em>',
+    heroSub:'Explore 189 productos PERI en su idioma. Vínculos directos al sitio oficial de PERI China, videos y folletos técnicos.',
+    gcbSub:'Globe Chinese Business Teams',
+    stat1:'Productos', stat2:'Categorías', stat3:'Idiomas', stat4:'Países Atendidos',
+    catTag:'GAMA DE PRODUCTOS', catTitle:'Todas las Categorías', catSub:'Haga clic en cualquier categoría para ver los productos con especificaciones completas, videos y enlaces directos al sitio web de PERI China.'
+  },
+  de: {
+    heroTag:'PERI Schalung & Gerüst',
+    heroTitle:'Chinesisches Produkt-<br><em>Informationszentrum</em>',
+    heroSub:'Entdecken Sie 189 PERI-Produkte in Ihrer Sprache. Direkte Links zur offiziellen PERI China Website, Produktvideos und Broschüren.',
+    gcbSub:'Globe Chinese Business Teams',
+    stat1:'Produkte', stat2:'Kategorien', stat3:'Sprachen', stat4:'Länder',
+    catTag:'PRODUKTPALETTE', catTitle:'Alle Produktkategorien', catSub:'Klicken Sie auf eine Kategorie, um Produkte mit vollständigen Spezifikationen, Videos und direkten Links zur PERI China Website zu durchsuchen.'
+  },
+  zh: {
+    heroTag:'PERI 模板与脚手架',
+    heroTitle:'派利产品<br><em>中文信息中心</em>',
+    heroSub:'浏览189款PERI产品中文信息，直接链接至PERI中国官网、产品视频和技术手册。',
+    gcbSub:'全球中国商业团队',
+    stat1:'产品', stat2:'类别', stat3:'语言', stat4:'覆盖国家',
+    catTag:'产品类别', catTitle:'所有产品类别', catSub:'点击任意类别，查看完整规格、视频及PERI中国官网直达链接。'
+  }
+};
+
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const d = t[lang];
+  if (!d) return;
+  document.getElementById('hero-tag').textContent = d.heroTag;
+  document.getElementById('hero-title').innerHTML = d.heroTitle;
+  document.getElementById('hero-sub').textContent = d.heroSub;
+  document.getElementById('gcb-sub-text').textContent = d.gcbSub;
+  document.getElementById('stat1').textContent = d.stat1;
+  document.getElementById('stat2').textContent = d.stat2;
+  document.getElementById('stat3').textContent = d.stat3;
+  document.getElementById('stat4').textContent = d.stat4;
+  document.getElementById('cat-tag').textContent = d.catTag;
+  document.getElementById('cat-title').textContent = d.catTitle;
+  document.getElementById('cat-sub').textContent = d.catSub;
+  // Update nav links
+  document.querySelectorAll('.nav-link[data-' + lang + ']').forEach(a => {
+    a.textContent = a.getAttribute('data-' + lang);
+  });
+}
+
+/* ---- Simple chat demo ---- */
+function sendChat() {
+  const input = document.getElementById('chatIn');
+  const msg = input.value.trim();
+  if (!msg) return;
+  const box = document.getElementById('chatMsgs');
+  box.innerHTML += `<div class="msg msg-user">${msg}</div>`;
+  input.value = '';
+  setTimeout(() => {
+    const m = msg.toLowerCase();
+    let r = 'For detailed technical information, please click the "🇨🇳 Details" button on the product page, or leave us a message and our engineer will respond. / 请点击产品页面的"详情"按钮，或留言给我们的工程师。';
+    if (m.includes('trio')) r = 'TRIO: Universal wall formwork, 6 standard panel widths, BFD Coupler connections, max 80 kN/m². Heights: 270 & 300 cm. Compatible with MAXIMO. / TRIO框式模板：6种标准宽度，BFD夹具，最大侧压80kN/m²。';
+    else if (m.includes('maximo')) r = 'MAXIMO: One-sided MX tie technology, up to 50% faster than conventional formwork. 100% compatible with TRIO. PERIskin corrosion protection. / MAXIMO：MX单侧拉杆，效率提升50%，与TRIO完全兼容。';
+    else if (m.includes('peri up') || m.includes('perium')) r = 'PERI UP: Modular scaffolding system, 25 cm grid, gravity lock connections. Available as Flex, Easy and Rosett variants. / PERI UP模块化脚手架：25cm网格，重力锁连接，多种型号可选。';
+    else if (m.includes('skydeck')) r = 'SKYDECK: Aluminum panel slab formwork, drop head principle for early stripping, short setting times. / SKYDECK铝合金楼板模板：早拆原理，组立时间短。';
+    else if (m.includes('acs')) r = 'ACS: Hydraulic self-climbing system, no crane required for climbing, suitable for core walls and bridge towers. / ACS自动爬架：液压顶升，无需吊车，适用于核心筒和桥塔。';
+    box.innerHTML += `<div class="msg msg-bot">${r}</div>`;
+    box.scrollTop = box.scrollHeight;
+  }, 500);
+  box.scrollTop = box.scrollHeight;
+}
+</script>
+
+</body>
+</html>

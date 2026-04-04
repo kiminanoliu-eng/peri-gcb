@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Software & Services | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+/* Lang bar */
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+
+/* Header */
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+
+/* Breadcrumb */
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f8f8f8;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.breadcrumb span{color:#aaa;margin:0 6px}
+
+/* Product Hero */
+.product-hero{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:380px}
+@media(max-width:768px){.product-hero{grid-template-columns:1fr}}
+.product-image-side{background:#C8102E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;position:relative;min-height:320px}
+.product-image-side a{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;width:100%}
+.product-brand-name{font-size:52px;font-weight:900;color:#fff;letter-spacing:2px;line-height:1}
+.product-cn-name{font-size:18px;color:rgba(255,255,255,.8);font-weight:300}
+.view-on-peri{margin-top:20px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);color:#fff;padding:8px 20px;border-radius:4px;font-size:13px;transition:.2s;display:inline-block}
+.view-on-peri:hover{background:rgba(255,255,255,.3)}
+.product-yellow-bar{position:absolute;bottom:0;left:0;right:0;height:5px;background:#FFB800}
+
+.product-info-side{padding:36px 40px;display:flex;flex-direction:column;gap:16px}
+.product-cat-badge{display:inline-flex;align-items:center;gap:6px;background:#fff3f3;color:#C8102E;border:1px solid #ffd0d0;padding:4px 12px;border-radius:20px;font-size:13px;width:fit-content}
+.product-title{font-size:28px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.product-tagline{font-size:15px;color:#555;border-left:3px solid #FFB800;padding-left:12px;margin-top:4px}
+.qr-section{margin-top:auto;display:flex;align-items:center;gap:12px;padding:12px;background:#f9f9f9;border-radius:6px;border:1px solid #eee}
+.qr-section img{width:64px;height:64px}
+.qr-text{font-size:12px;color:#888}
+.share-url{font-size:11px;color:#C8102E;word-break:break-all;margin-top:2px}
+
+/* Sections */
+.section{padding:40px 32px;border-bottom:1px solid #f0f0f0}
+.section:nth-child(even){background:#fafafa}
+.section-title{font-size:20px;font-weight:700;color:#1a1a1a;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section-title::before{content:'';width:4px;height:22px;background:#C8102E;display:block;border-radius:2px}
+
+/* Features */
+.features-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.features-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;background:#fff;border:1px solid #eee;border-radius:6px;font-size:14px}
+.features-list li::before{content:'✓';color:#C8102E;font-weight:700;flex-shrink:0;margin-top:1px}
+
+/* Video */
+.video-frame{width:100%;aspect-ratio:16/9;border:none;border-radius:8px;background:#111}
+.video-placeholder{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;text-align:center;color:#fff;gap:16px;aspect-ratio:16/9}
+.video-placeholder .play-icon{width:64px;height:64px;background:rgba(200,16,46,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px}
+.video-placeholder p{color:#aaa;font-size:14px;max-width:360px}
+.video-placeholder a{color:#FFB800;font-size:13px}
+
+/* PDF */
+.pdf-list{display:flex;flex-direction:column;gap:10px}
+.pdf-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid #eee;border-radius:8px;background:#fff;transition:.2s}
+.pdf-item:hover{border-color:#C8102E;background:#fff8f8}
+.pdf-icon{font-size:24px}
+.pdf-info{flex:1}
+.pdf-name{font-size:14px;font-weight:600}
+.pdf-size{font-size:12px;color:#888}
+.pdf-dl-btn{background:#C8102E;color:#fff;padding:6px 14px;border-radius:4px;font-size:12px;white-space:nowrap}
+.pdf-placeholder{color:#888;font-size:14px;font-style:italic;padding:20px;background:#f9f9f9;border-radius:6px;border:1px dashed #ddd;text-align:center}
+
+/* Projects */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.project-card{border:2px dashed #ddd;border-radius:10px;overflow:hidden;background:#fafafa;transition:.2s}
+.project-card:hover{border-color:#C8102E;background:#fff8f8}
+.project-img{height:160px;background:linear-gradient(135deg,#eee 0%,#ddd 100%);display:flex;align-items:center;justify-content:center;color:#bbb;font-size:40px}
+.project-body{padding:16px}
+.project-location{font-size:12px;color:#C8102E;font-weight:600;margin-bottom:4px}
+.project-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:6px}
+.project-desc{font-size:13px;color:#888;font-style:italic}
+
+/* Inquiry Form */
+.inquiry-form{max-width:640px;display:flex;flex-direction:column;gap:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:13px;font-weight:600;color:#555}
+.form-group input,.form-group select,.form-group textarea{padding:10px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;transition:.2s;background:#fff}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#C8102E;box-shadow:0 0 0 3px rgba(200,16,46,.08)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-note{font-size:12px;color:#aaa;font-style:italic}
+.submit-btn{background:#C8102E;color:#fff;border:none;padding:12px 32px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;align-self:flex-start;transition:.2s}
+.submit-btn:hover{background:#a00d25}
+
+/* Footer */
+.site-footer{background:#1a1a1a;color:#aaa;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-brand{color:#fff;font-weight:700;font-size:16px}
+.footer-brand span{color:#FFB800}
+.footer-links{display:flex;gap:20px;font-size:13px}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:12px;text-align:right}
+
+/* Related products */
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.related-card{border:1px solid #eee;border-radius:8px;padding:16px;transition:.2s;background:#fff}
+.related-card:hover{border-color:#C8102E;box-shadow:0 4px 16px rgba(200,16,46,.08)}
+.related-card .rcat{font-size:11px;color:#C8102E;font-weight:600;text-transform:uppercase;margin-bottom:4px}
+.related-card .rname{font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
+.related-card .rdesc{font-size:12px;color:#888;line-height:1.4}
+
+  .cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:60vh}
+  @media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+  .cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:24px 16px}
+  .cat-sidebar-title{font-size:12px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+  .cat-main{padding:32px}
+  .cat-hero{background:linear-gradient(135deg,#C8102E 0%,#a00d25 100%);color:#fff;padding:32px;margin-bottom:0}
+  .cat-hero-icon{font-size:48px;margin-bottom:8px}
+  .cat-hero h1{font-size:28px;font-weight:800}
+  .cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+  .cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+  .sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+  </style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+
+  <!-- Category Hero -->
+  <div class="cat-hero">
+    <div class="cat-hero-icon">💻</div>
+    <h1 data-zh="软件与服务" data-en="Software & Services">软件与服务</h1>
+    <p data-zh="PERI派利 软件与服务 系列产品" data-en="PERI Software & Services product range">PERI派利 软件与服务 系列产品</p>
+    <div class="cat-count" data-zh="34 个产品" data-en="34 Products">34 个产品</div>
+  </div>
+
+  <div class="cat-layout">
+    <!-- Sidebar -->
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="wall-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+      <a href="column-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+      <a href="slab-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🏗️ 楼板模板" data-en="🏗️ Slab Formwork">🏗️ 楼板模板</a>
+      <a href="climbing-systems.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+      <a href="scaffolding.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+      <a href="shoring.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+      <a href="infrastructure.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Infrastructure / Bridges / Tunnels">🌉 市政/桥梁/隧道</a>
+      <a href="formwork-panels.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="📋 模板板材" data-en="📋 Formwork Panels & Boards">📋 模板板材</a>
+      <a href="accessories.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+      <a href="software-services.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;background:#fff3f3;color:#C8102E;font-weight:600;" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+      <a href="testing-equipment.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔬 检测设备" data-en="🔬 Testing Equipment">🔬 检测设备</a>
+      <a href="logistics.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🚛 物流运输" data-en="🚛 Logistics & Transport">🚛 物流运输</a>
+    </div>
+    <!-- Product Grid -->
+    <div class="cat-main">
+      <div class="related-grid">
+      <a href="../products/maximo-mxp.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="MAXIMO- MXP平台系统" data-en="MAXIMO MXP Platform System">MAXIMO- MXP平台系统</div>
+        <div class="rdesc" data-zh="专为MAXIMO 和 TRIO墙模系统设计的、模块化可靠的平台系统" data-en="Modular, reliable platform system for MAXIMO and TRIO wall formwork systems.">专为MAXIMO 和 TRIO墙模系统设计的、模块化可靠的平台系统</div>
+      </a>
+      <a href="../products/ersatzplattenzuschnitt.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="板材替换服务" data-en="Panel Replacement Service">板材替换服务</div>
+        <div class="rdesc" data-zh="为所有常见模板系统提供专业的板材切割、替换服务" data-en="Professional panel cutting and replacement for all common formwork systems.">为所有常见模板系统提供专业的板材切割、替换服务</div>
+      </a>
+      <a href="../products/richtmeister-baustelle-schalung-geruest.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="现场施工指导-模板-脚手架" data-en="On-Site Supervision — Formwork & Scaffolding">现场施工指导-模板-脚手架</div>
+        <div class="rdesc" data-zh="施工现场专业指导，确保高效、安全使用派利产品" data-en="Professional on-site guidance for efficient and safe use of PERI products.">施工现场专业指导，确保高效、安全使用派利产品</div>
+      </a>
+      <a href="../products/planungsunterlagen.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="模板、脚手架领域内相关的文案系统" data-en="Planning Documentation System">模板、脚手架领域内相关的文案系统</div>
+        <div class="rdesc" data-zh="每个方案设计者必读的资料。我们的文案系统帮助您快速、高效地实现您的目标" data-en="Essential design reference for PERI formwork and scaffolding systems.">每个方案设计者必读的资料。我们的文案系统帮助您快速、高效地实现您的目标</div>
+      </a>
+      <a href="../products/peri-290-hebebuehne.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI 290 升降平台" data-en="PERI 290 Lifting Platform">PERI 290 升降平台</div>
+        <div class="rdesc" data-zh="PERI 290 升降平台，为立模、拆模设计的可移动作业平台。" data-en="Mobile working platform designed for formwork erection and stripping.">PERI 290 升降平台，为立模、拆模设计的可移动作业平台。</div>
+      </a>
+      <a href="../products/sts-300-scaffold-transfer-system.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="STS 300 脚手架材料转运升降平台" data-en="STS 300 Scaffold Transfer Platform">STS 300 脚手架材料转运升降平台</div>
+        <div class="rdesc" data-zh="高效、省时" data-en="Motorized hoist platform for efficient vertical material transfer.">高效、省时</div>
+      </a>
+      <a href="../products/peri-up-flex-lgs-150-working-platform.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI UP Flex 操作平台 LGS 150" data-en="PERI UP Flex Working Platform LGS 150">PERI UP Flex 操作平台 LGS 150</div>
+        <div class="rdesc" data-zh="适用于大跨度的操作平台，以及搭建临时的人行天桥。" data-en="Platform for large spans and temporary pedestrian bridge construction.">适用于大跨度的操作平台，以及搭建临时的人行天桥。</div>
+      </a>
+      <a href="../products/peri-up-flex-arbeitsgeruest.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI UP Flex 操作平台" data-en="PERI UP Flex Working Scaffold">PERI UP Flex 操作平台</div>
+        <div class="rdesc" data-zh="凭借高度灵活的模块化脚手架的设计，实现任何高度上安全的施工。" data-en="Safe construction at any height using highly flexible modular scaffold design.">凭借高度灵活的模块化脚手架的设计，实现任何高度上安全的施工。</div>
+      </a>
+      <a href="../products/rcs-mp-material-platform.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="RCS MP 卸料平台" data-en="RCS MP Material Platform">RCS MP 卸料平台</div>
+        <div class="rdesc" data-zh="使用吊车的灵活转运方案。" data-en="Flexible crane-based material transfer solution. Adaptable platform for material storage on climbing formwork projects.">使用吊车的灵活转运方案。</div>
+      </a>
+      <a href="../products/asg-arbeitsbuehnensystem.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="ASG 小型操作平台系统" data-en="ASG Small Working Platform System">ASG 小型操作平台系统</div>
+        <div class="rdesc" data-zh="适用于狭窄的工作空间。" data-en="Compact platform for confined working spaces. Versatile for restricted access areas in climbing formwork applications.">适用于狭窄的工作空间。</div>
+      </a>
+      <a href="../products/fb-180-klappbuehne.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="FB 180 折叠式平台系统" data-en="FB 180 Folding Working Platform">FB 180 折叠式平台系统</div>
+        <div class="rdesc" data-zh="多功能的作业及防护脚手架系统。" data-en="Multifunctional working and protective scaffold. Foldable for efficient storage between climbs.">多功能的作业及防护脚手架系统。</div>
+      </a>
+      <a href="../products/technical-services.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="工程技术服务" data-en="Engineering & Technical Services">工程技术服务</div>
+        <div class="rdesc" data-zh="面向全球，针对不同要求，优化方案。" data-en="Global engineering expertise with optimized solutions. PERI engineers support from design through construction.">面向全球，针对不同要求，优化方案。</div>
+      </a>
+      <a href="../products/logistics.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="物流服务" data-en="Logistics Services">物流服务</div>
+        <div class="rdesc" data-zh="将最顶级质量的材料，以最恰当的产品数量，在最合适的时间点，送至最合理的位置。" data-en="Right materials, right quantity, right place, right time. Complete supply chain management.">将最顶级质量的材料，以最恰当的产品数量，在最合适的时间点，送至最合理的位置。</div>
+      </a>
+      <a href="../products/planning.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="施工方案设计" data-en="Construction Planning">施工方案设计</div>
+        <div class="rdesc" data-zh="模板专家定制施工计划及指导，脚手架专家提供脚手架、支架解决方案。" data-en="Formwork and scaffolding experts create optimal construction plans and guidance.">模板专家定制施工计划及指导，脚手架专家提供脚手架、支架解决方案。</div>
+      </a>
+      <a href="../products/bim.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="建筑信息模型 (BIM)" data-en="Building Information Modeling (BIM)">建筑信息模型 (BIM)</div>
+        <div class="rdesc" data-zh="5维设计规划，协调施工过程。" data-en="5D planning and coordination of the construction process. Digital construction lifecycle.">5维设计规划，协调施工过程。</div>
+      </a>
+      <a href="../products/cnc-cutting-and-formwork-assembly.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="CNC 数控切割和装配模板" data-en="CNC Cutting and Formwork Assembly">CNC 数控切割和装配模板</div>
+        <div class="rdesc" data-zh="为每个项目量身定制，从板材到3D-组件的切割。" data-en="Tailored CNC manufacturing from panel to 3D component for complex formwork elements.">为每个项目量身定制，从板材到3D-组件的切割。</div>
+      </a>
+      <a href="../products/project-services.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="项目服务" data-en="Project Services">项目服务</div>
+        <div class="rdesc" data-zh="派利公司施工技术人员和项目负责人在施工现场提供专业指导。" data-en="PERI technical staff and project managers provide on-site professional guidance.">派利公司施工技术人员和项目负责人在施工现场提供专业指导。</div>
+      </a>
+      <a href="../products/rental-and-delivery.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="租赁服务以及材料配送" data-en="Rental Services & Material Delivery">租赁服务以及材料配送</div>
+        <div class="rdesc" data-zh="将最顶级质量的材料，以最恰当的产品数量，在最合适的时间点，送至最合理的位置" data-en="Flexible rental solutions with timely delivery to your construction site.">将最顶级质量的材料，以最恰当的产品数量，在最合适的时间点，送至最合理的位置</div>
+      </a>
+      <a href="../products/cleaning-and-repair.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="清洁与维修" data-en="Cleaning & Repair">清洁与维修</div>
+        <div class="rdesc" data-zh="专业的维护，保证了高质量的产品和施工。" data-en="Professional maintenance ensuring high-quality products and extended service life.">专业的维护，保证了高质量的产品和施工。</div>
+      </a>
+      <a href="../products/load-bearing-structure-inspection.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="受力结构检测" data-en="Load-Bearing Structure Inspection">受力结构检测</div>
+        <div class="rdesc" data-zh="由专业人员定期检测派利产品的受力结构" data-en="Regular specialist inspection and certification of PERI product structural integrity.">由专业人员定期检测派利产品的受力结构</div>
+      </a>
+      <a href="../products/site-management.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="施工现场管理" data-en="Site Management">施工现场管理</div>
+        <div class="rdesc" data-zh="清晰、透明的现场报告确保了项目数据、材料和成本等信息一目了然" data-en="Clear, transparent site reports for project data, materials and cost management.">清晰、透明的现场报告确保了项目数据、材料和成本等信息一目了然</div>
+      </a>
+      <a href="../products/scaffmax.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="scaffmax 脚手架方案设计程序" data-en="scaffmax Scaffolding Planning Software">scaffmax 脚手架方案设计程序</div>
+        <div class="rdesc" data-zh="快速、简单的规划派利脚手架" data-en="Fast, simple automated scaffolding design for PERI systems.">快速、简单的规划派利脚手架</div>
+      </a>
+      <a href="../products/moselcopter.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="Moselcopter 测量技术" data-en="Moselcopter Survey Technology">Moselcopter 测量技术</div>
+        <div class="rdesc" data-zh="为不同应用提供航拍、地面拍摄、空间可视化、3D建模等服务" data-en="Aerial photography, 3D modeling and spatial visualization services.">为不同应用提供航拍、地面拍摄、空间可视化、3D建模等服务</div>
+      </a>
+      <a href="../products/peri-cad.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI CAD 22 软件" data-en="PERI CAD 22 Software">PERI CAD 22 软件</div>
+        <div class="rdesc" data-zh="PERI CAD 22 模板方案的专业的设计。" data-en="Professional formwork planning software for all PERI systems.">PERI CAD 22 模板方案的专业的设计。</div>
+      </a>
+      <a href="../products/peripath.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERIpath" data-en="PERIpath">PERIpath</div>
+        <div class="rdesc" data-zh="轻松的统筹和优化大型工业项目中的施工人员和材料。" data-en="Easy coordination of construction personnel and materials on large industrial projects.">轻松的统筹和优化大型工业项目中的施工人员和材料。</div>
+      </a>
+      <a href="../products/centrio-clm.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="CENTRIO CLM" data-en="CENTRIO CLM">CENTRIO CLM</div>
+        <div class="rdesc" data-zh="整合施工周期中所有的文档、信息，建立一个数字化的施工数据库。" data-en="Digital construction database integrating all documentation and project information.">整合施工周期中所有的文档、信息，建立一个数字化的施工数据库。</div>
+      </a>
+      <a href="../products/myperi.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="myPERI 客户服务平台" data-en="myPERI Customer Service Platform">myPERI 客户服务平台</div>
+        <div class="rdesc" data-zh="在线服务平台-24小时查看您的项目数据。" data-en="Online platform for 24/7 access to your project data and material management.">在线服务平台-24小时查看您的项目数据。</div>
+      </a>
+      <a href="../products/peri-elpos.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI ELPOS 软件" data-en="PERI ELPOS Software">PERI ELPOS 软件</div>
+        <div class="rdesc" data-zh="用于日常模板规划，快速、简便的软件." data-en="Fast, easy everyday formwork planning and tie-rod layout software.">用于日常模板规划，快速、简便的软件.</div>
+      </a>
+      <a href="../products/schalungslastrechner.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="模板荷载计算器" data-en="Formwork Load Calculator">模板荷载计算器</div>
+        <div class="rdesc" data-zh="保证派利的墙体模板以及穿墙拉杆系统的经济、高效。" data-en="Online calculator for economic use of PERI wall formwork and tie systems.">保证派利的墙体模板以及穿墙拉杆系统的经济、高效。</div>
+      </a>
+      <a href="../products/peri-multiflex-configurator.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="MULTIFLEX 木梁-楼板模板 计算器" data-en="MULTIFLEX Slab Formwork Calculator">MULTIFLEX 木梁-楼板模板 计算器</div>
+        <div class="rdesc" data-zh="快速、简单的优化木梁间距、支撑间距和支撑类型。" data-en="Automated optimization of girder spacing and prop type for MULTIFLEX.">快速、简单的优化木梁间距、支撑间距和支撑类型。</div>
+      </a>
+      <a href="../products/st100-kalkulator.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="ST 100 塔架计算器" data-en="ST 100 Tower Calculator">ST 100 塔架计算器</div>
+        <div class="rdesc" data-zh="简单、快速计算PERI ST100塔架支撑系统允许最大轴向力。" data-en="Online calculation of maximum axial force for PERI ST100 shoring tower.">简单、快速计算PERI ST100塔架支撑系统允许最大轴向力。</div>
+      </a>
+      <a href="../products/multiprop-kalkulator.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="MULTIPROP 支撑塔架计算器" data-en="MULTIPROP Tower Calculator">MULTIPROP 支撑塔架计算器</div>
+        <div class="rdesc" data-zh="快速、简单、准确的最佳确定MULTIPROP塔架配置方案。" data-en="Fast, precise determination of optimal MULTIPROP tower configuration.">快速、简单、准确的最佳确定MULTIPROP塔架配置方案。</div>
+      </a>
+      <a href="../products/mds-k-kalkulator.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="MDS K 塔架计算器" data-en="MDS K Tower Calculator">MDS K 塔架计算器</div>
+        <div class="rdesc" data-zh="为不同配置的PERI MDS K塔架轻松、快速的计算允许的最大轴向荷载。" data-en="Easy calculation of maximum axial load for PERI MDS K tower configurations.">为不同配置的PERI MDS K塔架轻松、快速的计算允许的最大轴向荷载。</div>
+      </a>
+      <a href="../products/peri-quicksolve-duo.html" class="related-card">
+        <div class="rcat">💻 <span data-zh="软件与服务" data-en="Software & Services">软件与服务</span></div>
+        <div class="rname" data-zh="PERI QuickSolve | DUO 设计程序" data-en="PERI QuickSolve | DUO Design Software">PERI QuickSolve | DUO 设计程序</div>
+        <div class="rdesc" data-zh="该在线-设计程序是为DUO符合模板系统专门设计，用于设计方案、施工段，以及为简单的平面造型立模。" data-en="Online design software for the DUO girder formwork system.">该在线-设计程序是为DUO符合模板系统专门设计，用于设计方案、施工段，以及为简单的平面造型立模。</div>
+      </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>
+      <div class="footer-brand">GCB — Globe <span>Chinese</span> Business Teams</div>
+      <div style="font-size:13px;margin-top:4px;" data-zh="派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队" data-en="PERI Product Hub · Serving GCB teams in South America, Eastern Europe &amp; Africa">派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队</div>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
+      <a href="https://www.youtube.com/@perigroup" target="_blank">YouTube</a>
+    </div>
+    <div class="footer-copy">
+      <div data-zh="© PERI GCB 信息平台 2025" data-en="© PERI GCB Information Hub 2025">© PERI GCB 信息平台 2025</div>
+    </div>
+  </footer>
+
+  <script>
+
+function setLang(lang) {
+  document.querySelectorAll('[data-zh]').forEach(el => {
+    el.textContent = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+  });
+  document.querySelectorAll('.zh-only').forEach(el => el.style.display = lang==='zh'?'':'none');
+  document.querySelectorAll('.en-only').forEach(el => el.style.display = lang==='en'?'':'none');
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang===lang));
+  try { localStorage.setItem('peri-lang', lang); } catch(e){}
+  document.documentElement.lang = lang;
+}
+(function(){
+  var lang = 'zh';
+  try { lang = localStorage.getItem('peri-lang') || 'zh'; } catch(e){}
+  setLang(lang);
+})();
+
+  </script>
+</body>
+</html>

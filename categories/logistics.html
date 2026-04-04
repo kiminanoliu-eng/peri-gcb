@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Logistics & Transport | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+/* Lang bar */
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+
+/* Header */
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+
+/* Breadcrumb */
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f8f8f8;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.breadcrumb span{color:#aaa;margin:0 6px}
+
+/* Product Hero */
+.product-hero{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:380px}
+@media(max-width:768px){.product-hero{grid-template-columns:1fr}}
+.product-image-side{background:#C8102E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;position:relative;min-height:320px}
+.product-image-side a{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;width:100%}
+.product-brand-name{font-size:52px;font-weight:900;color:#fff;letter-spacing:2px;line-height:1}
+.product-cn-name{font-size:18px;color:rgba(255,255,255,.8);font-weight:300}
+.view-on-peri{margin-top:20px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);color:#fff;padding:8px 20px;border-radius:4px;font-size:13px;transition:.2s;display:inline-block}
+.view-on-peri:hover{background:rgba(255,255,255,.3)}
+.product-yellow-bar{position:absolute;bottom:0;left:0;right:0;height:5px;background:#FFB800}
+
+.product-info-side{padding:36px 40px;display:flex;flex-direction:column;gap:16px}
+.product-cat-badge{display:inline-flex;align-items:center;gap:6px;background:#fff3f3;color:#C8102E;border:1px solid #ffd0d0;padding:4px 12px;border-radius:20px;font-size:13px;width:fit-content}
+.product-title{font-size:28px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.product-tagline{font-size:15px;color:#555;border-left:3px solid #FFB800;padding-left:12px;margin-top:4px}
+.qr-section{margin-top:auto;display:flex;align-items:center;gap:12px;padding:12px;background:#f9f9f9;border-radius:6px;border:1px solid #eee}
+.qr-section img{width:64px;height:64px}
+.qr-text{font-size:12px;color:#888}
+.share-url{font-size:11px;color:#C8102E;word-break:break-all;margin-top:2px}
+
+/* Sections */
+.section{padding:40px 32px;border-bottom:1px solid #f0f0f0}
+.section:nth-child(even){background:#fafafa}
+.section-title{font-size:20px;font-weight:700;color:#1a1a1a;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section-title::before{content:'';width:4px;height:22px;background:#C8102E;display:block;border-radius:2px}
+
+/* Features */
+.features-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.features-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;background:#fff;border:1px solid #eee;border-radius:6px;font-size:14px}
+.features-list li::before{content:'✓';color:#C8102E;font-weight:700;flex-shrink:0;margin-top:1px}
+
+/* Video */
+.video-frame{width:100%;aspect-ratio:16/9;border:none;border-radius:8px;background:#111}
+.video-placeholder{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;text-align:center;color:#fff;gap:16px;aspect-ratio:16/9}
+.video-placeholder .play-icon{width:64px;height:64px;background:rgba(200,16,46,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px}
+.video-placeholder p{color:#aaa;font-size:14px;max-width:360px}
+.video-placeholder a{color:#FFB800;font-size:13px}
+
+/* PDF */
+.pdf-list{display:flex;flex-direction:column;gap:10px}
+.pdf-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid #eee;border-radius:8px;background:#fff;transition:.2s}
+.pdf-item:hover{border-color:#C8102E;background:#fff8f8}
+.pdf-icon{font-size:24px}
+.pdf-info{flex:1}
+.pdf-name{font-size:14px;font-weight:600}
+.pdf-size{font-size:12px;color:#888}
+.pdf-dl-btn{background:#C8102E;color:#fff;padding:6px 14px;border-radius:4px;font-size:12px;white-space:nowrap}
+.pdf-placeholder{color:#888;font-size:14px;font-style:italic;padding:20px;background:#f9f9f9;border-radius:6px;border:1px dashed #ddd;text-align:center}
+
+/* Projects */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.project-card{border:2px dashed #ddd;border-radius:10px;overflow:hidden;background:#fafafa;transition:.2s}
+.project-card:hover{border-color:#C8102E;background:#fff8f8}
+.project-img{height:160px;background:linear-gradient(135deg,#eee 0%,#ddd 100%);display:flex;align-items:center;justify-content:center;color:#bbb;font-size:40px}
+.project-body{padding:16px}
+.project-location{font-size:12px;color:#C8102E;font-weight:600;margin-bottom:4px}
+.project-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:6px}
+.project-desc{font-size:13px;color:#888;font-style:italic}
+
+/* Inquiry Form */
+.inquiry-form{max-width:640px;display:flex;flex-direction:column;gap:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:13px;font-weight:600;color:#555}
+.form-group input,.form-group select,.form-group textarea{padding:10px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;transition:.2s;background:#fff}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#C8102E;box-shadow:0 0 0 3px rgba(200,16,46,.08)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-note{font-size:12px;color:#aaa;font-style:italic}
+.submit-btn{background:#C8102E;color:#fff;border:none;padding:12px 32px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;align-self:flex-start;transition:.2s}
+.submit-btn:hover{background:#a00d25}
+
+/* Footer */
+.site-footer{background:#1a1a1a;color:#aaa;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-brand{color:#fff;font-weight:700;font-size:16px}
+.footer-brand span{color:#FFB800}
+.footer-links{display:flex;gap:20px;font-size:13px}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:12px;text-align:right}
+
+/* Related products */
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.related-card{border:1px solid #eee;border-radius:8px;padding:16px;transition:.2s;background:#fff}
+.related-card:hover{border-color:#C8102E;box-shadow:0 4px 16px rgba(200,16,46,.08)}
+.related-card .rcat{font-size:11px;color:#C8102E;font-weight:600;text-transform:uppercase;margin-bottom:4px}
+.related-card .rname{font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
+.related-card .rdesc{font-size:12px;color:#888;line-height:1.4}
+
+  .cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:60vh}
+  @media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+  .cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:24px 16px}
+  .cat-sidebar-title{font-size:12px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+  .cat-main{padding:32px}
+  .cat-hero{background:linear-gradient(135deg,#C8102E 0%,#a00d25 100%);color:#fff;padding:32px;margin-bottom:0}
+  .cat-hero-icon{font-size:48px;margin-bottom:8px}
+  .cat-hero h1{font-size:28px;font-weight:800}
+  .cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+  .cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+  .sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+  </style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+
+  <!-- Category Hero -->
+  <div class="cat-hero">
+    <div class="cat-hero-icon">🚛</div>
+    <h1 data-zh="物流运输" data-en="Logistics & Transport">物流运输</h1>
+    <p data-zh="PERI派利 物流运输 系列产品" data-en="PERI Logistics & Transport product range">PERI派利 物流运输 系列产品</p>
+    <div class="cat-count" data-zh="12 个产品" data-en="12 Products">12 个产品</div>
+  </div>
+
+  <div class="cat-layout">
+    <!-- Sidebar -->
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="wall-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+      <a href="column-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+      <a href="slab-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🏗️ 楼板模板" data-en="🏗️ Slab Formwork">🏗️ 楼板模板</a>
+      <a href="climbing-systems.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+      <a href="scaffolding.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+      <a href="shoring.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+      <a href="infrastructure.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Infrastructure / Bridges / Tunnels">🌉 市政/桥梁/隧道</a>
+      <a href="formwork-panels.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="📋 模板板材" data-en="📋 Formwork Panels & Boards">📋 模板板材</a>
+      <a href="accessories.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+      <a href="software-services.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+      <a href="testing-equipment.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔬 检测设备" data-en="🔬 Testing Equipment">🔬 检测设备</a>
+      <a href="logistics.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;background:#fff3f3;color:#C8102E;font-weight:600;" data-zh="🚛 物流运输" data-en="🚛 Logistics & Transport">🚛 物流运输</a>
+    </div>
+    <!-- Product Grid -->
+    <div class="cat-main">
+      <div class="related-grid">
+      <a href="../products/asw-465-ausschalwagen.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="ASW 465 拆模车" data-en="ASW 465 Stripping Carriage">ASW 465 拆模车</div>
+        <div class="rdesc" data-zh="ASW 465拆模车保证模板施工安全。" data-en="Motorized stripping carriage for safe and efficient table formwork release.">ASW 465拆模车保证模板施工安全。</div>
+      </a>
+      <a href="../products/umsetzzinken.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="转运叉" data-en="Transfer Fork">转运叉</div>
+        <div class="rdesc" data-zh="可转运最大为8米的台模。" data-en="Crane attachment for transferring table formwork up to 8 m long.">可转运最大为8米的台模。</div>
+      </a>
+      <a href="../products/formatgestell.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="格式托架框" data-en="Format Rack Frame">格式托架框</div>
+        <div class="rdesc" data-zh="格式托架框用于运输难以堆叠的材料。" data-en="Specialized transport frame for formwork components difficult to stack.">格式托架框用于运输难以堆叠的材料。</div>
+      </a>
+      <a href="../products/peri-up-easy-container.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="PERI UP Easy 集装箱" data-en="PERI UP Easy Container">PERI UP Easy 集装箱</div>
+        <div class="rdesc" data-zh="先进的物流概念，能够轻松快速地分类归纳组件" data-en="Advanced logistics container for easy, fast sorting and storage of scaffold components.">先进的物流概念，能够轻松快速地分类归纳组件</div>
+      </a>
+      <a href="../products/peri-up-easy-lkw-geruest-haenger.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="PERI UP Easy外装修脚手架卡车用材料挂架" data-en="PERI UP Easy Truck Scaffold Hanger">PERI UP Easy外装修脚手架卡车用材料挂架</div>
+        <div class="rdesc" data-zh="Weyres 公司的脚手架挂架是 为PERI UP Easy 67 外装修脚手架的设计的深思熟虑的运输和存储解决方案。" data-en="Transport and storage solution designed for PERI UP Easy 67 facade scaffolding.">Weyres 公司的脚手架挂架是 为PERI UP Easy 67 外装修脚手架的设计的深思熟虑的运输和存储解决方案。</div>
+      </a>
+      <a href="../products/kleinteilegestell.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="小组件托架框" data-en="Small Parts Rack">小组件托架框</div>
+        <div class="rdesc" data-zh="符合欧洲托盘标准的、可堆叠的托架。" data-en="Stackable rack conforming to European pallet standard for small components.">符合欧洲托盘标准的、可堆叠的托架。</div>
+      </a>
+      <a href="../products/transportmittel.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="材料运输工具" data-en="Transport Equipment">材料运输工具</div>
+        <div class="rdesc" data-zh="材料运输工具能够确保派利材料保快速、安全、经济地运输" data-en="Fast, safe and economical transport of PERI materials. Complete material handling.">材料运输工具能够确保派利材料保快速、安全、经济地运输</div>
+      </a>
+      <a href="../products/paletten.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="托架" data-en="Pallets">托架</div>
+        <div class="rdesc" data-zh="整体镀锌的托架，用于堆放、运输模板和脚手架零件。" data-en="Hot-dip galvanized pallets for stacking and transporting formwork and scaffolding parts.">整体镀锌的托架，用于堆放、运输模板和脚手架零件。</div>
+      </a>
+      <a href="../products/ptl-1250-2-tischhubwagen.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="PTL 1250-2 台模升降机" data-en="PTL 1250-2 Table Lifting Trolley">PTL 1250-2 台模升降机</div>
+        <div class="rdesc" data-zh="灵活、便于转向的台模转运装置。" data-en="Flexible, easy-to-steer motorized table lifting for safe relocation.">灵活、便于转向的台模转运装置。</div>
+      </a>
+      <a href="../products/tischverfahrwagen.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="台模转运车" data-en="Table Transfer Trolley">台模转运车</div>
+        <div class="rdesc" data-zh="轻松进行台模转运。" data-en="Simple wheeled transfer carriage for table formwork repositioning.">轻松进行台模转运。</div>
+      </a>
+      <a href="../products/peri-material-tracker.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="PERI 材料定位器" data-en="PERI Material Tracker">PERI 材料定位器</div>
+        <div class="rdesc" data-zh="材料智能管理" data-en="Intelligent real-time material management and tracking on the construction site.">材料智能管理</div>
+      </a>
+      <a href="../products/peri-up-easy-multi-box.html" class="related-card">
+        <div class="rcat">🚛 <span data-zh="物流运输" data-en="Logistics & Transport">物流运输</span></div>
+        <div class="rname" data-zh="PERI UP Easy Multi Box 多功能运输架" data-en="PERI UP Easy Multi Box">PERI UP Easy Multi Box 多功能运输架</div>
+        <div class="rdesc" data-zh="使用Multi Box 最多可收纳和运输40个Easy框架和脚手架钢管。它可以相互堆叠，还可装载其他组件。" data-en="Storage and transport frame for up to 40 Easy frames and scaffold tubes. Stackable.">使用Multi Box 最多可收纳和运输40个Easy框架和脚手架钢管。它可以相互堆叠，还可装载其他组件。</div>
+      </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>
+      <div class="footer-brand">GCB — Globe <span>Chinese</span> Business Teams</div>
+      <div style="font-size:13px;margin-top:4px;" data-zh="派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队" data-en="PERI Product Hub · Serving GCB teams in South America, Eastern Europe &amp; Africa">派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队</div>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
+      <a href="https://www.youtube.com/@perigroup" target="_blank">YouTube</a>
+    </div>
+    <div class="footer-copy">
+      <div data-zh="© PERI GCB 信息平台 2025" data-en="© PERI GCB Information Hub 2025">© PERI GCB 信息平台 2025</div>
+    </div>
+  </footer>
+
+  <script>
+
+function setLang(lang) {
+  document.querySelectorAll('[data-zh]').forEach(el => {
+    el.textContent = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+  });
+  document.querySelectorAll('.zh-only').forEach(el => el.style.display = lang==='zh'?'':'none');
+  document.querySelectorAll('.en-only').forEach(el => el.style.display = lang==='en'?'':'none');
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang===lang));
+  try { localStorage.setItem('peri-lang', lang); } catch(e){}
+  document.documentElement.lang = lang;
+}
+(function(){
+  var lang = 'zh';
+  try { lang = localStorage.getItem('peri-lang') || 'zh'; } catch(e){}
+  setLang(lang);
+})();
+
+  </script>
+</body>
+</html>

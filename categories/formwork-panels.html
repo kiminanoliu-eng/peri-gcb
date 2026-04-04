@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>模板板材 | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,'Noto Sans SC',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f9f9f9;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.cat-hero{background:linear-gradient(135deg,#C8102E 0%,#900b1e 100%);color:#fff;padding:36px 32px}
+.cat-hero-icon{font-size:44px;margin-bottom:8px}
+.cat-hero h1{font-size:28px;font-weight:800}
+.cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+.cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+.cat-layout{display:grid;grid-template-columns:220px 1fr;min-height:70vh}
+@media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+.cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:20px 12px}
+.cat-sidebar-title{font-size:11px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+.sidebar-link{display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;margin-bottom:4px}
+.sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+.sidebar-active{background:#fff3f3;color:#C8102E;font-weight:600}
+.cat-main{padding:28px 32px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.prod-card{border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;transition:.2s;background:#fff;display:flex;flex-direction:column}
+.prod-card:hover{border-color:#C8102E;box-shadow:0 4px 20px rgba(200,16,46,.1);transform:translateY(-2px)}
+.card-img-wrap{width:100%;height:160px;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.card-img-wrap img{width:100%;height:160px;object-fit:cover;transition:.3s}
+.prod-card:hover .card-img-wrap img{transform:scale(1.04)}
+.card-no-img{width:100%;height:160px;background:linear-gradient(135deg,#C8102E,#900b1e);display:flex;align-items:center;justify-content:center}
+.card-no-img span{color:#fff;font-size:18px;font-weight:800;letter-spacing:1px;padding:8px;text-align:center}
+.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card-name{font-size:15px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;flex:1}
+.site-footer{background:#1a1a1a;color:#aaa;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-brand{color:#fff;font-weight:700}
+.footer-brand span{color:#FFB800}
+</style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh',this)">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en',this)">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+  <div class="breadcrumb">
+    <a href="../index.html" data-zh="首页" data-en="Home">首页</a> ›
+    <span data-zh="模板板材" data-en="Formwork Panels">模板板材</span>
+  </div>
+  <div class="cat-hero">
+    <div class="cat-hero-icon">📋</div>
+    <h1 data-zh="模板板材" data-en="Formwork Panels">模板板材</h1>
+    <p data-zh="PERI派利 覆膜胶合板及模板面板全系列" data-en="PERI Film-Faced Plywood & Formwork Panels - Full Range">PERI派利 覆膜胶合板及模板面板全系列</p>
+    <div class="cat-count" data-zh="12 个产品" data-en="12 Products">12 个产品</div>
+  </div>
+  <div class="cat-layout">
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="../index.html" class="sidebar-link" data-zh="← 首页 / Home" data-en="← 首页 / Home">← 首页 / Home</a>
+  <a href="wall-formwork.html" class="sidebar-link" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+  <a href="column-formwork.html" class="sidebar-link" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+  <a href="slab-formwork.html" class="sidebar-link" data-zh="📐 楼板模板" data-en="📐 Slab Formwork">📐 楼板模板</a>
+  <a href="climbing-systems.html" class="sidebar-link" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+  <a href="scaffolding.html" class="sidebar-link" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+  <a href="shoring.html" class="sidebar-link" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+  <a href="civil-engineering.html" class="sidebar-link" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Civil Engineering">🌉 市政/桥梁/隧道</a>
+  <a href="formwork-panels.html" class="sidebar-link sidebar-active" data-zh="📋 模板板材" data-en="📋 Formwork Panels">📋 模板板材</a>
+  <a href="accessories.html" class="sidebar-link" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+  <a href="software-services.html" class="sidebar-link" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+    </div>
+    <div class="cat-main">
+      <div class="prod-grid">
+        <a href="../products/chinese-filmfaced-plywood.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890126/25620/china-filmfaced.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="覆膜胶合板 (中国产)" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>覆膜胶合板</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="覆膜胶合板 (中国产)" data-en="China Film-Faced Plywood">覆膜胶合板 (中国产)</div>
+          <div class="card-desc" data-zh="标准覆膜多层板，适用于混凝土模板面板，可多次周转" data-en="Standard film-faced plywood for concrete formwork, multiple reuse cycles">标准覆膜多层板，适用于混凝土模板面板，可多次周转</div>
+        </div>
+      </a>
+        <a href="../products/bintangor-plywood.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456792/25680/bintangor.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="宾当果胶合板" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>宾当果胶合板</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="宾当果胶合板" data-en="Bintangor Plywood">宾当果胶合板</div>
+          <div class="card-desc" data-zh="马来西亚宾当果木芯胶合板，表面光滑，混凝土表观质量好" data-en="Malaysian Bintangor core plywood with smooth surface for quality concrete finishes">马来西亚宾当果木芯胶合板，表面光滑，混凝土表观质量好</div>
+        </div>
+      </a>
+        <a href="../products/eukafilm.html" class="prod-card">
+        <div class="card-no-img"><span>Eukafilm</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Eukafilm 覆膜胶合板" data-en="Eukafilm Film-Faced Plywood">Eukafilm 覆膜胶合板</div>
+          <div class="card-desc" data-zh="PERI专有Eukafilm系列模板板材，高耐久覆膜" data-en="PERI's proprietary Eukafilm series formwork boards with high-durability film">PERI专有Eukafilm系列模板板材，高耐久覆膜</div>
+        </div>
+      </a>
+        <a href="../products/finply.html" class="prod-card">
+        <div class="card-no-img"><span>Finply</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Finply 芬兰胶合板" data-en="Finply Finnish Plywood">Finply 芬兰胶合板</div>
+          <div class="card-desc" data-zh="高品质芬兰桦木胶合板，多次周转，混凝土表面效果优" data-en="High-quality Finnish birch plywood for multiple reuse with excellent finish">高品质芬兰桦木胶合板，多次周转，混凝土表面效果优</div>
+        </div>
+      </a>
+        <a href="../products/finply-plus.html" class="prod-card">
+        <div class="card-no-img"><span>Finply</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Finply Plus 增强胶合板" data-en="Finply Plus Enhanced Plywood">Finply Plus 增强胶合板</div>
+          <div class="card-desc" data-zh="增强型Finply板材，提升耐候性和使用寿命" data-en="Enhanced Finply board with improved weather resistance and service life">增强型Finply板材，提升耐候性和使用寿命</div>
+        </div>
+      </a>
+        <a href="../products/finply-maxi.html" class="prod-card">
+        <div class="card-no-img"><span>Finply</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Finply Maxi 大规格胶合板" data-en="Finply Maxi Large Format Plywood">Finply Maxi 大规格胶合板</div>
+          <div class="card-desc" data-zh="大规格Finply胶合板，减少拼缝，提升混凝土表观质量" data-en="Large format Finply plywood reducing joints for better concrete appearance">大规格Finply胶合板，减少拼缝，提升混凝土表观质量</div>
+        </div>
+      </a>
+        <a href="../products/peri-birch.html" class="prod-card">
+        <div class="card-no-img"><span>PERI</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI 桦木胶合板" data-en="PERI Birch Plywood">PERI 桦木胶合板</div>
+          <div class="card-desc" data-zh="PERI标准桦木胶合板，强度高，适用于VARIO等系统" data-en="PERI standard birch plywood with high strength for VARIO and other systems">PERI标准桦木胶合板，强度高，适用于VARIO等系统</div>
+        </div>
+      </a>
+        <a href="../products/peri-birch-220.html" class="prod-card">
+        <div class="card-no-img"><span>PERI</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="PERI Birch 220 胶合板" data-en="PERI Birch 220 Plywood">PERI Birch 220 胶合板</div>
+          <div class="card-desc" data-zh="220系列桦木厚板，适用于重型模板系统" data-en="220-series thick birch plywood for heavy formwork systems">220系列桦木厚板，适用于重型模板系统</div>
+        </div>
+      </a>
+        <a href="../products/wiremesh-plywood.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:836fe7b9-d0f0-477d-8528-62a31f73409f/25173/wiremesh.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="网格钢丝复合板" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>网格钢丝复合板</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="网格钢丝复合板" data-en="Wiremesh Plywood">网格钢丝复合板</div>
+          <div class="card-desc" data-zh="内置钢丝网增强的复合模板板材，超强抗弯" data-en="Steel wire mesh reinforced composite formwork board with superior bending resistance">内置钢丝网增强的复合模板板材，超强抗弯</div>
+        </div>
+      </a>
+        <a href="../products/facing-plywood.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012348/25640/facing.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="单面装饰胶合板" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>单面装饰胶合板</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="单面装饰胶合板" data-en="Facing Plywood">单面装饰胶合板</div>
+          <div class="card-desc" data-zh="专用于清水混凝土面层处理的装饰胶合板" data-en="Specialty plywood for fair-faced concrete architectural finishes">专用于清水混凝土面层处理的装饰胶合板</div>
+        </div>
+      </a>
+        <a href="../products/3-s-panels.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678904/25600/3s-panels.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="3-S 三层实木板" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>3-S</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="3-S 三层实木板" data-en="3-S Solid Timber Panels">3-S 三层实木板</div>
+          <div class="card-desc" data-zh="三层实木拼合板，环保耐用，适合特殊外露效果" data-en="Three-layer solid timber panel, eco-friendly and durable for special exposed finishes">三层实木拼合板，环保耐用，适合特殊外露效果</div>
+        </div>
+      </a>
+        <a href="../products/finnaply.html" class="prod-card">
+        <div class="card-no-img"><span>Finnaply</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="Finnaply 复合板" data-en="Finnaply Composite Panel">Finnaply 复合板</div>
+          <div class="card-desc" data-zh="高强度复合模板，适用于复杂几何形体施工" data-en="High-strength composite board for complex geometry formwork">高强度复合模板，适用于复杂几何形体施工</div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-brand">GCB <span>PERI</span> Hub</div>
+    <div>© 2024 PERI GCB — Globe Chinese Business Teams</div>
+  </footer>
+  <script>
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('[data-zh],[data-en]').forEach(el => {
+    const txt = el.getAttribute('data-' + lang);
+    if (txt) el.textContent = txt;
+  });
+}
+</script>
+</body>
+</html>

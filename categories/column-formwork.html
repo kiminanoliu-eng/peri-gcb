@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>柱模 | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,'Noto Sans SC',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f9f9f9;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+
+.cat-hero{background:linear-gradient(135deg,#C8102E 0%,#900b1e 100%);color:#fff;padding:36px 32px}
+.cat-hero-icon{font-size:44px;margin-bottom:8px}
+.cat-hero h1{font-size:28px;font-weight:800}
+.cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+.cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+
+.cat-layout{display:grid;grid-template-columns:220px 1fr;min-height:70vh}
+@media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+
+.cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:20px 12px}
+.cat-sidebar-title{font-size:11px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+.sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+
+.cat-main{padding:28px 32px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+
+.prod-card{border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;transition:.2s;background:#fff;display:flex;flex-direction:column}
+.prod-card:hover{border-color:#C8102E;box-shadow:0 4px 20px rgba(200,16,46,.1);transform:translateY(-2px)}
+
+.card-img-wrap{width:100%;height:160px;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.card-img-wrap img{width:100%;height:160px;object-fit:cover;transition:.3s}
+.prod-card:hover .card-img-wrap img{transform:scale(1.04)}
+.card-no-img{background:linear-gradient(135deg,#C8102E,#900b1e)}
+.card-no-img span{color:#fff;font-size:18px;font-weight:800;letter-spacing:1px;padding:8px}
+
+.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card-name{font-size:15px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;flex:1}
+
+.site-footer{background:#1a1a1a;color:#aaa;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-brand{color:#fff;font-weight:700}
+.footer-brand span{color:#FFB800}
+  </style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh',this)">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en',this)">EN</button>
+  </div>
+
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo"
+             onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+      <a href="../search.html" data-zh="搜索" data-en="Search">搜索</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="../index.html" data-zh="首页" data-en="Home">首页</a> › 
+    <span data-zh="柱模" data-en="Column Formwork">柱模</span>
+  </div>
+
+  <div class="cat-hero">
+    <div class="cat-hero-icon">🏛️</div>
+    <h1 data-zh="柱模" data-en="Column Formwork">柱模</h1>
+    <p data-zh="PERI派利 柱模 系列产品" data-en="PERI Column Formwork product range">PERI派利 柱模 系列产品</p>
+    <div class="cat-count" data-zh="7 个产品" data-en="7 Products">7 个产品</div>
+  </div>
+
+  <div class="cat-layout">
+    <div class="cat-sidebar">
+  <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+  <a href="../index.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:13px;color:#888;transition:.2s;margin-bottom:4px;">← 首页 / Home</a>
+  <a href="wall-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+  <a href="column-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;background:#fff3f3;color:#C8102E;font-weight:600;" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+  <a href="slab-formwork.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="📐 楼板模板" data-en="📐 Slab Formwork">📐 楼板模板</a>
+  <a href="climbing-systems.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+  <a href="scaffolding.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+  <a href="shoring.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+  <a href="civil-engineering.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Infrastructure">🌉 市政/桥梁/隧道</a>
+  <a href="formwork-panels.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="📋 模板板材" data-en="📋 Formwork Panels">📋 模板板材</a>
+  <a href="accessories.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+  <a href="software-services.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+  <a href="testing-equipment.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🔬 检测设备" data-en="🔬 Testing Equipment">🔬 检测设备</a>
+  <a href="logistics.html" class="sidebar-link" style="display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;" data-zh="🚛 物流运输" data-en="🚛 Logistics & Transport">🚛 物流运输</a>
+</div>
+
+    <div class="cat-main">
+      <div class="prod-grid">
+      <a href="../products/vario-gt-24-column-formwork.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234567/23630/vario-gt24-col.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="VARIO GT 24 柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VARIO GT 24 柱模" data-en="VARIO GT 24 Column Formwork">VARIO GT 24 柱模</div>
+          <div class="card-desc" data-zh="灵活可调的木梁柱模系统，适用于各类方形、矩形截面柱体。" data-en="Flexible timber girder column formwork for square and rectangular cross-sections.">灵活可调的木梁柱模系统，适用于各类方形、矩形截面柱体。</div>
+        </div>
+      </a>
+      <a href="../products/vario-quattro-column-formwork.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123456/23620/vario-quattro.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="VARIO QUATTRO 柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VARIO QUATTRO 柱模" data-en="VARIO QUATTRO Column Formwork">VARIO QUATTRO 柱模</div>
+          <div class="card-desc" data-zh="四面调节系统，可精确适应各种方形和矩形柱截面尺寸。" data-en="Four-sided adjustable system for precise square and rectangular column forming.">四面调节系统，可精确适应各种方形和矩形柱截面尺寸。</div>
+        </div>
+      </a>
+      <a href="../products/trio-schalungssystem.html" class="prod-card">
+        <div class="card-img-wrap card-no-img"><span>TRIO</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="TRIO 柱模" data-en="TRIO Column Formwork">TRIO 柱模</div>
+          <div class="card-desc" data-zh="基于TRIO墙模系统的柱模解决方案，与墙模板材料通用。" data-en="Column formwork solution based on TRIO wall formwork, shared material pool.">基于TRIO墙模系统的柱模解决方案，与墙模板材料通用。</div>
+        </div>
+      </a>
+      <a href="../products/srs-saeulenrundschalung.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456789/23650/srs.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="SRS 圆柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="SRS 圆柱模" data-en="SRS Circular Column Formwork">SRS 圆柱模</div>
+          <div class="card-desc" data-zh="圆形柱截面专用模板，施工简便高效，混凝土表面质量优异。" data-en="For circular column cross-sections. Simple, efficient, high-quality concrete surface.">圆形柱截面专用模板，施工简便高效，混凝土表面质量优异。</div>
+        </div>
+      </a>
+      <a href="../products/rapid-column-formwork.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567890/23660/rapid.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="RAPID 柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="RAPID 柱模" data-en="RAPID Column Formwork">RAPID 柱模</div>
+          <div class="card-desc" data-zh="快速安装的轻量化柱模系统，单人可操作，效率极高。" data-en="Fast-assembly lightweight column formwork, operable by a single person.">快速安装的轻量化柱模系统，单人可操作，效率极高。</div>
+        </div>
+      </a>
+      <a href="../products/quattro-column-formwork.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f2a3b4c5-d6e7-8901-fabc-012345678901/23670/quattro.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="QUATTRO 柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="QUATTRO 柱模" data-en="QUATTRO Column Formwork">QUATTRO 柱模</div>
+          <div class="card-desc" data-zh="四面调节方形和矩形柱模，钢制结构，耐用性强。" data-en="Four-sided adjustable steel column formwork. Durable and robust.">四面调节方形和矩形柱模，钢制结构，耐用性强。</div>
+        </div>
+      </a>
+      <a href="../products/lico-column-formwork.html" class="prod-card">
+        <div class="card-img-wrap">
+        <img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f6f67d39-eba3-4537-86b7-69a595794b2f/23672/lico-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" 
+             alt="LICO 柱模" 
+             onerror="this.parentNode.style.background='#C8102E';this.style.display='none'">
+      </div>
+        <div class="card-body">
+          <div class="card-name" data-zh="LICO 柱模" data-en="LICO Lightweight Column Formwork">LICO 柱模</div>
+          <div class="card-desc" data-zh="轻量铝制柱模，适用于标准截面，人工搬运便捷。" data-en="Lightweight aluminum column formwork for standard sections. Easy manual handling.">轻量铝制柱模，适用于标准截面，人工搬运便捷。</div>
+        </div>
+      </a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span>PERI</span> GCB Product Hub</div>
+    <div>GCB — Globe Chinese Business Teams | 派利产品信息中心</div>
+    <div>© PERI Group</div>
+  </footer>
+
+  <script>
+  function setLang(lang, btn) {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    if(btn) btn.classList.add('active');
+    document.querySelectorAll('[data-zh],[data-en]').forEach(el => {
+      if(el.dataset[lang]) el.textContent = el.dataset[lang];
+    });
+    localStorage.setItem('lang', lang);
+  }
+  (function(){
+    const saved = localStorage.getItem('lang');
+    if(saved && saved !== 'zh') {
+      const btn = document.querySelector('.lang-btn[data-lang="'+saved+'"]');
+      setLang(saved, btn);
+    }
+  })();
+  </script>
+</body>
+</html>

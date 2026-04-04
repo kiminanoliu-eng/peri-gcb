@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>市政/桥梁/隧道工程 | GCB PERI Hub</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,'Noto Sans SC',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
+.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:16px}
+.peri-logo{height:36px;object-fit:contain}
+.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
+.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
+.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
+.header-nav a:hover{color:#C8102E}
+.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f9f9f9;border-bottom:1px solid #eee}
+.breadcrumb a{color:#C8102E}
+.cat-hero{background:linear-gradient(135deg,#C8102E 0%,#900b1e 100%);color:#fff;padding:36px 32px}
+.cat-hero-icon{font-size:44px;margin-bottom:8px}
+.cat-hero h1{font-size:28px;font-weight:800}
+.cat-hero p{opacity:.85;margin-top:6px;font-size:15px}
+.cat-count{background:rgba(255,255,255,.15);display:inline-block;padding:4px 14px;border-radius:20px;font-size:13px;margin-top:10px}
+.cat-layout{display:grid;grid-template-columns:220px 1fr;min-height:70vh}
+@media(max-width:768px){.cat-layout{grid-template-columns:1fr}}
+.cat-sidebar{background:#f8f8f8;border-right:1px solid #eee;padding:20px 12px}
+.cat-sidebar-title{font-size:11px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding:0 12px}
+.sidebar-link{display:block;padding:8px 12px;border-radius:6px;font-size:14px;color:#555;transition:.2s;margin-bottom:4px}
+.sidebar-link:hover{background:#fff!important;color:#C8102E!important}
+.sidebar-active{background:#fff3f3;color:#C8102E;font-weight:600}
+.cat-main{padding:28px 32px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.prod-card{border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;transition:.2s;background:#fff;display:flex;flex-direction:column}
+.prod-card:hover{border-color:#C8102E;box-shadow:0 4px 20px rgba(200,16,46,.1);transform:translateY(-2px)}
+.card-img-wrap{width:100%;height:160px;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.card-img-wrap img{width:100%;height:160px;object-fit:cover;transition:.3s}
+.prod-card:hover .card-img-wrap img{transform:scale(1.04)}
+.card-no-img{width:100%;height:160px;background:linear-gradient(135deg,#C8102E,#900b1e);display:flex;align-items:center;justify-content:center}
+.card-no-img span{color:#fff;font-size:18px;font-weight:800;letter-spacing:1px;padding:8px;text-align:center}
+.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card-name{font-size:15px;font-weight:700;color:#1a1a1a;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;flex:1}
+.site-footer{background:#1a1a1a;color:#aaa;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-brand{color:#fff;font-weight:700}
+.footer-brand span{color:#FFB800}
+</style>
+</head>
+<body>
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh',this)">中文</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en',this)">EN</button>
+  </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html">
+        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+      </a>
+      <div class="gcb-tag">
+        <strong>GCB — Globe Chinese Business Teams</strong>
+        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
+      <a href="../index.html#categories" data-zh="所有分类" data-en="All Categories">所有分类</a>
+    </nav>
+  </header>
+  <div class="breadcrumb">
+    <a href="../index.html" data-zh="首页" data-en="Home">首页</a> ›
+    <span data-zh="市政/桥梁/隧道工程" data-en="Civil Engineering">市政/桥梁/隧道工程</span>
+  </div>
+  <div class="cat-hero">
+    <div class="cat-hero-icon">🌉</div>
+    <h1 data-zh="市政/桥梁/隧道工程" data-en="Civil Engineering">市政/桥梁/隧道工程</h1>
+    <p data-zh="PERI VARIOKIT 桥梁、隧道及基础设施工程解决方案" data-en="PERI VARIOKIT Bridge, Tunnel & Infrastructure Engineering Solutions">PERI VARIOKIT 桥梁、隧道及基础设施工程解决方案</p>
+    <div class="cat-count" data-zh="12 个产品" data-en="12 Products">12 个产品</div>
+  </div>
+  <div class="cat-layout">
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-title" data-zh="所有分类" data-en="All Categories">所有分类</div>
+      <a href="../index.html" class="sidebar-link" data-zh="← 首页 / Home" data-en="← 首页 / Home">← 首页 / Home</a>
+  <a href="wall-formwork.html" class="sidebar-link" data-zh="🧱 墙模板" data-en="🧱 Wall Formwork">🧱 墙模板</a>
+  <a href="column-formwork.html" class="sidebar-link" data-zh="🏛️ 柱模" data-en="🏛️ Column Formwork">🏛️ 柱模</a>
+  <a href="slab-formwork.html" class="sidebar-link" data-zh="📐 楼板模板" data-en="📐 Slab Formwork">📐 楼板模板</a>
+  <a href="climbing-systems.html" class="sidebar-link" data-zh="⬆️ 爬架系统" data-en="⬆️ Climbing Systems">⬆️ 爬架系统</a>
+  <a href="scaffolding.html" class="sidebar-link" data-zh="🔧 脚手架" data-en="🔧 Scaffolding">🔧 脚手架</a>
+  <a href="shoring.html" class="sidebar-link" data-zh="⚙️ 承重支撑" data-en="⚙️ Shoring & Support">⚙️ 承重支撑</a>
+  <a href="civil-engineering.html" class="sidebar-link sidebar-active" data-zh="🌉 市政/桥梁/隧道" data-en="🌉 Civil Engineering">🌉 市政/桥梁/隧道</a>
+  <a href="formwork-panels.html" class="sidebar-link" data-zh="📋 模板板材" data-en="📋 Formwork Panels">📋 模板板材</a>
+  <a href="accessories.html" class="sidebar-link" data-zh="🔩 配件与工具" data-en="🔩 Accessories & Tools">🔩 配件与工具</a>
+  <a href="software-services.html" class="sidebar-link" data-zh="💻 软件与服务" data-en="💻 Software & Services">💻 软件与服务</a>
+    </div>
+    <div class="cat-main">
+      <div class="prod-grid">
+        <a href="../products/variokit-engineering-construction-kit.html" class="prod-card">
+        <div class="card-no-img"><span>VARIOKIT</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VARIOKIT 工程模板组合系统" data-en="VARIOKIT Engineering Construction Kit">VARIOKIT 工程模板组合系统</div>
+          <div class="card-desc" data-zh="模块化特殊工程模板套件，适用于桥梁、隧道等基础设施项目" data-en="Modular engineering construction kit for bridges, tunnels and infrastructure">模块化特殊工程模板套件，适用于桥梁、隧道等基础设施项目</div>
+        </div>
+      </a>
+        <a href="../products/vcb-kragarmkonsole.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:5ae821e7-46dc-43de-aede-b3092463254d/24756/vcb.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VCB 悬臂托架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VCB</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VCB 悬臂托架" data-en="VCB Cantilever Bracket">VCB 悬臂托架</div>
+          <div class="card-desc" data-zh="桥梁施工用可调节悬臂托架，适用于翼缘板及外挑结构" data-en="Adjustable cantilever bracket for bridge wing slabs and overhanging structures">桥梁施工用可调节悬臂托架，适用于翼缘板及外挑结构</div>
+        </div>
+      </a>
+        <a href="../products/vcc-composite-formwork-carriage.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d988ab9f-2851-3dcd-ba7b-2d9bb01bcb6f/19780/vcc.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VCC 组合混凝土模板台车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VCC</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VCC 组合混凝土模板台车" data-en="VCC Composite Concrete Formwork Carriage">VCC 组合混凝土模板台车</div>
+          <div class="card-desc" data-zh="用于混凝土组合桥梁施工的模板台车" data-en="Formwork carriage for composite concrete bridge construction">用于混凝土组合桥梁施工的模板台车</div>
+        </div>
+      </a>
+        <a href="../products/vbc-balanced-cantilever-carriage.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012347/24920/vbc.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VBC 平衡悬臂施工台车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VBC</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VBC 平衡悬臂施工台车" data-en="VBC Balanced Cantilever Carriage">VBC 平衡悬臂施工台车</div>
+          <div class="card-desc" data-zh="平衡悬臂桥梁施工用移动台车系统" data-en="Mobile carriage system for balanced cantilever bridge construction">平衡悬臂桥梁施工用移动台车系统</div>
+        </div>
+      </a>
+        <a href="../products/vgb-cantilevered-parapet-track.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a37f09a7-c7d2-4652-a5bc-a2ca547c42cf/23918/vgb.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VGB 悬挑栏板轨道系统" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VGB</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VGB 悬挑栏板轨道系统" data-en="VGB Cantilevered Parapet Track">VGB 悬挑栏板轨道系统</div>
+          <div class="card-desc" data-zh="桥梁护栏板悬挑施工轨道，安全高效" data-en="Cantilevered track system for efficient and safe parapet construction">桥梁护栏板悬挑施工轨道，安全高效</div>
+        </div>
+      </a>
+        <a href="../products/vgk-cantilevered-parapet-bracket.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d5c408c9-7369-41ec-b0d5-726ffe21eb70/23931/vgk.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VGK 悬挑栏板托架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VGK</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VGK 悬挑栏板托架" data-en="VGK Cantilevered Parapet Bracket">VGK 悬挑栏板托架</div>
+          <div class="card-desc" data-zh="桥梁两侧护栏板模板托架，可侧挂于主梁" data-en="Parapet formwork bracket cantilevered from main beam webs">桥梁两侧护栏板模板托架，可侧挂于主梁</div>
+        </div>
+      </a>
+        <a href="../products/vgw-cantilevered-parapet-carriage.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:aa34dd5a-b19a-493e-8f98-2124109d73c3/24087/vgw.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VGW 悬挑栏板台车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VGW</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VGW 悬挑栏板台车" data-en="VGW Cantilevered Parapet Carriage">VGW 悬挑栏板台车</div>
+          <div class="card-desc" data-zh="移动式护栏板施工台车，适用于长大桥梁工程" data-en="Mobile parapet construction carriage for long bridge projects">移动式护栏板施工台车，适用于长大桥梁工程</div>
+        </div>
+      </a>
+        <a href="../products/vtc-tunnel-carriage.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123458/24930/vtc.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VTC 隧道模板台车" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VTC</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VTC 隧道模板台车" data-en="VTC Tunnel Formwork Carriage">VTC 隧道模板台车</div>
+          <div class="card-desc" data-zh="可移动隧道衬砌整体模板台车" data-en="Movable full-circle tunnel lining formwork carriage">可移动隧道衬砌整体模板台车</div>
+        </div>
+      </a>
+        <a href="../products/vrb-heavy-duty-truss-girder.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890125/24900/vrb.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VRB 重型桁架大梁" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VRB</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VRB 重型桁架大梁" data-en="VRB Heavy-Duty Truss Girder">VRB 重型桁架大梁</div>
+          <div class="card-desc" data-zh="特重型桁架大梁，用于大跨度承重模板支撑" data-en="Extra-heavy truss girder for long-span load-bearing formwork support">特重型桁架大梁，用于大跨度承重模板支撑</div>
+        </div>
+      </a>
+        <a href="../products/vst-heavy-duty-tower.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901236/24910/vst.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="VST 重型支撑塔架" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>VST</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="VST 重型支撑塔架" data-en="VST Heavy-Duty Tower">VST 重型支撑塔架</div>
+          <div class="card-desc" data-zh="超重型模块化支撑塔架，单塔可承载数百吨" data-en="Ultra-heavy modular support tower with hundreds of tonnes per unit capacity">超重型模块化支撑塔架，单塔可承载数百吨</div>
+        </div>
+      </a>
+        <a href="../products/alphakit.html" class="prod-card">
+        <div class="card-img-wrap"><img class="card-thumb" src="https://cdn.peri.cloud/dam/jcr:61de3d5d-57f8-400e-b1f2-b9cefe7c2149/24848/alphakit.jpg?width=400&height=240&fit=bounds&format=pjpg&auto=webp" alt="AlphaKit 工程套件" loading="lazy" onerror="this.parentNode.outerHTML='<div class=\'card-no-img\'><span>AlphaKit</span></div>'"></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="AlphaKit 工程套件" data-en="AlphaKit Engineering System">AlphaKit 工程套件</div>
+          <div class="card-desc" data-zh="灵活工程构建套件，适用于复杂特殊结构施工" data-en="Flexible engineering construction kit for complex special structures">灵活工程构建套件，适用于复杂特殊结构施工</div>
+        </div>
+      </a>
+        <a href="../products/freeform-formwork.html" class="prod-card">
+        <div class="card-no-img"><span>自由曲面模板</span></div>
+        <div class="card-body">
+          <div class="card-name" data-zh="自由曲面模板" data-en="Freeform Formwork">自由曲面模板</div>
+          <div class="card-desc" data-zh="特殊造型混凝土结构用自由曲面模板解决方案" data-en="Custom formwork solutions for special shaped concrete structures">特殊造型混凝土结构用自由曲面模板解决方案</div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-brand">GCB <span>PERI</span> Hub</div>
+    <div>© 2024 PERI GCB — Globe Chinese Business Teams</div>
+  </footer>
+  <script>
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('[data-zh],[data-en]').forEach(el => {
+    const txt = el.getAttribute('data-' + lang);
+    if (txt) el.textContent = txt;
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>软件与Apps — PERI GCB</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--red:#e3000f;--yellow:#f5a800;--dark:#1a1a1a;--grey:#f4f4f4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--dark);background:#fff}
+a{color:inherit;text-decoration:none}
+/* NAV */
+.nav{background:var(--dark);display:flex;align-items:center;padding:0 32px;height:60px;position:sticky;top:0;z-index:100}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.nav-logo img{height:32px}
+.nav-logo span{color:#fff;font-size:15px;font-weight:600}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:#ccc;font-size:13px;transition:.2s}
+.nav-links a:hover{color:#fff}
+.lang-bar{display:flex;gap:8px;margin-left:24px}
+.lang-bar button{background:none;border:1px solid #555;color:#aaa;padding:2px 8px;border-radius:3px;font-size:11px;cursor:pointer;transition:.2s}
+.lang-bar button:hover,.lang-bar button.active{background:var(--red);border-color:var(--red);color:#fff}
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#2d2d2d 100%);color:#fff;padding:48px 32px;text-align:center;border-bottom:4px solid var(--red)}
+.hero h1{font-size:2.2rem;margin-bottom:12px}
+.hero p{font-size:1rem;color:#ccc;max-width:560px;margin:0 auto}
+/* BREADCRUMB */
+.breadcrumb{padding:12px 32px;font-size:13px;color:#888;border-bottom:1px solid #eee;background:#fafafa}
+.breadcrumb a{color:var(--red)}
+.breadcrumb a:hover{text-decoration:underline}
+/* CARDS */
+.grid{display:grid;gap:24px;padding:32px;max-width:1200px;margin:0 auto}
+.grid-3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0;display:block}
+.card-img-placeholder{width:100%;height:180px;background:linear-gradient(135deg,#e8e8e8,#d0d0d0);display:flex;align-items:center;justify-content:center;font-size:40px;color:#aaa}
+.card-body{padding:16px}
+.card-badge{display:inline-block;background:var(--yellow);color:var(--dark);font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
+.card-badge-red{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.card-title{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;margin-bottom:12px}
+.card-count{font-size:11px;color:#999}
+/* SUBCATEGORY STRIP */
+.subcat-strip{padding:8px 32px;background:#f9f9f9;border-bottom:1px solid #eee;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.subcat-strip span{font-size:12px;color:#888}
+.subcat-chip{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:var(--yellow);color:var(--dark);cursor:pointer;transition:.15s}
+.subcat-chip:hover{background:var(--red);color:#fff}
+/* SECTION TITLE */
+.sec{padding:24px 32px 0}
+.sec h2{font-size:1.4rem;border-left:4px solid var(--red);padding-left:12px}
+.sec p{color:#666;font-size:13px;margin-top:6px}
+/* BTN */
+.btn{display:inline-block;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;border:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#b8000b}
+.btn-outline{background:none;border:2px solid var(--red);color:var(--red)}
+.btn-outline:hover{background:var(--red);color:#fff}
+/* PRODUCT PAGE */
+.prod-hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1100px;margin:0 auto;padding:32px}
+.prod-img{width:100%;max-height:400px;object-fit:contain;border-radius:8px;background:#f5f5f5}
+.prod-info h1{font-size:1.8rem;margin-bottom:12px}
+.prod-info .badge{background:var(--red);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px}
+.prod-info .badge-subcat{background:var(--yellow);color:var(--dark);padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px;margin-left:6px}
+.prod-info p{color:#555;line-height:1.7;margin-bottom:20px}
+.prod-cta{display:flex;gap:12px;flex-wrap:wrap}
+/* INQUIRY FORM */
+.inquiry-box{background:var(--grey);border-radius:8px;padding:24px;margin-top:32px}
+.inquiry-box h3{margin-bottom:16px;font-size:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-row input,.form-row select,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px}
+textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px;resize:vertical;min-height:80px;margin-bottom:12px}
+/* FOOTER */
+footer{background:var(--dark);color:#aaa;text-align:center;padding:32px;font-size:12px;margin-top:64px}
+footer a{color:var(--yellow)}
+/* SEARCH */
+.search-bar{display:flex;gap:8px;max-width:500px;margin:20px auto 0}
+.search-bar input{flex:1;padding:10px 16px;border:2px solid #555;background:rgba(255,255,255,.1);color:#fff;border-radius:4px;font-size:14px}
+.search-bar input::placeholder{color:#999}
+.search-bar button{padding:10px 20px;background:var(--red);color:#fff;border:none;border-radius:4px;cursor:pointer}
+#search-results{padding:24px 32px;max-width:1200px;margin:0 auto}
+/* YOUTUBE */
+.yt-section{max-width:1100px;margin:0 auto;padding:0 32px 40px}
+.yt-section h3{font-size:1.05rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;border-left:4px solid #ff0000;padding-left:12px}
+.yt-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.yt-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.btn-yt{background:#ff0000;color:#fff;display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;transition:.2s}
+.btn-yt:hover{background:#cc0000;color:#fff}
+/* CLICKABLE IMAGE HINT */
+.prod-img-link{display:block;position:relative}
+.prod-img-link::after{content:'↗ cn.peri.com';position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 8px;border-radius:3px;opacity:0;transition:.2s}
+.prod-img-link:hover::after{opacity:1}
+@media(max-width:700px){
+  .prod-hero{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .grid-3,.grid-4{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo">
+    <svg width="48" height="20" viewBox="0 0 120 50"><rect width="120" height="50" fill="#e3000f"/><text x="10" y="38" font-family="Arial" font-weight="900" font-size="38" fill="white">PERI</text></svg>
+    <span>GCB Hub</span>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a>
+    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China">中文官网</a>
+  </div>
+  <div class="lang-bar">
+    <button data-l="zh" onclick="setLang('zh')">中文</button>
+    <button data-l="en" onclick="setLang('en')">EN</button>
+    <button data-l="es" onclick="setLang('es')">ES</button>
+    <button data-l="de" onclick="setLang('de')">DE</button>
+  </div>
+</nav>
+<div class="breadcrumb">
+  <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a> ›
+  <span data-zh="软件与Apps" data-en="Software & Apps" data-es="Software y Aplicaciones" data-de="Software & Apps">软件与Apps</span>
+</div>
+<div class="hero" style="padding:32px">
+  <h1 data-zh="软件与Apps" data-en="Software & Apps" data-es="Software y Aplicaciones" data-de="Software & Apps">软件与Apps</h1>
+  <p data-zh="PERI设计规划软件及数字化工具" data-en="Software & Apps" data-es="Software y Aplicaciones" data-de="Software & Apps">PERI设计规划软件及数字化工具</p>
+</div>
+<div class="sec">
+  <h2 data-zh="共 13 个产品" data-en="13 Products"
+      data-es="13 Productos" data-de="13 Produkte">共 13 个产品</h2>
+</div>
+<div class="grid grid-4">
+  
+    <div class="card" onclick="location.href='../products/peri-cad-software.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:b2c3d4e5-f6a7-8901-bcde-012345678903/25300/peri-cad.jpg" alt="PERI CAD 22 软件" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">PERI CAD 22 软件</div>
+        <div class="card-desc">专业的模板和脚手架CAD设计软件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peripath.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:c3d4e5f6-a7b8-9012-cdef-123456789015/25310/peripath.jpg" alt="PERIpath" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">PERIpath</div>
+        <div class="card-desc">PERI的数字化施工路径规划工具。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/centrio-clm-software.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890126/25320/centrio.jpg" alt="CENTRIO CLM" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">CENTRIO CLM</div>
+        <div class="card-desc">先进的施工荷载监测软件系统。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/myperi.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901237/25330/myperi.jpg" alt="myPERI 客户服务平台" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">myPERI 客户服务平台</div>
+        <div class="card-desc">一站式的派利客户服务数字化平台。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-elpos-software.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012348/25340/elpos.jpg" alt="PERI ELPOS 软件" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">PERI ELPOS 软件</div>
+        <div class="card-desc">专业的模板工程量计算软件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/formwork-load-calculator.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123459/25350/load-calc.jpg" alt="模板荷载计算器" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">模板荷载计算器</div>
+        <div class="card-desc">快速计算模板新浇混凝土侧压力的在线工具。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-multiflex-configurator.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234570/25360/multiflex-config.jpg" alt="MULTIFLEX 木梁楼板模板计算器" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">MULTIFLEX 木梁楼板模板计算器</div>
+        <div class="card-desc">快速确定MULTIFLEX系统最佳配置的计算工具。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-st-100-configurator.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:c9d0e1f2-a3b4-5678-cdef-789012345681/25370/st100-config.jpg" alt="ST 100 塔架计算器" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">ST 100 塔架计算器</div>
+        <div class="card-desc">ST 100支撑塔架的快速配置计算工具。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-multiprop-shoring-tower-configurator.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:099bb8c2-f50b-43af-9f20-0bfa4c6d91ba/25287/multiprop-shoring-tower-configurator.png" alt="MULTIPROP 支撑塔架计算器" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">MULTIPROP 支撑塔架计算器</div>
+        <div class="card-desc">快速确定MULTIPROP塔架最佳配置方案。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-mds-k-configurator.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:396cb275-87ac-439f-889f-5a973b90e29c/25292/peri-mds-k-shoring-tower-configurator-icon.png" alt="MDS K 塔架计算器" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">MDS K 塔架计算器</div>
+        <div class="card-desc">为不同配置的PERI MDS K塔架计算最大允许轴向荷载。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/peri-duo-planner.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:a2f3568c-99a7-41c1-93e0-071e9e4ded51/25485/peri-duo-%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F.png" alt="PERI QuickSolve DUO 设计程序" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">PERI QuickSolve DUO 设计程序</div>
+        <div class="card-desc">专为DUO复合模板系统设计的在线规划程序。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/scaffmax-geruestbau-planungssoftware.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456792/25400/scaffmax.jpg" alt="scaffmax 脚手架方案设计程序" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">scaffmax 脚手架方案设计程序</div>
+        <div class="card-desc">专业的脚手架工程方案设计软件。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='../products/moselcopter-raumvisualisierung-vermessungssysteme.html'">
+      <img class="card-img" src="https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567893/25410/moselcopter.jpg" alt="Moselcopter 测量技术" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<div class="card-img-placeholder" style="display:none">🔧</div>
+      <div class="card-body">
+        <div class="card-title">Moselcopter 测量技术</div>
+        <div class="card-desc">基于无人机的建筑测量和空间可视化技术。</div>
+        <span class="btn btn-outline" style="font-size:11px;padding:5px 12px"
+              data-zh="了解更多" data-en="Learn More" data-es="Más info" data-de="Mehr">了解更多</span>
+      </div>
+    </div>
+</div>
+<footer>
+  <p data-zh="© PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队"
+     data-en="© PERI GCB Product Information Hub | South America, Eastern Europe, Africa Teams"
+     data-es="© PERI GCB Centro de Información de Productos | Equipos de América del Sur, Europa del Este, África"
+     data-de="© PERI GCB Produktinformationszentrum | Teams Südamerika, Osteuropa, Afrika">
+     © PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队</p>
+  <p style="margin-top:8px">
+    <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
+  </p>
+</footer>
+<script>
+const LANG_DATA={};
+function setLang(l){
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.textContent=el.dataset[l]});
+  document.querySelectorAll('.lang-bar button').forEach(b=>b.classList.toggle('active',b.dataset.l===l));
+  localStorage.setItem('periLang',l);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved=localStorage.getItem('periLang')||'zh';
+  setLang(saved);
+});
+</script>
+</body></html>
