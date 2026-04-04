@@ -1,337 +1,205 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+  <title>FinNaPly 板 — PERI GCB</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="High-quality, lightweight plywood for architectural concrete design.">
-  <title>FinNaPly Panel | GCB PERI Hub</title>
-  <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--red:#e3000f;--yellow:#f5a800;--dark:#1a1a1a;--grey:#f4f4f4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--dark);background:#fff}
 a{color:inherit;text-decoration:none}
-
-/* Lang bar */
-.lang-bar{background:#1a1a1a;padding:6px 24px;display:flex;gap:8px;justify-content:flex-end}
-.lang-btn{background:transparent;border:1px solid #555;color:#aaa;padding:3px 12px;border-radius:3px;cursor:pointer;font-size:13px;transition:.2s}
-.lang-btn.active,.lang-btn:hover{background:#C8102E;border-color:#C8102E;color:#fff}
-
-/* Header */
-.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 32px;border-bottom:3px solid #C8102E;background:#fff;position:sticky;top:0;z-index:100}
-.header-left{display:flex;align-items:center;gap:16px}
-.peri-logo{height:36px;object-fit:contain}
-.gcb-tag{font-size:12px;color:#666;border-left:2px solid #FFB800;padding-left:10px;line-height:1.3}
-.gcb-tag strong{display:block;color:#C8102E;font-size:13px}
-.header-nav{display:flex;gap:24px;font-size:14px;color:#555}
-.header-nav a:hover{color:#C8102E}
-
-/* Breadcrumb */
-.breadcrumb{padding:10px 32px;font-size:13px;color:#888;background:#f8f8f8;border-bottom:1px solid #eee}
-.breadcrumb a{color:#C8102E}
-.breadcrumb span{color:#aaa;margin:0 6px}
-
-/* Product Hero */
-.product-hero{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:380px}
-@media(max-width:768px){.product-hero{grid-template-columns:1fr}}
-.product-image-side{background:#C8102E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;position:relative;min-height:320px}
-.product-image-side a{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;width:100%}
-.product-brand-name{font-size:52px;font-weight:900;color:#fff;letter-spacing:2px;line-height:1}
-.product-cn-name{font-size:18px;color:rgba(255,255,255,.8);font-weight:300}
-.view-on-peri{margin-top:20px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);color:#fff;padding:8px 20px;border-radius:4px;font-size:13px;transition:.2s;display:inline-block}
-.view-on-peri:hover{background:rgba(255,255,255,.3)}
-.product-yellow-bar{position:absolute;bottom:0;left:0;right:0;height:5px;background:#FFB800}
-
-.product-info-side{padding:36px 40px;display:flex;flex-direction:column;gap:16px}
-.product-cat-badge{display:inline-flex;align-items:center;gap:6px;background:#fff3f3;color:#C8102E;border:1px solid #ffd0d0;padding:4px 12px;border-radius:20px;font-size:13px;width:fit-content}
-.product-title{font-size:28px;font-weight:700;color:#1a1a1a;line-height:1.3}
-.product-tagline{font-size:15px;color:#555;border-left:3px solid #FFB800;padding-left:12px;margin-top:4px}
-.qr-section{margin-top:auto;display:flex;align-items:center;gap:12px;padding:12px;background:#f9f9f9;border-radius:6px;border:1px solid #eee}
-.qr-section img{width:64px;height:64px}
-.qr-text{font-size:12px;color:#888}
-.share-url{font-size:11px;color:#C8102E;word-break:break-all;margin-top:2px}
-
-/* Sections */
-.section{padding:40px 32px;border-bottom:1px solid #f0f0f0}
-.section:nth-child(even){background:#fafafa}
-.section-title{font-size:20px;font-weight:700;color:#1a1a1a;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.section-title::before{content:'';width:4px;height:22px;background:#C8102E;display:block;border-radius:2px}
-
-/* Features */
-.features-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
-.features-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;background:#fff;border:1px solid #eee;border-radius:6px;font-size:14px}
-.features-list li::before{content:'✓';color:#C8102E;font-weight:700;flex-shrink:0;margin-top:1px}
-
-/* Video */
-.video-frame{width:100%;aspect-ratio:16/9;border:none;border-radius:8px;background:#111}
-.video-placeholder{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;text-align:center;color:#fff;gap:16px;aspect-ratio:16/9}
-.video-placeholder .play-icon{width:64px;height:64px;background:rgba(200,16,46,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px}
-.video-placeholder p{color:#aaa;font-size:14px;max-width:360px}
-.video-placeholder a{color:#FFB800;font-size:13px}
-
-/* PDF */
-.pdf-list{display:flex;flex-direction:column;gap:10px}
-.pdf-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid #eee;border-radius:8px;background:#fff;transition:.2s}
-.pdf-item:hover{border-color:#C8102E;background:#fff8f8}
-.pdf-icon{font-size:24px}
-.pdf-info{flex:1}
-.pdf-name{font-size:14px;font-weight:600}
-.pdf-size{font-size:12px;color:#888}
-.pdf-dl-btn{background:#C8102E;color:#fff;padding:6px 14px;border-radius:4px;font-size:12px;white-space:nowrap}
-.pdf-placeholder{color:#888;font-size:14px;font-style:italic;padding:20px;background:#f9f9f9;border-radius:6px;border:1px dashed #ddd;text-align:center}
-
-/* Projects */
-.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
-.project-card{border:2px dashed #ddd;border-radius:10px;overflow:hidden;background:#fafafa;transition:.2s}
-.project-card:hover{border-color:#C8102E;background:#fff8f8}
-.project-img{height:160px;background:linear-gradient(135deg,#eee 0%,#ddd 100%);display:flex;align-items:center;justify-content:center;color:#bbb;font-size:40px}
-.project-body{padding:16px}
-.project-location{font-size:12px;color:#C8102E;font-weight:600;margin-bottom:4px}
-.project-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:6px}
-.project-desc{font-size:13px;color:#888;font-style:italic}
-
-/* Inquiry Form */
-.inquiry-form{max-width:640px;display:flex;flex-direction:column;gap:16px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:600px){.form-row{grid-template-columns:1fr}}
-.form-group{display:flex;flex-direction:column;gap:6px}
-.form-group label{font-size:13px;font-weight:600;color:#555}
-.form-group input,.form-group select,.form-group textarea{padding:10px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;transition:.2s;background:#fff}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#C8102E;box-shadow:0 0 0 3px rgba(200,16,46,.08)}
-.form-group textarea{resize:vertical;min-height:100px}
-.form-note{font-size:12px;color:#aaa;font-style:italic}
-.submit-btn{background:#C8102E;color:#fff;border:none;padding:12px 32px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;align-self:flex-start;transition:.2s}
-.submit-btn:hover{background:#a00d25}
-
-/* Footer */
-.site-footer{background:#1a1a1a;color:#aaa;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.footer-brand{color:#fff;font-weight:700;font-size:16px}
-.footer-brand span{color:#FFB800}
-.footer-links{display:flex;gap:20px;font-size:13px}
-.footer-links a:hover{color:#fff}
-.footer-copy{font-size:12px;text-align:right}
-
-/* Related products */
-.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.related-card{border:1px solid #eee;border-radius:8px;padding:16px;transition:.2s;background:#fff}
-.related-card:hover{border-color:#C8102E;box-shadow:0 4px 16px rgba(200,16,46,.08)}
-.related-card .rcat{font-size:11px;color:#C8102E;font-weight:600;text-transform:uppercase;margin-bottom:4px}
-.related-card .rname{font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
-.related-card .rdesc{font-size:12px;color:#888;line-height:1.4}
+/* NAV */
+.nav{background:var(--dark);display:flex;align-items:center;padding:0 32px;height:60px;position:sticky;top:0;z-index:100}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.nav-logo img{height:32px}
+.nav-logo span{color:#fff;font-size:15px;font-weight:600}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:#ccc;font-size:13px;transition:.2s}
+.nav-links a:hover{color:#fff}
+.lang-bar{display:flex;gap:8px;margin-left:24px}
+.lang-bar button{background:none;border:1px solid #555;color:#aaa;padding:2px 8px;border-radius:3px;font-size:11px;cursor:pointer;transition:.2s}
+.lang-bar button:hover,.lang-bar button.active{background:var(--red);border-color:var(--red);color:#fff}
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#2d2d2d 100%);color:#fff;padding:48px 32px;text-align:center;border-bottom:4px solid var(--red)}
+.hero h1{font-size:2.2rem;margin-bottom:12px}
+.hero p{font-size:1rem;color:#ccc;max-width:560px;margin:0 auto}
+/* BREADCRUMB */
+.breadcrumb{padding:12px 32px;font-size:13px;color:#888;border-bottom:1px solid #eee;background:#fafafa}
+.breadcrumb a{color:var(--red)}
+.breadcrumb a:hover{text-decoration:underline}
+/* CARDS */
+.grid{display:grid;gap:24px;padding:32px;max-width:1200px;margin:0 auto}
+.grid-3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0;display:block}
+.card-img-placeholder{width:100%;height:180px;background:linear-gradient(135deg,#e8e8e8,#d0d0d0);display:flex;align-items:center;justify-content:center;font-size:40px;color:#aaa}
+.card-body{padding:16px}
+.card-badge{display:inline-block;background:var(--yellow);color:var(--dark);font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
+.card-badge-red{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.card-title{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.5;margin-bottom:12px}
+.card-count{font-size:11px;color:#999}
+/* SUBCATEGORY STRIP */
+.subcat-strip{padding:8px 32px;background:#f9f9f9;border-bottom:1px solid #eee;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.subcat-strip span{font-size:12px;color:#888}
+.subcat-chip{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:var(--yellow);color:var(--dark);cursor:pointer;transition:.15s}
+.subcat-chip:hover{background:var(--red);color:#fff}
+/* SECTION TITLE */
+.sec{padding:24px 32px 0}
+.sec h2{font-size:1.4rem;border-left:4px solid var(--red);padding-left:12px}
+.sec p{color:#666;font-size:13px;margin-top:6px}
+/* BTN */
+.btn{display:inline-block;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;border:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#b8000b}
+.btn-outline{background:none;border:2px solid var(--red);color:var(--red)}
+.btn-outline:hover{background:var(--red);color:#fff}
+/* PRODUCT PAGE */
+.prod-hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1100px;margin:0 auto;padding:32px}
+.prod-img{width:100%;max-height:400px;object-fit:contain;border-radius:8px;background:#f5f5f5}
+.prod-info h1{font-size:1.8rem;margin-bottom:12px}
+.prod-info .badge{background:var(--red);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px}
+.prod-info .badge-subcat{background:var(--yellow);color:var(--dark);padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px;margin-left:6px}
+.prod-info p{color:#555;line-height:1.7;margin-bottom:20px}
+.prod-cta{display:flex;gap:12px;flex-wrap:wrap}
+/* INQUIRY FORM */
+.inquiry-box{background:var(--grey);border-radius:8px;padding:24px;margin-top:32px}
+.inquiry-box h3{margin-bottom:16px;font-size:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-row input,.form-row select,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px}
+textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px;resize:vertical;min-height:80px;margin-bottom:12px}
+/* FOOTER */
+footer{background:var(--dark);color:#aaa;text-align:center;padding:32px;font-size:12px;margin-top:64px}
+footer a{color:var(--yellow)}
+/* SEARCH */
+.search-bar{display:flex;gap:8px;max-width:500px;margin:20px auto 0}
+.search-bar input{flex:1;padding:10px 16px;border:2px solid #555;background:rgba(255,255,255,.1);color:#fff;border-radius:4px;font-size:14px}
+.search-bar input::placeholder{color:#999}
+.search-bar button{padding:10px 20px;background:var(--red);color:#fff;border:none;border-radius:4px;cursor:pointer}
+#search-results{padding:24px 32px;max-width:1200px;margin:0 auto}
+/* YOUTUBE */
+.yt-section{max-width:1100px;margin:0 auto;padding:0 32px 40px}
+.yt-section h3{font-size:1.05rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;border-left:4px solid #ff0000;padding-left:12px}
+.yt-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.yt-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.btn-yt{background:#ff0000;color:#fff;display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;transition:.2s}
+.btn-yt:hover{background:#cc0000;color:#fff}
+/* CLICKABLE IMAGE HINT */
+.prod-img-link{display:block;position:relative}
+.prod-img-link::after{content:'↗ cn.peri.com';position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 8px;border-radius:3px;opacity:0;transition:.2s}
+.prod-img-link:hover::after{opacity:1}
+@media(max-width:700px){
+  .prod-hero{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .grid-3,.grid-4{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:1.6rem}
+}
 </style>
 </head>
 <body>
+<nav class="nav">
+  <div class="nav-logo">
+    <svg width="48" height="20" viewBox="0 0 120 50"><rect width="120" height="50" fill="#e3000f"/><text x="10" y="38" font-family="Arial" font-weight="900" font-size="38" fill="white">PERI</text></svg>
+    <span>GCB Hub</span>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a>
+    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China">中文官网</a>
+  </div>
   <div class="lang-bar">
-    <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中文</button>
-    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    <button data-l="zh" onclick="setLang('zh')">中文</button>
+    <button data-l="en" onclick="setLang('en')">EN</button>
+    <button data-l="es" onclick="setLang('es')">ES</button>
+    <button data-l="de" onclick="setLang('de')">DE</button>
   </div>
-  <header class="site-header">
-    <div class="header-left">
-      <a href="../index.html">
-        <img src="https://cn.peri.com/.resources/fe2/webresources/img/peri-logo.webp" alt="PERI" class="peri-logo" onerror="this.style.display='none'">
+</nav>
+<div class="breadcrumb">
+  <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a> ›
+  <a href="../categories/panels-plywood.html" data-zh="板材" data-en="Panels & Plywood" data-es="Paneles y Madera Contrachapada" data-de="Platten und Sperrholz">板材</a> ›
+  <span>FinNaPly 板</span>
+</div>
+
+<div class="prod-hero">
+  <div>
+    <a href="https://cn.peri.com/products/finnaply.html" target="_blank" class="prod-img-link" title="点击前往 cn.peri.com 查看完整产品信息"><img class="prod-img" src="https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456792/25580/finnaply.jpg" alt="FinNaPly 板" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div style="display:none;width:100%;height:300px;background:#f0f0f0;align-items:center;justify-content:center;font-size:60px;border-radius:8px">🔧</div></a><p style="font-size:11px;color:#999;margin-top:6px;text-align:center">↗ <a href="https://cn.peri.com/products/finnaply.html" target="_blank" style="color:var(--red)">在 cn.peri.com 查看完整信息</a></p>
+  </div>
+  <div class="prod-info">
+    <span class="badge" data-zh="板材" data-en="Panels & Plywood" data-es="Paneles y Madera Contrachapada" data-de="Platten und Sperrholz">板材</span>
+    <h1>FinNaPly 板</h1>
+    <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px">天然面覆膜胶合板，适用于清水混凝土。</p>
+    <div class="prod-cta">
+      <a href="https://cn.peri.com/products/finnaply.html" target="_blank" class="btn btn-red"
+         data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen">
+         ↗ 前往中文官网查看
       </a>
-      <div class="gcb-tag">
-        <strong>GCB — Globe Chinese Business Teams</strong>
-        <span data-zh="派利产品信息中心" data-en="PERI Product Information Hub">派利产品信息中心</span>
-      </div>
+      <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})"
+              data-zh="发送询价" data-en="Send Inquiry" data-es="Enviar Consulta" data-de="Anfrage senden">
+              发送询价
+      </button>
     </div>
-    <nav class="header-nav">
-      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
-      <a href="../categories/formwork-panels.html" data-zh="模板板材" data-en="Formwork Panels & Boards">模板板材</a>
-    </nav>
-  </header>
-  <div class="breadcrumb">
-    <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
-    <span>›</span>
-    <a href="../categories/formwork-panels.html" data-zh="模板板材" data-en="Formwork Panels & Boards">模板板材</a>
-    <span>›</span>
-    <span data-zh="FinNaPly板" data-en="FinNaPly Panel">FinNaPly板</span>
-  </div>
 
-  <!-- Product Hero -->
-  <section class="product-hero">
-    <div class="product-image-side">
-      <a href="https://cn.peri.com/products/finnaply.html" target="_blank" title="View on PERI China Website">
-        <div class="product-brand-name">FinNaPly</div>
-        <div class="product-cn-name">FinNaPly板</div>
-        <div class="view-on-peri" data-zh="查看派利中文官网 ↗" data-en="View on cn.peri.com ↗">查看派利中文官网 ↗</div>
-      </a>
-      <div class="product-yellow-bar"></div>
-    </div>
-    <div class="product-info-side">
-      <div class="product-cat-badge">📋 <span data-zh="模板板材" data-en="Formwork Panels & Boards">模板板材</span></div>
-      <h1 class="product-title" data-zh="FinNaPly板" data-en="FinNaPly Panel">FinNaPly板</h1>
-      <p class="product-tagline" data-zh="高质量、轻质的胶合板，用于建筑造型设计。" data-en="High-quality, lightweight plywood for architectural concrete design.">高质量、轻质的胶合板，用于建筑造型设计。</p>
-      <div class="qr-section">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://kiminanoliu-eng.github.io/peri-gcb/products/finnaply.html" alt="QR Code" loading="lazy">
-        <div>
-          <div class="qr-text" data-zh="扫码分享此产品页" data-en="Scan to share this product page">扫码分享此产品页</div>
-          <div class="share-url">https://kiminanoliu-eng.github.io/peri-gcb/products/finnaply.html</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Description -->
-  <div class="section">
-    <div class="section-title" data-zh="产品介绍" data-en="Product Description">产品介绍</div>
-    <p style="font-size:15px;color:#333;max-width:760px;line-height:1.8;" data-zh="高质量、轻质的胶合板，用于建筑造型设计。" data-en="High-quality, lightweight plywood for architectural concrete design.">高质量、轻质的胶合板，用于建筑造型设计。</p>
-    <p style="margin-top:12px;">
-      <a href="https://cn.peri.com/products/finnaply.html" target="_blank" style="color:#C8102E;font-size:14px;display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid #ffd0d0;padding-bottom:2px;">
-        <span data-zh="在派利中文官网查看完整产品信息" data-en="View full product details on cn.peri.com">在派利中文官网查看完整产品信息</span> ↗
-      </a>
-    </p>
-  </div>
-
-  <!-- Features -->
-  <div class="section">
-    <div class="section-title" data-zh="产品特点" data-en="Key Features">产品特点</div>
-    <ul class="features-list">
-      <li data-zh="高质量PERI标准产品，广泛应用于全球工程项目" data-en="High-quality PERI standard product, widely applied in construction projects worldwide">高质量PERI标准产品，广泛应用于全球工程项目</li>
-      <li data-zh="系统组件互相兼容，可灵活扩展配置" data-en="System components fully compatible for flexible configuration and expansion">系统组件互相兼容，可灵活扩展配置</li>
-      <li data-zh="经济高效，快速立模拆模，降低工期成本" data-en="Economical and efficient with fast assembly and stripping to reduce project time">经济高效，快速立模拆模，降低工期成本</li>
-      <li data-zh="可提供工程技术支持和方案设计服务" data-en="Engineering technical support and solution design services available">可提供工程技术支持和方案设计服务</li>
-    </ul>
-  </div>
-
-  <!-- Video -->
-  <div class="section">
-    <div class="section-title" data-zh="产品视频" data-en="Product Video">产品视频</div>
-    <div class="video-placeholder">
-      <div class="play-icon">▶</div>
-      <p data-zh="暂无视频，请访问 PERI YouTube 频道查看相关视频" data-en="Video coming soon. Visit the PERI YouTube channel for related videos.">暂无视频，请访问 PERI YouTube 频道查看相关视频</p>
-      <a href="https://www.youtube.com/@perigroup" target="_blank" data-zh="🎬 PERI YouTube 频道 →" data-en="🎬 PERI YouTube Channel →">🎬 PERI YouTube 频道 →</a>
-    </div>
-  </div>
-
-  <!-- PDF Resources -->
-  <div class="section">
-    <div class="section-title" data-zh="技术资料 / PDF" data-en="Technical Documents / PDF">技术资料 / PDF</div>
-    <div class="pdf-placeholder" data-zh="📄 技术手册正在整理中，敬请联系GCB团队获取" data-en="📄 Technical documentation being compiled. Please contact GCB team to request.">📄 技术手册正在整理中，敬请联系GCB团队获取</div>
-  </div>
-
-  <!-- Project Showcase -->
-  <div class="section">
-    <div class="section-title" data-zh="项目案例" data-en="Project Showcase">项目案例</div>
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-img">🏗️</div>
-        <div class="project-body">
-          <div class="project-location" data-zh="待补充" data-en="To be added">待补充</div>
-          <div class="project-name" data-zh="项目案例 1" data-en="Project Case 1">项目案例 1</div>
-          <div class="project-desc" data-zh="项目信息待补充，请联系GCB团队" data-en="Project details coming soon. Contact GCB team.">项目信息待补充，请联系GCB团队</div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img">🏗️</div>
-        <div class="project-body">
-          <div class="project-location" data-zh="待补充" data-en="To be added">待补充</div>
-          <div class="project-name" data-zh="项目案例 2" data-en="Project Case 2">项目案例 2</div>
-          <div class="project-desc" data-zh="项目信息待补充，请联系GCB团队" data-en="Project details coming soon. Contact GCB team.">项目信息待补充，请联系GCB团队</div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img">🏗️</div>
-        <div class="project-body">
-          <div class="project-location" data-zh="待补充" data-en="To be added">待补充</div>
-          <div class="project-name" data-zh="项目案例 3" data-en="Project Case 3">项目案例 3</div>
-          <div class="project-desc" data-zh="项目信息待补充，请联系GCB团队" data-en="Project details coming soon. Contact GCB team.">项目信息待补充，请联系GCB团队</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Inquiry Form -->
-  <div class="section">
-    <div class="section-title" data-zh="产品询盘" data-en="Product Inquiry">产品询盘</div>
-    <form class="inquiry-form" onsubmit="handleSubmit(event)">
+    <div class="inquiry-box" id="inquiry" style="margin-top:24px">
+      <h3 data-zh="产品询价" data-en="Product Inquiry" data-es="Consulta de Producto" data-de="Produktanfrage">产品询价</h3>
       <div class="form-row">
-        <div class="form-group">
-          <label data-zh="您的姓名 *" data-en="Your Name *">您的姓名 *</label>
-          <input type="text" required placeholder="" data-ph-zh="请输入姓名" data-ph-en="Enter your name">
-        </div>
-        <div class="form-group">
-          <label data-zh="公司名称" data-en="Company">公司名称</label>
-          <input type="text" placeholder="" data-ph-zh="请输入公司名称" data-ph-en="Enter company name">
-        </div>
+        <input type="text" placeholder="姓名 / Name" id="fi-name">
+        <input type="email" placeholder="邮箱 / Email" id="fi-email">
       </div>
       <div class="form-row">
-        <div class="form-group">
-          <label data-zh="联系邮箱 *" data-en="Email *">联系邮箱 *</label>
-          <input type="email" required placeholder="" data-ph-zh="请输入邮箱" data-ph-en="Enter email address">
-        </div>
-        <div class="form-group">
-          <label data-zh="联系电话" data-en="Phone">联系电话</label>
-          <input type="tel" placeholder="" data-ph-zh="请输入电话" data-ph-en="Enter phone number">
-        </div>
+        <input type="text" placeholder="公司 / Company" id="fi-company">
+        <input type="text" placeholder="国家 / Country" id="fi-country">
       </div>
-      <div class="form-group">
-        <label data-zh="国家/地区" data-en="Country / Region">国家/地区</label>
-        <select>
-          <option value="" data-zh="请选择" data-en="Please select">请选择</option>
-          <option>Brazil / 巴西</option><option>Argentina / 阿根廷</option><option>Chile / 智利</option>
-          <option>Colombia / 哥伦比亚</option><option>Peru / 秘鲁</option>
-          <option>Poland / 波兰</option><option>Romania / 罗马尼亚</option><option>Czech Republic / 捷克</option>
-          <option>Hungary / 匈牙利</option><option>Serbia / 塞尔维亚</option>
-          <option>Nigeria / 尼日利亚</option><option>Ethiopia / 埃塞俄比亚</option><option>Kenya / 肯尼亚</option>
-          <option>South Africa / 南非</option><option>Egypt / 埃及</option>
-          <option data-zh="其他" data-en="Other">其他</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label data-zh="询盘内容 *" data-en="Inquiry Details *">询盘内容 *</label>
-        <textarea required placeholder="" data-ph-zh="请描述您的项目需求、产品数量、工期要求等..." data-ph-en="Please describe your project requirements, quantity, timeline..."></textarea>
-      </div>
-      <p class="form-note" data-zh="* 此表单目前收集信息，GCB团队将通过邮件与您联系" data-en="* This form collects your inquiry. GCB team will contact you by email.">* 此表单目前收集信息，GCB团队将通过邮件与您联系</p>
-      <button type="submit" class="submit-btn" data-zh="提交询盘" data-en="Submit Inquiry">提交询盘</button>
-    </form>
+      <textarea placeholder="询价内容 / Inquiry message..." id="fi-msg" rows="3"></textarea>
+      <button class="btn btn-red" onclick="sendInquiry('FinNaPly 板')"
+              data-zh="发送" data-en="Send" data-es="Enviar" data-de="Senden">发送</button>
+    </div>
   </div>
+</div>
 
-  <footer class="site-footer">
-    <div>
-      <div class="footer-brand">GCB — Globe <span>Chinese</span> Business Teams</div>
-      <div style="font-size:13px;margin-top:4px;" data-zh="派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队" data-en="PERI Product Hub · Serving GCB teams in South America, Eastern Europe &amp; Africa">派利产品信息平台 · 服务南美洲、东欧、非洲中国商务团队</div>
-    </div>
-    <div class="footer-links">
-      <a href="../index.html" data-zh="首页" data-en="Home">首页</a>
-      <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
-      <a href="https://www.youtube.com/@perigroup" target="_blank">YouTube</a>
-    </div>
-    <div class="footer-copy">
-      <div data-zh="© PERI GCB 信息平台 2025" data-en="© PERI GCB Information Hub 2025">© PERI GCB 信息平台 2025</div>
-    </div>
-  </footer>
+<div class="yt-section">
+  <h3>▶ <span data-zh="PERI 产品视频" data-en="PERI Product Video"
+               data-es="Video del Producto PERI" data-de="PERI Produktvideo">PERI 产品视频</span></h3>
+  
+  <a href="https://www.youtube.com/@perigroup/search?query=FinNaPly%20%E6%9D%BF" target="_blank" class="btn btn-yt"
+     data-zh="在 PERI YouTube 频道搜索此产品" data-en="Search this product on PERI YouTube"
+     data-es="Buscar en PERI YouTube" data-de="Auf PERI YouTube suchen">
+    ▶&nbsp; 在 PERI YouTube 频道搜索
+  </a>
+</div>
 
-  <script>
-
-function setLang(lang) {
-  document.querySelectorAll('[data-zh]').forEach(el => {
-    el.textContent = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
-  });
-  document.querySelectorAll('.zh-only').forEach(el => el.style.display = lang==='zh'?'':'none');
-  document.querySelectorAll('.en-only').forEach(el => el.style.display = lang==='en'?'':'none');
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang===lang));
-  try { localStorage.setItem('peri-lang', lang); } catch(e){}
-  document.documentElement.lang = lang;
+<footer>
+  <p data-zh="© PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队"
+     data-en="© PERI GCB Product Information Hub | South America, Eastern Europe, Africa Teams"
+     data-es="© PERI GCB Centro de Información de Productos | Equipos de América del Sur, Europa del Este, África"
+     data-de="© PERI GCB Produktinformationszentrum | Teams Südamerika, Osteuropa, Afrika">
+     © PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队</p>
+  <p style="margin-top:8px">
+    <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
+  </p>
+</footer>
+<script>
+const LANG_DATA={};
+function setLang(l){
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.textContent=el.dataset[l]});
+  document.querySelectorAll('.lang-bar button').forEach(b=>b.classList.toggle('active',b.dataset.l===l));
+  localStorage.setItem('periLang',l);
 }
-(function(){
-  var lang = 'zh';
-  try { lang = localStorage.getItem('peri-lang') || 'zh'; } catch(e){}
-  setLang(lang);
-})();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    var lang = document.documentElement.lang;
-    alert(lang === 'zh' ? '感谢您的询盘！GCB团队将尽快与您联系。' : 'Thank you for your inquiry! GCB team will contact you soon.');
-    e.target.reset();
-  }
-  // Update placeholders on language change
-  var _origSetLang = setLang;
-  setLang = function(lang) {
-    _origSetLang(lang);
-    document.querySelectorAll('[data-ph-zh]').forEach(function(el) {
-      el.placeholder = lang==='zh' ? el.getAttribute('data-ph-zh') : el.getAttribute('data-ph-en');
-    });
-  };
-  </script>
-</body>
-</html>
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved=localStorage.getItem('periLang')||'zh';
+  setLang(saved);
+});
+</script>
+<script>
+function sendInquiry(product){
+  const name=document.getElementById('fi-name').value;
+  const email=document.getElementById('fi-email').value;
+  const company=document.getElementById('fi-company').value;
+  const country=document.getElementById('fi-country').value;
+  const msg=document.getElementById('fi-msg').value;
+  const body=`产品询价: ${product}\n姓名: ${name}\n公司: ${company}\n国家: ${country}\n\n${msg}`;
+  window.location='mailto:?subject=PERI产品询价: '+encodeURIComponent(product)+'&body='+encodeURIComponent(body);
+}
+</script>
+</body></html>

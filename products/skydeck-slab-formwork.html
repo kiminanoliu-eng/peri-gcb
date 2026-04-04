@@ -97,21 +97,6 @@ footer a{color:var(--yellow)}
   .grid-3,.grid-4{grid-template-columns:1fr 1fr}
   .hero h1{font-size:1.6rem}
 }
-
-/* PROJECT CARDS */
-.proj-section{max-width:1100px;margin:0 auto;padding:0 32px 48px}
-.proj-section h3{font-size:1.05rem;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:8px;border-left:4px solid var(--red);padding-left:12px}
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.proj-card{border-radius:8px;overflow:hidden;border:1px solid #e8e8e8;transition:.2s;background:#fff}
-.proj-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.12);transform:translateY(-2px)}
-.proj-img-fallback{width:100%;height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;text-align:center;gap:4px}
-.proj-body{padding:12px 14px}
-.proj-name{font-weight:700;font-size:13px;line-height:1.3;margin-bottom:4px}
-.proj-meta{font-size:11px;color:#888;display:flex;gap:6px;align-items:center}
-.proj-desc{font-size:12px;color:#555;line-height:1.5;margin-top:6px}
-.proj-link{display:inline-block;margin-top:8px;font-size:11px;color:var(--red);font-weight:600}
-.proj-link:hover{text-decoration:underline}
-
 </style>
 </head>
 <body>
@@ -188,62 +173,6 @@ footer a{color:var(--yellow)}
      data-es="Buscar en PERI YouTube" data-de="Auf PERI YouTube suchen">
     ▶&nbsp; 在 PERI YouTube 频道搜索
   </a>
-</div>
-
-
-<!-- ═══ EXAMPLE PROJECTS ═══ -->
-<div class="proj-section">
-  <h3>🏗️ <span data-zh="示例项目" data-en="Reference Projects" data-es="Proyectos de Referencia" data-de="Referenzprojekte">示例项目</span></h3>
-  <div class="proj-grid">
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#1a1a3a,#0d0d25)">
-        <div style="font-size:28px">🇬🇧</div>
-        <div style="color:rgba(255,255,255,.75);font-size:11px;margin-top:2px">伦敦，英国</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="伦敦金融城Leadenhall大厦" data-en="Leadenhall Building, London">伦敦金融城Leadenhall大厦</div>
-        <div class="proj-meta"><span>🇬🇧</span><span data-zh="🇬🇧 英国 · 超高层办公" data-en="UK · Supertall Office">🇬🇧 英国 · 超高层办公</span></div>
-        <div class="proj-desc" data-zh="SKYDECK铝合金早拆楼板模板实现4天一层的施工效率" data-en="SKYDECK aluminium drop-head slab formwork achieves 4-day floor cycle">SKYDECK铝合金早拆楼板模板实现4天一层的施工效率</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多" data-en="→ Learn more">→ 查看更多</a>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#2a3a1a,#1a2510)">
-        <div style="font-size:28px">🇩🇪</div>
-        <div style="color:rgba(255,255,255,.75);font-size:11px;margin-top:2px">慕尼黑，德国</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="慕尼黑住宅开发项目" data-en="Munich Residential Development">慕尼黑住宅开发项目</div>
-        <div class="proj-meta"><span>🇩🇪</span><span data-zh="🇩🇪 德国 · 住宅楼" data-en="Germany · Residential">🇩🇪 德国 · 住宅楼</span></div>
-        <div class="proj-desc" data-zh="SKYDECK系统提升楼板浇筑效率，减少材料用量" data-en="SKYDECK system improves slab pour efficiency while reducing material usage">SKYDECK系统提升楼板浇筑效率，减少材料用量</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多" data-en="→ Learn more">→ 查看更多</a>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#3a2a1a,#251a0d)">
-        <div style="font-size:28px">🇦🇪</div>
-        <div style="color:rgba(255,255,255,.75);font-size:11px;margin-top:2px">迪拜，阿联酋</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="迪拜码头公寓" data-en="Dubai Marina Apartments">迪拜码头公寓</div>
-        <div class="proj-meta"><span>🇦🇪</span><span data-zh="🇦🇪 阿联酋 · 高层住宅" data-en="UAE · High-rise Residential">🇦🇪 阿联酋 · 高层住宅</span></div>
-        <div class="proj-desc" data-zh="高标准清水混凝土楼板用SKYDECK快速施工完成" data-en="Premium fair-faced concrete slabs completed efficiently with SKYDECK">高标准清水混凝土楼板用SKYDECK快速施工完成</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多" data-en="→ Learn more">→ 查看更多</a>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#1a3a3a,#0d2525)">
-        <div style="font-size:28px">🇨🇳</div>
-        <div style="color:rgba(255,255,255,.75);font-size:11px;margin-top:2px">深圳，中国</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="深圳超高层综合体" data-en="Shenzhen Supertall Complex">深圳超高层综合体</div>
-        <div class="proj-meta"><span>🇨🇳</span><span data-zh="🇨🇳 中国 · 综合体" data-en="China · Mixed-use">🇨🇳 中国 · 综合体</span></div>
-        <div class="proj-desc" data-zh="SKYDECK楼板模板在深圳超高层楼板施工中展现高效性" data-en="SKYDECK slab formwork demonstrates high efficiency in Shenzhen supertall construction">SKYDECK楼板模板在深圳超高层楼板施工中展现高效性</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多" data-en="→ Learn more">→ 查看更多</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 <footer>

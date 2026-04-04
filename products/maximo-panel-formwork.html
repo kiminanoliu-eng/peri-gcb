@@ -97,22 +97,6 @@ footer a{color:var(--yellow)}
   .grid-3,.grid-4{grid-template-columns:1fr 1fr}
   .hero h1{font-size:1.6rem}
 }
-/* PROJECT CARDS */
-.proj-section{max-width:1100px;margin:0 auto;padding:0 32px 48px}
-.proj-section h3{font-size:1.05rem;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:8px;border-left:4px solid var(--red);padding-left:12px}
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.proj-card{border-radius:8px;overflow:hidden;border:1px solid #e8e8e8;transition:.2s;background:#fff}
-.proj-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.12);transform:translateY(-2px)}
-.proj-img{width:100%;height:140px;object-fit:cover;display:block;background:#1a1a1a}
-.proj-img-fallback{width:100%;height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;text-align:center;gap:4px}
-.proj-flag{font-size:28px}
-.proj-city{color:rgba(255,255,255,.8);font-size:11px;margin-top:2px}
-.proj-body{padding:12px 14px}
-.proj-name{font-weight:700;font-size:13px;line-height:1.3;margin-bottom:4px}
-.proj-meta{font-size:11px;color:#888;display:flex;gap:6px;align-items:center}
-.proj-desc{font-size:12px;color:#555;line-height:1.5;margin-top:6px}
-.proj-link{display:inline-block;margin-top:8px;font-size:11px;color:var(--red);font-weight:600}
-.proj-link:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -189,70 +173,6 @@ footer a{color:var(--yellow)}
      data-es="Buscar en PERI YouTube" data-de="Auf PERI YouTube suchen">
     ▶&nbsp; 在 PERI YouTube 频道搜索
   </a>
-</div>
-
-<!-- ═══ EXAMPLE PROJECTS ═══ -->
-<div class="proj-section">
-  <h3>🏗️ <span data-zh="示例项目" data-en="Reference Projects" data-es="Proyectos de Referencia" data-de="Referenzprojekte">示例项目</span></h3>
-  <div class="proj-grid">
-
-    <!-- Project 1 -->
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#1a3a5c,#0d2035)">
-        <div class="proj-flag">🇨🇦</div>
-        <div class="proj-city" style="color:rgba(255,255,255,.75);font-size:11px">Mississauga, Canada</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="密西沙加梦露大厦" data-en="Absolute World, Mississauga" data-es="Absolute World, Misisiagua" data-de="Absolute World, Mississauga">密西沙加梦露大厦</div>
-        <div class="proj-meta"><span>🇨🇦</span><span data-zh="加拿大 · 住宅超高层" data-en="Canada · High-rise Residential">加拿大 · 住宅超高层</span></div>
-        <div class="proj-desc" data-zh="采用MAXIMO框式模板施工的标志性扭转超高层建筑，混凝土外观质量卓越" data-en="Iconic twisted supertall built with MAXIMO, achieving exceptional concrete surface quality">采用MAXIMO框式模板施工的标志性扭转超高层建筑，混凝土外观质量卓越</div>
-        <a href="https://cn.peri.com/references/absolute-world.html" target="_blank" class="proj-link" data-zh="→ 查看项目详情" data-en="→ View project">→ 查看项目详情</a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#2d5a27,#1a3a18)">
-        <div class="proj-flag">🇩🇪</div>
-        <div class="proj-city" style="color:rgba(255,255,255,.75);font-size:11px">München, Germany</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="慕尼黑MK4综合体" data-en="MK4 Complex, Munich" data-es="Complejo MK4, Múnich" data-de="MK4-Komplex, München">慕尼黑MK4综合体</div>
-        <div class="proj-meta"><span>🇩🇪</span><span data-zh="德国 · 混合用途综合体" data-en="Germany · Mixed-use Complex">德国 · 混合用途综合体</span></div>
-        <div class="proj-desc" data-zh="MAXIMO大型框式模板用于墙体和核心筒施工，高效完成大面积浇筑" data-en="MAXIMO used for wall and core construction, enabling efficient large-area concrete pours">MAXIMO大型框式模板用于墙体和核心筒施工，高效完成大面积浇筑</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多项目" data-en="→ More projects">→ 查看更多项目</a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#5a2727,#3a1818)">
-        <div class="proj-flag">🇩🇰</div>
-        <div class="proj-city" style="color:rgba(255,255,255,.75);font-size:11px">Copenhagen, Denmark</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="哥本哈根辉凌制药总部" data-en="Lundbeck HQ, Copenhagen" data-es="Sede Lundbeck, Copenhague" data-de="Lundbeck HQ, Kopenhagen">哥本哈根辉凌制药总部</div>
-        <div class="proj-meta"><span>🇩🇰</span><span data-zh="丹麦 · 工业厂房" data-en="Denmark · Industrial Building">丹麦 · 工业厂房</span></div>
-        <div class="proj-desc" data-zh="制药研发综合楼的清水混凝土外墙采用MAXIMO系统施工" data-en="Fair-faced concrete facade of pharmaceutical R&D complex constructed with MAXIMO system">制药研发综合楼的清水混凝土外墙采用MAXIMO系统施工</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多项目" data-en="→ More projects">→ 查看更多项目</a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="proj-card">
-      <div class="proj-img-fallback" style="background:linear-gradient(135deg,#3a3a1a,#252510)">
-        <div class="proj-flag">🇩🇪</div>
-        <div class="proj-city" style="color:rgba(255,255,255,.75);font-size:11px">Ulm, Germany</div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-name" data-zh="乌尔姆Ypsilon大桥" data-en="Ypsilon Bridge, Ulm" data-es="Puente Ypsilon, Ulm" data-de="Ypsilon-Brücke, Ulm">乌尔姆Ypsilon大桥</div>
-        <div class="proj-meta"><span>🇩🇪</span><span data-zh="德国 · 桥梁工程" data-en="Germany · Bridge Engineering">德国 · 桥梁工程</span></div>
-        <div class="proj-desc" data-zh="Y形桥墩墙体采用MAXIMO模板系统，实现复杂几何形体的精准混凝土成型" data-en="Y-shaped pier walls built with MAXIMO for precise shaping of complex geometry">Y形桥墩墙体采用MAXIMO模板系统，实现复杂几何形体的精准混凝土成型</div>
-        <a href="https://cn.peri.com/references.html" target="_blank" class="proj-link" data-zh="→ 查看更多项目" data-en="→ More projects">→ 查看更多项目</a>
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <footer>
