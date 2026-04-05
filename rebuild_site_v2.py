@@ -32,6 +32,7 @@ YT_IDS = {
     'scs-climbing-system':                'nQFyXcSVc1Q',
     'multiprop-aluminium-slab-props':     'dothgJ6xPz8',
     'liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF': 'fpmvkKH-hc8',
+    'quattro-column-formwork':            'OWpNmrq4qEc',
 }
 
 BASE = os.path.dirname(os.path.abspath(__file__))
