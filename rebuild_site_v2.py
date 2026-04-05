@@ -68,18 +68,27 @@ CAT_LABELS = {
     'en': {k: DATA[k]['en'] for k in DATA},
     'es': {k: DATA[k]['es'] for k in DATA},
     'de': {k: DATA[k]['de'] for k in DATA},
+    'pt': {k: DATA[k].get('pt', DATA[k]['en']) for k in DATA},
+    'sr': {k: DATA[k].get('sr', DATA[k]['en']) for k in DATA},
+    'hu': {k: DATA[k].get('hu', DATA[k]['en']) for k in DATA},
 }
 NAV_ITEMS = {
     'zh': {'home':'首页','products':'产品目录','contact':'联系我们','search':'搜索产品'},
     'en': {'home':'Home','products':'Products','contact':'Contact','search':'Search'},
     'es': {'home':'Inicio','products':'Productos','contact':'Contacto','search':'Buscar'},
     'de': {'home':'Startseite','products':'Produkte','contact':'Kontakt','search':'Suche'},
+    'pt': {'home':'Início','products':'Produtos','contact':'Contato','search':'Pesquisar'},
+    'sr': {'home':'Početna','products':'Proizvodi','contact':'Kontakt','search':'Pretraga'},
+    'hu': {'home':'Kezdőlap','products':'Termékek','contact':'Kapcsolat','search':'Keresés'},
 }
 BTN = {
     'zh': {'learn':'了解更多','inquiry':'发送询价','view_all':'查看全部产品','visit':'访问中文官网'},
     'en': {'learn':'Learn More','inquiry':'Send Inquiry','view_all':'View All Products','visit':'Visit PERI China'},
     'es': {'learn':'Saber Más','inquiry':'Enviar Consulta','view_all':'Ver Todos','visit':'Visitar PERI China'},
     'de': {'learn':'Mehr erfahren','inquiry':'Anfrage senden','view_all':'Alle Produkte','visit':'PERI China besuchen'},
+    'pt': {'learn':'Saiba Mais','inquiry':'Enviar Consulta','view_all':'Ver Todos os Produtos','visit':'Visitar PERI China'},
+    'sr': {'learn':'Saznaj Više','inquiry':'Pošalji Upit','view_all':'Pogledaj Sve Proizvode','visit':'Posetite PERI China'},
+    'hu': {'learn':'Tudjon Meg Többet','inquiry':'Ajánlatkérés','view_all':'Összes Termék','visit':'PERI China Látogatása'},
 }
 
 # ---- Shared CSS / JS -------------------------------------------------------
@@ -91,20 +100,20 @@ SHARED_HEAD = '''<meta charset="UTF-8">
 body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--dark);background:#fff}
 a{color:inherit;text-decoration:none}
 /* NAV */
-.nav{background:var(--dark);display:flex;align-items:center;padding:0 32px;height:60px;position:sticky;top:0;z-index:100}
+.nav{background:#fff;display:flex;align-items:center;padding:0 32px;height:70px;position:sticky;top:0;z-index:100;border-bottom:1px solid #e0e0e0;box-shadow:0 2px 4px rgba(0,0,0,.05)}
 .nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto}
-.nav-logo img{height:32px}
-.nav-logo span{color:#fff;font-size:15px;font-weight:600}
+.nav-logo img{height:40px}
+.nav-logo span{color:var(--dark);font-size:15px;font-weight:600}
 .nav-links{display:flex;gap:28px}
-.nav-links a{color:#ccc;font-size:13px;transition:.2s}
-.nav-links a:hover{color:#fff}
+.nav-links a{color:#666;font-size:13px;transition:.2s;font-weight:500}
+.nav-links a:hover{color:var(--red)}
 .lang-bar{display:flex;gap:8px;margin-left:24px}
-.lang-bar button{background:none;border:1px solid #555;color:#aaa;padding:2px 8px;border-radius:3px;font-size:11px;cursor:pointer;transition:.2s}
+.lang-bar button{background:none;border:1px solid #ddd;color:#666;padding:4px 10px;border-radius:4px;font-size:11px;cursor:pointer;transition:.2s;font-weight:500}
 .lang-bar button:hover,.lang-bar button.active{background:var(--red);border-color:var(--red);color:#fff}
 /* HERO */
-.hero{background:linear-gradient(135deg,var(--dark) 0%,#2d2d2d 100%);color:#fff;padding:48px 32px;text-align:center;border-bottom:4px solid var(--red)}
-.hero h1{font-size:2.2rem;margin-bottom:12px}
-.hero p{font-size:1rem;color:#ccc;max-width:560px;margin:0 auto}
+.hero{background:#fff;color:var(--dark);padding:60px 32px;text-align:center;border-bottom:3px solid var(--red)}
+.hero h1{font-size:2.2rem;margin-bottom:12px;color:var(--dark)}
+.hero p{font-size:1rem;color:#666;max-width:560px;margin:0 auto}
 /* BREADCRUMB */
 .breadcrumb{padding:12px 32px;font-size:13px;color:#888;border-bottom:1px solid #eee;background:#fafafa}
 .breadcrumb a{color:var(--red)}
@@ -157,7 +166,7 @@ footer{background:var(--dark);color:#aaa;text-align:center;padding:32px;font-siz
 footer a{color:var(--yellow)}
 /* SEARCH */
 .search-bar{display:flex;gap:8px;max-width:500px;margin:20px auto 0}
-.search-bar input{flex:1;padding:10px 16px;border:2px solid #555;background:rgba(255,255,255,.1);color:#fff;border-radius:4px;font-size:14px}
+.search-bar input{flex:1;padding:10px 16px;border:2px solid #ddd;background:#fff;color:var(--dark);border-radius:4px;font-size:14px}
 .search-bar input::placeholder{color:#999}
 .search-bar button{padding:10px 20px;background:var(--red);color:#fff;border:none;border-radius:4px;cursor:pointer}
 #search-results{padding:24px 32px;max-width:1200px;margin:0 auto}
@@ -196,45 +205,52 @@ document.addEventListener('DOMContentLoaded',()=>{
 def nav_html(active='home'):
     return f'''<nav class="nav">
   <div class="nav-logo">
-    <svg width="48" height="20" viewBox="0 0 120 50"><rect width="120" height="50" fill="#e3000f"/><text x="10" y="38" font-family="Arial" font-weight="900" font-size="38" fill="white">PERI</text></svg>
+    <img src="../peri-logo.webp" alt="PERI">
     <span>GCB Hub</span>
   </div>
   <div class="nav-links">
-    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a>
-    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China">中文官网</a>
+    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite" data-pt="Início" data-sr="Početna" data-hu="Kezdőlap">首页</a>
+    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China" data-pt="PERI China" data-sr="PERI China" data-hu="PERI China">中文官网</a>
   </div>
   <div class="lang-bar">
     <button data-l="zh" onclick="setLang('zh')">中文</button>
     <button data-l="en" onclick="setLang('en')">EN</button>
+    <button data-l="pt" onclick="setLang('pt')">PT</button>
+    <button data-l="sr" onclick="setLang('sr')">SR</button>
     <button data-l="es" onclick="setLang('es')">ES</button>
-    <button data-l="de" onclick="setLang('de')">DE</button>
+    <button data-l="hu" onclick="setLang('hu')">HU</button>
   </div>
 </nav>'''
 
 def nav_html_root():
     return '''<nav class="nav">
   <div class="nav-logo">
-    <svg width="48" height="20" viewBox="0 0 120 50"><rect width="120" height="50" fill="#e3000f"/><text x="10" y="38" font-family="Arial" font-weight="900" font-size="38" fill="white">PERI</text></svg>
+    <img src="peri-logo.webp" alt="PERI">
     <span>GCB Hub</span>
   </div>
   <div class="nav-links">
-    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China">中文官网</a>
+    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China" data-pt="PERI China" data-sr="PERI China" data-hu="PERI China">中文官网</a>
   </div>
   <div class="lang-bar">
     <button data-l="zh" onclick="setLang('zh')">中文</button>
     <button data-l="en" onclick="setLang('en')">EN</button>
+    <button data-l="pt" onclick="setLang('pt')">PT</button>
+    <button data-l="sr" onclick="setLang('sr')">SR</button>
     <button data-l="es" onclick="setLang('es')">ES</button>
-    <button data-l="de" onclick="setLang('de')">DE</button>
+    <button data-l="hu" onclick="setLang('hu')">HU</button>
   </div>
 </nav>'''
 
 def footer_html():
     return '''<footer>
-  <p data-zh="© PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队"
-     data-en="© PERI GCB Product Information Hub | South America, Eastern Europe, Africa Teams"
-     data-es="© PERI GCB Centro de Información de Productos | Equipos de América del Sur, Europa del Este, África"
-     data-de="© PERI GCB Produktinformationszentrum | Teams Südamerika, Osteuropa, Afrika">
-     © PERI GCB 产品信息中心 | 南美洲、东欧、非洲地区团队</p>
+  <p data-zh="© PERI GCB 产品信息中心"
+     data-en="© PERI GCB Product Information Hub"
+     data-es="© PERI GCB Centro de Información de Productos"
+     data-de="© PERI GCB Produktinformationszentrum"
+     data-pt="© PERI GCB Centro de Informações de Produtos"
+     data-sr="© PERI GCB Centar za Informacije o Proizvodima"
+     data-hu="© PERI GCB Termékinformációs Központ">
+     © PERI GCB 产品信息中心</p>
   <p style="margin-top:8px">
     <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
   </p>
@@ -265,10 +281,10 @@ def build_homepage():
     <div class="card" onclick="location.href='categories/{cat['slug']}.html'" style="cursor:pointer">
       {img_or_placeholder(cat.get('img',''), display_name)}
       <div class="card-body">
-        <div class="card-badge" data-zh="{display_name}" data-en="{cat['en']}" data-es="{cat['es']}" data-de="{cat['de']}">{display_name}</div>
-        <div class="card-title" data-zh="{display_name}" data-en="{cat['en']}" data-es="{cat['es']}" data-de="{cat['de']}">{display_name}</div>
+        <div class="card-badge" data-zh="{display_name}" data-en="{cat['en']}" data-es="{cat['es']}" data-de="{cat['de']}" data-pt="{cat.get('pt', cat['en'])}" data-sr="{cat.get('sr', cat['en'])}" data-hu="{cat.get('hu', cat['en'])}">{display_name}</div>
+        <div class="card-title" data-zh="{display_name}" data-en="{cat['en']}" data-es="{cat['es']}" data-de="{cat['de']}" data-pt="{cat.get('pt', cat['en'])}" data-sr="{cat.get('sr', cat['en'])}" data-hu="{cat.get('hu', cat['en'])}">{display_name}</div>
         {extra_desc}
-        <div class="card-count" data-zh="{count} 个产品" data-en="{count} products" data-es="{count} productos" data-de="{count} Produkte">{count} 个产品</div>
+        <div class="card-count" data-zh="{count} 个产品" data-en="{count} products" data-es="{count} productos" data-de="{count} Produkte" data-pt="{count} produtos" data-sr="{count} proizvoda" data-hu="{count} termék">{count} 个产品</div>
       </div>
     </div>'''
 
@@ -279,8 +295,8 @@ def build_homepage():
     <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
       <img class="card-img" src="{proj['image']}" alt="{proj['name_zh']}" loading="lazy">
       <div class="card-body">
-        <div class="card-badge-red" data-zh="参建项目" data-en="Project" data-es="Proyecto" data-de="Projekt">参建项目</div>
-        <div class="card-title" data-zh="{proj['name_zh']}" data-en="{proj['name_en']}">{proj['name_zh']}</div>
+        <div class="card-badge-red" data-zh="参建项目" data-en="Project" data-es="Proyecto" data-de="Projekt" data-pt="Projeto" data-sr="Projekat" data-hu="Projekt">参建项目</div>
+        <div class="card-title" data-zh="{proj['name_zh']}" data-en="{proj['name_en']}" data-pt="{proj['name_en']}" data-sr="{proj['name_en']}" data-es="{proj['name_en']}" data-hu="{proj['name_en']}">{proj['name_zh']}</div>
         <div class="card-desc">{proj['description']}</div>
         <div style="font-size:11px;color:#999;margin-top:8px">📍 {proj['location']}</div>
       </div>
@@ -295,17 +311,17 @@ def build_homepage():
 <body>
 {nav_html_root()}
 <div class="hero">
-  <h1 data-zh="PERI 产品信息中心" data-en="PERI Product Information Hub" data-es="Centro de Información de Productos PERI" data-de="PERI Produktinformationszentrum">PERI 产品信息中心</h1>
-  <p data-zh="面向南美洲、东欧、非洲的GCB团队 — 了解派利完整产品系列" data-en="For GCB Teams in South America, Eastern Europe & Africa — Explore the full PERI product range" data-es="Para equipos GCB en Sudamérica, Europa del Este y África — Explore la gama completa de productos PERI" data-de="Für GCB-Teams in Südamerika, Osteuropa und Afrika — Entdecken Sie das vollständige PERI-Produktprogramm">面向南美洲、东欧、非洲的GCB团队 — 了解派利完整产品系列</p>
+  <h1 data-zh="PERI 产品信息中心" data-en="PERI Product Information Hub" data-es="Centro de Información de Productos PERI" data-de="PERI Produktinformationszentrum" data-pt="Centro de Informações de Produtos PERI" data-sr="PERI Centar za Informacije o Proizvodima" data-hu="PERI Termékinformációs Központ">PERI 产品信息中心</h1>
+  <p data-zh="了解派利完整产品系列" data-en="Explore the full PERI product range" data-es="Explore la gama completa de productos PERI" data-de="Entdecken Sie das vollständige PERI-Produktprogramm" data-pt="Explore a gama completa de produtos PERI" data-sr="Istražite kompletan PERI asortiman proizvoda" data-hu="Fedezze fel a teljes PERI termékpalettát">了解派利完整产品系列</p>
   <div class="search-bar">
     <input type="text" id="q" placeholder="搜索产品... / Search products..." onkeydown="if(event.key==='Enter')doSearch()">
-    <button onclick="doSearch()" data-zh="搜索" data-en="Search" data-es="Buscar" data-de="Suchen">搜索</button>
+    <button onclick="doSearch()" data-zh="搜索" data-en="Search" data-es="Buscar" data-de="Suchen" data-pt="Pesquisar" data-sr="Pretraga" data-hu="Keresés">搜索</button>
   </div>
 </div>
 
 <div class="sec">
-  <h2 data-zh="产品分类" data-en="Product Categories" data-es="Categorías de Productos" data-de="Produktkategorien">产品分类</h2>
-  <p data-zh="点击分类查看所有产品" data-en="Click a category to browse products" data-es="Haga clic en una categoría para ver los productos" data-de="Klicken Sie auf eine Kategorie, um Produkte anzuzeigen">点击分类查看所有产品</p>
+  <h2 data-zh="产品分类" data-en="Product Categories" data-es="Categorías de Productos" data-de="Produktkategorien" data-pt="Categorias de Produtos" data-sr="Kategorije Proizvoda" data-hu="Termékkategóriák">产品分类</h2>
+  <p data-zh="点击分类查看所有产品" data-en="Click a category to browse products" data-es="Haga clic en una categoría para ver los productos" data-de="Klicken Sie auf eine Kategorie, um Produkte anzuzeigen" data-pt="Clique em uma categoria para navegar pelos produtos" data-sr="Kliknite na kategoriju da pregledate proizvode" data-hu="Kattintson egy kategóriára a termékek böngészéséhez">点击分类查看所有产品</p>
 </div>
 <div class="grid grid-3">
   {cat_cards}
@@ -314,7 +330,7 @@ def build_homepage():
 <div style="text-align:center;padding:32px">
   <a href="https://cn.peri.com/products.html" target="_blank" class="btn btn-red"
      data-zh="访问 cn.peri.com 查看全部产品" data-en="Visit cn.peri.com for full product range"
-     data-es="Visitar cn.peri.com para ver todos los productos" data-de="cn.peri.com besuchen für alle Produkte">
+     data-es="Visitar cn.peri.com para ver todos los productos" data-de="cn.peri.com besuchen für alle Produkte" data-pt="Visite cn.peri.com para ver todos os produtos" data-sr="Posetite cn.peri.com za sve proizvode" data-hu="Látogassa meg a cn.peri.com oldalt az összes termékért">
      访问 cn.peri.com 查看全部产品
   </a>
 </div>
@@ -322,15 +338,35 @@ def build_homepage():
 <!-- China Projects Section -->
 <div style="background:#f5f5f5;padding:60px 0;margin-top:40px">
   <div class="sec">
-    <h2 data-zh="中国参建项目" data-en="Projects in China" data-es="Proyectos en China" data-de="Projekte in China">中国参建项目</h2>
-    <p data-zh="PERI 在中国的标志性工程项目" data-en="PERI's landmark projects in China" data-es="Proyectos emblemáticos de PERI en China" data-de="PERIs Leuchtturmprojekte in China">PERI 在中国的标志性工程项目</p>
+    <h2 data-zh="中国参建项目" data-en="Projects in China" data-es="Proyectos en China" data-de="Projekte in China" data-pt="Projetos na China" data-sr="Projekti u Kini" data-hu="Projektek Kínában">中国参建项目</h2>
+    <p data-zh="PERI 在中国的标志性工程项目" data-en="PERI's landmark projects in China" data-es="Proyectos emblemáticos de PERI en China" data-de="PERIs Leuchtturmprojekte in China" data-pt="Projetos emblemáticos da PERI na China" data-sr="PERI-jevi značajni projekti u Kini" data-hu="PERI mérföldkő projektjei Kínában">PERI 在中国的标志性工程项目</p>
   </div>
-  <div class="grid grid-3" style="max-width:1200px;margin:0 auto;padding:0 32px">
-    {china_projects_html}
+
+  <!-- Carousel Container -->
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;position:relative;overflow:hidden">
+    <div id="projectCarousel" class="grid grid-3" style="transition:transform 0.5s ease">
+      {china_projects_html}
+    </div>
+    <button onclick="scrollCarousel(-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:rgba(227,0,15,0.9);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:20px;z-index:10">‹</button>
+    <button onclick="scrollCarousel(1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:rgba(227,0,15,0.9);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:20px;z-index:10">›</button>
   </div>
+
+  <script>
+  let carouselIndex = 0;
+  function scrollCarousel(dir) {{
+    const carousel = document.getElementById('projectCarousel');
+    const cards = carousel.children;
+    const totalCards = cards.length;
+    carouselIndex = (carouselIndex + dir + totalCards) % totalCards;
+    const cardWidth = cards[0].offsetWidth + 24;
+    carousel.style.transform = 'translateX(-' + (carouselIndex * cardWidth) + 'px)';
+  }}
+  setInterval(() => scrollCarousel(1), 5000);
+  </script>
+
   <div style="text-align:center;padding:32px">
     <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
-       data-zh="查看更多项目" data-en="View More Projects" data-es="Ver Más Proyectos" data-de="Mehr Projekte ansehen">
+       data-zh="查看更多项目" data-en="View More Projects" data-es="Ver Más Proyectos" data-de="Mehr Projekte ansehen" data-pt="Ver Mais Projetos" data-sr="Pogledaj Više Projekata" data-hu="További Projektek">
        查看更多项目
     </a>
   </div>
