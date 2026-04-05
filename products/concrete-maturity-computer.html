@@ -143,24 +143,46 @@ footer a{color:var(--yellow)}
          📄 产品手册 PDF
       </a>
       <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})"
-              data-zh="发送询价" data-en="Send Inquiry" data-es="Enviar Consulta" data-de="Anfrage senden">
-              发送询价
+              data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">
+              发表留言
       </button>
     </div>
 
     <div class="inquiry-box" id="inquiry" style="margin-top:24px">
-      <h3 data-zh="产品询价" data-en="Product Inquiry" data-es="Consulta de Producto" data-de="Produktanfrage">产品询价</h3>
-      <div class="form-row">
-        <input type="text" placeholder="姓名 / Name" id="fi-name">
-        <input type="email" placeholder="邮箱 / Email" id="fi-email">
-      </div>
-      <div class="form-row">
-        <input type="text" placeholder="公司 / Company" id="fi-company">
-        <input type="text" placeholder="国家 / Country" id="fi-country">
-      </div>
-      <textarea placeholder="询价内容 / Inquiry message..." id="fi-msg" rows="3"></textarea>
-      <button class="btn btn-red" onclick="sendInquiry('混凝土强度测试仪')"
-              data-zh="发送" data-en="Send" data-es="Enviar" data-de="Senden">发送</button>
+      <h3 data-zh="产品留言板" data-en="Product Comments" data-es="Comentarios del Producto" data-de="Produktkommentare">产品留言板</h3>
+      <p style="font-size:13px;color:#666;margin-bottom:16px"
+         data-zh="分享您对此产品的看法、使用经验或提出问题"
+         data-en="Share your thoughts, experience or questions about this product"
+         data-es="Comparte tus opiniones, experiencia o preguntas sobre este producto"
+         data-de="Teilen Sie Ihre Gedanken, Erfahrungen oder Fragen zu diesem Produkt">
+         分享您对此产品的看法、使用经验或提出问题
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="comment-form">
+        <input type="hidden" name="access_key" value="bb073dfc-3b76-4263-897d-365fe7b6762a">
+        <input type="hidden" name="subject" value="PERI产品留言: 混凝土强度测试仪">
+        <input type="hidden" name="from_name" value="PERI GCB 留言板">
+        <input type="hidden" name="product" value="混凝土强度测试仪">
+        <input type="hidden" name="product_url" value="https://cn.peri.com/products/concrete-maturity-computer.html">
+        <input type="hidden" name="redirect" value="https://kiminanoliu-eng.github.io/peri-gcb/products/concrete-maturity-computer.html?submitted=true">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="姓名 / Name *" required>
+          <input type="text" name="company" placeholder="公司 / Company *" required>
+        </div>
+        <div class="form-row">
+          <input type="text" name="project" placeholder="项目名称 / Project Name">
+          <input type="email" name="email" placeholder="邮箱 / Email (可选)">
+        </div>
+        <textarea name="message" placeholder="留言内容 / Message *" rows="4" required></textarea>
+        <button type="submit" class="btn btn-red"
+                data-zh="发布留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">发布留言</button>
+        <p style="font-size:11px;color:#999;margin-top:8px"
+           data-zh="提交后，您的留言将发送到我们的邮箱进行审核"
+           data-en="Your comment will be sent to our email for review"
+           data-es="Su comentario será enviado a nuestro correo para revisión"
+           data-de="Ihr Kommentar wird zur Überprüfung an unsere E-Mail gesendet">
+           提交后，您的留言将发送到我们的邮箱进行审核
+        </p>
+      </form>
     </div>
   </div>
 </div>
@@ -230,14 +252,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 </script>
 <script>
-function sendInquiry(product){
-  const name=document.getElementById('fi-name').value;
-  const email=document.getElementById('fi-email').value;
-  const company=document.getElementById('fi-company').value;
-  const country=document.getElementById('fi-country').value;
-  const msg=document.getElementById('fi-msg').value;
-  const body=`产品询价: ${product}\n姓名: ${name}\n公司: ${company}\n国家: ${country}\n\n${msg}`;
-  window.location='mailto:?subject=PERI产品询价: '+encodeURIComponent(product)+'&body='+encodeURIComponent(body);
-}
+// Form submission success handling
+document.getElementById('comment-form')?.addEventListener('submit', function(e) {
+  const btn = this.querySelector('button[type="submit"]');
+  btn.textContent = '发送中...';
+  btn.disabled = true;
+});
 </script>
 </body></html>
