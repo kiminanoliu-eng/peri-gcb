@@ -52,6 +52,13 @@ try:
 except:
     CHINA_PROJECTS = []
 
+# Load PDF links
+try:
+    with open(os.path.join(BASE, 'product_pdf_links.json'), encoding='utf-8') as f:
+        PDF_LINKS = json.load(f)
+except:
+    PDF_LINKS = {}
+
 PERI_RED   = '#e3000f'
 PERI_YELLOW= '#f5a800'
 
@@ -551,6 +558,9 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     cat_display = cat_key.replace('_', '/')
     cn_url = f'https://cn.peri.com/products/{slug}.html'
 
+    # Get PDF link
+    pdf_url = PDF_LINKS.get(slug, cn_url)
+
     # Determine back-link for breadcrumb
     if subcat:
         back_cat_slug = subcat['slug']
@@ -653,7 +663,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
          data-pt="↗ Ver no PERI China" data-sr="↗ Pogledaj na PERI China" data-hu="↗ Megtekintés a PERI China oldalon">
          ↗ 前往中文官网查看
       </a>
-      <a href="{cn_url}" target="_blank" class="btn btn-yellow"
+      <a href="{pdf_url}" target="_blank" class="btn btn-yellow"
          data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF"
          data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF" data-hu="📄 Termékismertető PDF">
          📄 产品手册 PDF
