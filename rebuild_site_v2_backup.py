@@ -45,13 +45,6 @@ os.makedirs(PRODS_DIR, exist_ok=True)
 with open(os.path.join(BASE, 'products_v2.json'), encoding='utf-8') as f:
     DATA = json.load(f)
 
-# Load China projects
-try:
-    with open(os.path.join(BASE, 'china_projects.json'), encoding='utf-8') as f:
-        CHINA_PROJECTS = json.load(f)['projects']
-except:
-    CHINA_PROJECTS = []
-
 PERI_RED   = '#e3000f'
 PERI_YELLOW= '#f5a800'
 
@@ -272,20 +265,6 @@ def build_homepage():
       </div>
     </div>'''
 
-    # Generate China projects cards
-    china_projects_html = ''
-    for proj in CHINA_PROJECTS:
-        china_projects_html += f'''
-    <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
-      <img class="card-img" src="{proj['image']}" alt="{proj['name_zh']}" loading="lazy">
-      <div class="card-body">
-        <div class="card-badge-red" data-zh="参建项目" data-en="Project" data-es="Proyecto" data-de="Projekt">参建项目</div>
-        <div class="card-title" data-zh="{proj['name_zh']}" data-en="{proj['name_en']}">{proj['name_zh']}</div>
-        <div class="card-desc">{proj['description']}</div>
-        <div style="font-size:11px;color:#999;margin-top:8px">📍 {proj['location']}</div>
-      </div>
-    </div>'''
-
     html = f'''<!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -317,23 +296,6 @@ def build_homepage():
      data-es="Visitar cn.peri.com para ver todos los productos" data-de="cn.peri.com besuchen für alle Produkte">
      访问 cn.peri.com 查看全部产品
   </a>
-</div>
-
-<!-- China Projects Section -->
-<div style="background:#f5f5f5;padding:60px 0;margin-top:40px">
-  <div class="sec">
-    <h2 data-zh="中国参建项目" data-en="Projects in China" data-es="Proyectos en China" data-de="Projekte in China">中国参建项目</h2>
-    <p data-zh="PERI 在中国的标志性工程项目" data-en="PERI's landmark projects in China" data-es="Proyectos emblemáticos de PERI en China" data-de="PERIs Leuchtturmprojekte in China">PERI 在中国的标志性工程项目</p>
-  </div>
-  <div class="grid grid-3" style="max-width:1200px;margin:0 auto;padding:0 32px">
-    {china_projects_html}
-  </div>
-  <div style="text-align:center;padding:32px">
-    <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
-       data-zh="查看更多项目" data-en="View More Projects" data-es="Ver Más Proyectos" data-de="Mehr Projekte ansehen">
-       查看更多项目
-    </a>
-  </div>
 </div>
 
 {footer_html()}
@@ -593,10 +555,6 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
          data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen">
          ↗ 前往中文官网查看
       </a>
-      <a href="{cn_url}" target="_blank" class="btn btn-yellow"
-         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF">
-         📄 产品手册 PDF
-      </a>
       <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({{behavior:'smooth'}})"
               data-zh="发送询价" data-en="Send Inquiry" data-es="Enviar Consulta" data-de="Anfrage senden">
               发送询价
@@ -621,34 +579,6 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
 </div>
 
 {yt_section}
-
-<!-- Project Examples Section -->
-<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
-        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele">
-        应用项目示例
-    </h3>
-    <p style="color:#666;margin-bottom:32px;font-size:14px"
-       data-zh="查看此产品在实际工程中的应用案例" data-en="See this product in real construction projects"
-       data-es="Ver este producto en proyectos reales" data-de="Sehen Sie dieses Produkt in echten Projekten">
-       查看此产品在实际工程中的应用案例
-    </p>
-    <div style="text-align:center;padding:40px;background:white;border:2px dashed #ddd;border-radius:8px">
-      <div style="font-size:48px;margin-bottom:16px;opacity:0.3">🏗️</div>
-      <p style="color:#999;margin-bottom:20px"
-         data-zh="项目示例即将添加" data-en="Project examples coming soon"
-         data-es="Ejemplos próximamente" data-de="Beispiele folgen bald">
-         项目示例即将添加
-      </p>
-      <a href="{cn_url}" target="_blank" class="btn btn-outline"
-         data-zh="在官网查看项目案例" data-en="View projects on PERI China"
-         data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
-         在官网查看项目案例
-      </a>
-    </div>
-  </div>
-</div>
 
 {footer_html()}
 {LANG_JS}
