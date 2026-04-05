@@ -1,272 +1,159 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <title>MULTIFLEX 木梁式楼板模板 — PERI GCB</title>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-:root{--red:#e3000f;--yellow:#f5a800;--dark:#1a1a1a;--grey:#f4f4f4}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--dark);background:#fff}
-a{color:inherit;text-decoration:none}
-/* NAV */
-.nav{background:#fff;display:flex;align-items:center;padding:0 32px;height:70px;position:sticky;top:0;z-index:100;border-bottom:1px solid #e0e0e0;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto}
-.nav-logo img{height:40px}
-.nav-logo span{color:var(--dark);font-size:15px;font-weight:600}
-.nav-links{display:flex;gap:28px}
-.nav-links a{color:#666;font-size:13px;transition:.2s;font-weight:500}
-.nav-links a:hover{color:var(--red)}
-.lang-bar{display:flex;gap:8px;margin-left:24px}
-.lang-bar button{background:none;border:1px solid #ddd;color:#666;padding:4px 10px;border-radius:4px;font-size:11px;cursor:pointer;transition:.2s;font-weight:500}
-.lang-bar button:hover,.lang-bar button.active{background:var(--red);border-color:var(--red);color:#fff}
-/* HERO */
-.hero{background:#fff;color:var(--dark);padding:60px 32px;text-align:center;border-bottom:3px solid var(--red)}
-.hero h1{font-size:2.2rem;margin-bottom:12px;color:var(--dark)}
-.hero p{font-size:1rem;color:#666;max-width:560px;margin:0 auto}
-/* BREADCRUMB */
-.breadcrumb{padding:12px 32px;font-size:13px;color:#888;border-bottom:1px solid #eee;background:#fafafa}
-.breadcrumb a{color:var(--red)}
-.breadcrumb a:hover{text-decoration:underline}
-/* CARDS */
-.grid{display:grid;gap:24px;padding:32px;max-width:1200px;margin:0 auto}
-.grid-3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.grid-4{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.card{background:#fff;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
-.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0;display:block}
-.card-img-placeholder{width:100%;height:180px;background:linear-gradient(135deg,#e8e8e8,#d0d0d0);display:flex;align-items:center;justify-content:center;font-size:40px;color:#aaa}
-.card-body{padding:16px}
-.card-badge{display:inline-block;background:var(--yellow);color:var(--dark);font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
-.card-badge-red{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:8px}
-.card-title{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3}
-.card-desc{font-size:12px;color:#666;line-height:1.5;margin-bottom:12px}
-.card-count{font-size:11px;color:#999}
-/* SUBCATEGORY STRIP */
-.subcat-strip{padding:8px 32px;background:#f9f9f9;border-bottom:1px solid #eee;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.subcat-strip span{font-size:12px;color:#888}
-.subcat-chip{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:var(--yellow);color:var(--dark);cursor:pointer;transition:.15s}
-.subcat-chip:hover{background:var(--red);color:#fff}
-/* SECTION TITLE */
-.sec{padding:24px 32px 0}
-.sec h2{font-size:1.4rem;border-left:4px solid var(--red);padding-left:12px}
-.sec p{color:#666;font-size:13px;margin-top:6px}
-/* BTN */
-.btn{display:inline-block;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;border:none}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:#b8000b}
-.btn-outline{background:none;border:2px solid var(--red);color:var(--red)}
-.btn-outline:hover{background:var(--red);color:#fff}
-/* PRODUCT PAGE */
-.prod-hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1100px;margin:0 auto;padding:32px}
-.prod-img{width:100%;max-height:400px;object-fit:contain;border-radius:8px;background:#f5f5f5}
-.prod-info h1{font-size:1.8rem;margin-bottom:12px}
-.prod-info .badge{background:var(--red);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px}
-.prod-info .badge-subcat{background:var(--yellow);color:var(--dark);padding:3px 10px;border-radius:3px;font-size:11px;display:inline-block;margin-bottom:12px;margin-left:6px}
-.prod-info p{color:#555;line-height:1.7;margin-bottom:20px}
-.prod-cta{display:flex;gap:12px;flex-wrap:wrap}
-/* INQUIRY FORM */
-.inquiry-box{background:var(--grey);border-radius:8px;padding:24px;margin-top:32px}
-.inquiry-box h3{margin-bottom:16px;font-size:1rem}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.form-row input,.form-row select,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px}
-textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:13px;resize:vertical;min-height:80px;margin-bottom:12px}
-/* FOOTER */
-footer{background:var(--dark);color:#aaa;text-align:center;padding:32px;font-size:12px;margin-top:64px}
-footer a{color:var(--yellow)}
-/* SEARCH */
-.search-bar{display:flex;gap:8px;max-width:500px;margin:20px auto 0}
-.search-bar input{flex:1;padding:10px 16px;border:2px solid #ddd;background:#fff;color:var(--dark);border-radius:4px;font-size:14px}
-.search-bar input::placeholder{color:#999}
-.search-bar button{padding:10px 20px;background:var(--red);color:#fff;border:none;border-radius:4px;cursor:pointer}
-#search-results{padding:24px 32px;max-width:1200px;margin:0 auto}
-/* YOUTUBE */
-.yt-section{max-width:1100px;margin:0 auto;padding:0 32px 40px}
-.yt-section h3{font-size:1.05rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;border-left:4px solid #ff0000;padding-left:12px}
-.yt-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
-.yt-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.btn-yt{background:#ff0000;color:#fff;display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;transition:.2s}
-.btn-yt:hover{background:#cc0000;color:#fff}
-/* CLICKABLE IMAGE HINT */
-.prod-img-link{display:block;position:relative}
-.prod-img-link::after{content:'↗ cn.peri.com';position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 8px;border-radius:3px;opacity:0;transition:.2s}
-.prod-img-link:hover::after{opacity:1}
-@media(max-width:700px){
-  .prod-hero{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-  .grid-3,.grid-4{grid-template-columns:1fr 1fr}
-  .hero h1{font-size:1.6rem}
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULTIFLEX 木梁式楼板模板 - PERI GCB 派利产品中文介绍HUB</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class="nav">
-  <div class="nav-logo">
-    <img src="../peri-logo.webp" alt="PERI">
-    <span data-zh="GCB 派利产品中文介绍HUB" data-en="GCB PERI Product Hub" data-es="GCB Centro de Productos PERI" data-de="GCB PERI Produktzentrum" data-pt="GCB Centro de Produtos PERI" data-sr="GCB PERI Centar Proizvoda" data-hu="GCB PERI Termékközpont">GCB 派利产品中文介绍HUB</span>
-  </div>
-  <div class="nav-links">
-    <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite" data-pt="Início" data-sr="Početna" data-hu="Kezdőlap">首页</a>
-    <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China" data-pt="PERI China" data-sr="PERI China" data-hu="PERI China">中文官网</a>
-  </div>
-  <div class="lang-bar">
-    <button data-l="zh" onclick="setLang('zh')">中文</button>
-    <button data-l="en" onclick="setLang('en')">EN</button>
-    <button data-l="pt" onclick="setLang('pt')">PT</button>
-    <button data-l="sr" onclick="setLang('sr')">SR</button>
-    <button data-l="es" onclick="setLang('es')">ES</button>
-    <button data-l="hu" onclick="setLang('hu')">HU</button>
-  </div>
-</nav>
-<div class="breadcrumb">
-  <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite">首页</a> ›
-  <a href="../categories/building-formwork.html" data-zh="建筑模板系统" data-en="Building Formwork Systems" data-es="Sistemas de Encofrado" data-de="Schalungssysteme">建筑模板系统</a> ›
-  <a href="../categories/slab-formwork.html" data-zh="楼板模板" data-en="Slab Formwork" data-es="Encofrado de Losas" data-de="Deckenschalung">楼板模板</a> ›
-  <span>MULTIFLEX 木梁式楼板模板</span>
-</div>
-
-<div class="prod-hero">
-  <div>
-    <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" class="prod-img-link" title="点击前往 cn.peri.com 查看完整产品信息"><img class="prod-img" src="https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901234/23820/multiflex.jpg" alt="MULTIFLEX 木梁式楼板模板" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div style="display:none;width:100%;height:300px;background:#f0f0f0;align-items:center;justify-content:center;font-size:60px;border-radius:8px">🔧</div></a><p style="font-size:11px;color:#999;margin-top:6px;text-align:center">↗ <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" style="color:var(--red)">在 cn.peri.com 查看完整信息</a></p>
-  </div>
-  <div class="prod-info">
-    <span class="badge" data-zh="建筑模板系统" data-en="Building Formwork Systems" data-es="Sistemas de Encofrado" data-de="Schalungssysteme">建筑模板系统</span><span class="badge-subcat" data-zh="楼板模板" data-en="Slab Formwork" data-es="Encofrado de Losas" data-de="Deckenschalung">楼板模板</span>
-    <h1>MULTIFLEX 木梁式楼板模板</h1>
-    <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px">灵活多变的木梁楼板模板系统。</p>
-    <div class="prod-cta">
-      <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" class="btn btn-red"
-         data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen">
-         ↗ 前往中文官网查看
+  <nav>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <span data-zh="GCB 派利产品中文介绍HUB" data-en="GCB PERI Product Hub" data-es="GCB Centro de Productos PERI"
+              data-de="GCB PERI Produktzentrum" data-pt="GCB Centro de Produtos PERI" data-sr="GCB PERI Centar Proizvoda"
+              data-hu="GCB PERI Termékközpont">GCB 派利产品中文介绍HUB</span>
       </a>
-      <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" class="btn btn-yellow"
-         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF">
-         📄 产品手册 PDF
-      </a>
-      <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})"
-              data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">
-              发表留言
-      </button>
+      <div class="nav-right">
+        <select id="lang-switcher" onchange="switchLanguage(this.value)">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="de">Deutsch</option>
+          <option value="pt">Português</option>
+          <option value="sr">Српски</option>
+          <option value="hu">Magyar</option>
+        </select>
+        <a href="../search.html" class="btn btn-outline">
+          <span data-zh="🔍 搜索" data-en="🔍 Search" data-es="🔍 Buscar" data-de="🔍 Suchen"
+                data-pt="🔍 Pesquisar" data-sr="🔍 Претрага" data-hu="🔍 Keresés">🔍 搜索</span>
+        </a>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
 
-<div class="yt-section">
-  <h3>▶ <span data-zh="PERI 产品视频" data-en="PERI Product Video"
-               data-es="Video del Producto PERI" data-de="PERI Produktvideo">PERI 产品视频</span></h3>
-    <div class="yt-embed">
-    <iframe src="https://www.youtube-nocookie.com/embed/kHOmVl6O5us"
-            title="MULTIFLEX 木梁式楼板模板 — PERI Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-  </div>
-  <a href="https://www.youtube.com/@perigroup/search?query=MULTIFLEX%20%E6%9C%A8%E6%A2%81%E5%BC%8F%E6%A5%BC%E6%9D%BF%E6%A8%A1%E6%9D%BF" target="_blank" class="btn btn-yt"
-     data-zh="在 PERI YouTube 频道搜索此产品" data-en="Search this product on PERI YouTube"
-     data-es="Buscar en PERI YouTube" data-de="Auf PERI YouTube suchen">
-    ▶&nbsp; 在 PERI YouTube 频道搜索
-  </a>
-</div>
+  <div class="container" style="margin-top:80px">
+    <div class="breadcrumb">
+      <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite"
+         data-pt="Início" data-sr="Почетна" data-hu="Kezdőlap">首页</a> ›
+      <a href="../categories/building-formwork.html" data-zh="建筑模板系统" data-en="Building Formwork Systems"
+         data-es="Sistemas de Encofrado" data-de="Schalungssysteme" data-pt="Sistemas de Cofragem"
+         data-sr="Sistemi Oplate" data-hu="Zsaluzási Rendszerek">建筑模板系统</a> ›
+      <a href="../categories/wall-formwork.html" data-zh="楼板模板" data-en="Wall Formwork"
+         data-es="Encofrado de Muros" data-de="Wandschalung" data-pt="Cofragem de Paredes"
+         data-sr="Oplata Zidova" data-hu="Falzsaluzat">楼板模板</a> ›
+      <span>MULTIFLEX 木梁式楼板模板</span>
+    </div>
 
-<!-- Project Examples Section -->
-<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
-        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele">
-        应用项目示例
-    </h3>
+    <div class="product-hero">
+      <img src="https://cdn.peri.cloud/dam/jcr:7497f465-c3b9-4052-93ce-7d91ffbf55a3/23853/multiflex-木梁式-楼板模板.jpg" alt="MULTIFLEX 木梁式楼板模板" class="product-img">
+      <div class="product-info">
+        <h1>MULTIFLEX 木梁式楼板模板</h1>
+        <p class="product-desc"
+           data-zh="灵活的木梁式楼板模板系统，由VT 20K和GT 24木梁组成。可适应各种楼板造型，最大浇筑厚度1米。系统对主梁、次梁布置位置及模板板材选择无特殊限制。"
+           data-en="Flexible girder slab formwork system consisting of VT 20K and GT 24 timber beams. Adapts to various slab configurations with maximum casting thickness of 1 meter. The system has no special restrictions on primary/secondary beam placement or panel selection."
+           data-es="Sistema flexible de encofrado de losas con vigas compuesto por vigas de madera VT 20K y GT 24. Se adapta a varias configuraciones de losas con un espesor máximo de fundición de 1 metro. El sistema no tiene restricciones especiales en la colocación de vigas primarias/secundarias o selección de paneles."
+           data-de="Flexibles Trägerschalungssystem für Decken bestehend aus VT 20K und GT 24 Holzträgern. Passt sich verschiedenen Deckenkonfigurationen mit maximaler Betonierdicke von 1 Meter an. Das System hat keine besonderen Einschränkungen bei der Platzierung von Haupt-/Nebenträgern oder Panelauswahl."
+           data-pt="Sistema flexível de cofragem de lajes com vigas composto por vigas de madeira VT 20K e GT 24. Adapta-se a várias configurações de lajes com espessura máxima de concretagem de 1 metro. O sistema não tem restrições especiais na colocação de vigas primárias/secundárias ou seleção de painéis."
+           data-sr="Fleksibilan sistem gredne oplate ploča koji se sastoji od drvenih greda VT 20K i GT 24. Prilagođava se različitim konfiguracijama ploča sa maksimalnom debljinom betoniranja od 1 metar. Sistem nema posebna ograničenja u postavljanju primarnih/sekundarnih greda ili izboru panela."
+           data-hu="Rugalmas gerendás födémzsaluzási rendszer VT 20K és GT 24 fagerendákból. Alkalmazkodik különböző födémkonfigurációkhoz, maximum 1 méter betonozási vastagsággal. A rendszernek nincsenek különleges korlátozásai az elsődleges/másodlagos gerenda elhelyezésére vagy panel kiválasztására.">灵活的木梁式楼板模板系统，由VT 20K和GT 24木梁组成。可适应各种楼板造型，最大浇筑厚度1米。系统对主梁、次梁布置位置及模板板材选择无特殊限制。</p>
+
+        <div class="product-actions">
+          <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" class="btn btn-red"
+             data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China"
+             data-de="↗ Auf PERI China ansehen" data-pt="↗ Ver no PERI China" data-sr="↗ Pogledaj na PERI China"
+             data-hu="↗ Megtekintés a PERI China oldalon">↗ 前往中文官网查看</a>
+
+          <a href="https://www.peri.id/dam/jcr:18e76024-78e6-3a4c-b2f0-32272779a4d4/multiflex.pdf" target="_blank" class="btn btn-yellow"
+             data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF"
+             data-de="📄 Produktbroschüre PDF" data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF"
+             data-hu="📄 Termékismertető PDF">📄 产品手册 PDF</a>
+
+          <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})"
+                  data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten"
+                  data-pt="Publicar Comentário" data-sr="Objavi Komentar" data-hu="Hozzászólás Közzététele">发表留言</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:64px;margin-bottom:16px;font-size:24px"
+        data-zh="应用项目示例" data-en="Reference Projects" data-es="Proyectos de Referencia" data-de="Referenzprojekte"
+        data-pt="Projetos de Referência" data-sr="Referentni Projekti" data-hu="Referencia Projektek">应用项目示例</h3>
     <p style="color:#666;margin-bottom:32px;font-size:14px"
-       data-zh="查看此产品在实际工程中的应用案例" data-en="See this product in real construction projects"
-       data-es="Ver este producto en proyectos reales" data-de="Sehen Sie dieses Produkt in echten Projekten">
-       查看此产品在实际工程中的应用案例
-    </p>
-    <div style="text-align:center;padding:40px;background:white;border:2px dashed #ddd;border-radius:8px">
-      <div style="font-size:48px;margin-bottom:16px;opacity:0.3">🏗️</div>
-      <p style="color:#999;margin-bottom:20px"
-         data-zh="项目示例即将添加" data-en="Project examples coming soon"
-         data-es="Ejemplos próximamente" data-de="Beispiele folgen bald">
-         项目示例即将添加
-      </p>
-      <a href="https://cn.peri.com/products/multiflex-girder-slab-formwork.html" target="_blank" class="btn btn-outline"
-         data-zh="在官网查看项目案例" data-en="View projects on PERI China"
-         data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
-         在官网查看项目案例
-      </a>
-    </div>
-  </div>
-</div>
+       data-zh="查看派利产品在实际工程中的应用案例" data-en="See PERI products in real construction projects"
+       data-es="Ver productos PERI en proyectos reales" data-de="Sehen Sie PERI-Produkte in echten Projekten"
+       data-pt="Veja produtos PERI em projetos reais" data-sr="Pogledajte PERI proizvode u stvarnim projektima"
+       data-hu="Tekintse meg a PERI termékeket valós projektekben">查看派利产品在实际工程中的应用案例</p>
 
-<!-- Comment Board Section -->
-<div style="background:#fff;padding:60px 32px">
-  <div style="max-width:1100px;margin:0 auto">
-    <div class="inquiry-box" id="inquiry">
-      <h3 data-zh="产品留言板" data-en="Product Comments" data-es="Comentarios del Producto" data-de="Produktkommentare">产品留言板</h3>
-      <p style="font-size:13px;color:#666;margin-bottom:16px"
-         data-zh="分享您对此产品的看法、使用经验或提出问题"
-         data-en="Share your thoughts, experience or questions about this product"
-         data-es="Comparte tus opiniones, experiencia o preguntas sobre este producto"
-         data-de="Teilen Sie Ihre Gedanken, Erfahrungen oder Fragen zu diesem Produkt">
-         分享您对此产品的看法、使用经验或提出问题
-      </p>
+    <div class="grid grid-3" style="gap:24px">
+
+    </div>
+
+    <div style="margin-top:64px;margin-bottom:64px">
+      <h3 style="margin-bottom:16px;font-size:24px;display:flex;align-items:center;gap:8px"
+          data-zh="📺 产品视频介绍" data-en="📺 Product Video" data-es="📺 Video del Producto" data-de="📺 Produktvideo"
+          data-pt="📺 Vídeo do Produto" data-sr="📺 Видео Производа" data-hu="📺 Termék Videó">📺 产品视频介绍</h3>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)">
+        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+                src="https://www.youtube.com/embed/kHOmVl6O5us"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="inquiry" style="margin-top:80px;margin-bottom:80px">
+      <h3 style="margin-bottom:24px;font-size:24px"
+          data-zh="发表留言" data-en="Post a Comment" data-es="Publicar Comentario" data-de="Kommentar posten"
+          data-pt="Publicar Comentário" data-sr="Objavi Komentar" data-hu="Hozzászólás Közzététele">发表留言</h3>
+
       <form action="https://api.web3forms.com/submit" method="POST" id="comment-form">
         <input type="hidden" name="access_key" value="bb073dfc-3b76-4263-897d-365fe7b6762a">
-        <input type="hidden" name="subject" value="PERI产品留言: MULTIFLEX 木梁式楼板模板">
-        <input type="hidden" name="from_name" value="PERI GCB 留言板">
-        <input type="hidden" name="product" value="MULTIFLEX 木梁式楼板模板">
-        <input type="hidden" name="product_url" value="https://cn.peri.com/products/multiflex-girder-slab-formwork.html">
-        <input type="hidden" name="redirect" value="https://kiminanoliu-eng.github.io/peri-gcb/products/multiflex-girder-slab-formwork.html?submitted=true">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="姓名 / Name *" required>
-          <input type="text" name="company" placeholder="公司 / Company *" required>
+        <input type="hidden" name="subject" value="HANDSET Alpha 产品留言">
+
+        <div class="form-group">
+          <label data-zh="姓名" data-en="Name" data-es="Nombre" data-de="Name" data-pt="Nome" data-sr="Име" data-hu="Név">姓名</label>
+          <input type="text" name="name" required>
         </div>
-        <div class="form-row">
-          <input type="text" name="project" placeholder="项目名称 / Project Name">
-          <input type="email" name="email" placeholder="邮箱 / Email (可选)">
+
+        <div class="form-group">
+          <label data-zh="公司" data-en="Company" data-es="Empresa" data-de="Firma" data-pt="Empresa" data-sr="Компанија" data-hu="Cég">公司</label>
+          <input type="text" name="company">
         </div>
-        <textarea name="message" placeholder="留言内容 / Message *" rows="4" required></textarea>
+
+        <div class="form-group">
+          <label data-zh="项目" data-en="Project" data-es="Proyecto" data-de="Projekt" data-pt="Projeto" data-sr="Пројекат" data-hu="Projekt">项目</label>
+          <input type="text" name="project">
+        </div>
+
+        <div class="form-group">
+          <label data-zh="邮箱" data-en="Email" data-es="Correo" data-de="E-Mail" data-pt="E-mail" data-sr="Е-пошта" data-hu="E-mail">邮箱</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label data-zh="留言内容" data-en="Message" data-es="Mensaje" data-de="Nachricht" data-pt="Mensagem" data-sr="Порука" data-hu="Üzenet">留言内容</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+
         <button type="submit" class="btn btn-red"
-                data-zh="发布留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">发布留言</button>
-        <p style="font-size:11px;color:#999;margin-top:8px"
-           data-zh="提交后，您的留言将发送到我们的邮箱进行审核"
-           data-en="Your comment will be sent to our email for review"
-           data-es="Su comentario será enviado a nuestro correo para revisión"
-           data-de="Ihr Kommentar wird zur Überprüfung an unsere E-Mail gesendet">
-           提交后，您的留言将发送到我们的邮箱进行审核
-        </p>
+                data-zh="提交留言" data-en="Submit Comment" data-es="Enviar Comentario" data-de="Kommentar senden"
+                data-pt="Enviar Comentário" data-sr="Пошаљи Коментар" data-hu="Hozzászólás Küldése">提交留言</button>
       </form>
     </div>
   </div>
-</div>
 
-<footer>
-  <p data-zh="© PERI GCB 产品信息中心"
-     data-en="© PERI GCB Product Information Hub"
-     data-es="© PERI GCB Centro de Información de Productos"
-     data-de="© PERI GCB Produktinformationszentrum"
-     data-pt="© PERI GCB Centro de Informações de Produtos"
-     data-sr="© PERI GCB Centar za Informacije o Proizvodima"
-     data-hu="© PERI GCB Termékinformációs Központ">
-     © PERI GCB 产品信息中心</p>
-  <p style="margin-top:8px">
-    <a href="https://cn.peri.com" target="_blank">cn.peri.com</a>
-  </p>
-</footer>
-<script>
-const LANG_DATA={};
-function setLang(l){
-  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.textContent=el.dataset[l]});
-  document.querySelectorAll('.lang-bar button').forEach(b=>b.classList.toggle('active',b.dataset.l===l));
-  localStorage.setItem('periLang',l);
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  const saved=localStorage.getItem('periLang')||'zh';
-  setLang(saved);
-});
-</script>
-<script>
-// Form submission success handling
-document.getElementById('comment-form')?.addEventListener('submit', function(e) {
-  const btn = this.querySelector('button[type="submit"]');
-  btn.textContent = '发送中...';
-  btn.disabled = true;
-});
-</script>
-</body></html>
+  <footer>
+    <div class="container">
+      <p data-zh="© 2024 PERI GCB 派利产品中文介绍HUB - 非官方产品展示平台"
+         data-en="© 2024 PERI GCB Product Hub - Unofficial Product Showcase"
+         data-es="© 2024 PERI GCB Centro de Productos - Plataforma No Oficial"
+         data-de="© 2024 PERI GCB Produktzentrum - Inoffizielle Produktplattform"
+         data-pt="© 2024 PERI GCB Centro de Produtos - Plataforma Não Oficial"
+         data-sr="© 2024 PERI GCB Centar Proizvoda - Nezvanična Platforma"
+         data-hu="© 2024 PERI GCB Termékközpont - Nem Hivatalos Platform">© 2024 PERI GCB 派利产品中文介绍HUB - 非官方产品展示平台</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
