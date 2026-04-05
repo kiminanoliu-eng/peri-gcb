@@ -103,7 +103,7 @@ footer a{color:var(--yellow)}
 <nav class="nav">
   <div class="nav-logo">
     <img src="../peri-logo.webp" alt="PERI">
-    <span>GCB Hub</span>
+    <span data-zh="GCB 派利产品中文介绍HUB" data-en="GCB PERI Product Hub" data-es="GCB Centro de Productos PERI" data-de="GCB PERI Produktzentrum" data-pt="GCB Centro de Produtos PERI" data-sr="GCB PERI Centar Proizvoda" data-hu="GCB PERI Termékközpont">GCB 派利产品中文介绍HUB</span>
   </div>
   <div class="nav-links">
     <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite" data-pt="Início" data-sr="Početna" data-hu="Kezdőlap">首页</a>
@@ -147,43 +147,6 @@ footer a{color:var(--yellow)}
               发表留言
       </button>
     </div>
-
-    <div class="inquiry-box" id="inquiry" style="margin-top:24px">
-      <h3 data-zh="产品留言板" data-en="Product Comments" data-es="Comentarios del Producto" data-de="Produktkommentare">产品留言板</h3>
-      <p style="font-size:13px;color:#666;margin-bottom:16px"
-         data-zh="分享您对此产品的看法、使用经验或提出问题"
-         data-en="Share your thoughts, experience or questions about this product"
-         data-es="Comparte tus opiniones, experiencia o preguntas sobre este producto"
-         data-de="Teilen Sie Ihre Gedanken, Erfahrungen oder Fragen zu diesem Produkt">
-         分享您对此产品的看法、使用经验或提出问题
-      </p>
-      <form action="https://api.web3forms.com/submit" method="POST" id="comment-form">
-        <input type="hidden" name="access_key" value="bb073dfc-3b76-4263-897d-365fe7b6762a">
-        <input type="hidden" name="subject" value="PERI产品留言: 转运叉">
-        <input type="hidden" name="from_name" value="PERI GCB 留言板">
-        <input type="hidden" name="product" value="转运叉">
-        <input type="hidden" name="product_url" value="https://cn.peri.com/products/table-lifting-fork.html">
-        <input type="hidden" name="redirect" value="https://kiminanoliu-eng.github.io/peri-gcb/products/table-lifting-fork.html?submitted=true">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="姓名 / Name *" required>
-          <input type="text" name="company" placeholder="公司 / Company *" required>
-        </div>
-        <div class="form-row">
-          <input type="text" name="project" placeholder="项目名称 / Project Name">
-          <input type="email" name="email" placeholder="邮箱 / Email (可选)">
-        </div>
-        <textarea name="message" placeholder="留言内容 / Message *" rows="4" required></textarea>
-        <button type="submit" class="btn btn-red"
-                data-zh="发布留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">发布留言</button>
-        <p style="font-size:11px;color:#999;margin-top:8px"
-           data-zh="提交后，您的留言将发送到我们的邮箱进行审核"
-           data-en="Your comment will be sent to our email for review"
-           data-es="Su comentario será enviado a nuestro correo para revisión"
-           data-de="Ihr Kommentar wird zur Überprüfung an unsere E-Mail gesendet">
-           提交后，您的留言将发送到我们的邮箱进行审核
-        </p>
-      </form>
-    </div>
   </div>
 </div>
 
@@ -222,6 +185,48 @@ footer a{color:var(--yellow)}
          data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
          在官网查看项目案例
       </a>
+    </div>
+  </div>
+</div>
+
+<!-- Comment Board Section -->
+<div style="background:#fff;padding:60px 32px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div class="inquiry-box" id="inquiry">
+      <h3 data-zh="产品留言板" data-en="Product Comments" data-es="Comentarios del Producto" data-de="Produktkommentare">产品留言板</h3>
+      <p style="font-size:13px;color:#666;margin-bottom:16px"
+         data-zh="分享您对此产品的看法、使用经验或提出问题"
+         data-en="Share your thoughts, experience or questions about this product"
+         data-es="Comparte tus opiniones, experiencia o preguntas sobre este producto"
+         data-de="Teilen Sie Ihre Gedanken, Erfahrungen oder Fragen zu diesem Produkt">
+         分享您对此产品的看法、使用经验或提出问题
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="comment-form">
+        <input type="hidden" name="access_key" value="bb073dfc-3b76-4263-897d-365fe7b6762a">
+        <input type="hidden" name="subject" value="PERI产品留言: 转运叉">
+        <input type="hidden" name="from_name" value="PERI GCB 留言板">
+        <input type="hidden" name="product" value="转运叉">
+        <input type="hidden" name="product_url" value="https://cn.peri.com/products/table-lifting-fork.html">
+        <input type="hidden" name="redirect" value="https://kiminanoliu-eng.github.io/peri-gcb/products/table-lifting-fork.html?submitted=true">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="姓名 / Name *" required>
+          <input type="text" name="company" placeholder="公司 / Company *" required>
+        </div>
+        <div class="form-row">
+          <input type="text" name="project" placeholder="项目名称 / Project Name">
+          <input type="email" name="email" placeholder="邮箱 / Email (可选)">
+        </div>
+        <textarea name="message" placeholder="留言内容 / Message *" rows="4" required></textarea>
+        <button type="submit" class="btn btn-red"
+                data-zh="发布留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">发布留言</button>
+        <p style="font-size:11px;color:#999;margin-top:8px"
+           data-zh="提交后，您的留言将发送到我们的邮箱进行审核"
+           data-en="Your comment will be sent to our email for review"
+           data-es="Su comentario será enviado a nuestro correo para revisión"
+           data-de="Ihr Kommentar wird zur Überprüfung an unsere E-Mail gesendet">
+           提交后，您的留言将发送到我们的邮箱进行审核
+        </p>
+      </form>
     </div>
   </div>
 </div>

@@ -206,7 +206,7 @@ def nav_html(active='home'):
     return f'''<nav class="nav">
   <div class="nav-logo">
     <img src="../peri-logo.webp" alt="PERI">
-    <span>GCB Hub</span>
+    <span data-zh="GCB 派利产品中文介绍HUB" data-en="GCB PERI Product Hub" data-es="GCB Centro de Productos PERI" data-de="GCB PERI Produktzentrum" data-pt="GCB Centro de Produtos PERI" data-sr="GCB PERI Centar Proizvoda" data-hu="GCB PERI Termékközpont">GCB 派利产品中文介绍HUB</span>
   </div>
   <div class="nav-links">
     <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite" data-pt="Início" data-sr="Početna" data-hu="Kezdőlap">首页</a>
@@ -226,7 +226,7 @@ def nav_html_root():
     return '''<nav class="nav">
   <div class="nav-logo">
     <img src="peri-logo.webp" alt="PERI">
-    <span>GCB Hub</span>
+    <span data-zh="GCB 派利产品中文介绍HUB" data-en="GCB PERI Product Hub" data-es="GCB Centro de Productos PERI" data-de="GCB PERI Produktzentrum" data-pt="GCB Centro de Produtos PERI" data-sr="GCB PERI Centar Proizvoda" data-hu="GCB PERI Termékközpont">GCB 派利产品中文介绍HUB</span>
   </div>
   <div class="nav-links">
     <a href="https://cn.peri.com" target="_blank" data-zh="中文官网" data-en="PERI China" data-es="PERI China" data-de="PERI China" data-pt="PERI China" data-sr="PERI China" data-hu="PERI China">中文官网</a>
@@ -638,8 +638,43 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
               发表留言
       </button>
     </div>
+  </div>
+</div>
 
-    <div class="inquiry-box" id="inquiry" style="margin-top:24px">
+{yt_section}
+
+<!-- Project Examples Section -->
+<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
+        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele">
+        应用项目示例
+    </h3>
+    <p style="color:#666;margin-bottom:32px;font-size:14px"
+       data-zh="查看此产品在实际工程中的应用案例" data-en="See this product in real construction projects"
+       data-es="Ver este producto en proyectos reales" data-de="Sehen Sie dieses Produkt in echten Projekten">
+       查看此产品在实际工程中的应用案例
+    </p>
+    <div style="text-align:center;padding:40px;background:white;border:2px dashed #ddd;border-radius:8px">
+      <div style="font-size:48px;margin-bottom:16px;opacity:0.3">🏗️</div>
+      <p style="color:#999;margin-bottom:20px"
+         data-zh="项目示例即将添加" data-en="Project examples coming soon"
+         data-es="Ejemplos próximamente" data-de="Beispiele folgen bald">
+         项目示例即将添加
+      </p>
+      <a href="{cn_url}" target="_blank" class="btn btn-outline"
+         data-zh="在官网查看项目案例" data-en="View projects on PERI China"
+         data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
+         在官网查看项目案例
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Comment Board Section -->
+<div style="background:#fff;padding:60px 32px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div class="inquiry-box" id="inquiry">
       <h3 data-zh="产品留言板" data-en="Product Comments" data-es="Comentarios del Producto" data-de="Produktkommentare">产品留言板</h3>
       <p style="font-size:13px;color:#666;margin-bottom:16px"
          data-zh="分享您对此产品的看法、使用经验或提出问题"
@@ -674,36 +709,6 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
            提交后，您的留言将发送到我们的邮箱进行审核
         </p>
       </form>
-    </div>
-  </div>
-</div>
-
-{yt_section}
-
-<!-- Project Examples Section -->
-<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
-        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele">
-        应用项目示例
-    </h3>
-    <p style="color:#666;margin-bottom:32px;font-size:14px"
-       data-zh="查看此产品在实际工程中的应用案例" data-en="See this product in real construction projects"
-       data-es="Ver este producto en proyectos reales" data-de="Sehen Sie dieses Produkt in echten Projekten">
-       查看此产品在实际工程中的应用案例
-    </p>
-    <div style="text-align:center;padding:40px;background:white;border:2px dashed #ddd;border-radius:8px">
-      <div style="font-size:48px;margin-bottom:16px;opacity:0.3">🏗️</div>
-      <p style="color:#999;margin-bottom:20px"
-         data-zh="项目示例即将添加" data-en="Project examples coming soon"
-         data-es="Ejemplos próximamente" data-de="Beispiele folgen bald">
-         项目示例即将添加
-      </p>
-      <a href="{cn_url}" target="_blank" class="btn btn-outline"
-         data-zh="在官网查看项目案例" data-en="View projects on PERI China"
-         data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
-         在官网查看项目案例
-      </a>
     </div>
   </div>
 </div>

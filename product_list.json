@@ -1,0 +1,1282 @@
+[
+  {
+    "slug": "handset-alpha",
+    "name": "HANDSET Alpha 模块化模板系统",
+    "desc": "便于徒手操作、灵活、轻质的模板系统",
+    "img": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "vario-gt-24-girder-wall-formwork",
+    "name": "VARIO GT 24 木梁式墙模",
+    "desc": "久经考验的GT 24木梁模板系统，适用于任何类型的工程。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-%E6%9C%A8%E6%A2%81%E5%BC%8F%E5%A2%99%E6%A8%A1.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "uno-formwork-system",
+    "name": "UNO 墙模",
+    "desc": "适用于相同构造的住宅建筑，立模简单、高效、快速。",
+    "img": "https://cdn.peri.cloud/dam/jcr:3453e69c-1cc3-4ac4-b2dc-daa568c88ce2/23723/peri-uno.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "trio-rahmenschalung",
+    "name": "TRIO 框式模板",
+    "desc": "TRIO框式模板系统，用于各种墙体浇筑。",
+    "img": "https://cdn.peri.cloud/dam/jcr:53e3559b-cf25-4eef-a2a5-ac38db3fa423/23717/trio-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "maximo-panel-formwork",
+    "name": "MAXIMO 框式模板",
+    "desc": "高效、坚固的大型框式模板系统，适用于大面积墙体浇筑，拥有出色的混凝土成型质量。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e905cbcd-e9f6-4c0f-8383-e5c0d98a14c0/23026/maximo-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.png",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "domino-panel-formwork",
+    "name": "DOMINO 框式模板",
+    "desc": "模块化框式模板，灵活适用于各种工程。",
+    "img": "https://cdn.peri.cloud/dam/jcr:02a159fc-6321-47ce-9019-7083d8dec5d6/23091/domino-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF",
+    "name": "LIWA 钢框模板",
+    "desc": "轻型钢框模板，高效经济。",
+    "img": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "sb-brace-frame",
+    "name": "SB 单侧支架",
+    "desc": "为高达8.75米的单侧模板提供可靠的受力支撑。",
+    "img": "https://cdn.peri.cloud/dam/jcr:4bfd5515-7915-4e45-a794-9101e8f2be24/23693/sb-%E5%8D%95%E4%BE%A7%E6%94%AF%E6%9E%B6.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "rundflex-plus-rundschalung",
+    "name": "RUNDFLEX Plus 曲面模板",
+    "desc": "用于浇筑圆形或弧形结构的曲面模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c8737c1e-d50b-4451-ad04-331d84b7589a/23704/peri-rundflex-plus-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "rundflex-circular-wall-formwork",
+    "name": "RUNDFLEX 曲面模板",
+    "desc": "适用于各种半径的圆形墙体浇筑。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a468190d-84d6-47af-be74-357625b65f3f/23018/peri-rundflex-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "grv-rundschalung",
+    "name": "GRV 曲面模板",
+    "desc": "无需穿墙拉杆，对桶形结构建筑进行浇筑。",
+    "img": "https://cdn.peri.cloud/dam/jcr:26bdff4b-2ce4-4728-a122-5cc84a30734f/23078/grv-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "墙模"
+  },
+  {
+    "slug": "vario-quattro-column-formwork",
+    "name": "VARIO QUATTRO 柱模",
+    "desc": "可展开的木梁柱模，适用于较大截面的立柱。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123456/23620/vario-quattro.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "vario-gt-24-column-formwork",
+    "name": "VARIO GT 24 柱模",
+    "desc": "截面无级调节，可浇筑所有高度的立柱。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234567/23630/vario-gt24-col.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "trio-schalungssystem",
+    "name": "TRIO 柱模",
+    "desc": "是对TRIO墙模系统极具意义的补充。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c9d0e1f2-a3b4-5678-cdef-789012345678/23640/trio-col.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "srs-saeulenrundschalung",
+    "name": "SRS 圆柱模",
+    "desc": "圆柱型钢模保证了顶级混凝土墙面质量。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456789/23650/srs.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "rapid-column-formwork",
+    "name": "RAPID 柱模",
+    "desc": "可满足对混凝土墙面及边角成型的最高要求。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567890/23660/rapid.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "quattro-column-formwork",
+    "name": "QUATTRO 柱模",
+    "desc": "模板、斜撑和平台可整体转运。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f2a3b4c5-d6e7-8901-fabc-012345678901/23670/quattro.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "lico-column-formwork",
+    "name": "LICO 柱模",
+    "desc": "轻型经济的柱模，立模不依赖吊车。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f6f67d39-eba3-4537-86b7-69a595794b2f/23672/lico-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "柱模"
+  },
+  {
+    "slug": "skymax-grosspaneel-deckenschalung",
+    "name": "SKYMAX 大面积楼板模板",
+    "desc": "轻质的模板系统确保快速、轻松立模。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a3b4c5d6-e7f8-9012-abcd-123456789012/23800/skymax.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "skydeck-slab-formwork",
+    "name": "SKYDECK 模块化楼板模板",
+    "desc": "效率极高的模块化楼板模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b4c5d6e7-f8a9-0123-bcde-234567890123/23810/skydeck.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "multiflex-girder-slab-formwork",
+    "name": "MULTIFLEX 木梁式楼板模板",
+    "desc": "灵活多变的木梁楼板模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901234/23820/multiflex.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "gridflex-deckenschalung",
+    "name": "GRIDFLEX 框架楼板模板",
+    "desc": "高效的框架式楼板模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d6e7f8a9-b0c1-2345-defa-456789012345/23830/gridflex.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "variodeck-steel-waler-slab-table",
+    "name": "VARIODECK 钢梁台模",
+    "desc": "适用于浇筑大面积楼板或安装较重预制件的钢梁台模系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:336927cd-8a80-4b6a-83bb-af6021987028/23797/variodeck-%E9%92%A2%E6%A2%81%E5%8F%B0%E6%A8%A1.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "tischmodul-vt",
+    "name": "TISCHMODUL VT 台模",
+    "desc": "使用标准组件进行预组装、即用型的标准台模系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f005395c-0a17-4a14-8b8f-e7cea48be6f1/23753/tischmodul-vt-%E5%8F%B0%E6%A8%A1.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "skytable-slab-formwork",
+    "name": "SKYTABLE 台模",
+    "desc": "大面积的台模，最大模块可达150平方米。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e7f8a9b0-c1d2-3456-efab-567890123456/23840/skytable.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "unterzug-und-deckenabschalungen",
+    "name": "梁板、楼板的端模组件",
+    "desc": "专为梁和楼板结构精心设计的端模产品。",
+    "img": "https://cdn.peri.cloud/dam/jcr:3fc9dda0-de6a-4fc1-adbc-ca6460e91f53/26403/%E6%B4%BE%E5%88%A9%E7%AB%AF%E6%A8%A1%E6%94%AF%E6%9E%B6-2.png",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板"
+  },
+  {
+    "slug": "maximo-mxp",
+    "name": "MAXIMO MXP 平台系统",
+    "desc": "专为MAXIMO 和 TRIO墙模系统设计的、模块化可靠的平台系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:7a82934e-0787-41d4-9a99-bc4b27e38e4a/26382/mxp-%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "mxk-bracket-system",
+    "name": "MAXIMO MXK 支架系统",
+    "desc": "用于MAXIMO模板系统的多功能支架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f8a9b0c1-d2e3-4567-fabc-678901234567/26300/mxk.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "sky-anker",
+    "name": "SKY-Anker 个人安全设备",
+    "desc": "可以作为个人安全防护装置的锚固点，避免工人坠落。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f221c7cd-f86b-4bc0-b4b2-40619b6def8c/26208/untitled.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "prokit-ep-110-fall-protection",
+    "name": "PROKIT EP 110 防坠落护栏",
+    "desc": "模板系统配套的安全防护装置。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345678/26400/prokit-ep110.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "prokit-ep-200-fall-protection",
+    "name": "PROKIT EP 200 防坠落护栏",
+    "desc": "更高防护等级的安全防坠落系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456789/26410/prokit-ep200.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "release-agent",
+    "name": "脱模剂",
+    "desc": "高效脱模，保证混凝土墙面质量。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567890/26200/release-agent.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "stripping-cart-asw465",
+    "name": "ASW 465 拆模车",
+    "desc": "快速、安全地完成楼板模板的拆模工作。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678901/26210/asw465.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "vt-20k-formwork-girder",
+    "name": "VT 20K 模板木梁",
+    "desc": "高质量模板木梁，适用于各类模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e3f4a5b6-c7d8-9012-efab-123456789012/24600/vt20k.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "gt-24-formwork-girder",
+    "name": "GT 24 模板木梁",
+    "desc": "经典的GT 24模板木梁，久经考验。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890123/24610/gt24.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "peri-stopend-trestle",
+    "name": "模板端模支架",
+    "desc": "专业的模板端部支撑系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901234/26250/stopend.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "peri-elevating-platform-290",
+    "name": "PERI 290 升降平台",
+    "desc": "安全高效的施工升降平台。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012345/26260/platform290.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "plastic-stopend-angle",
+    "name": "复合材料端模支架",
+    "desc": "轻质的复合材料端模支撑角件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123456/26270/plastic-stopend.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "table-lifting-fork",
+    "name": "转运叉",
+    "desc": "用于台模转运的专用叉车附件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d8e9f0a1-b2c3-4567-defa-678901234567/26280/lifting-fork.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "crate-pallet",
+    "name": "格式托架框",
+    "desc": "用于整齐存放和运输小型模板配件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e9f0a1b2-c3d4-5678-efab-789012345678/26290/crate.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "door-and-vario-box-out",
+    "name": "门窗造型框与VARIO造型框",
+    "desc": "用于门、窗和特殊造型的模板组件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456789/26295/boxout.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "hardware-boxes",
+    "name": "小组件托架框",
+    "desc": "用于收纳和运输模板小配件的标准箱。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567890/26296/hardware-boxes.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "peri-ankertechnik",
+    "name": "PERI 拉杆技术",
+    "desc": "可靠密水性处理的拉杆系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:06b2bc93-d6cd-4693-aa2b-ce15082b0ba3/24172/%E6%B4%BE%E5%88%A9%E6%8B%89%E6%9D%86%E6%8A%80%E6%9C%AF.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "rs-push-pull-props",
+    "name": "RS 斜撑",
+    "desc": "标准斜撑，用于固定墙模垂直度。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b2c3d4e5-f6a7-8901-bcde-012345678901/24180/rs-props.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel",
+    "name": "工具组合",
+    "desc": "专业模板施工工具套装。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c3d4e5f6-a7b8-9012-cdef-123456789012/26310/tools.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "transportbehaelter",
+    "name": "材料运输工具",
+    "desc": "材料运输工具能够确保派利材料快速、安全、经济地运输。",
+    "img": "https://cdn.peri.cloud/dam/jcr:1c8ddcbe-16a5-48e5-ab06-99179fefc05b/26335/%E6%B4%BE%E5%88%A9%E8%BF%90%E8%BE%93%E5%B7%A5%E5%85%B7.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "pallet",
+    "name": "托架",
+    "desc": "整体镀锌的托架，用于堆放、运输模板和脚手架零件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:bf97baa3-e492-48e6-b9be-fa60eb99f176/24682/%E6%89%98%E6%9E%B6.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "ptl-1250-2-table-lift",
+    "name": "PTL 1250-2 台模升降机",
+    "desc": "灵活、便于转向的台模转运装置。",
+    "img": "https://cdn.peri.cloud/dam/jcr:daffb6b7-2d4b-4b99-84f4-9b9f00cecf7a/24334/%E5%8F%B0%E6%A8%A1%E5%8D%87%E9%99%8D%E6%9C%BAptl-1250-2.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "table-striking-and-transporation-trolley",
+    "name": "台模转运车",
+    "desc": "轻松进行台模转运。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e01bd524-2042-4b5c-96f8-563d770b7834/24327/%E5%8F%B0%E6%A8%A1-%E8%BD%AC%E8%BF%90%E8%BD%A6.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "ftf-fassadenschalung",
+    "name": "FTF 外立面模板",
+    "desc": "适用于外立面浇筑的专用模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890124/24190/ftf.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "isc-temperaturueberwachungs-und-betonfestigkeits-set",
+    "name": "InSite 派利混凝土检测套件",
+    "desc": "监测现浇混凝土温度、准确测量混凝土强度。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f9677be7-eda0-43c2-a741-d7014dcfecde/25509/temperatur-sensor.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "concrete-maturity-computer",
+    "name": "混凝土强度测试仪",
+    "desc": "混凝土强度测试仪为模板的早拆提供可靠的依据。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d0954559-dddd-458e-b86e-bf10f6cc8320/23962/%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%BC%BA%E5%BA%A6%E6%B5%8B%E8%AF%95%E4%BB%AA.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "isc-sono-wz-analyser",
+    "name": "SONO WZ 水灰比分析仪",
+    "desc": "精确测量新拌混凝土水灰比的分析仪器。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901235/25520/sono-wz.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "richtstuetze-ft-360",
+    "name": "FT 360 斜撑",
+    "desc": "FT 360斜撑可在2.15至3.60米之间调节，适用于预制结构。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e9421be9-5203-4e10-ae76-4b350120d168/25872/ft-360.png",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "abrollcontainer",
+    "name": "PERI UP Easy 集装箱",
+    "desc": "用于PERI UP Easy脚手架材料的标准集装箱。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012346/26100/container.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "hammock",
+    "name": "HAMMOCK 安全系统",
+    "desc": "安全吊网系统，保护施工人员安全。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123457/26110/hammock.jpg",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件"
+  },
+  {
+    "slug": "multiprop-aluminium-slab-props",
+    "name": "MULTIPROP 铝合金楼板支撑",
+    "desc": "轻质铝合金楼板支撑，适用于各类楼板模板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234568/24700/multiprop.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "pd8-shoring-system",
+    "name": "PD 8 承重支架",
+    "desc": "适用于大荷载的承重支架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c9d0e1f2-a3b4-5678-cdef-789012345679/24710/pd8.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "pep-ergo-tubular-steel-slab-props",
+    "name": "PEP Ergo 楼板模板支撑",
+    "desc": "人体工学设计的钢管楼板支撑系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456780/24720/pep-ergo.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "pep-alpha-props",
+    "name": "PEP Alpha 楼板模板支撑",
+    "desc": "可靠的铝合金楼板模板支撑系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567891/24730/pep-alpha.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-flex-shoring",
+    "name": "PERI UP Flex 承重支架",
+    "desc": "基于PERI UP Flex系统的承重支架方案。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f2a3b4c5-d6e7-8901-fabc-012345678902/24740/peri-up-shoring.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-flex-shoring-tower-mds-k",
+    "name": "PERI UP Flex MDS K 支撑塔架",
+    "desc": "高承载的模块化支撑塔架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a3b4c5d6-e7f8-9012-abcd-123456789013/24750/mds-k.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "pd-5-shoring-system",
+    "name": "PD 5 承重支架系统",
+    "desc": "通用型承重支架，适用于各种荷载条件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b4c5d6e7-f8a9-0123-bcde-234567890124/24760/pd5.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-modular-scaffold",
+    "name": "PERI UP Flex 模块化脚手架",
+    "desc": "高度灵活的模块化脚手架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901235/24800/peri-up-modular.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-rosett-modular-scaffold",
+    "name": "PERI UP 盘扣式模块脚手架",
+    "desc": "采用盘扣连接的PERI UP模块化脚手架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d6e7f8a9-b0c1-2345-defa-456789012346/24810/peri-up-rosett.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-easy-frame-scaffolding",
+    "name": "PERI UP Easy 框式脚手架",
+    "desc": "简单、快速的框式脚手架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e7f8a9b0-c1d2-3456-efab-567890123457/24820/peri-up-easy.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-facade-scaffolding",
+    "name": "PERI UP Flex 外装修脚手架",
+    "desc": "适用于建筑外立面施工的脚手架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f8a9b0c1-d2e3-4567-fabc-678901234568/24830/peri-up-facade.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-working-platforms",
+    "name": "PERI UP Flex 操作平台",
+    "desc": "凭借高度灵活的模块化设计，实现任何高度上安全的施工。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b5cae175-3939-4ec6-8738-3ab710a74f0c/24561/peri-up-flex-%E6%93%8D%E4%BD%9C%E5%B9%B3%E5%8F%B0.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-working-platform-lgs-150",
+    "name": "PERI UP Flex 操作平台 LGS 150",
+    "desc": "适用于大跨度的操作平台，以及搭建临时的人行天桥。",
+    "img": "https://cdn.peri.cloud/dam/jcr:4c5cb513-0653-45c7-9cfe-76e38d73b409/25245/peri-up-flex-%E6%93%8D%E4%BD%9C%E5%B9%B3%E5%8F%B0-lgs-150.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-reinforcement-scaffold",
+    "name": "PERI UP Flex 钢筋绑扎脚手架",
+    "desc": "实用、安全无需配重及拉杆的模板作业脚手架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:dd7771d3-91ca-4a7d-8a0f-23018d5debde/24389/peri-up-flex-%E9%92%A2%E7%AD%8B%E7%BB%91%E6%89%8E%E8%84%9A%E6%89%8B%E6%9E%B6.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-rosett-r-scaffold-system",
+    "name": "PERI UP 盘扣式钢筋绑扎脚手架",
+    "desc": "用于钢筋绑扎作业的盘扣式脚手架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345679/24840/peri-up-rosett-r.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-suspended-scaffold",
+    "name": "PERI UP Flex 悬挂脚手架",
+    "desc": "轻质、可移动的悬挂脚手架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:55949aac-045d-449c-b7ff-55f933184d16/25271/peri-up-flex-%E6%82%AC%E6%8C%82%E8%84%9A%E6%89%8B%E6%9E%B6.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-t-frame-working-scaffold",
+    "name": "PERI UP T型框式脚手架",
+    "desc": "先进的护栏系统、作业脚手架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:6499ca27-ba81-40ed-8025-d08faf3e1234/24850/peri-up-t-frame.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-rosett-stair-alu-64",
+    "name": "64型 PERI UP 铝制施工梯塔架",
+    "desc": "铝制施工爬梯塔架，轻质耐用。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456790/24860/stair-64.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-stair-75",
+    "name": "75型 PERI UP Flex 施工梯塔架",
+    "desc": "75型施工爬梯塔架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567891/24870/stair-75.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-flex-treppe-100-125",
+    "name": "100/125型 PERI UP Flex 施工梯塔架",
+    "desc": "适用于大型项目的施工梯塔架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678902/24880/stair-100-125.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-rosett-public-stair",
+    "name": "PERI UP 盘扣式公共楼梯塔架",
+    "desc": "可作为永久或临时公共通道的楼梯塔架。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e3f4a5b6-c7d8-9012-efab-123456789013/24890/public-stair.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-easy-treppe-67",
+    "name": "67型 PERI UP Easy 施工梯塔架",
+    "desc": "快速组装的67型施工爬梯系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890124/24900/stair-67.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-weather-protection-roof",
+    "name": "PERI UP Flex 顶棚系统",
+    "desc": "为施工现场提供全方位防风雨保护的顶棚系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901235/24910/weather-roof.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "weather-protection-roof-lgs75",
+    "name": "防护顶棚系统 LGS 75",
+    "desc": "为小跨度、中跨度设计的防护顶棚系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012346/24920/weather-lgs75.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "geruest-anhaenger-transportsystem-kfz-peri-up-easy",
+    "name": "PERI UP Easy 外装修脚手架卡车用材料挂架",
+    "desc": "便于卡车运输的脚手架材料挂架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123457/25000/truck-rack.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-geruestbaukasten-belagstechnik",
+    "name": "PERI UP 踏脚板技术",
+    "desc": "多种踏脚板选择，满足不同施工需求。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d8e9f0a1-b2c3-4567-defa-678901234568/25010/boards.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-easy-multibox",
+    "name": "PERI UP Easy Multi Box 多功能运输架",
+    "desc": "高效的脚手架材料多功能运输解决方案。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e9f0a1b2-c3d4-5678-efab-789012345679/25020/multibox.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "seilwinde-und-schwenkarmhalter",
+    "name": "PERI UP 绞盘与吊臂固定杆",
+    "desc": "用于脚手架材料提升的绞盘和吊臂系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456790/25030/winch.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "alimak-sts-300-scaffold-transport-system",
+    "name": "STS 300 脚手架材料转运升降平台",
+    "desc": "高效的脚手架材料垂直运输平台。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567891/25040/sts300.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "asset-tracking",
+    "name": "PERI 材料定位器",
+    "desc": "实时追踪和管理派利施工材料的数字化系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b2c3d4e5-f6a7-8901-bcde-012345678902/25050/asset-tracking.jpg",
+    "category": "脚手架_支架系统",
+    "subcategory": null
+  },
+  {
+    "slug": "variokit-engineering-construction-kit",
+    "name": "VARIOKIT 工程套件",
+    "desc": "灵活的工程套件系统，适用于各种特殊结构。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c3d4e5f6-a7b8-9012-cdef-123456789013/26420/variokit-kit.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "variokit-gespaerrefachwerk",
+    "name": "VARIOKIT 桁架",
+    "desc": "用于浇筑桥梁箱梁、倾斜的墙体或顶板结构。",
+    "img": "https://cdn.peri.cloud/dam/jcr:cd492bdd-3573-46a2-9ea5-ad3f2b51f076/26416/variokit-%E6%A1%81%E6%9E%B6.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vrb-heavy-duty-truss-girder",
+    "name": "VARIOKIT VRB 桁架梁",
+    "desc": "用于大跨度工程的高强度桁架梁系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890125/24900/vrb.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vst-heavy-duty-tower",
+    "name": "VARIOKIT VST 高强塔架",
+    "desc": "用于重载工程的高强度塔架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901236/24910/vst.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vgk-cantilevered-parapet-bracket",
+    "name": "VARIOKIT VGK 边梁支架",
+    "desc": "轻质的边梁支架，适用于修缮和浇筑较短的桥梁。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d5c408c9-7369-41ec-b0d5-726ffe21eb70/23931/vgk-%E8%BE%B9%E6%A2%81%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vgb-cantilevered-parapet-track",
+    "name": "VARIOKIT-VGB 移动式边梁支架系统",
+    "desc": "用于安装和修缮桥面边缘以及桥面中间的边梁。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a37f09a7-c7d2-4652-a5bc-a2ca547c42cf/23918/vgb-%E7%A7%BB%E5%8A%A8%E5%BC%8F%E8%BE%B9%E6%A2%81%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vgw-cantilevered-parapet-carriage",
+    "name": "VARIOKIT VGW 边梁模板车",
+    "desc": "可在桥面上移动的、不需要在建筑结构上锚固。",
+    "img": "https://cdn.peri.cloud/dam/jcr:aa34dd5a-b19a-493e-8f98-2124109d73c3/24087/vgw-%E8%BE%B9%E6%A2%81%E6%A8%A1%E6%9D%BF%E5%8F%B0%E8%BD%A6.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vcc-composite-formwork-carriage",
+    "name": "VARIOKIT VCC 劲性混凝土模板台车",
+    "desc": "架设在桥梁钢结构，用于浇筑桥面结构的模板台车。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d988ab9f-2851-3dcd-ba7b-2d9bb01bcb6f/19780/vcc-composite-formwork-carriage.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vcb-kragarmkonsole",
+    "name": "VARIOKIT VCB 悬臂支架",
+    "desc": "无需脚手架的悬臂模板，适用于劲性混凝土结构。",
+    "img": "https://cdn.peri.cloud/dam/jcr:5ae821e7-46dc-43de-aede-b3092463254d/24756/vcb-%E6%82%AC%E8%87%82%E6%94%AF%E6%9E%B6.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vbc-balanced-cantilever-carriage",
+    "name": "VARIOKIT VBC 挂篮系统",
+    "desc": "用于悬臂浇筑桥梁箱梁的模板台车系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012347/24920/vbc.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "vtc-tunnel-carriage",
+    "name": "VARIOKIT VTC 隧道模板台车",
+    "desc": "适用于隧道衬砌浇筑的专用模板台车。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123458/24930/vtc.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "variokit-taktschiebeanlage-vil",
+    "name": "VARIOKIT VIL 顶推式桥梁模板台车",
+    "desc": "用于顶推施工法的桥梁模板台车系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234569/24940/vil.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "alphakit",
+    "name": "ALPHAKIT 工程系统",
+    "desc": "由塔架和桁架梁组成的便利工程系统，适用于中型桥梁。",
+    "img": "https://cdn.peri.cloud/dam/jcr:61de3d5d-57f8-400e-b1f2-b9cefe7c2149/24848/alphakit.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "freeform-formwork",
+    "name": "复杂曲面模板",
+    "desc": "为特殊造型结构精确制模。",
+    "img": "https://cdn.peri.cloud/dam/jcr:63f0a096-8526-4554-ac65-92abd48fd2f3/23402/%E5%A4%8D%E6%9D%82%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-flex-ueberbrueckungen",
+    "name": "PERI UP Flex 天桥",
+    "desc": "作业平台10米长，由模块化的PERI UP Flex桁架梁组成。",
+    "img": "https://cdn.peri.cloud/dam/jcr:066f30cc-4bb7-4b14-874d-64a0860446d3/19197/peri-up-flex-10m.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-up-flex-grabenbruecke",
+    "name": "PERI UP Flex 架桥",
+    "desc": "用于跨越施工坑槽的临时桥梁系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c9d0e1f2-a3b4-5678-cdef-789012345680/25100/grabenbruecke.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "acs-self-climbing-system",
+    "name": "ACS 自动爬架系统",
+    "desc": "使用液压千斤顶取代吊车，安全地整体提升爬架单元。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456791/25200/acs.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "rcs-max-klettersystem",
+    "name": "RCS MAX 导轨爬架系统",
+    "desc": "创新的爬架顶升过程，提高了现场施工速度。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567892/25210/rcs-max.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "rcs-rail-climbing-system",
+    "name": "RCS 导轨爬架系统",
+    "desc": "应用广泛的多功能导轨爬架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f2a3b4c5-d6e7-8901-fabc-012345678903/25220/rcs.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "scs-climbing-system",
+    "name": "SCS 单面模板的爬架系统",
+    "desc": "用于单面模板施工的爬架系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a3b4c5d6-e7f8-9012-abcd-123456789014/25230/scs.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "lps-lightweight-climbing-enclosure",
+    "name": "LPS 轻型可爬升的防护屏",
+    "desc": "轻型防护网组成的可爬升防护屏系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b4c5d6e7-f8a9-0123-bcde-234567890125/25240/lps.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "rcs-mp-material-platform",
+    "name": "RCS MP 卸料平台",
+    "desc": "与RCS爬架系统配套的专用卸料平台。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901236/25250/rcs-mp.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "asg-narrow-working-platform",
+    "name": "ASG 小型操作平台系统",
+    "desc": "用于狭窄区域施工的小型操作平台。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d6e7f8a9-b0c1-2345-defa-456789012347/25260/asg.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "cb-climbing-formwork",
+    "name": "CB 爬架系统",
+    "desc": "需要吊车转运的爬模系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e7f8a9b0-c1d2-3456-efab-567890123458/25270/cb.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "fb180-folding-platform",
+    "name": "FB 180 折叠式平台系统",
+    "desc": "可折叠的工作平台系统，节省空间。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f8a9b0c1-d2e3-4567-fabc-678901234569/25280/fb180.jpg",
+    "category": "市政工程系统",
+    "subcategory": null
+  },
+  {
+    "slug": "technical-services",
+    "name": "工程技术服务",
+    "desc": "提供从方案设计到现场指导的全面工程技术服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345680/26500/tech-services.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "technical-processing",
+    "name": "施工方案设计",
+    "desc": "专业的施工方案设计和技术支持服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456791/26510/tech-processing.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "building-information-modeling",
+    "name": "建筑信息模型 (BIM)",
+    "desc": "提供基于BIM的模板和脚手架数字化解决方案。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567892/26520/bim.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "cnc-cutting-and-formwork-assembly",
+    "name": "CNC 数控切割和装配模板",
+    "desc": "精确的数控切割服务，确保模板尺寸精度。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678903/26530/cnc.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "field-service",
+    "name": "项目服务",
+    "desc": "现场施工指导和技术支持服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e3f4a5b6-c7d8-9012-efab-123456789014/26540/field-service.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "logistics-services",
+    "name": "物流服务",
+    "desc": "专业的模板和脚手架物流配送服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890125/26550/logistics.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "rental-park-and-distribution",
+    "name": "租赁服务及材料配送",
+    "desc": "灵活的设备租赁和材料配送解决方案。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901236/26560/rental.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "cleaning-and-repair",
+    "name": "清洁与维修",
+    "desc": "专业的模板清洁和维修服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012347/26570/cleaning.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "ueberpruefung-lastaufnahmemittel",
+    "name": "受力结构检测",
+    "desc": "专业的起重配件和受力结构安全检测服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123458/26580/inspection.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "richtmeister-baustelle-schalung-geruest",
+    "name": "现场施工指导",
+    "desc": "施工现场专业指导，确保高效、安全使用派利产品。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d8e9f0a1-b2c3-4567-defa-678901234569/26590/supervision.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "werkseitige-montage-und-demontage",
+    "name": "工厂内组装和拆卸模板",
+    "desc": "在工厂预组装，减少现场工作量。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e9f0a1b2-c3d4-5678-efab-789012345680/26600/assembly.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "ausschreibungstexte",
+    "name": "模板脚手架文案系统",
+    "desc": "专业的招投标文案和技术规格支持。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456791/26610/docs.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "baustellencontrolling",
+    "name": "施工现场管理",
+    "desc": "数字化的施工现场管理和监控系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567892/26620/site-control.jpg",
+    "category": "工程技术服务",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-cad-software",
+    "name": "PERI CAD 22 软件",
+    "desc": "专业的模板和脚手架CAD设计软件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b2c3d4e5-f6a7-8901-bcde-012345678903/25300/peri-cad.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peripath",
+    "name": "PERIpath",
+    "desc": "PERI的数字化施工路径规划工具。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c3d4e5f6-a7b8-9012-cdef-123456789015/25310/peripath.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "centrio-clm-software",
+    "name": "CENTRIO CLM",
+    "desc": "先进的施工荷载监测软件系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d4e5f6a7-b8c9-0123-defa-234567890126/25320/centrio.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "myperi",
+    "name": "myPERI 客户服务平台",
+    "desc": "一站式的派利客户服务数字化平台。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e5f6a7b8-c9d0-1234-efab-345678901237/25330/myperi.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-elpos-software",
+    "name": "PERI ELPOS 软件",
+    "desc": "专业的模板工程量计算软件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f6a7b8c9-d0e1-2345-fabc-456789012348/25340/elpos.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "formwork-load-calculator",
+    "name": "模板荷载计算器",
+    "desc": "快速计算模板新浇混凝土侧压力的在线工具。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a7b8c9d0-e1f2-3456-abcd-567890123459/25350/load-calc.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-multiflex-configurator",
+    "name": "MULTIFLEX 木梁楼板模板计算器",
+    "desc": "快速确定MULTIFLEX系统最佳配置的计算工具。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b8c9d0e1-f2a3-4567-bcde-678901234570/25360/multiflex-config.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-st-100-configurator",
+    "name": "ST 100 塔架计算器",
+    "desc": "ST 100支撑塔架的快速配置计算工具。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c9d0e1f2-a3b4-5678-cdef-789012345681/25370/st100-config.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-multiprop-shoring-tower-configurator",
+    "name": "MULTIPROP 支撑塔架计算器",
+    "desc": "快速确定MULTIPROP塔架最佳配置方案。",
+    "img": "https://cdn.peri.cloud/dam/jcr:099bb8c2-f50b-43af-9f20-0bfa4c6d91ba/25287/multiprop-shoring-tower-configurator.png",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-mds-k-configurator",
+    "name": "MDS K 塔架计算器",
+    "desc": "为不同配置的PERI MDS K塔架计算最大允许轴向荷载。",
+    "img": "https://cdn.peri.cloud/dam/jcr:396cb275-87ac-439f-889f-5a973b90e29c/25292/peri-mds-k-shoring-tower-configurator-icon.png",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-duo-planner",
+    "name": "PERI QuickSolve DUO 设计程序",
+    "desc": "专为DUO复合模板系统设计的在线规划程序。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a2f3568c-99a7-41c1-93e0-071e9e4ded51/25485/peri-duo-%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F.png",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "scaffmax-geruestbau-planungssoftware",
+    "name": "scaffmax 脚手架方案设计程序",
+    "desc": "专业的脚手架工程方案设计软件。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d0e1f2a3-b4c5-6789-defa-890123456792/25400/scaffmax.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "moselcopter-raumvisualisierung-vermessungssysteme",
+    "name": "Moselcopter 测量技术",
+    "desc": "基于无人机的建筑测量和空间可视化技术。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e1f2a3b4-c5d6-7890-efab-901234567893/25410/moselcopter.jpg",
+    "category": "软件与Apps",
+    "subcategory": null
+  },
+  {
+    "slug": "ersatzplattenzuschnitt",
+    "name": "板材替换服务",
+    "desc": "为所有常见模板系统提供专业的板材切割、替换服务。",
+    "img": "https://cdn.peri.cloud/dam/jcr:eb6af9af-00d8-48d4-87e2-7d46033161b9/26420/%E6%9D%BF%E6%9D%90%E6%9B%BF%E6%8D%A2%E5%88%87%E5%89%B2%E6%9C%8D%E5%8A%A1.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "finply",
+    "name": "FinPly 板",
+    "desc": "高质量覆膜胶合板，适用于各类模板系统。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f2a3b4c5-d6e7-8901-fabc-012345678904/25500/finply.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "finply-maxi",
+    "name": "FinPly Maxi 板",
+    "desc": "大幅面高质量覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a3b4c5d6-e7f8-9012-abcd-123456789016/25510/finply-maxi.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "finply-plus",
+    "name": "FinPly Plus 板",
+    "desc": "增强型覆膜胶合板，使用寿命更长。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b4c5d6e7-f8a9-0123-bcde-234567890127/25520/finply-plus.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "maxiform",
+    "name": "Maxiform 板",
+    "desc": "高性能模板专用覆膜板材。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c5d6e7f8-a9b0-1234-cdef-345678901238/25530/maxiform.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-birch",
+    "name": "PERI Birch 板",
+    "desc": "优质桦木覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d6e7f8a9-b0c1-2345-defa-456789012349/25540/peri-birch.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "rusply",
+    "name": "RusPly 板",
+    "desc": "经济实用的覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e7f8a9b0-c1d2-3456-efab-567890123460/25550/rusply.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-birch-220",
+    "name": "PERI Birch 220 板",
+    "desc": "220mm厚度的优质桦木覆膜板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f8a9b0c1-d2e3-4567-fabc-678901234571/25560/birch-220.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "elliottis-pine-c-c-bfu-100",
+    "name": "Elliottis Pine C+/C BFU 100 板",
+    "desc": "高强度松木覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a9b0c1d2-e3f4-5678-abcd-789012345681/25570/elliottis-bfu.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "finnaply",
+    "name": "FinNaPly 板",
+    "desc": "天然面覆膜胶合板，适用于清水混凝土。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b0c1d2e3-f4a5-6789-bcde-890123456792/25580/finnaply.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "radiata-pine",
+    "name": "Radiata Pine 板",
+    "desc": "辐射松覆膜胶合板，性价比高。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c1d2e3f4-a5b6-7890-cdef-901234567893/25590/radiata-pine.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "3-s-panels",
+    "name": "3夹板模板板材",
+    "desc": "三层结构的模板专用板材。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d2e3f4a5-b6c7-8901-defa-012345678904/25600/3s-panels.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "beto-s",
+    "name": "Beto-S 板",
+    "desc": "特殊用途模板覆膜板材。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e3f4a5b6-c7d8-9012-efab-123456789015/25610/beto-s.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "chinese-filmfaced-plywood",
+    "name": "中国覆膜胶合板",
+    "desc": "优质中国产覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f4a5b6c7-d8e9-0123-fabc-234567890126/25620/chinese-ffp.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "eukafilm",
+    "name": "Eukafilm 板",
+    "desc": "桉木覆膜胶合板，适用于高周转次数。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a5b6c7d8-e9f0-1234-abcd-345678901237/25630/eukafilm.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "facing-plywood",
+    "name": "衬板",
+    "desc": "用于特殊模板应用的衬垫胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:b6c7d8e9-f0a1-2345-bcde-456789012348/25640/facing.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-pine",
+    "name": "PERI Pine 板",
+    "desc": "PERI品牌松木覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c7d8e9f0-a1b2-3456-cdef-567890123459/25650/peri-pine.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "peri-spruce-400",
+    "name": "PERI Spruce 400 板",
+    "desc": "云杉木覆膜胶合板，400mm幅宽。",
+    "img": "https://cdn.peri.cloud/dam/jcr:d8e9f0a1-b2c3-4567-defa-678901234570/25660/peri-spruce.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "pine-premium",
+    "name": "Pine Premium 板",
+    "desc": "高级松木覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:e9f0a1b2-c3d4-5678-efab-789012345681/25670/pine-premium.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "bintangor-plywood",
+    "name": "Bintangor 胶合板",
+    "desc": "东南亚Bintangor木覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:f0a1b2c3-d4e5-6789-fabc-890123456792/25680/bintangor.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "elliottis-pine-c-c-wbp",
+    "name": "Elliottis Pine C+/C WBP 板",
+    "desc": "WBP级防水覆膜胶合板。",
+    "img": "https://cdn.peri.cloud/dam/jcr:a1b2c3d4-e5f6-7890-abcd-901234567893/25690/elliottis-wbp.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "wiremesh-plywood",
+    "name": "压纹板",
+    "desc": "防滑表面处理，用于特殊应用的板材。",
+    "img": "https://cdn.peri.cloud/dam/jcr:836fe7b9-d0f0-477d-8528-62a31f73409f/25173/%E8%A1%A8%E9%9D%A2%E5%8E%8B%E7%BA%B9%E5%A4%84%E7%90%86.jpg",
+    "category": "板材",
+    "subcategory": null
+  },
+  {
+    "slug": "pave",
+    "name": "Pave 板",
+    "desc": "混凝土地砖板材。",
+    "img": "https://cdn.peri.cloud/dam/jcr:c60b2e2b-f5d6-484b-b8ce-b9d9c2493844/25252/peri-pave.jpg",
+    "category": "板材",
+    "subcategory": null
+  }
+]
