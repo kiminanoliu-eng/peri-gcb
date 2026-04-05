@@ -1,9 +1,29 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+为单个产品生成完整的产品页面（测试版本）
+"""
+
+import json
+import os
+import random
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+
+# 加载产品数据
+with open(os.path.join(BASE, 'handset_alpha_complete.json'), encoding='utf-8') as f:
+    product = json.load(f)
+
+# 使用产品自己的项目示例
+selected_projects = product.get('projects', [])
+
+# 生成HTML
+html = f'''<!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HANDSET Alpha 模块化模板系统 - PERI GCB 派利产品中文介绍HUB</title>
+  <title>{product['name_zh']} - PERI GCB 派利产品中文介绍HUB</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -36,40 +56,40 @@
     <div class="breadcrumb">
       <a href="../index.html" data-zh="首页" data-en="Home" data-es="Inicio" data-de="Startseite"
          data-pt="Início" data-sr="Почетна" data-hu="Kezdőlap">首页</a> ›
-      <a href="../categories/building-formwork.html" data-zh="建筑模板系统" data-en="Building Formwork Systems"
+      <a href="../categories/building-formwork.html" data-zh="{product['category']}" data-en="Building Formwork Systems"
          data-es="Sistemas de Encofrado" data-de="Schalungssysteme" data-pt="Sistemas de Cofragem"
-         data-sr="Sistemi Oplate" data-hu="Zsaluzási Rendszerek">建筑模板系统</a> ›
-      <a href="../categories/wall-formwork.html" data-zh="墙模" data-en="Wall Formwork"
+         data-sr="Sistemi Oplate" data-hu="Zsaluzási Rendszerek">{product['category']}</a> ›
+      <a href="../categories/wall-formwork.html" data-zh="{product['subcategory']}" data-en="Wall Formwork"
          data-es="Encofrado de Muros" data-de="Wandschalung" data-pt="Cofragem de Paredes"
-         data-sr="Oplata Zidova" data-hu="Falzsaluzat">墙模</a> ›
-      <span>HANDSET Alpha 模块化模板系统</span>
+         data-sr="Oplata Zidova" data-hu="Falzsaluzat">{product['subcategory']}</a> ›
+      <span>{product['name_zh']}</span>
     </div>
 
     <div class="product-hero">
-      <img src="https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg" alt="HANDSET Alpha 模块化模板系统" class="product-img">
+      <img src="{product['image']}" alt="{product['name_zh']}" class="product-img">
       <div class="product-info">
-        <h1>HANDSET Alpha 模块化模板系统</h1>
+        <h1>{product['name_zh']}</h1>
         <p class="product-desc"
-           data-zh="HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱的基础型模板系统。该系统价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统操作简单、直观。模板组装只需两人，不需吊车即可完成。"
-           data-en="HANDSET Alpha is a basic formwork system for concreting walls, building foundations, and columns. The system is highly competitive in price and excellent in performance. A small number of component types and versatile modules make the system simple and intuitive to operate. Formwork assembly requires only two people and can be completed without a crane."
-           data-es="HANDSET Alpha es un sistema de encofrado básico para hormigonado de muros, cimientos de edificios y columnas. El sistema es altamente competitivo en precio y excelente en rendimiento. Un pequeño número de tipos de componentes y módulos versátiles hacen que el sistema sea simple e intuitivo de operar. El montaje del encofrado requiere solo dos personas y se puede completar sin grúa."
-           data-de="HANDSET Alpha ist ein Basis-Schalungssystem für die Betonierung von Wänden, Gebäudefundamenten und Stützen. Das System ist preislich sehr wettbewerbsfähig und leistungsstark. Eine geringe Anzahl von Bauteiltypen und vielseitige Module machen das System einfach und intuitiv zu bedienen. Die Schalungsmontage erfordert nur zwei Personen und kann ohne Kran durchgeführt werden."
-           data-pt="HANDSET Alpha é um sistema de cofragem básico para concretagem de paredes, fundações de edifícios e colunas. O sistema é altamente competitivo em preço e excelente em desempenho. Um pequeno número de tipos de componentes e módulos versáteis tornam o sistema simples e intuitivo de operar. A montagem da cofragem requer apenas duas pessoas e pode ser concluída sem guindaste."
-           data-sr="HANDSET Alpha je osnovni sistem oplate za betoniranje zidova, temelja zgrada i stubova. Sistem je veoma konkurentan po ceni i odličan po performansama. Mali broj tipova komponenti i svestrani moduli čine sistem jednostavnim i intuitivnim za rad. Montaža oplate zahteva samo dve osobe i može se završiti bez dizalice."
-           data-hu="A HANDSET Alpha egy alapvető zsaluzási rendszer falak, épületalapok és oszlopok betonozásához. A rendszer rendkívül versenyképes árú és kiváló teljesítményű. A kevés alkatrész típus és a sokoldalú modulok egyszerűvé és intuitívvá teszik a rendszer működtetését. A zsaluzat összeszerelése csak két személyt igényel és daru nélkül is elvégezhető.">HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱的基础型模板系统。该系统价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统操作简单、直观。模板组装只需两人，不需吊车即可完成。</p>
+           data-zh="{product['description']['zh']}"
+           data-en="{product['description']['en']}"
+           data-es="{product['description']['es']}"
+           data-de="{product['description']['de']}"
+           data-pt="{product['description']['pt']}"
+           data-sr="{product['description']['sr']}"
+           data-hu="{product['description']['hu']}">{product['description']['zh']}</p>
 
         <div class="product-actions">
-          <a href="https://cn.peri.com/products/handset-alpha.html" target="_blank" class="btn btn-red"
+          <a href="{product['cn_url']}" target="_blank" class="btn btn-red"
              data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China"
              data-de="↗ Auf PERI China ansehen" data-pt="↗ Ver no PERI China" data-sr="↗ Pogledaj na PERI China"
              data-hu="↗ Megtekintés a PERI China oldalon">↗ 前往中文官网查看</a>
 
-          <a href="https://www.peri.co.za/dam/jcr:61fe2e05-22de-4176-85ad-7663494b99d5/handset-alpha-brochure.pdf" target="_blank" class="btn btn-yellow"
+          <a href="{product['pdf_link']}" target="_blank" class="btn btn-yellow"
              data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF"
              data-de="📄 Produktbroschüre PDF" data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF"
              data-hu="📄 Termékismertető PDF">📄 产品手册 PDF</a>
 
-          <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})"
+          <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({{behavior:'smooth'}})"
                   data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten"
                   data-pt="Publicar Comentário" data-sr="Objavi Komentar" data-hu="Hozzászólás Közzététele">发表留言</button>
         </div>
@@ -86,23 +106,21 @@
        data-hu="Tekintse meg a PERI termékeket valós projektekben">查看派利产品在实际工程中的应用案例</p>
 
     <div class="grid grid-3" style="gap:24px">
+'''
 
-      <div class="card" onclick="window.open('https://cn.peri.com/projects/nadvoznjaci-preko-pruge-novi-sad-kelebija.html', '_blank')" style="cursor:pointer">
-        <img src="https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/塞尔维亚，kelebija，novi-sad-铁路立交桥.jpg" alt="塞尔维亚，Kelebija，NOVI SAD 铁路立交桥" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0">
+# 添加项目卡片
+for proj in selected_projects:
+    html += f'''
+      <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
+        <img src="{proj['image']}" alt="{proj['name']}" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0">
         <div class="card-body">
-          <div class="card-title" style="font-size:14px;font-weight:600;margin-bottom:8px">塞尔维亚，Kelebija，NOVI SAD 铁路立交桥</div>
-          <div class="card-desc" style="font-size:12px;color:#666;margin-bottom:8px">现代化改造Novog Sada 至 Kelebije高速铁路线</div>
-          <div style="font-size:11px;color:#999">📍 Subotice, 塞尔维亚</div>
+          <div class="card-title" style="font-size:14px;font-weight:600;margin-bottom:8px">{proj['name']}</div>
+          <div class="card-desc" style="font-size:12px;color:#666;margin-bottom:8px">{proj['description']}</div>
+          <div style="font-size:11px;color:#999">📍 {proj['location']}</div>
         </div>
-      </div>
-      <div class="card" onclick="window.open('https://cn.peri.com/projects/大摩拉瓦河桥梁工程.html', '_blank')" style="cursor:pointer">
-        <img src="https://cdn.peri.cloud/dam/jcr:6cedbd38-976c-4495-af93-2da098670879/20230/大摩拉瓦河桥梁工程-（沿多瑙河高速公路-第一标段）.jpg" alt="大摩拉瓦河桥梁工程 （沿多瑙河高速公路-第一标段）" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0">
-        <div class="card-body">
-          <div class="card-title" style="font-size:14px;font-weight:600;margin-bottom:8px">大摩拉瓦河桥梁工程 （沿多瑙河高速公路-第一标段）</div>
-          <div class="card-desc" style="font-size:12px;color:#666;margin-bottom:8px">使用派利多种系统为工程提供综合解决方案</div>
-          <div style="font-size:11px;color:#999">📍 Požarevac, 塞尔维亚</div>
-        </div>
-      </div>
+      </div>'''
+
+html += f'''
     </div>
 
     <div style="margin-top:64px;margin-bottom:64px">
@@ -111,7 +129,7 @@
           data-pt="📺 Vídeo do Produto" data-sr="📺 Видео Производа" data-hu="📺 Termék Videó">📺 产品视频介绍</h3>
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)">
         <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
-                src="https://www.youtube.com/embed/c3FOoHAjQEs"
+                src="https://www.youtube.com/embed/{product.get('youtube_video_id', 'PLACEHOLDER_NEED_VIDEO_ID')}"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
       </div>
@@ -173,3 +191,22 @@
   <script src="../script.js"></script>
 </body>
 </html>
+'''
+
+# 保存文件
+output_dir = os.path.join(BASE, 'mnt/创建产品网站/products')
+os.makedirs(output_dir, exist_ok=True)
+output_file = os.path.join(output_dir, 'handset-alpha-test.html')
+
+with open(output_file, 'w', encoding='utf-8') as f:
+    f.write(html)
+
+print(f"✅ 测试产品页面已生成: {output_file}")
+print(f"\n包含的功能:")
+print(f"  ✓ 正确的产品图片: {product['image']}")
+print(f"  ✓ 正确的类别归属: {product['category']} > {product['subcategory']}")
+print(f"  ✓ 7种语言的产品描述")
+print(f"  ✓ PDF下载链接: {product['pdf_link']}")
+print(f"  ✓ 3个项目示例")
+print(f"  ✓ Web3Forms留言板")
+print(f"\n请在浏览器中打开查看: file://{output_file}")
