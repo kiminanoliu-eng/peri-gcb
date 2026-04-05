@@ -525,6 +525,27 @@ def build_subcategory_page(cat_key, cat, sc_key, sc):
 # ============================================================
 # 3. PRODUCT PAGES
 # ============================================================
+def build_project_cards():
+    """Generate project cards HTML from china_projects.json (random 3 projects)"""
+    import random
+    if not CHINA_PROJECTS or len(CHINA_PROJECTS) == 0:
+        return '<p style="color:#999;text-align:center">暂无项目示例</p>'
+
+    # Select 3 random projects
+    selected = random.sample(CHINA_PROJECTS, min(3, len(CHINA_PROJECTS)))
+    cards = ''
+    for proj in selected:
+        cards += f'''
+      <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
+        <img src="{proj['image']}" alt="{proj['name_zh']}" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0">
+        <div class="card-body">
+          <div class="card-title" style="font-size:14px;font-weight:600;margin-bottom:8px">{proj['name_zh']}</div>
+          <div class="card-desc" style="font-size:12px;color:#666;margin-bottom:8px">{proj['description']}</div>
+          <div style="font-size:11px;color:#999">📍 {proj['location']}</div>
+        </div>
+      </div>'''
+    return cards
+
 def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     slug, name_zh, desc_zh, img = p[0], p[1], p[2], p[3]
     cat_display = cat_key.replace('_', '/')
@@ -623,18 +644,23 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
   <div class="prod-info">
     {badge_html}
     <h1>{name_zh}</h1>
-    <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px">{desc_zh}</p>
+    <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px"
+       data-zh="{desc_zh}" data-en="{desc_zh}" data-es="{desc_zh}" data-de="{desc_zh}"
+       data-pt="{desc_zh}" data-sr="{desc_zh}" data-hu="{desc_zh}">{desc_zh}</p>
     <div class="prod-cta">
       <a href="{cn_url}" target="_blank" class="btn btn-red"
-         data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen">
+         data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen"
+         data-pt="↗ Ver no PERI China" data-sr="↗ Pogledaj na PERI China" data-hu="↗ Megtekintés a PERI China oldalon">
          ↗ 前往中文官网查看
       </a>
       <a href="{cn_url}" target="_blank" class="btn btn-yellow"
-         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF">
+         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF"
+         data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF" data-hu="📄 Termékismertető PDF">
          📄 产品手册 PDF
       </a>
       <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({{behavior:'smooth'}})"
-              data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten">
+              data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten"
+              data-pt="Publicar Comentário" data-sr="Objavi Komentar" data-hu="Hozzászólás Közzététele">
               发表留言
       </button>
     </div>
@@ -647,25 +673,25 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
 <div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
   <div style="max-width:1100px;margin:0 auto">
     <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
-        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele">
+        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele"
+        data-pt="Exemplos de Projetos" data-sr="Primeri Projekata" data-hu="Projekt Példák">
         应用项目示例
     </h3>
     <p style="color:#666;margin-bottom:32px;font-size:14px"
-       data-zh="查看此产品在实际工程中的应用案例" data-en="See this product in real construction projects"
-       data-es="Ver este producto en proyectos reales" data-de="Sehen Sie dieses Produkt in echten Projekten">
-       查看此产品在实际工程中的应用案例
+       data-zh="查看派利产品在实际工程中的应用案例" data-en="See PERI products in real construction projects"
+       data-es="Ver productos PERI en proyectos reales" data-de="Sehen Sie PERI-Produkte in echten Projekten"
+       data-pt="Veja produtos PERI em projetos reais" data-sr="Pogledajte PERI proizvode u stvarnim projektima"
+       data-hu="Tekintse meg a PERI termékeket valós projektekben">
+       查看派利产品在实际工程中的应用案例
     </p>
-    <div style="text-align:center;padding:40px;background:white;border:2px dashed #ddd;border-radius:8px">
-      <div style="font-size:48px;margin-bottom:16px;opacity:0.3">🏗️</div>
-      <p style="color:#999;margin-bottom:20px"
-         data-zh="项目示例即将添加" data-en="Project examples coming soon"
-         data-es="Ejemplos próximamente" data-de="Beispiele folgen bald">
-         项目示例即将添加
-      </p>
-      <a href="{cn_url}" target="_blank" class="btn btn-outline"
-         data-zh="在官网查看项目案例" data-en="View projects on PERI China"
-         data-es="Ver proyectos en PERI China" data-de="Projekte auf PERI China ansehen">
-         在官网查看项目案例
+    <div class="grid grid-3" style="gap:24px">
+      {build_project_cards()}
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
+         data-zh="查看更多项目案例 ↗" data-en="View More Projects ↗" data-es="Ver Más Proyectos ↗" data-de="Mehr Projekte ansehen ↗"
+         data-pt="Ver Mais Projetos ↗" data-sr="Pogledaj Više Projekata ↗" data-hu="További Projektek ↗">
+         查看更多项目案例 ↗
       </a>
     </div>
   </div>
