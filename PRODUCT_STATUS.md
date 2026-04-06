@@ -2,15 +2,15 @@
 
 **最后更新**: 2026-04-06  
 **总产品数**: 160  
-**已完成**: 21  
-**待处理**: 139  
-**完成率**: 13.1%
+**已完成**: 28  
+**待处理**: 132  
+**完成率**: 17.5%
 
 ---
 
-## 已完成产品（21个）
+## 已完成产品（28个）
 
-### 建筑模板系统 - 墙模（7个）
+### 建筑模板系统 - 墙模（10个）
 1. ✅ handset-alpha - HANDSET Alpha 模块化模板系统
 2. ✅ uno-formwork-system - UNO 墙模
 3. ✅ trio-rahmenschalung - TRIO 框式模板
@@ -18,34 +18,41 @@
 5. ✅ domino-panel-formwork - DOMINO 框式模板
 6. ✅ liwa - LIWA 钢框模板
 7. ✅ sb-brace-frame - SB 单侧支架
+8. ✅ vario-gt-24-girder-wall-formwork - VARIO GT 24 木梁式墙模
+9. ✅ vario_gt24 - VARIO GT 24
 
-### 建筑模板系统 - 曲面模板（1个）
-8. ✅ grv-rundschalung - GRV 曲面模板
+### 建筑模板系统 - 曲面模板（3个）
+10. ✅ grv-rundschalung - GRV 曲面模板
+11. ✅ rundflex-plus-rundschalung - RUNDFLEX Plus 曲面模板
+12. ✅ rundflex-circular-wall-formwork - RUNDFLEX 曲面模板
 
-### 建筑模板系统 - 柱模（2个）
-9. ✅ trio-schalungssystem - TRIO 柱模
-10. ✅ quattro-column-formwork - QUATTRO 柱模
+### 建筑模板系统 - 柱模（5个）
+13. ✅ trio-schalungssystem - TRIO 柱模
+14. ✅ quattro-column-formwork - QUATTRO 柱模
+15. ✅ vario-gt-24-column-formwork - VARIO GT 24 柱模
+16. ✅ vario-quattro-column-formwork - VARIO QUATTRO 柱模
+17. ✅ srs-saeulenrundschalung - SRS 圆柱模
 
 ### 建筑模板系统 - 楼板模板（4个）
-11. ✅ skydeck-slab-formwork - SKYDECK 模块化楼板模板
-12. ✅ multiflex-girder-slab-formwork - MULTIFLEX 木梁式楼板模板
-13. ✅ gridflex-deckenschalung - GRIDFLEX 框架楼板模板
-14. ✅ skytable-slab-formwork - SKYTABLE 台模
+18. ✅ skydeck-slab-formwork - SKYDECK 模块化楼板模板
+19. ✅ multiflex-girder-slab-formwork - MULTIFLEX 木梁式楼板模板
+20. ✅ gridflex-deckenschalung - GRIDFLEX 框架楼板模板
+21. ✅ skytable-slab-formwork - SKYTABLE 台模
 
 ### 建筑模板系统 - 通用配件（2个）
-15. ✅ prokit-ep-110-fall-protection - PROKIT EP 110 防坠落护栏
-16. ✅ release-agent - 脱模剂
+22. ✅ prokit-ep-110-fall-protection - PROKIT EP 110 防坠落护栏
+23. ✅ release-agent - 脱模剂
 
 ### 脚手架系统（2个）
-17. ✅ crate-pallet - 格式托架框
-18. ✅ peri-up-easy-frame-scaffolding - PERI UP Easy 框式脚手架
+24. ✅ crate-pallet - 格式托架框
+25. ✅ peri-up-easy-frame-scaffolding - PERI UP Easy 框式脚手架
 
 ### 工程施工套件（2个）
-19. ✅ geruest-anhaenger-transportsystem-kfz-peri-up-easy - PERI UP Easy 外装修脚手架卡车用材料挂架
-20. ✅ vgw-cantilevered-parapet-carriage - VARIOKIT VGW 边梁模板车
+26. ✅ geruest-anhaenger-transportsystem-kfz-peri-up-easy - PERI UP Easy 外装修脚手架卡车用材料挂架
+27. ✅ vgw-cantilevered-parapet-carriage - VARIOKIT VGW 边梁模板车
 
 ### 数字化解决方案（1个）
-21. ✅ moselcopter-raumvisualisierung-vermessungssysteme - Moselcopter 测量技术
+28. ✅ moselcopter-raumvisualisierung-vermessungssysteme - Moselcopter 测量技术
 
 ---
 
