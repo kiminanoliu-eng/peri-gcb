@@ -645,10 +645,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
   </div>'''
-    else:
-        yt_embed = ''
-
-    yt_section = f'''<div class="yt-section">
+        yt_section = f'''<div class="yt-section">
   <h3>▶ <span data-zh="PERI 产品视频" data-en="PERI Product Video"
                data-es="Video del Producto PERI" data-de="PERI Produktvideo">PERI 产品视频</span></h3>
   {yt_embed}
@@ -658,6 +655,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     ▶&nbsp; 在 PERI YouTube 频道搜索
   </a>
 </div>'''
+    else:
+        yt_section = ''
 
     # Badge: show main category + subcategory if applicable
     if subcat:
@@ -668,6 +667,48 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     else:
         badge_html = (f'<span class="badge" data-zh="{badge_zh}" data-en="{badge_en}" '
                       f'data-es="{badge_es}" data-de="{badge_de}">{badge_zh}</span>')
+
+    # PDF button - only show if pdf_url exists
+    if pdf_url:
+        pdf_button = f'''<a href="{pdf_url}" target="_blank" class="btn btn-yellow"
+         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF"
+         data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF" data-hu="📄 Termékismertető PDF">
+         📄 产品手册 PDF
+      </a>'''
+    else:
+        pdf_button = ''
+
+    # Projects section - only show if there are projects
+    if product_projects:
+        projects_section = f'''<!-- Project Examples Section -->
+<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
+        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele"
+        data-pt="Exemplos de Projetos" data-sr="Primeri Projekata" data-hu="Projekt Példák">
+        应用项目示例
+    </h3>
+    <p style="color:#666;margin-bottom:32px;font-size:14px"
+       data-zh="查看派利产品在实际工程中的应用案例" data-en="See PERI products in real construction projects"
+       data-es="Ver productos PERI en proyectos reales" data-de="Sehen Sie PERI-Produkte in echten Projekten"
+       data-pt="Veja produtos PERI em projetos reais" data-sr="Pogledajte PERI proizvode u stvarnim projektima"
+       data-hu="Tekintse meg a PERI termékeket valós projektekben">
+       查看派利产品在实际工程中的应用案例
+    </p>
+    <div class="grid grid-3" style="gap:24px">
+      {build_project_cards(product_projects)}
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
+         data-zh="查看更多项目案例 ↗" data-en="View More Projects ↗" data-es="Ver Más Proyectos ↗" data-de="Mehr Projekte ansehen ↗"
+         data-pt="Ver Mais Projetos ↗" data-sr="Pogledaj Više Projekata ↗" data-hu="További Projektek ↗">
+         查看更多项目案例 ↗
+      </a>
+    </div>
+  </div>
+</div>'''
+    else:
+        projects_section = ''
 
     html = f'''<!DOCTYPE html>
 <html lang="zh">
@@ -698,11 +739,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
          data-pt="↗ Ver no PERI China" data-sr="↗ Pogledaj na PERI China" data-hu="↗ Megtekintés a PERI China oldalon">
          ↗ 前往中文官网查看
       </a>
-      <a href="{pdf_url}" target="_blank" class="btn btn-yellow"
-         data-zh="📄 产品手册 PDF" data-en="📄 Product Brochure PDF" data-es="📄 Folleto PDF" data-de="📄 Produktbroschüre PDF"
-         data-pt="📄 Folheto PDF" data-sr="📄 Brošura PDF" data-hu="📄 Termékismertető PDF">
-         📄 产品手册 PDF
-      </a>
+      {pdf_button}
       <button class="btn btn-outline" onclick="document.getElementById('inquiry').scrollIntoView({{behavior:'smooth'}})"
               data-zh="发表留言" data-en="Post Comment" data-es="Publicar Comentario" data-de="Kommentar posten"
               data-pt="Publicar Comentário" data-sr="Objavi Komentar" data-hu="Hozzászólás Közzététele">
@@ -714,33 +751,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
 
 {yt_section}
 
-<!-- Project Examples Section -->
-<div style="background:#f5f5f5;padding:60px 32px;margin-top:40px">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.4rem;margin-bottom:24px;border-left:4px solid var(--red);padding-left:12px"
-        data-zh="应用项目示例" data-en="Project Examples" data-es="Ejemplos de Proyectos" data-de="Projektbeispiele"
-        data-pt="Exemplos de Projetos" data-sr="Primeri Projekata" data-hu="Projekt Példák">
-        应用项目示例
-    </h3>
-    <p style="color:#666;margin-bottom:32px;font-size:14px"
-       data-zh="查看派利产品在实际工程中的应用案例" data-en="See PERI products in real construction projects"
-       data-es="Ver productos PERI en proyectos reales" data-de="Sehen Sie PERI-Produkte in echten Projekten"
-       data-pt="Veja produtos PERI em projetos reais" data-sr="Pogledajte PERI proizvode u stvarnim projektima"
-       data-hu="Tekintse meg a PERI termékeket valós projektekben">
-       查看派利产品在实际工程中的应用案例
-    </p>
-    <div class="grid grid-3" style="gap:24px">
-      {build_project_cards(product_projects)}
-    </div>
-    <div style="text-align:center;margin-top:32px">
-      <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
-         data-zh="查看更多项目案例 ↗" data-en="View More Projects ↗" data-es="Ver Más Proyectos ↗" data-de="Mehr Projekte ansehen ↗"
-         data-pt="Ver Mais Projetos ↗" data-sr="Pogledaj Više Projekata ↗" data-hu="További Projektek ↗">
-         查看更多项目案例 ↗
-      </a>
-    </div>
-  </div>
-</div>
+{projects_section}
 
 <!-- Comment Board Section -->
 <div style="background:#fff;padding:60px 32px">
