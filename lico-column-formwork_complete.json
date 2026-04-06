@@ -1,0 +1,34 @@
+{
+  "slug": "lico-column-formwork",
+  "name_zh": "LICO 柱模",
+  "category": "建筑模板系统",
+  "subcategory": "柱模",
+  "description": {
+    "zh": "轻型经济的柱模，立模不依赖吊车。",
+    "en": "Lightweight and economical column formwork, independent of crane for assembly.",
+    "es": "Encofrado de columnas ligero y económico, independiente de grúa para el montaje.",
+    "de": "Leichte und wirtschaftliche Säulenschalung, kranunabhängige Montage.",
+    "fr": "Coffrage de colonnes léger et économique, montage indépendant de la grue.",
+    "pt": "Fôrma de coluna leve e econômica, montagem independente de guindaste.",
+    "ar": "قوالب أعمدة خفيفة واقتصادية، تركيب مستقل عن الرافعة."
+  },
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:f6f67d39-eba3-4537-86b7-69a595794b2f/23672/lico-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "卡塔尔，巴瓦商业街",
+      "location": "卡塔尔",
+      "description": "为8公里长的商业中心提供综合模板方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/%E5%8D%A1%E5%A1%94%E5%B0%94%EF%BC%8C%E5%A4%9A%E5%93%88%EF%BC%8C%E5%B7%B4%E7%93%A6%E5%95%86%E4%B8%9A%E8%A1%97.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/barwa-commercial-avenue-doha-qatar.html"
+    },
+    {
+      "name": "沙特阿拉伯，吉达之门 „E3 – Abraj Al-Hilal 2"",
+      "location": "沙特阿拉伯",
+      "description": "3天完成一个施工循环，减少了吊车的使用量",
+      "image": "https://cdn.peri.cloud/dam/jcr:6434b872-e4cd-47af-bf2e-9546dacf1cad/11885/%E5%90%89%E8%BE%BE%E4%B9%8B%E9%97%A8-e3-%E2%80%93-abraj-al-hilal-2.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/jeddah-gate-e3-saudi-arabia.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.ae/dam/jcr:13ec053c-1b15-454b-843d-a2c48641f20b/lico.pdf",
+  "youtube_video_id": ""
+}

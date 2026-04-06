@@ -14,8 +14,9 @@
 - [ ] 文件名 = `{slug}_complete.json`（完全匹配slug）
 - [ ] PDF: 下载并打开确认内容是该产品的手册
 - [ ] 项目: 从产品页面HTML提取（不用WebFetch）
-- [ ] 视频: 在PERI频道内搜索（英语，≤10分钟）
+- [ ] 视频: 使用Agent自动搜索（尝试5次，未找到用空字符串）
 - [ ] 部署后访问在线页面验证（等待2分钟）
+- [ ] 空内容自动隐藏（PDF/YouTube/项目为空时页面自动隐藏组件）
 
 ## 常见错误速查
 
@@ -69,6 +70,8 @@ curl -I "https://kiminanoliu-eng.github.io/peri-gcb/products/{slug}.html"
 - ✅ 验证正确性，不只是有效性
 - ✅ 文件名必须与slug完全匹配
 - ✅ 宁可没有PDF/视频，也不用错误的
+- ✅ YouTube搜索自动化（使用Agent，尝试5次）
+- ✅ 页面自动隐藏空组件（rebuild_site_v2.py已实现）
 
 ## 详细文档
 

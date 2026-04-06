@@ -2,9 +2,9 @@
 
 **最后更新**: 2026-04-06  
 **总产品数**: 160  
-**已完成**: 28  
-**待处理**: 132  
-**完成率**: 17.5%
+**已完成**: 29  
+**待处理**: 131  
+**完成率**: 18.1%
 
 ---
 
@@ -26,33 +26,34 @@
 11. ✅ rundflex-plus-rundschalung - RUNDFLEX Plus 曲面模板
 12. ✅ rundflex-circular-wall-formwork - RUNDFLEX 曲面模板
 
-### 建筑模板系统 - 柱模（5个）
+### 建筑模板系统 - 柱模（6个）
 13. ✅ trio-schalungssystem - TRIO 柱模
 14. ✅ quattro-column-formwork - QUATTRO 柱模
 15. ✅ vario-gt-24-column-formwork - VARIO GT 24 柱模
 16. ✅ vario-quattro-column-formwork - VARIO QUATTRO 柱模
 17. ✅ srs-saeulenrundschalung - SRS 圆柱模
+18. ✅ rapid-column-formwork - RAPID 柱模
 
 ### 建筑模板系统 - 楼板模板（4个）
-18. ✅ skydeck-slab-formwork - SKYDECK 模块化楼板模板
-19. ✅ multiflex-girder-slab-formwork - MULTIFLEX 木梁式楼板模板
-20. ✅ gridflex-deckenschalung - GRIDFLEX 框架楼板模板
-21. ✅ skytable-slab-formwork - SKYTABLE 台模
+19. ✅ skydeck-slab-formwork - SKYDECK 模块化楼板模板
+20. ✅ multiflex-girder-slab-formwork - MULTIFLEX 木梁式楼板模板
+21. ✅ gridflex-deckenschalung - GRIDFLEX 框架楼板模板
+22. ✅ skytable-slab-formwork - SKYTABLE 台模
 
 ### 建筑模板系统 - 通用配件（2个）
-22. ✅ prokit-ep-110-fall-protection - PROKIT EP 110 防坠落护栏
-23. ✅ release-agent - 脱模剂
+23. ✅ prokit-ep-110-fall-protection - PROKIT EP 110 防坠落护栏
+24. ✅ release-agent - 脱模剂
 
 ### 脚手架系统（2个）
-24. ✅ crate-pallet - 格式托架框
-25. ✅ peri-up-easy-frame-scaffolding - PERI UP Easy 框式脚手架
+25. ✅ crate-pallet - 格式托架框
+26. ✅ peri-up-easy-frame-scaffolding - PERI UP Easy 框式脚手架
 
 ### 工程施工套件（2个）
-26. ✅ geruest-anhaenger-transportsystem-kfz-peri-up-easy - PERI UP Easy 外装修脚手架卡车用材料挂架
-27. ✅ vgw-cantilevered-parapet-carriage - VARIOKIT VGW 边梁模板车
+27. ✅ geruest-anhaenger-transportsystem-kfz-peri-up-easy - PERI UP Easy 外装修脚手架卡车用材料挂架
+28. ✅ vgw-cantilevered-parapet-carriage - VARIOKIT VGW 边梁模板车
 
 ### 数字化解决方案（1个）
-28. ✅ moselcopter-raumvisualisierung-vermessungssysteme - Moselcopter 测量技术
+29. ✅ moselcopter-raumvisualisierung-vermessungssysteme - Moselcopter 测量技术
 
 ---
 
@@ -64,29 +65,25 @@
 3. ⏳ rundflex-circular-wall-formwork - RUNDFLEX 曲面模板
 
 ### 建筑模板系统 - 柱模（待处理）
-4. ⏳ vario-quattro-column-formwork - VARIO QUATTRO 柱模
-5. ⏳ vario-gt-24-column-formwork - VARIO GT 24 柱模
-6. ⏳ srs-saeulenrundschalung - SRS 圆柱模
-7. ⏳ rapid-column-formwork - RAPID 柱模
-8. ⏳ lico-column-formwork - LICO 柱模
+4. ⏳ lico-column-formwork - LICO 柱模
 
 ### 建筑模板系统 - 楼板模板（待处理）
-9. ⏳ skymax-grosspaneel-deckenschalung - SKYMAX 大面积楼板模板
-10. ⏳ variodeck-steel-waler-slab-table - VARIODECK 钢梁台模
-11. ⏳ tischmodul-vt - TISCHMODUL VT 台模
-12. ⏳ unterzug-und-deckenabschalungen - 梁板、楼板的端模组件
+5. ⏳ skymax-grosspaneel-deckenschalung - SKYMAX 大面积楼板模板
+6. ⏳ variodeck-steel-waler-slab-table - VARIODECK 钢梁台模
+7. ⏳ tischmodul-vt - TISCHMODUL VT 台模
+8. ⏳ unterzug-und-deckenabschalungen - 梁板、楼板的端模组件
 
 ### 建筑模板系统 - 通用配件（待处理）
-13. ⏳ maximo-mxp - MAXIMO MXP 平台系统
-14. ⏳ mxk-bracket-system - MAXIMO MXK 支架系统
-15. ⏳ sky-anker - SKY-Anker 个人安全设备
-16. ⏳ prokit-ep-200-fall-protection - PROKIT EP 200 防坠落护栏
-17. ⏳ stripping-cart-asw465 - ASW 465 拆模车
-18. ⏳ vt-20k-formwork-girder - VT 20K 模板木梁
-19. ⏳ gt-24-formwork-girder - GT 24 模板木梁
-20. ⏳ peri-stopend-trestle - 模板端模支架
+9. ⏳ maximo-mxp - MAXIMO MXP 平台系统
+10. ⏳ mxk-bracket-system - MAXIMO MXK 支架系统
+11. ⏳ sky-anker - SKY-Anker 个人安全设备
+12. ⏳ prokit-ep-200-fall-protection - PROKIT EP 200 防坠落护栏
+13. ⏳ stripping-cart-asw465 - ASW 465 拆模车
+14. ⏳ vt-20k-formwork-girder - VT 20K 模板木梁
+15. ⏳ gt-24-formwork-girder - GT 24 模板木梁
+16. ⏳ peri-stopend-trestle - 模板端模支架
 
-**注**: 以上仅列出前20个待处理产品，完整列表共139个产品。
+**注**: 以上仅列出前16个待处理产品，完整列表共131个产品。
 
 ---
 
@@ -94,17 +91,13 @@
 
 根据分类和重要性，建议按以下顺序处理：
 
-### 优先级1: 墙模系统（核心产品）
-1. **vario-gt-24-girder-wall-formwork** - VARIO GT 24 木梁式墙模
-   - 原因：VARIO系列是PERI的核心产品线
+### 优先级1: 柱模系统
+1. **lico-column-formwork** - LICO 柱模
+   - 原因：柱模系列是核心产品线
 
-### 优先级2: 柱模系统
-2. **vario-quattro-column-formwork** - VARIO QUATTRO 柱模
-3. **vario-gt-24-column-formwork** - VARIO GT 24 柱模
-
-### 优先级3: 楼板模板系统
-4. **skymax-grosspaneel-deckenschalung** - SKYMAX 大面积楼板模板
-5. **variodeck-steel-waler-slab-table** - VARIODECK 钢梁台模
+### 优先级2: 楼板模板系统
+2. **skymax-grosspaneel-deckenschalung** - SKYMAX 大面积楼板模板
+3. **variodeck-steel-waler-slab-table** - VARIODECK 钢梁台模
 
 ---
 
