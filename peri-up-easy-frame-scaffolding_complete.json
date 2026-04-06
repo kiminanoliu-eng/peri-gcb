@@ -1,0 +1,35 @@
+{
+  "slug": "peri-up-easy-frame-scaffolding",
+  "name_zh": "PERI UP Easy 框式脚手架",
+  "category": "脚手架_支架系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-up-easy-frame-scaffolding.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:48d6fece-8b29-405e-968b-0d284fba1989/24535/peri-up-easy%E7%B3%BB%E7%BB%9F.jpg",
+  "description": {
+    "zh": "PERI UP Easy 是钢制的轻型外装修脚手架，安装过程快速、简便。",
+    "en": "PERI UP Easy is a lightweight steel facade scaffolding system that is quick and easy to install.",
+    "es": "PERI UP Easy es un andamio ligero de acero para fachadas que se instala de forma rápida y sencilla.",
+    "de": "PERI UP Easy ist ein leichtes Fassadengerüst aus Stahl, das schnell und einfach zu montieren ist.",
+    "pt": "PERI UP Easy é um andaime leve de aço para fachadas que é rápido e fácil de instalar.",
+    "sr": "PERI UP Easy je lagana čelična fasadna skela koja se brzo i lako montira.",
+    "hu": "A PERI UP Easy egy könnyű acél homlokzati állvány, amely gyorsan és egyszerűen telepíthető."
+  },
+  "projects": [
+    {
+      "name": "SKY PARK 公寓",
+      "location": "斯洛伐克，布拉迪斯拉发",
+      "description": "SKY PARK多功能建筑将现代的居住空间、办公空间与公共空间融为一体，由著名建筑师扎哈·哈迪德设计",
+      "image": "https://cdn.peri.cloud/dam/jcr:7cdd19f8-750f-4bfa-b89d-8e01979058ab/26818/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%EF%BC%8C%E5%B8%83%E6%8B%89%E8%BF%AA%E6%96%AF%E6%8B%89%E5%8F%91%EF%BC%8Csky-park-%E5%85%AC%E5%AF%93%E5%A4%A7%E5%8E%A6.jpg",
+      "link": "https://cn.peri.com/projects/sky-park-residence-bratislava-slovakia.html"
+    },
+    {
+      "name": "住宅和商业建筑"Ypsilon"",
+      "location": "德国，乌尔姆",
+      "description": "该项目包含一座35米10层高的大厦、相邻7层结构的裙楼和2层地下停车场，提供6300平方米的商业、办公和住宅用途面积",
+      "image": "https://cdn.peri.cloud/dam/jcr:eca574f8-af6e-4962-b08e-aaaef4d4a781/19011/%E5%BE%B7%E5%9B%BD%EF%BC%8C%E4%B9%8C%E5%B0%94%E5%A7%86%EF%BC%8C%E4%BD%8F%E5%AE%85%E5%92%8C%E5%95%86%E4%B8%9A%E5%BB%BA%E7%AD%91-ypsilon.jpg",
+      "link": "https://cn.peri.com/projects/ypsilon-residential-and-office-building-ulm-germany.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/76178",
+  "youtube_video_id": ""
+}
