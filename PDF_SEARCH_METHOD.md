@@ -12,9 +12,52 @@
 2. 提取 `/.rest/downloads/{ID}` 链接
 3. 使用完整URL：`https://www.peri.ltd.uk/.rest/downloads/{ID}`
 
+### ⚠️ 重要：Slug变体尝试策略
+
+**问题：** 中国网站和UK网站的产品slug可能不一致
+
+**解决方案：** 必须尝试多个slug变体，按以下顺序：
+
+1. **原始slug** - 直接使用中国网站的slug
+2. **移除后缀** - 去掉产品类型后缀
+   - `prokit-ep-110-fall-protection` → `prokit`
+   - `peri-up-easy-frame-scaffolding` → `peri-up-easy-scaffolding`
+3. **简化版本** - 只保留核心产品名
+   - `domino-panel-formwork` → `domino`
+4. **添加常见后缀** - 尝试添加UK网站常用后缀
+   - 添加 `-scaffolding`
+   - 添加 `-formwork`
+
 ### 示例
-- TRIO: `https://www.peri.ltd.uk/.rest/downloads/78343`
-- DOMINO: `https://www.peri.ltd.uk/.rest/downloads/85752`
+- PROKIT EP 110:
+  - ❌ `prokit-ep-110-fall-protection` (中国slug)
+  - ✅ `prokit` (简化版本)
+  
+- PERI UP Easy:
+  - ❌ `peri-up-easy-frame-scaffolding` (中国slug)
+  - ✅ `peri-up-easy-scaffolding` (移除"frame")
+
+- DOMINO:
+  - ✅ `domino-panel-formwork` (原始slug有效)
+  - ✅ `domino` (简化版本也有效)
+
+### 实施代码
+```bash
+# 尝试多个slug变体
+slugs=(
+  "$original_slug"
+  "${original_slug%-*}"  # 移除最后一个词
+  "${original_slug%%-*}" # 只保留第一个词
+)
+
+for slug in "${slugs[@]}"; do
+  result=$(curl -s "https://www.peri.ltd.uk/products/$slug.html" | grep -o '/.rest/downloads/[0-9]*' | head -1)
+  if [ -n "$result" ]; then
+    echo "Found: $result"
+    break
+  fi
+done
+```
 
 ### 优点
 - 直接、可靠
@@ -22,8 +65,8 @@
 - 链接稳定
 
 ### 缺点
+- 需要尝试多个slug变体
 - 不是所有产品在UK网站都有
-- 产品slug可能需要调整
 
 ---
 
