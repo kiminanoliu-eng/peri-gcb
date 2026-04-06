@@ -1,0 +1,49 @@
+{
+  "slug": "sb-brace-frame",
+  "name_zh": "SB 单侧支架",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/sb-brace-frame.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:4bfd5515-7915-4e45-a794-9101e8f2be24/23693/sb-单侧支架.jpg",
+  "description": {
+    "zh": "为高达8.75米的单侧模板提供可靠的受力支撑。",
+    "en": "Provides reliable load-bearing support for single-sided formwork up to 8.75 meters high.",
+    "es": "Proporciona soporte de carga confiable para encofrado de un solo lado de hasta 8.75 metros de altura.",
+    "de": "Bietet zuverlässige Lastaufnahme für einseitige Schalung bis zu 8,75 Meter Höhe.",
+    "pt": "Fornece suporte de carga confiável para fôrmas de face única com até 8,75 metros de altura.",
+    "sr": "Pruža pouzdanu nosivost za jednostrane oplate do 8,75 metara visine.",
+    "hu": "Megbízható teherhordó támogatást nyújt egyoldalas zsaluzathoz 8,75 méter magasságig."
+  },
+  "projects": [
+    {
+      "name": "迪拜之窗",
+      "location": "阿拉伯联合酋长国",
+      "description": "为巨型倾斜的画框式建筑提供爬模方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:14afaa5d-11fd-44b4-bada-419c27002112/11275/阿联酋联合酋长国，迪拜之窗.jpg",
+      "link": "https://cn.peri.com/projects/dubai-frame-united-arab-emirates.html"
+    },
+    {
+      "name": "波茨坦广场",
+      "location": "德国",
+      "description": "该项目是柏林市中心新开发项目的一部分，包括办公室、商业和住宅楼、火车站",
+      "image": "https://cdn.peri.cloud/dam/jcr:ace46a76-b8f7-447e-bade-4cf83e9d290e/16885/波茨坦广场，柏林，一个未来的城市.jpg",
+      "link": "https://cn.peri.com/projects/potsdamer-platz.html"
+    },
+    {
+      "name": "辉凌制药A/S研发中心",
+      "location": "丹麦，哥本哈根",
+      "description": "派利公司提供为项目定制的施工方案，满足复杂的建筑设计要求 在丹麦哥本哈根市，新建辉凌制药A/S研发中心 三角形的建筑需要满足高质量的清水混凝土要求 建筑位于哥本哈根市与马尔默市间的厄勒交叉口旁边海滨的中心位置 建筑共八层，地下2层，地上6层",
+      "image": "https://cdn.peri.cloud/dam/jcr:f82f0544-ae5d-4bca-8c97-4d122be205c6/26880/丹麦，哥本哈根，辉凌制药a-s研发中心.jpg",
+      "link": "https://cn.peri.com/projects/research-and-development-centre-of-ferring-pharmaceuticals-a-s-copenhagen-denmark.html"
+    },
+    {
+      "name": "VTB竞技体育场",
+      "location": "俄罗斯",
+      "description": "VTB竞技体育场是俄罗斯足球俱乐部莫斯科FK 迪那摩的主场。该体育场最多可容纳两万六千名观众，并且采用了多种顶尖的技术，是一个先进的多功能球场。该球场为不同体育项目和用途设计，因此利用率非常高。仅用几个小时就可以将体育馆从足球场和冰球场变为篮球场或举办音乐会的场馆。",
+      "image": "https://cdn.peri.cloud/dam/jcr:f6e5e0c7-36eb-4b33-b160-6e4ca2b56f2f/12005/多功能的运动场、集会场地.jpg",
+      "link": "https://cn.peri.com/projects/vtb-arena-moscow-russia.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.id/dam/jcr:9f85565f-4040-3033-a38d-1932648984cc/sb-brace-frame.pdf",
+  "youtube_video_id": ""
+}

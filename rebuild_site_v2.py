@@ -579,6 +579,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     # Load product-specific data from *_complete.json if exists
     product_projects = []
     pdf_url = None
+    yt_id_from_json = None
     complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
     if os.path.exists(complete_json_path):
         try:
@@ -586,6 +587,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
                 product_data = json.load(f)
                 product_projects = product_data.get('projects', [])
                 pdf_url = product_data.get('pdf_link')  # Get direct PDF URL
+                yt_id_from_json = product_data.get('youtube_video_id')  # Get YouTube video ID
         except:
             pass
 
@@ -631,7 +633,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
                f'↗ <a href="{cn_url}" target="_blank" style="color:var(--red)">在 cn.peri.com 查看完整信息</a></p>')
 
     # YouTube section
-    yt_id = YT_IDS.get(slug, '')
+    # Priority: 1. *_complete.json, 2. YT_IDS dictionary
+    yt_id = yt_id_from_json if yt_id_from_json else YT_IDS.get(slug, '')
     yt_query = urllib.parse.quote(name_zh)
     yt_search_url = f'https://www.youtube.com/@perigroup/search?query={yt_query}'
 
