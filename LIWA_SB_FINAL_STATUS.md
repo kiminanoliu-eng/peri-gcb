@@ -22,7 +22,7 @@
   2. Bandra Kurla Complex地铁站（印度孟买）
   3. UTEC大学校园（秘鲁）
 - ✅ 项目来源：全部从cn.peri.com产品页面提取
-- ✅ PDF链接：空字符串（未找到PDF）
+- ✅ PDF链接：https://www.peri.co.th/dam/jcr:bf8b3cd6-eeb5-4529-bf7e-c1d5148f8a36/liwa.pdf（通过Google搜索找到）
 - ✅ YouTube视频：v25MaKccw3k
 - ✅ 在线页面：https://kiminanoliu-eng.github.io/peri-gcb/products/liwa.html (HTTP 200)
 
@@ -193,5 +193,5 @@ yt_id = yt_id_from_json if yt_id_from_json else YT_IDS.get(slug, '')
 
 ---
 
-**最后更新**: 2026-04-06 18:45
-**状态**: LIWA和SB已完成并部署，可以开始下一个产品
+**最后更新**: 2026-04-06 17:10
+**状态**: LIWA和SB已完成并部署（包含PDF），可以开始下一个产品

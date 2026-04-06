@@ -1,0 +1,20 @@
+{
+  "slug": "crate-pallet",
+  "name_zh": "格式托架框",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "cn_url": "https://cn.peri.com/products/crate-pallet.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:5e9e7b6e-e274-4d9d-a4af-f707c3982c66/24681/%E6%A0%BC%E5%BC%8F%E6%89%98%E6%9E%B6%E6%A1%86.jpg",
+  "description": {
+    "zh": "格式托架框用于运输难以堆放的组件。",
+    "en": "Format support frames are used for transporting components that are difficult to stack.",
+    "es": "Los marcos de soporte de formato se utilizan para transportar componentes difíciles de apilar.",
+    "de": "Formatgestelle werden für den Transport von schwer stapelbaren Komponenten verwendet.",
+    "pt": "Estruturas de suporte de formato são usadas para transportar componentes difíceis de empilhar.",
+    "sr": "Okviri za podršku formata se koriste za transport komponenti koje je teško slagati.",
+    "hu": "A formátumtartó keretek nehezen rakásolható alkatrészek szállítására szolgálnak."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
