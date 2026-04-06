@@ -1,0 +1,49 @@
+{
+  "slug": "trio-rahmenschalung",
+  "name_zh": "TRIO 框式模板",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/trio-rahmenschalung.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:53e3559b-cf25-4eef-a2a5-ac38db3fa423/23717/trio-框式模板.jpg",
+  "description": {
+    "zh": "TRIO多功能墙体模板是一种简单、高效的模板系统，减少了浇筑时间。整套系统只含6种不同宽度的标准模块，简化了装配流程及运输环节。",
+    "en": "TRIO multifunctional wall formwork is a simple and efficient formwork system that reduces concreting time. The complete system contains only 6 different standard module widths, simplifying assembly and transportation.",
+    "es": "El encofrado de pared multifuncional TRIO es un sistema de encofrado simple y eficiente que reduce el tiempo de hormigonado. El sistema completo contiene solo 6 anchos de módulos estándar diferentes, simplificando el montaje y el transporte.",
+    "de": "TRIO Multifunktionsschalung ist ein einfaches und effizientes Schalungssystem, das die Betonierzeit reduziert. Das komplette System enthält nur 6 verschiedene Standardmodulbreiten und vereinfacht Montage und Transport.",
+    "pt": "A fôrma de parede multifuncional TRIO é um sistema de fôrmas simples e eficiente que reduz o tempo de concretagem. O sistema completo contém apenas 6 larguras de módulos padrão diferentes, simplificando a montagem e o transporte.",
+    "sr": "TRIO višenamenska oplata za zidove je jednostavan i efikasan sistem oplate koji smanjuje vreme betoniranja. Kompletan sistem sadrži samo 6 različitih širina standardnih modula, pojednostavljujući montažu i transport.",
+    "hu": "A TRIO többfunkciós falzsaluzat egy egyszerű és hatékony zsaluzási rendszer, amely csökkenti a betonozási időt. A teljes rendszer csak 6 különböző szabványos modulszélességet tartalmaz, egyszerűsítve az összeszerelést és a szállítást."
+  },
+  "projects": [
+    {
+      "name": "斯塔夫罗斯尼亚尔霍斯基金文化中心",
+      "location": "希腊，雅典",
+      "description": "为雅典的新地标建筑搭建抗震脚手架",
+      "image": "https://cdn.peri.cloud/dam/jcr:06ea840d-4bc9-4d3b-aea4-9b9bf56c9fd0/10568/希腊，雅典，snfcc–-派利承重支架方案.jpg",
+      "link": "https://cn.peri.com/projects/stavros-niarchos-foundation-cultural-center.html"
+    },
+    {
+      "name": "Gazenica港口客运码头 运营大厅",
+      "location": "克罗地亚，扎达尔",
+      "description": "相互协调确定的模板、脚手架方案，加快了施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/克罗地亚，扎达尔，gazenica客运码头，运营大厅.jpg",
+      "link": "https://cn.peri.com/projects/terminal-building-gazenica-passenger-port-zadar-croatia.html"
+    },
+    {
+      "name": "道加瓦河水电站",
+      "location": "白俄罗斯，波洛茨克",
+      "description": "提供顶级的施工设备与细节丰富的施工方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:37ae80f9-8203-4f2d-b73b-9db3f80e72ab/12384/模板、脚手架全面方案.jpg",
+      "link": "https://cn.peri.com/projects/duena-wasserkraftwerk-polotsk-weissrussland.html"
+    },
+    {
+      "name": "The Squaire办公大楼",
+      "location": "德国，法兰克福",
+      "description": "SKYDECK楼板模板安装在可移动的特殊结构上",
+      "image": "https://cdn.peri.cloud/dam/jcr:36a368c5-2408-47de-a06d-2d6255fab28b/16684/the-squaire办公大楼-架设在建筑物纵向外侧的peri-up脚手架承受施工荷载.jpg",
+      "link": "https://cn.peri.com/projects/the-squaire.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
