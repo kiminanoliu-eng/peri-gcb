@@ -2,6 +2,72 @@
 
 ## 2026-04-06 - LIWA和SB产品处理
 
+### 错误0: products_v2.json中使用了URL编码的中文slug
+
+**严重程度**: 🔴 极高
+
+**问题描述**:
+- products_v2.json中LIWA的slug是 `liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF`（URL编码的中文）
+- 导致生成的HTML文件名包含URL编码字符：`liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF.html`
+- GitHub Pages无法正确处理这种文件名，返回404错误
+- 用户无法访问LIWA产品页面
+
+**根本原因**:
+- products_v2.json中的slug应该使用英文，而不是URL编码的中文
+- 其他产品都使用英文slug（如 `uno-formwork-system`, `sb-brace-frame`）
+- 只有LIWA使用了URL编码的中文slug
+
+**影响范围**:
+- LIWA产品页面完全无法访问（404）
+- 即使部署成功，用户也看不到页面
+- 这是最严重的错误类型：产品完全不可用
+
+**解决方案**:
+1. 检查cn.peri.com的英文版本，找到正确的英文slug
+   - 中文URL: `https://cn.peri.com/products/liwa-钢框模板.html`
+   - 英文URL: `https://www.peri.com/en/products/liwa.html`
+   - 正确的slug: `liwa`
+
+2. 修改products_v2.json，将slug改为 `liwa`
+
+3. 重命名JSON文件：`liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF_complete.json` → `liwa_complete.json`
+
+4. 更新JSON文件中的slug字段
+
+5. 重新生成网站
+
+6. 删除旧的URL编码文件
+
+7. 重新部署
+
+**预防措施**:
+1. **检查所有产品的slug**: 确保products_v2.json中所有slug都是英文
+2. **预检脚本**: 添加检查，拒绝URL编码的slug
+3. **命名规则**: slug必须只包含小写字母、数字和连字符
+
+**检查命令**:
+```bash
+# 检查products_v2.json中是否有URL编码的slug
+python3 -c "
+import json
+with open('products_v2.json', 'r') as f:
+    data = json.load(f)
+    for cat_key, cat in data.items():
+        if 'subcategories' in cat:
+            for sc_key, sc in cat['subcategories'].items():
+                for p in sc['products']:
+                    if '%' in p[0]:
+                        print(f'❌ URL编码的slug: {p[0]} ({p[1]})')
+"
+```
+
+**教训**:
+- **slug必须是英文** - 不能使用中文或URL编码
+- **参考英文网站** - 从www.peri.com/en获取正确的英文slug
+- **部署后必须验证** - 不能假设部署成功就能访问
+
+---
+
 ### 错误1: 忘记部署到GitHub Pages
 
 **严重程度**: 🔴 高
