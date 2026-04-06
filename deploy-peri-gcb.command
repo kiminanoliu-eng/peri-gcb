@@ -32,7 +32,7 @@ git remote add origin https://github.com/kiminanoliu-eng/peri-gcb.git
 # Stage all HTML files
 echo ""
 echo "📁 Staging all website files..."
-git add "mnt/创建产品网站/index.html" "mnt/创建产品网站/categories/" "mnt/创建产品网站/products/" "mnt/创建产品网站/search.html" 2>/dev/null
+git add index.html categories/ products/ search.html 2>/dev/null
 git add -A
 
 FILE_COUNT=$(git diff --cached --name-only 2>/dev/null | wc -l | tr -d ' ')
