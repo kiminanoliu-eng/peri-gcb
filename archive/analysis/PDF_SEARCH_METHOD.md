@@ -19,12 +19,15 @@
 **解决方案：** 必须尝试多个slug变体，按以下顺序：
 
 1. **原始slug** - 直接使用中国网站的slug
-2. **移除后缀** - 去掉产品类型后缀
+2. **英文翻译变体** - 将德语/其他语言翻译成英文
+   - `grv-rundschalung` → `grv-circular-formwork` (rundschalung=circular formwork)
+   - `quattro-saeulenschalung` → `quattro-column-formwork`
+3. **移除后缀** - 去掉产品类型后缀
    - `prokit-ep-110-fall-protection` → `prokit`
    - `peri-up-easy-frame-scaffolding` → `peri-up-easy-scaffolding`
-3. **简化版本** - 只保留核心产品名
+4. **简化版本** - 只保留核心产品名
    - `domino-panel-formwork` → `domino`
-4. **添加常见后缀** - 尝试添加UK网站常用后缀
+5. **添加常见后缀** - 尝试添加UK网站常用后缀
    - 添加 `-scaffolding`
    - 添加 `-formwork`
 
@@ -36,6 +39,11 @@
 - PERI UP Easy:
   - ❌ `peri-up-easy-frame-scaffolding` (中国slug)
   - ✅ `peri-up-easy-scaffolding` (移除"frame")
+
+- GRV:
+  - ❌ `grv-rundschalung` (德语slug)
+  - ❌ `grv` (简化版本)
+  - ✅ `grv-circular-formwork` (英文翻译)
 
 - DOMINO:
   - ✅ `domino-panel-formwork` (原始slug有效)

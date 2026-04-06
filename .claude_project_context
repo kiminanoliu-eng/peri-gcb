@@ -1,0 +1,33 @@
+# PERI产品网站项目 - Claude快速上下文
+
+## 项目信息
+- 路径: /Users/fufu/Documents/Claude/Projects/自动化/创建产品网站
+- 目标: 为160个PERI产品生成中文介绍网站
+- 状态: 10+个产品已完成，150个待处理
+
+## 核心文档（必读）
+1. WORKFLOW_QUICK_REFERENCE.md - 工作流程快速参考（2.6KB）
+2. README.md - 项目概况（2.2KB）
+3. PROJECT_RULES.md - 核心规则（6.8KB）
+
+## 工作流程（6步）
+1. 确认产品slug（从products_v2.json）
+2. 提取数据（curl + grep）
+3. 验证数据（PDF内容、项目案例、视频）
+4. 创建JSON（{slug}_complete.json）
+5. 生成页面（python3 rebuild_site_v2.py）
+6. 部署验证（bash deploy-peri-gcb.command）
+
+## 关键原则
+- 一次只做1个产品
+- 验证正确性，不只是有效性
+- 文件名必须与slug完全匹配
+- PDF必须下载并人工确认内容
+- 部署后必须验证在线页面
+
+## 历史文档
+详细的错误记录、检查清单、分析文档在 archive/ 目录中，按需查阅。
+
+## 快速启动
+新对话中说：
+"继续PERI产品网站项目，路径 /Users/fufu/Documents/Claude/Projects/自动化/创建产品网站，读取 WORKFLOW_QUICK_REFERENCE.md"
