@@ -124,19 +124,25 @@ for proj in selected_projects:
 
 html += f'''
     </div>
+'''
 
+# 只有当youtube_video_id存在且不为空时才显示视频部分
+if product.get('youtube_video_id'):
+    html += f'''
     <div style="margin-top:64px;margin-bottom:64px">
       <h3 style="margin-bottom:16px;font-size:24px;display:flex;align-items:center;gap:8px"
           data-zh="📺 产品视频介绍" data-en="📺 Product Video" data-es="📺 Video del Producto" data-de="📺 Produktvideo"
           data-pt="📺 Vídeo do Produto" data-sr="📺 Видео Производа" data-hu="📺 Termék Videó">📺 产品视频介绍</h3>
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.15)">
         <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
-                src="https://www.youtube.com/embed/{product.get('youtube_video_id', 'PLACEHOLDER_NEED_VIDEO_ID')}"
+                src="https://www.youtube.com/embed/{product['youtube_video_id']}"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
       </div>
     </div>
+'''
 
+html += '''
     <div id="inquiry" style="margin-top:80px;margin-bottom:80px">
       <h3 style="margin-bottom:24px;font-size:24px"
           data-zh="发表留言" data-en="Post a Comment" data-es="Publicar Comentario" data-de="Kommentar posten"

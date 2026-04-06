@@ -1,0 +1,35 @@
+{
+  "slug": "uno-formwork-system",
+  "name_zh": "UNO 墙模",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/uno-formwork-system.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:3453e69c-1cc3-4ac4-b2dc-daa568c88ce2/23723/peri-uno.jpg",
+  "description": {
+    "zh": "使用UNO系统可将墙体、柱体、楼板、梁以及楼梯一次性立模，并完成一体式浇筑。对于经济适用房或对相同结构进行重复浇筑的项目，UNO系统是高效、经济的模板系统。",
+    "en": "The UNO system enables one-time formwork assembly for walls, columns, slabs, beams and stairs with monolithic casting. For affordable housing or projects with repetitive structures, UNO is an efficient and economical formwork system.",
+    "es": "El sistema UNO permite el montaje único de encofrado para muros, columnas, losas, vigas y escaleras con vaciado monolítico. Para viviendas asequibles o proyectos con estructuras repetitivas, UNO es un sistema de encofrado eficiente y económico.",
+    "de": "Das UNO-System ermöglicht die einmalige Schalungsmontage für Wände, Stützen, Decken, Balken und Treppen mit monolithischem Guss. Für bezahlbaren Wohnungsbau oder Projekte mit sich wiederholenden Strukturen ist UNO ein effizientes und wirtschaftliches Schalungssystem.",
+    "pt": "O sistema UNO permite a montagem única de fôrmas para paredes, pilares, lajes, vigas e escadas com concretagem monolítica. Para habitação acessível ou projetos com estruturas repetitivas, UNO é um sistema de fôrmas eficiente e econômico.",
+    "sr": "UNO sistem omogućava jednokratnu montažu oplate za zidove, stubove, ploče, grede i stepenice sa monolitnim betoniranjem. Za pristupačno stanovanje ili projekte sa ponavljajućim strukturama, UNO je efikasan i ekonomičan sistem oplate.",
+    "hu": "A UNO rendszer lehetővé teszi a falak, oszlopok, födémek, gerendák és lépcsők egyszeri zsaluzását monolitikus betonozással. Megfizethető lakások vagy ismétlődő szerkezetű projektek esetén a UNO hatékony és gazdaságos zsaluzási rendszer."
+  },
+  "projects": [
+    {
+      "name": "Los Portones de Linares住宅群",
+      "location": "智利，利纳雷斯",
+      "description": "两天完成一个施工流程，一体浇筑住宅。共计浇筑350套住宅，每两天完成一个浇筑周期。",
+      "image": "https://cdn.peri.cloud/dam/jcr:959e7277-f548-4428-95f2-777d10e9b414/11361/智利-los-portones-de-linares住宅群.jpg",
+      "link": "https://cn.peri.com/projects/housing-complex-los-portones-de-linares.html"
+    },
+    {
+      "name": "Saglemi住房项目",
+      "location": "加纳，普兰普兰",
+      "description": "使用一体式浇筑方法进行施工，每3天完成一个循环。Saglemi住房项目包含了共计5000个住房单元。",
+      "image": "https://cdn.peri.cloud/dam/jcr:e65f6fa1-014c-4af8-9873-0705dbfca374/11921/使用派利公司的uno空间模板系统，采用一体式浇筑方法.jpg",
+      "link": "https://cn.peri.com/projects/saglemi-housing-project-prampram-ghana.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.it/dam/jcr:6ace1692-e75a-4192-8a98-4080f40e98dd/uno-cassaforma-per-pareti-brochure-en.pdf",
+  "youtube_video_id": ""
+}

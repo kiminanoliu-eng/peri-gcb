@@ -1,0 +1,1073 @@
+{
+  "uno-formwork-system": {
+    "name_zh": "UNO 墙模",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "trio-rahmenschalung": {
+    "name_zh": "TRIO 框式模板",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF": {
+    "name_zh": "LIWA 钢框模板",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "sb-brace-frame": {
+    "name_zh": "SB 单侧支架",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rundflex-plus-rundschalung": {
+    "name_zh": "RUNDFLEX Plus 曲面模板",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rundflex-circular-wall-formwork": {
+    "name_zh": "RUNDFLEX 曲面模板",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "grv-rundschalung": {
+    "name_zh": "GRV 曲面模板",
+    "category": "建筑模板系统",
+    "subcategory": "墙模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vario-quattro-column-formwork": {
+    "name_zh": "VARIO QUATTRO 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vario-gt-24-column-formwork": {
+    "name_zh": "VARIO GT 24 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "trio-schalungssystem": {
+    "name_zh": "TRIO 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "srs-saeulenrundschalung": {
+    "name_zh": "SRS 圆柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rapid-column-formwork": {
+    "name_zh": "RAPID 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "quattro-column-formwork": {
+    "name_zh": "QUATTRO 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "lico-column-formwork": {
+    "name_zh": "LICO 柱模",
+    "category": "建筑模板系统",
+    "subcategory": "柱模",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "skymax-grosspaneel-deckenschalung": {
+    "name_zh": "SKYMAX 大面积楼板模板",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "variodeck-steel-waler-slab-table": {
+    "name_zh": "VARIODECK 钢梁台模",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "tischmodul-vt": {
+    "name_zh": "TISCHMODUL VT 台模",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "skytable-slab-formwork": {
+    "name_zh": "SKYTABLE 台模",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "unterzug-und-deckenabschalungen": {
+    "name_zh": "梁板、楼板的端模组件",
+    "category": "建筑模板系统",
+    "subcategory": "楼板模板",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "maximo-mxp": {
+    "name_zh": "MAXIMO MXP 平台系统",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "mxk-bracket-system": {
+    "name_zh": "MAXIMO MXK 支架系统",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "sky-anker": {
+    "name_zh": "SKY-Anker 个人安全设备",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "prokit-ep-110-fall-protection": {
+    "name_zh": "PROKIT EP 110 防坠落护栏",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "prokit-ep-200-fall-protection": {
+    "name_zh": "PROKIT EP 200 防坠落护栏",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "release-agent": {
+    "name_zh": "脱模剂",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "stripping-cart-asw465": {
+    "name_zh": "ASW 465 拆模车",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vt-20k-formwork-girder": {
+    "name_zh": "VT 20K 模板木梁",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "gt-24-formwork-girder": {
+    "name_zh": "GT 24 模板木梁",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-stopend-trestle": {
+    "name_zh": "模板端模支架",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-elevating-platform-290": {
+    "name_zh": "PERI 290 升降平台",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "plastic-stopend-angle": {
+    "name_zh": "复合材料端模支架",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "table-lifting-fork": {
+    "name_zh": "转运叉",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "crate-pallet": {
+    "name_zh": "格式托架框",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "door-and-vario-box-out": {
+    "name_zh": "门窗造型框与VARIO造型框",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "hardware-boxes": {
+    "name_zh": "小组件托架框",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-ankertechnik": {
+    "name_zh": "PERI 拉杆技术",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rs-push-pull-props": {
+    "name_zh": "RS 斜撑",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel": {
+    "name_zh": "工具组合",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "transportbehaelter": {
+    "name_zh": "材料运输工具",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pallet": {
+    "name_zh": "托架",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "ptl-1250-2-table-lift": {
+    "name_zh": "PTL 1250-2 台模升降机",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "table-striking-and-transporation-trolley": {
+    "name_zh": "台模转运车",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "ftf-fassadenschalung": {
+    "name_zh": "FTF 外立面模板",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "isc-temperaturueberwachungs-und-betonfestigkeits-set": {
+    "name_zh": "InSite 派利混凝土检测套件",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "concrete-maturity-computer": {
+    "name_zh": "混凝土强度测试仪",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "isc-sono-wz-analyser": {
+    "name_zh": "SONO WZ 水灰比分析仪",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "richtstuetze-ft-360": {
+    "name_zh": "FT 360 斜撑",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "abrollcontainer": {
+    "name_zh": "PERI UP Easy 集装箱",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "hammock": {
+    "name_zh": "HAMMOCK 安全系统",
+    "category": "建筑模板系统",
+    "subcategory": "通用配件",
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "multiprop-aluminium-slab-props": {
+    "name_zh": "MULTIPROP 铝合金楼板支撑",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pd8-shoring-system": {
+    "name_zh": "PD 8 承重支架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pep-ergo-tubular-steel-slab-props": {
+    "name_zh": "PEP Ergo 楼板模板支撑",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pep-alpha-props": {
+    "name_zh": "PEP Alpha 楼板模板支撑",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-flex-shoring": {
+    "name_zh": "PERI UP Flex 承重支架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-flex-shoring-tower-mds-k": {
+    "name_zh": "PERI UP Flex MDS K 支撑塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pd-5-shoring-system": {
+    "name_zh": "PD 5 承重支架系统",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-modular-scaffold": {
+    "name_zh": "PERI UP Flex 模块化脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-rosett-modular-scaffold": {
+    "name_zh": "PERI UP 盘扣式模块脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-easy-frame-scaffolding": {
+    "name_zh": "PERI UP Easy 框式脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-facade-scaffolding": {
+    "name_zh": "PERI UP Flex 外装修脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-working-platforms": {
+    "name_zh": "PERI UP Flex 操作平台",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-working-platform-lgs-150": {
+    "name_zh": "PERI UP Flex 操作平台 LGS 150",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-reinforcement-scaffold": {
+    "name_zh": "PERI UP Flex 钢筋绑扎脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-rosett-r-scaffold-system": {
+    "name_zh": "PERI UP 盘扣式钢筋绑扎脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-suspended-scaffold": {
+    "name_zh": "PERI UP Flex 悬挂脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-t-frame-working-scaffold": {
+    "name_zh": "PERI UP T型框式脚手架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-rosett-stair-alu-64": {
+    "name_zh": "64型 PERI UP 铝制施工梯塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-stair-75": {
+    "name_zh": "75型 PERI UP Flex 施工梯塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-flex-treppe-100-125": {
+    "name_zh": "100/125型 PERI UP Flex 施工梯塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-rosett-public-stair": {
+    "name_zh": "PERI UP 盘扣式公共楼梯塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-easy-treppe-67": {
+    "name_zh": "67型 PERI UP Easy 施工梯塔架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-weather-protection-roof": {
+    "name_zh": "PERI UP Flex 顶棚系统",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "weather-protection-roof-lgs75": {
+    "name_zh": "防护顶棚系统 LGS 75",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "geruest-anhaenger-transportsystem-kfz-peri-up-easy": {
+    "name_zh": "PERI UP Easy 外装修脚手架卡车用材料挂架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-geruestbaukasten-belagstechnik": {
+    "name_zh": "PERI UP 踏脚板技术",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-easy-multibox": {
+    "name_zh": "PERI UP Easy Multi Box 多功能运输架",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "seilwinde-und-schwenkarmhalter": {
+    "name_zh": "PERI UP 绞盘与吊臂固定杆",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "alimak-sts-300-scaffold-transport-system": {
+    "name_zh": "STS 300 脚手架材料转运升降平台",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "asset-tracking": {
+    "name_zh": "PERI 材料定位器",
+    "category": "脚手架_支架系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "variokit-engineering-construction-kit": {
+    "name_zh": "VARIOKIT 工程套件",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "variokit-gespaerrefachwerk": {
+    "name_zh": "VARIOKIT 桁架",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vrb-heavy-duty-truss-girder": {
+    "name_zh": "VARIOKIT VRB 桁架梁",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vst-heavy-duty-tower": {
+    "name_zh": "VARIOKIT VST 高强塔架",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vgk-cantilevered-parapet-bracket": {
+    "name_zh": "VARIOKIT VGK 边梁支架",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vgb-cantilevered-parapet-track": {
+    "name_zh": "VARIOKIT-VGB 移动式边梁支架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vgw-cantilevered-parapet-carriage": {
+    "name_zh": "VARIOKIT VGW 边梁模板车",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vcc-composite-formwork-carriage": {
+    "name_zh": "VARIOKIT VCC 劲性混凝土模板台车",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vcb-kragarmkonsole": {
+    "name_zh": "VARIOKIT VCB 悬臂支架",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vbc-balanced-cantilever-carriage": {
+    "name_zh": "VARIOKIT VBC 挂篮系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "vtc-tunnel-carriage": {
+    "name_zh": "VARIOKIT VTC 隧道模板台车",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "variokit-taktschiebeanlage-vil": {
+    "name_zh": "VARIOKIT VIL 顶推式桥梁模板台车",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "alphakit": {
+    "name_zh": "ALPHAKIT 工程系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "freeform-formwork": {
+    "name_zh": "复杂曲面模板",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-flex-ueberbrueckungen": {
+    "name_zh": "PERI UP Flex 天桥",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-up-flex-grabenbruecke": {
+    "name_zh": "PERI UP Flex 架桥",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "acs-self-climbing-system": {
+    "name_zh": "ACS 自动爬架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rcs-max-klettersystem": {
+    "name_zh": "RCS MAX 导轨爬架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rcs-rail-climbing-system": {
+    "name_zh": "RCS 导轨爬架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "scs-climbing-system": {
+    "name_zh": "SCS 单面模板的爬架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "lps-lightweight-climbing-enclosure": {
+    "name_zh": "LPS 轻型可爬升的防护屏",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rcs-mp-material-platform": {
+    "name_zh": "RCS MP 卸料平台",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "asg-narrow-working-platform": {
+    "name_zh": "ASG 小型操作平台系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "cb-climbing-formwork": {
+    "name_zh": "CB 爬架系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "fb180-folding-platform": {
+    "name_zh": "FB 180 折叠式平台系统",
+    "category": "市政工程系统",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "technical-services": {
+    "name_zh": "工程技术服务",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "technical-processing": {
+    "name_zh": "施工方案设计",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "building-information-modeling": {
+    "name_zh": "建筑信息模型 (BIM)",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "cnc-cutting-and-formwork-assembly": {
+    "name_zh": "CNC 数控切割和装配模板",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "field-service": {
+    "name_zh": "项目服务",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "logistics-services": {
+    "name_zh": "物流服务",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rental-park-and-distribution": {
+    "name_zh": "租赁服务及材料配送",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "cleaning-and-repair": {
+    "name_zh": "清洁与维修",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "ueberpruefung-lastaufnahmemittel": {
+    "name_zh": "受力结构检测",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "richtmeister-baustelle-schalung-geruest": {
+    "name_zh": "现场施工指导",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "werkseitige-montage-und-demontage": {
+    "name_zh": "工厂内组装和拆卸模板",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "ausschreibungstexte": {
+    "name_zh": "模板脚手架文案系统",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "baustellencontrolling": {
+    "name_zh": "施工现场管理",
+    "category": "工程技术服务",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-cad-software": {
+    "name_zh": "PERI CAD 22 软件",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peripath": {
+    "name_zh": "PERIpath",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "centrio-clm-software": {
+    "name_zh": "CENTRIO CLM",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "myperi": {
+    "name_zh": "myPERI 客户服务平台",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-elpos-software": {
+    "name_zh": "PERI ELPOS 软件",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "formwork-load-calculator": {
+    "name_zh": "模板荷载计算器",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-multiflex-configurator": {
+    "name_zh": "MULTIFLEX 木梁楼板模板计算器",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-st-100-configurator": {
+    "name_zh": "ST 100 塔架计算器",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-multiprop-shoring-tower-configurator": {
+    "name_zh": "MULTIPROP 支撑塔架计算器",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-mds-k-configurator": {
+    "name_zh": "MDS K 塔架计算器",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-duo-planner": {
+    "name_zh": "PERI QuickSolve DUO 设计程序",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "scaffmax-geruestbau-planungssoftware": {
+    "name_zh": "scaffmax 脚手架方案设计程序",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "moselcopter-raumvisualisierung-vermessungssysteme": {
+    "name_zh": "Moselcopter 测量技术",
+    "category": "软件与Apps",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "ersatzplattenzuschnitt": {
+    "name_zh": "板材替换服务",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "finply": {
+    "name_zh": "FinPly 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "finply-maxi": {
+    "name_zh": "FinPly Maxi 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "finply-plus": {
+    "name_zh": "FinPly Plus 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "maxiform": {
+    "name_zh": "Maxiform 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-birch": {
+    "name_zh": "PERI Birch 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "rusply": {
+    "name_zh": "RusPly 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-birch-220": {
+    "name_zh": "PERI Birch 220 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "elliottis-pine-c-c-bfu-100": {
+    "name_zh": "Elliottis Pine C+/C BFU 100 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "finnaply": {
+    "name_zh": "FinNaPly 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "radiata-pine": {
+    "name_zh": "Radiata Pine 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "3-s-panels": {
+    "name_zh": "3夹板模板板材",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "beto-s": {
+    "name_zh": "Beto-S 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "chinese-filmfaced-plywood": {
+    "name_zh": "中国覆膜胶合板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "eukafilm": {
+    "name_zh": "Eukafilm 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "facing-plywood": {
+    "name_zh": "衬板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-pine": {
+    "name_zh": "PERI Pine 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "peri-spruce-400": {
+    "name_zh": "PERI Spruce 400 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pine-premium": {
+    "name_zh": "Pine Premium 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "bintangor-plywood": {
+    "name_zh": "Bintangor 胶合板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "elliottis-pine-c-c-wbp": {
+    "name_zh": "Elliottis Pine C+/C WBP 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "wiremesh-plywood": {
+    "name_zh": "压纹板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  },
+  "pave": {
+    "name_zh": "Pave 板",
+    "category": "板材",
+    "subcategory": null,
+    "projects": [],
+    "youtube_video_id": ""
+  }
+}
