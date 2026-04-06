@@ -17,7 +17,7 @@ YT_IDS = {
     'trio-schalungssystem':               'ypBa9srkqy8',
     'skydeck-slab-formwork':              'CgOEI3YtG_E',
     'multiflex-girder-slab-formwork':     'kHOmVl6O5us',
-    'gridflex-deckenschalung':            '8DCFAQnCUPk',
+    'gridflex-deckenschalung':            'd1SUjg7Cc8A',
     'domino-panel-formwork':              'nlUE8QqL5DQ',
     'maximo-panel-formwork':              'ROJJQ-tdidw',
     'peri-up-modular-scaffold':           'rHppk1GCUvo',
