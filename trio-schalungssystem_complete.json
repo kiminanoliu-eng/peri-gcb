@@ -1,0 +1,49 @@
+{
+  "slug": "trio-schalungssystem",
+  "name_zh": "TRIO 柱模",
+  "category": "建筑模板系统",
+  "subcategory": "柱模",
+  "cn_url": "https://cn.peri.com/products/trio-schalungssystem.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:c2da98c8-c87d-4dfb-84d5-483fa884fd95/23834/trio-柱模系统.jpg",
+  "description": {
+    "zh": "宽度为90厘米的TRIO柱型模块可为截面为正方形、矩形的柱子立模。以5厘米为模数，可对截面20x20厘米至75x75厘米的柱子进行立模。",
+    "en": "The 90 cm wide TRIO column modules can form square and rectangular columns. With a 5 cm module, columns with cross-sections from 20x20 cm to 75x75 cm can be formed.",
+    "es": "Los módulos de columna TRIO de 90 cm de ancho pueden formar columnas cuadradas y rectangulares. Con un módulo de 5 cm, se pueden formar columnas con secciones transversales de 20x20 cm a 75x75 cm.",
+    "de": "Die 90 cm breiten TRIO-Stützenmodule können quadratische und rechteckige Stützen schalen. Mit einem 5-cm-Modul können Stützen mit Querschnitten von 20x20 cm bis 75x75 cm geschalt werden.",
+    "pt": "Os módulos de coluna TRIO de 90 cm de largura podem formar colunas quadradas e retangulares. Com um módulo de 5 cm, colunas com seções transversais de 20x20 cm a 75x75 cm podem ser formadas.",
+    "sr": "TRIO moduli za stubove širine 90 cm mogu formirati kvadratne i pravougaone stubove. Sa modulom od 5 cm, mogu se formirati stubovi sa poprečnim presecima od 20x20 cm do 75x75 cm.",
+    "hu": "A 90 cm széles TRIO oszlopmodulok négyzet és téglalap alakú oszlopokat tudnak zsaluzni. 5 cm-es modullal 20x20 cm-től 75x75 cm-ig terjedő keresztmetszetű oszlopok zsaluzhatók."
+  },
+  "projects": [
+    {
+      "name": "Gazenica港口客运码头 运营大厅",
+      "location": "克罗地亚，扎达尔",
+      "description": "相互协调确定的模板、脚手架方案，加快了施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/克罗地亚，扎达尔，gazenica客运码头，运营大厅.jpg",
+      "link": "https://cn.peri.com/projects/terminal-building-gazenica-passenger-port-zadar-croatia.html"
+    },
+    {
+      "name": "巴瓦商业街",
+      "location": "卡塔尔，多哈",
+      "description": "为8公里长的商业中心提供综合模板方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/卡塔尔，多哈，巴瓦商业街.jpg",
+      "link": "https://cn.peri.com/projects/barwa-commercial-avenue-doha-qatar.html"
+    },
+    {
+      "name": "ZepTerra-住宅、办公综合楼",
+      "location": "塞尔维亚，贝尔格莱德",
+      "description": "按时交付设备是当务之急",
+      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra住宅商业综合楼.jpg",
+      "link": "https://cn.peri.com/projects/zepterra.html"
+    },
+    {
+      "name": "叶赫塔中心",
+      "location": "俄罗斯，圣彼得堡",
+      "description": "为欧洲最高的大厦提供全套的模板、脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/圣彼得堡，叶赫塔中心.jpg",
+      "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
