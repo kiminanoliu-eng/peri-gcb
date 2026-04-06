@@ -1,0 +1,46 @@
+{
+  "slug": "srs-saeulenrundschalung",
+  "name_zh": "SRS 圆柱模",
+  "category": "建筑模板系统",
+  "description": {
+    "zh": "圆柱型钢模系统，采用两个半圆柱型钢模通过六角螺杆紧固件连接。模块连接部位致密性好，承载能力强，确保顶级混凝土表面质量。可浇筑直径25-70厘米的柱体。",
+    "en": "Circular steel formwork system with two half-cylinder steel forms connected by hexagonal bolt fasteners. Excellent joint tightness and load-bearing capacity ensure top-quality concrete surface. Suitable for columns with diameters of 25-70 cm.",
+    "es": "Sistema de encofrado de acero circular con dos formas de acero semicilíndricas conectadas por pernos hexagonales. Excelente estanqueidad de juntas y capacidad de carga garantizan una superficie de hormigón de alta calidad. Adecuado para columnas de 25-70 cm de diámetro.",
+    "de": "Rundsäulen-Stahlschalungssystem mit zwei Halbzylinder-Stahlformen, verbunden durch Sechskantschrauben. Hervorragende Fugendichtigkeit und Tragfähigkeit gewährleisten erstklassige Betonoberflächen. Geeignet für Säulen mit 25-70 cm Durchmesser.",
+    "pt": "Sistema de cofragem de aço circular com duas formas de aço semicilíndricas conectadas por parafusos hexagonais. Excelente estanqueidade das juntas e capacidade de carga garantem superfície de concreto de alta qualidade. Adequado para colunas de 25-70 cm de diâmetro.",
+    "sr": "Систем кружне челичне оплате са два полуцилиндрична челична облика повезана шестоугаоним вијцима. Одлична заптивеност спојева и носивост обезбеђују врхунски квалитет бетонске површине. Погодан за стубове пречника 25-70 цм.",
+    "hu": "Kör alakú acél zsaluzási rendszer két félhengeres acél formával, hatszögletű csavarokkal összekötve. Kiváló illesztési tömítettség és teherbírás biztosítja a kiváló minőségű betonfeltét. Alkalmas 25-70 cm átmérőjű oszlopokhoz."
+  },
+  "projects": [
+    {
+      "name": "斯塔夫罗斯尼亚尔霍斯基金文化中心",
+      "location": "希腊，雅典",
+      "description": "斯塔夫罗斯尼亚尔霍斯基金文化中心项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:06ea840d-4bc9-4d3b-aea4-9b9bf56c9fd0/10568/%E5%B8%8C%E8%85%8A%EF%BC%8C%E9%9B%85%E5%85%B8%EF%BC%8Csnfcc%E2%80%93-%E6%B4%BE%E5%88%A9%E6%89%BF%E9%87%8D%E6%94%AF%E6%9E%B6%E6%96%B9%E6%A1%88.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/stavros-niarchos-foundation-cultural-center.html"
+    },
+    {
+      "name": "Gazenica港口客运码头 运营大厅",
+      "location": "克罗地亚，扎达尔",
+      "description": "Gazenica港口客运码头运营大厅项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/%E5%85%8B%E7%BD%97%E5%9C%B0%E4%BA%9A%EF%BC%8C%E6%89%8E%E8%BE%BE%E5%B0%94%EF%BC%8Cgazenica%E5%AE%A2%E8%BF%90%E7%A0%81%E5%A4%B4%EF%BC%8C%E8%BF%90%E8%90%A5%E5%A4%A7%E5%8E%85.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/terminal-building-gazenica-passenger-port-zadar-croatia.html"
+    },
+    {
+      "name": "巴瓦商业街",
+      "location": "卡塔尔，多哈",
+      "description": "巴瓦商业街项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/%E5%8D%A1%E5%A1%94%E5%B0%94%EF%BC%8C%E5%A4%9A%E5%93%88%EF%BC%8C%E5%B7%B4%E7%93%A6%E5%95%86%E4%B8%9A%E8%A1%97.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/barwa-commercial-avenue-doha-qatar.html"
+    },
+    {
+      "name": "新海关",
+      "location": "德国",
+      "description": "新海关项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:65b11fb2-1634-4616-924a-a7f135f55e35/16746/%E6%96%B0%E6%B5%B7%E5%85%B3-%E6%96%B0%E6%B5%B7%E5%85%B3%E7%94%B13%E6%A0%8B%E5%88%AB%E5%85%B7%E4%B8%80%E6%A0%BC%E7%9A%84%E5%BB%BA%E7%AD%91%E7%BB%84%E6%88%90.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/德国，新海关.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
