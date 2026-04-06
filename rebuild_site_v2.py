@@ -36,7 +36,7 @@ YT_IDS = {
 }
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SITE = os.path.join(BASE, 'mnt', '创建产品网站')
+SITE = BASE  # 直接输出到根目录，无需手动复制
 CATS_DIR = os.path.join(SITE, 'categories')
 PRODS_DIR = os.path.join(SITE, 'products')
 
