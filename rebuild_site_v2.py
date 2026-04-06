@@ -576,19 +576,22 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     cat_display = cat_key.replace('_', '/')
     cn_url = f'https://cn.peri.com/products/{slug}.html'
 
-    # Get PDF link
-    pdf_url = PDF_LINKS.get(slug, cn_url)
-
-    # Load product-specific projects from *_complete.json if exists
+    # Load product-specific data from *_complete.json if exists
     product_projects = []
+    pdf_url = None
     complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
     if os.path.exists(complete_json_path):
         try:
             with open(complete_json_path, 'r', encoding='utf-8') as f:
                 product_data = json.load(f)
                 product_projects = product_data.get('projects', [])
+                pdf_url = product_data.get('pdf_link')  # Get direct PDF URL
         except:
             pass
+
+    # Fallback to product_pdf_links.json, then cn_url
+    if not pdf_url:
+        pdf_url = PDF_LINKS.get(slug, cn_url)
 
     # Determine back-link for breadcrumb
     if subcat:
