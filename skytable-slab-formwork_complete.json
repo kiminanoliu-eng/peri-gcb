@@ -1,0 +1,35 @@
+{
+  "slug": "skytable-slab-formwork",
+  "name_zh": "SKYTABLE 台模",
+  "category": "建筑模板系统",
+  "subcategory": "楼板模板",
+  "cn_url": "https://cn.peri.com/products/skytable-slab-formwork.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:a5c58666-bd89-4381-8ee0-4c41af3e9ccd/23744/skytable-%E5%8F%B0%E6%A8%A1.jpg",
+  "description": {
+    "zh": "SKYTABLE适用于大面积的楼板浇筑。单块模板最大可达150平方米。",
+    "en": "SKYTABLE is suitable for large-area slab pouring. A single formwork panel can reach up to 150 square meters.",
+    "es": "SKYTABLE es adecuado para el vertido de losas de gran superficie. Un solo panel de encofrado puede alcanzar hasta 150 metros cuadrados.",
+    "de": "SKYTABLE eignet sich für großflächige Deckenbetonierungen. Eine einzelne Schalungstafel kann bis zu 150 Quadratmeter groß sein.",
+    "pt": "SKYTABLE é adequado para concretagem de lajes de grande área. Um único painel de forma pode atingir até 150 metros quadrados.",
+    "sr": "SKYTABLE je pogodan za betoniranje ploča velikih površina. Jedan panel oplate može dostići do 150 kvadratnih metara.",
+    "hu": "A SKYTABLE nagy felületű födémbetonozáshoz alkalmas. Egyetlen zsalutábla akár 150 négyzetméter is lehet."
+  },
+  "projects": [
+    {
+      "name": "滨海湾金沙酒店",
+      "location": "新加坡, 新加坡",
+      "description": "大型综合度假酒店项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:dc46e3e8-a2ee-4e4e-934f-651a02a23557/17678/%E6%BB%A8%E6%B5%B7%E6%B9%BE%E9%87%91%E6%B2%99%E9%85%92%E5%BA%97-%E7%BE%8E%E5%9B%BD%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%E9%87%91%E6%B2%99%E9%9B%86%E5%9B%A2%E6%98%AF%E6%95%B4%E4%B8%AA%E5%BB%BA%E7%AD%91%E7%BE%A4%E7%9A%84%E4%B8%9A%E4%B8%BB%EF%BC%8C%E8%A1%8C%E4%BA%BA%E5%9C%A8%E8%BF%9C%E5%A4%84%E5%8D%B3%E5%8F%AF%E7%9C%8B%E5%88%B0%E8%AF%A5%E9%85%92%E5%BA%97%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/marina-bay-sands.html"
+    },
+    {
+      "name": "癌症治疗中心",
+      "location": "加拿大，卡尔加里",
+      "description": "医疗建筑项目",
+      "image": "https://cdn.peri.cloud/dam/jcr:45c0f372-773f-48ae-9346-9cf8a071ad9a/26926/%E5%8A%A0%E6%8B%BF%E5%A4%A7%EF%BC%8C%E5%8D%A1%E5%B0%94%E5%8A%A0%E9%87%8C%E7%99%8C%E7%97%87%E6%B2%BB%E7%96%97%E4%B8%AD%E5%BF%83.jpg",
+      "link": "https://cn.peri.com/projects/加拿大，卡尔加里，癌症治疗中心.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
