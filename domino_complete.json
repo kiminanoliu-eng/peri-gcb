@@ -16,7 +16,36 @@
   "pdf_link": "",
   "youtube_video_id": "JkRVhXSvIV8",
   "cn_url": "https://cn.peri.com/products/domino-panel-formwork.html",
-  "projects": [],
+  "projects": [
+    {
+      "name": "哈波布鲁大桥",
+      "location": "挪威，索尔弗龙",
+      "description": "斜拉桥，总长320米，两塔之间主跨100米。采用PERI的VBC平衡悬臂挂篮和PERI UP模块化脚手架系统。",
+      "image": "https://cdn.peri.cloud/dam/jcr:cab03454-6d28-4393-b39a-6dd664ccb68f/16135/哈波布鲁大桥-–-variokit和peri-up系统.jpg",
+      "link": "https://cn.peri.com/projects/harpe-bru-bridge.html"
+    },
+    {
+      "name": "ZepTerra-住宅、办公综合楼",
+      "location": "塞尔维亚，新贝尔格莱德",
+      "description": "混合用途住宅和商业开发项目，10层，总面积3.2万平方米。第一期包括227套公寓和两层地下停车场。",
+      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra住宅商业综合楼.jpg",
+      "link": "https://cn.peri.com/projects/zepterra.html"
+    },
+    {
+      "name": "叶赫塔中心",
+      "location": "俄罗斯，圣彼得堡",
+      "description": "462米高的混合用途综合体，作为俄罗斯天然气工业股份公司总部。87层，40万平方米，包括办公空间、科学展览馆、教育机构和体育休闲设施。",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/圣彼得堡，叶赫塔中心.jpg",
+      "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
+    },
+    {
+      "name": "BSR 中心 TLV Alon 大厦",
+      "location": "以色列，特拉维夫",
+      "description": "现代办公综合体，两座对称的双子塔，各高164米。建筑展示X形立面设计，从地面到中部逐渐收窄，然后向顶部扩展。",
+      "image": "https://cdn.peri.cloud/dam/jcr:1d8ae2fa-03c5-4327-bb8a-24bfbae9f0de/10696/以色列，特拉维夫，-bsr中心tlv-alon大厦-alon大厦的施工现场组成了特拉维夫的天际线.jpg",
+      "link": "https://cn.peri.com/projects/alon-towers-bsr-center-tlv-tel-aviv-israel.html"
+    }
+  ],
   "verified": true,
   "verification_date": "2026-04-05"
 }
