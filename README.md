@@ -10,10 +10,14 @@
 
 ## 快速开始
 
+### 查看项目状态
+
+- **产品完成状态**: [PRODUCT_STATUS.md](PRODUCT_STATUS.md) - 21个已完成，139个待处理
+
 ### 添加新产品页面
 
 - **快速参考**: [WORKFLOW_QUICK_REFERENCE.md](WORKFLOW_QUICK_REFERENCE.md) - 简洁版流程（2.6KB）
-- **完整文档**: [WORKFLOW_COMPLETE.md](WORKFLOW_COMPLETE.md) - 详细步骤和经验教训（包含所有细节）
+- **完整文档**: [WORKFLOW_COMPLETE.md](WORKFLOW_COMPLETE.md) - 详细步骤和经验教训（21KB，包含PDF/YouTube的实际获取方法）
 
 **简要步骤**:
 1. 确认产品slug（从products_v2.json）
