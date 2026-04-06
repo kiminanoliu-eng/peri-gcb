@@ -58,27 +58,140 @@ curl -I "https://kiminanoliu-eng.github.io/peri-gcb/products/{slug}.html"
 
 ## PDF提取详细步骤
 
-### 搜索顺序（按优先级）
+### 方法1: PERI UK网站直接提取（推荐，最有效）
 
-**优先级1: cn.peri.com**
+**为什么推荐UK网站**:
+- PDF链接格式统一：`/.rest/downloads/{ID}`
+- 成功率高
+- PDF质量好（官方文档）
+
+**步骤**:
 ```bash
+# 1. 访问UK网站产品页面
+curl -s "https://www.peri.ltd.uk/products/{slug}.html" > uk_page.html
+
+# 2. 提取下载链接ID
+download_id=$(grep -o '/.rest/downloads/[0-9]*' uk_page.html | head -1)
+
+# 3. 构建完整PDF URL
+pdf_url="https://www.peri.ltd.uk${download_id}"
+
+# 4. 验证
+curl -I "$pdf_url"
+```
+
+**⚠️ 关键：Slug变体尝试策略**
+
+**问题**: 中国网站和UK网站的产品slug可能不一致
+
+**解决方案**: 必须尝试多个slug变体，按以下顺序：
+
+1. **原始slug** - 直接使用中国网站的slug
+2. **英文翻译变体** - 将德语/其他语言翻译成英文
+   - `grv-rundschalung` → `grv-circular-formwork` (rundschalung=circular formwork)
+   - `quattro-saeulenschalung` → `quattro-column-formwork`
+3. **移除后缀** - 去掉产品类型后缀
+   - `prokit-ep-110-fall-protection` → `prokit`
+   - `peri-up-easy-frame-scaffolding` → `peri-up-easy-scaffolding`
+4. **简化版本** - 只保留核心产品名
+   - `domino-panel-formwork` → `domino`
+5. **添加常见后缀** - 尝试添加UK网站常用后缀
+   - 添加 `-scaffolding`
+   - 添加 `-formwork`
+
+**实际案例**:
+- PROKIT EP 110:
+  - ❌ `prokit-ep-110-fall-protection` (中国slug)
+  - ✅ `prokit` (简化版本)
+  
+- PERI UP Easy:
+  - ❌ `peri-up-easy-frame-scaffolding` (中国slug)
+  - ✅ `peri-up-easy-scaffolding` (移除"frame")
+
+- GRV:
+  - ❌ `grv-rundschalung` (德语slug)
+  - ❌ `grv` (简化版本)
+  - ✅ `grv-circular-formwork` (英文翻译)
+
+**自动尝试多个变体的脚本**:
+```bash
+# 定义slug变体数组
+original_slug="your-product-slug"
+slugs=(
+  "$original_slug"                    # 原始slug
+  "${original_slug%-*}"               # 移除最后一个词
+  "${original_slug%%-*}"              # 只保留第一个词
+  "${original_slug}-formwork"         # 添加formwork
+  "${original_slug}-scaffolding"      # 添加scaffolding
+)
+
+# 尝试每个变体
+for slug in "${slugs[@]}"; do
+  echo "尝试: $slug"
+  result=$(curl -s "https://www.peri.ltd.uk/products/$slug.html" | grep -o '/.rest/downloads/[0-9]*' | head -1)
+  if [ -n "$result" ]; then
+    echo "✅ 找到: https://www.peri.ltd.uk$result"
+    pdf_url="https://www.peri.ltd.uk$result"
+    break
+  fi
+done
+
+if [ -z "$result" ]; then
+  echo "❌ UK网站未找到，尝试方法2"
+fi
+```
+
+### 方法2: Google搜索（备选，简单有效）
+
+**搜索公式**:
+```
+peri {产品英文名} pdf
+```
+
+**为什么这个方法有效**:
+1. Google索引了PERI所有区域网站的PDF
+2. 搜索结果直接指向产品手册
+3. 覆盖全球所有PERI网站
+
+**示例**:
+- LIWA: `peri liwa pdf`
+  - 结果: https://www.peri.co.th/dam/jcr:bf8b3cd6-eeb5-4529-bf7e-c1d5148f8a36/liwa.pdf
+  - 状态: ✅ 有效 (HTTP 200, 4.8MB)
+
+**操作步骤**:
+1. 在Google搜索：`peri {产品英文名} pdf`
+2. 查找来自PERI官方网站的PDF链接（peri.com, peri.co.th, peri.id等）
+3. 复制PDF直接链接
+4. 验证链接（见下方三步验证法）
+
+**⚠️ 注意**: 
+- 避免使用Scribd、ilovepdf等第三方网站的PDF
+- 只使用PERI官方网站的PDF
+
+### 方法3: 其他区域网站（如果方法1和2都失败）
+
+**搜索顺序**:
+```bash
+# 优先级1: cn.peri.com
 curl -s "https://cn.peri.com/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
-```
 
-**优先级2: www.peri.com/en**
-```bash
+# 优先级2: www.peri.com/en
 curl -s "https://www.peri.com/en/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
-```
 
-**优先级3: 其他区域网站**
-- peri.id (印尼)
-- peri.com.au (澳大利亚)
-- peri.co.za (南非)
-- peri.ltd.uk (英国)
-
-```bash
-# 示例：印尼网站
+# 优先级3: peri.id (印尼)
 curl -s "https://www.peri.id/en/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
+
+# 优先级4: peri.com.au (澳大利亚)
+curl -s "https://www.peri.com.au/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
+
+# 优先级5: peri.co.za (南非)
+curl -s "https://www.peri.co.za/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
+
+# 优先级6: peri.de (德国)
+curl -s "https://www.peri.de/produkte/{slug}.html" | grep -o 'https://[^"]*\.pdf'
+
+# 优先级7: peri.co.th (泰国)
+curl -s "https://www.peri.co.th/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
 ```
 
 ### PDF验证三步法（最关键！）
@@ -225,50 +338,68 @@ diff actual_projects.txt json_projects.txt
 
 ## YouTube视频提取详细步骤
 
-### 在哪里搜索？（最重要！）
+### ⚠️ 重要：YouTube搜索是人工操作
 
-**✅ 正确方式: 在PERI官方频道内搜索**
+**YouTube视频搜索必须手动完成**，原因：
+1. 需要在PERI官方频道内搜索（不是YouTube主页）
+2. 需要人工判断视频语言（英语 vs 德语）
+3. 需要人工判断视频内容（产品介绍 vs 项目案例 vs 培训视频）
+4. 需要人工判断视频时长（≤10分钟）
+
+### 步骤1: 在PERI官方频道内搜索
+
+**✅ 正确方式**:
 1. 访问 https://www.youtube.com/@perigroup
-2. 在频道内搜索框输入：`{product_name} formwork`
-3. **不要在YouTube主页搜索**
+2. 点击频道页面的"搜索"图标（放大镜）
+3. 在频道内搜索框输入：`{product_name} formwork`
+4. 浏览搜索结果
 
-**❌ 错误方式: 在YouTube主页搜索**
-- 会找到大量德语培训视频
-- 会找到其他上传者的视频
-- 不符合要求（需要英语产品介绍）
+**❌ 错误方式**:
+- 不要在YouTube主页搜索
+- 不要在Google搜索YouTube视频
+- 原因：会找到大量德语培训视频和其他上传者的视频
 
-### 筛选条件
+### 步骤2: 筛选视频
 
 **必须满足所有条件**:
 - ✅ **语言**: 英语（不要德语培训视频）
+  - 检查方法：看视频标题、描述、或播放几秒确认语言
 - ✅ **时长**: ≤ 10分钟
+  - 检查方法：视频缩略图右下角显示时长
 - ✅ **内容**: 产品介绍/演示（不是项目案例视频）
+  - 检查方法：看视频标题和描述
+  - 产品介绍：标题包含产品名称，描述介绍产品特点
+  - 项目案例：标题包含项目名称（如"Dubai Frame"），描述介绍项目
 - ✅ **来源**: PERI官方频道（@perigroup）
+  - 已经在频道内搜索，自动满足
 - ✅ **发布时间**: 优先最新的
+  - 如果有多个符合条件的视频，选择最新的
 
-### 提取视频ID
+### 步骤3: 提取视频ID
 
 **从视频URL提取11位视频ID**:
-- 例如：`https://www.youtube.com/watch?v=CgOEI3YtG_E` → `CgOEI3YtG_E`
-- 视频ID长度必须是11个字符
 
-### 视频验证清单
+**URL格式**:
+- 标准格式：`https://www.youtube.com/watch?v=CgOEI3YtG_E`
+- 短链接：`https://youtu.be/CgOEI3YtG_E`
+- 嵌入格式：`https://www.youtube.com/embed/CgOEI3YtG_E`
+
+**提取方法**:
+- 视频ID是URL中 `v=` 后面的11个字符
+- 或者短链接中域名后的11个字符
+- 例如：`CgOEI3YtG_E`
+
+**验证**:
 - [ ] 视频ID长度为11个字符
 - [ ] 视频时长 ≤ 10分钟
 - [ ] 视频语言是英语
 - [ ] 视频内容是该产品的介绍/演示
-- [ ] 视频来自PERI官方频道（@perigroup）
-- [ ] 不是项目案例视频
-
-### 如果找不到合适的视频
-- 使用空字符串 `""`
-- 不要使用不符合条件的视频
-- 不要使用德语视频
-- 不要使用其他频道的视频
 
 ### 搜索技巧
+
+**关键词组合**:
 ```
-搜索关键词组合:
+基础搜索:
 - {product_name} formwork
 - {product_name} system
 - {product_name} introduction
@@ -278,7 +409,81 @@ diff actual_projects.txt json_projects.txt
 - "TRIO formwork"
 - "MAXIMO panel formwork"
 - "PERI UP scaffolding"
+- "SKYDECK slab formwork"
 ```
+
+**如果找不到结果**:
+1. 尝试简化产品名称
+   - `vario-gt-24-girder-wall-formwork` → `VARIO GT 24`
+   - `peri-up-easy-frame-scaffolding` → `PERI UP Easy`
+2. 尝试不同的关键词
+   - 添加 "product"
+   - 添加 "system"
+   - 移除 "formwork"
+3. 检查产品是否有别名或简称
+
+### 常见问题
+
+**问题1: 只找到德语视频**
+- 原因：在YouTube主页搜索，而不是在PERI频道内搜索
+- 解决：必须在 https://www.youtube.com/@perigroup 频道内搜索
+
+**问题2: 找到的视频超过10分钟**
+- 解决：继续搜索，或者使用空字符串 `""`
+- 不要使用超过10分钟的视频
+
+**问题3: 找到的是项目案例视频**
+- 特征：标题包含项目名称（如"Dubai Frame", "Burj Khalifa"）
+- 解决：继续搜索产品介绍视频，或者使用空字符串 `""`
+
+**问题4: 完全找不到视频**
+- 解决：使用空字符串 `""`
+- 不要使用不符合条件的视频
+- 不要使用其他频道的视频
+
+### 如果找不到合适的视频
+
+**使用空字符串 `""`**:
+```json
+{
+  "youtube_video_id": ""
+}
+```
+
+**不要**:
+- ❌ 使用德语视频
+- ❌ 使用超过10分钟的视频
+- ❌ 使用项目案例视频
+- ❌ 使用其他频道的视频
+- ❌ 使用培训视频
+
+### 实际操作示例
+
+**示例1: TRIO Formwork**
+1. 访问 https://www.youtube.com/@perigroup
+2. 在频道内搜索："TRIO formwork"
+3. 找到视频："TRIO Panel Formwork System"
+4. 检查：
+   - 语言：英语 ✓
+   - 时长：8:32 ✓
+   - 内容：产品介绍 ✓
+5. 提取视频ID：`ypBa9srkqy8`
+
+**示例2: MAXIMO**
+1. 访问 https://www.youtube.com/@perigroup
+2. 在频道内搜索："MAXIMO formwork"
+3. 找到视频："MAXIMO Panel Formwork"
+4. 检查：
+   - 语言：英语 ✓
+   - 时长：6:45 ✓
+   - 内容：产品介绍 ✓
+5. 提取视频ID：`ROJJQ-tdidw`
+
+**示例3: 找不到合适视频**
+1. 访问 https://www.youtube.com/@perigroup
+2. 在频道内搜索："SB brace frame"
+3. 结果：没有找到符合条件的视频
+4. 使用空字符串：`""`
 
 ---
 
@@ -472,14 +677,44 @@ grep -o 'og:image.*content="[^"]*"' project.html
 
 ### 搜索PDF（按优先级）
 ```bash
-# 优先级1: cn.peri.com
+# 方法1: PERI UK网站（推荐）
+# 尝试多个slug变体
+original_slug="your-product-slug"
+slugs=(
+  "$original_slug"
+  "${original_slug%-*}"
+  "${original_slug%%-*}"
+)
+
+for slug in "${slugs[@]}"; do
+  result=$(curl -s "https://www.peri.ltd.uk/products/$slug.html" | grep -o '/.rest/downloads/[0-9]*' | head -1)
+  if [ -n "$result" ]; then
+    pdf_url="https://www.peri.ltd.uk$result"
+    echo "找到: $pdf_url"
+    break
+  fi
+done
+
+# 方法2: Google搜索（如果方法1失败）
+# 在Google搜索: peri {产品英文名} pdf
+# 手动操作，复制找到的PDF链接
+
+# 方法3: 其他区域网站
 curl -s "https://cn.peri.com/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
-
-# 优先级2: www.peri.com/en
 curl -s "https://www.peri.com/en/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
-
-# 优先级3: peri.id
 curl -s "https://www.peri.id/en/products/{slug}.html" | grep -o 'https://[^"]*\.pdf'
+```
+
+### 搜索YouTube视频（人工操作）
+```
+1. 访问 https://www.youtube.com/@perigroup
+2. 在频道内搜索: {product_name} formwork
+3. 筛选条件:
+   - 语言: 英语
+   - 时长: ≤10分钟
+   - 内容: 产品介绍（不是项目案例）
+4. 提取视频ID（11个字符）
+5. 如果找不到: 使用空字符串 ""
 ```
 
 ### 验证PDF（三步法）
