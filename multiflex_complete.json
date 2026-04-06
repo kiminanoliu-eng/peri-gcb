@@ -16,7 +16,36 @@
   "pdf_link": "https://www.peri.id/dam/jcr:18e76024-78e6-3a4c-b2f0-32272779a4d4/multiflex.pdf",
   "youtube_video_id": "kHOmVl6O5us",
   "cn_url": "https://cn.peri.com/products/multiflex-girder-slab-formwork.html",
-  "projects": [],
+  "projects": [
+    {
+      "name": "Gazenica港口客运码头 运营大厅",
+      "location": "克罗地亚，扎达尔",
+      "description": "Gazenica港口的两层客运和渡轮码头设施，占地25万平方米。使用PERI模板和支撑系统实现高质量和安全施工。",
+      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/克罗地亚，扎达尔，gazenica客运码头，运营大厅.jpg",
+      "link": "https://cn.peri.com/projects/terminal-building-gazenica-passenger-port-zadar-croatia.html"
+    },
+    {
+      "name": "The Squaire办公大楼",
+      "location": "德国，法兰克福",
+      "description": "位于法兰克福机场火车站上方的办公、购物和酒店综合体。9层建筑，长660米，可用面积15万平方米。",
+      "image": "https://cdn.peri.cloud/dam/jcr:36a368c5-2408-47de-a06d-2d6255fab28b/16684/the-squaire办公大楼-架设在建筑物纵向外侧的peri-up脚手架承受施工荷载.jpg",
+      "link": "https://cn.peri.com/projects/the-squaire.html"
+    },
+    {
+      "name": "Viertel Zwei – Rondo住宅公园",
+      "location": "奥地利，维也纳",
+      "description": "围绕维也纳Prater公园Krieau赛马场建造的现代住宅社区，拥有200套住房单元。7栋圆柱形建筑，高33米，4至7层。",
+      "image": "https://cdn.peri.cloud/dam/jcr:a6e1c94f-91f7-4ac7-8e96-858a70c3e972/11731/33米高的公寓大厦.jpg",
+      "link": "https://cn.peri.com/projects/viertel-zwei-rondo-residential-complex-vienna-austria.html"
+    },
+    {
+      "name": "巴瓦商业街",
+      "location": "卡塔尔，多哈",
+      "description": "沿高速公路建造的8公里商业街，建筑面积约90万平方米。楼板厚度20厘米，净高2.20至7.80米。",
+      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/卡塔尔，多哈，巴瓦商业街.jpg",
+      "link": "https://cn.peri.com/projects/barwa-commercial-avenue-doha-qatar.html"
+    }
+  ],
   "verified": true,
   "verification_date": "2026-04-05"
 }
