@@ -16,7 +16,22 @@
   "pdf_link": "https://www.peri.com.au/dam/jcr:c6f1e5cf-e6d6-4d94-bb10-c88dd90fc95b/gridflex.pdf",
   "youtube_video_id": "cKjk3nuYOJ0",
   "cn_url": "https://cn.peri.com/products/gridflex-deckenschalung.html",
-  "projects": [],
+  "projects": [
+    {
+      "name": "美利亚酒店",
+      "location": "法国，巴黎",
+      "description": "新建酒店，地上20层，地下5层，总建筑高度87米。PERI提供了综合爬模方案，既作为施工团队的安全屏障，又支持安装预制挡土墙。",
+      "image": "https://cdn.peri.cloud/dam/jcr:e90e9863-98fb-48f1-b4aa-aaabf8226ec6/17521/法国，拉德芳斯，美利亚酒店-派利为项目提供了综合的爬模方案.jpg",
+      "link": "https://cn.peri.com/projects/hotel-melia-la-defense.html"
+    },
+    {
+      "name": "赫拉克勒斯塔",
+      "location": "西班牙，洛斯巴里奥斯",
+      "description": "位于直布罗陀海峡海岸的两座办公塔楼，混凝土立面上集成了超大字母显示\"Non plus ultra\"。100米高，21层，采用PERI的ACS自爬升系统。",
+      "image": "https://cdn.peri.cloud/dam/jcr:866ef413-c1ce-49d6-9e7a-fe3553a34af5/17291/西班牙，赫拉克勒斯塔.jpg",
+      "link": "https://cn.peri.com/projects/las-torres-de-hercules.html"
+    }
+  ],
   "verified": true,
   "verification_date": "2026-04-05"
 }
