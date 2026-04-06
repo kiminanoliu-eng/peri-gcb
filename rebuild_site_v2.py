@@ -533,9 +533,26 @@ def build_subcategory_page(cat_key, cat, sc_key, sc):
 # ============================================================
 # 3. PRODUCT PAGES
 # ============================================================
-def build_project_cards():
-    """Generate project cards HTML from china_projects.json (random 3 projects)"""
+def build_project_cards(product_projects=None):
+    """Generate project cards HTML from product-specific projects or china_projects.json (random 3 projects)"""
     import random
+
+    # Use product-specific projects if provided
+    if product_projects and len(product_projects) > 0:
+        cards = ''
+        for proj in product_projects:
+            cards += f'''
+      <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
+        <img src="{proj['image']}" alt="{proj['name']}" style="width:100%;height:200px;object-fit:cover;border-radius:8px 8px 0 0">
+        <div class="card-body">
+          <div class="card-title" style="font-size:14px;font-weight:600;margin-bottom:8px">{proj['name']}</div>
+          <div class="card-desc" style="font-size:12px;color:#666;margin-bottom:8px">{proj['description']}</div>
+          <div style="font-size:11px;color:#999">📍 {proj['location']}</div>
+        </div>
+      </div>'''
+        return cards
+
+    # Fallback to random projects from china_projects.json
     if not CHINA_PROJECTS or len(CHINA_PROJECTS) == 0:
         return '<p style="color:#999;text-align:center">暂无项目示例</p>'
 
@@ -561,6 +578,17 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
 
     # Get PDF link
     pdf_url = PDF_LINKS.get(slug, cn_url)
+
+    # Load product-specific projects from *_complete.json if exists
+    product_projects = []
+    complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
+    if os.path.exists(complete_json_path):
+        try:
+            with open(complete_json_path, 'r', encoding='utf-8') as f:
+                product_data = json.load(f)
+                product_projects = product_data.get('projects', [])
+        except:
+            pass
 
     # Determine back-link for breadcrumb
     if subcat:
@@ -696,7 +724,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
        查看派利产品在实际工程中的应用案例
     </p>
     <div class="grid grid-3" style="gap:24px">
-      {build_project_cards()}
+      {build_project_cards(product_projects)}
     </div>
     <div style="text-align:center;margin-top:32px">
       <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
