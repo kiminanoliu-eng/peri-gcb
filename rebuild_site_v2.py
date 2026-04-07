@@ -592,7 +592,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
             pass
 
     # Fallback to product_pdf_links.json, then cn_url
-    if not pdf_url:
+    # Only fallback if pdf_url is None (not found in JSON), not if it's empty string ""
+    if pdf_url is None:
         pdf_url = PDF_LINKS.get(slug, cn_url)
 
     # Determine back-link for breadcrumb
