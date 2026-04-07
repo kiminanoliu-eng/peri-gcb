@@ -581,6 +581,12 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     pdf_url = None
     yt_id_from_json = None
     desc_from_json = None
+    desc_en = desc_zh  # Default to Chinese if no translation
+    desc_es = desc_zh
+    desc_de = desc_zh
+    desc_fr = desc_zh
+    desc_pt = desc_zh
+    desc_ar = desc_zh
     complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
     if os.path.exists(complete_json_path):
         try:
@@ -589,9 +595,16 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
                 product_projects = product_data.get('projects', [])
                 pdf_url = product_data.get('pdf_link')  # Get direct PDF URL
                 yt_id_from_json = product_data.get('youtube_video_id')  # Get YouTube video ID
-                # Override desc_zh with Chinese description from complete JSON if available
-                if 'description' in product_data and 'zh' in product_data['description']:
-                    desc_from_json = product_data['description']['zh']
+                # Extract all language descriptions from complete JSON if available
+                if 'description' in product_data:
+                    descriptions = product_data['description']
+                    desc_from_json = descriptions.get('zh', '')
+                    desc_en = descriptions.get('en', '')
+                    desc_es = descriptions.get('es', '')
+                    desc_de = descriptions.get('de', '')
+                    desc_fr = descriptions.get('fr', '')
+                    desc_pt = descriptions.get('pt', '')
+                    desc_ar = descriptions.get('ar', '')
         except:
             pass
 
@@ -740,8 +753,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     {badge_html}
     <h1>{name_zh}</h1>
     <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px"
-       data-zh="{desc_zh}" data-en="{desc_zh}" data-es="{desc_zh}" data-de="{desc_zh}"
-       data-pt="{desc_zh}" data-sr="{desc_zh}" data-hu="{desc_zh}">{desc_zh}</p>
+       data-zh="{desc_zh}" data-en="{desc_en}" data-es="{desc_es}" data-de="{desc_de}"
+       data-pt="{desc_pt}" data-fr="{desc_fr}" data-ar="{desc_ar}">{desc_zh}</p>
     <div class="prod-cta">
       <a href="{cn_url}" target="_blank" class="btn btn-red"
          data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen"
