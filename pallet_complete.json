@@ -1,0 +1,19 @@
+{
+  "slug": "pallet",
+  "name_zh": "托架",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "description": {
+    "zh": "整体镀锌托架，用于堆放和运输模板、脚手架零件。两种尺寸：80×120厘米和80×150厘米。可堆叠4层，最大承载1.5吨。兼容吊车、叉车和托盘搬运车。",
+    "en": "Galvanized pallet for stacking and transporting formwork and scaffolding components. Two sizes: 80×120cm and 80×150cm. Stackable up to 4 units, maximum load 1.5 tons. Compatible with cranes, forklifts, and pallet jacks.",
+    "es": "Paleta galvanizada para apilar y transportar componentes de encofrado y andamios. Dos tamaños: 80×120 cm y 80×150 cm. Apilable hasta 4 unidades, carga máxima 1.5 toneladas. Compatible con grúas, montacargas y transpaletas.",
+    "de": "Verzinkte Palette zum Stapeln und Transportieren von Schalungs- und Gerüstkomponenten. Zwei Größen: 80×120 cm und 80×150 cm. Stapelbar bis 4 Einheiten, maximale Last 1,5 Tonnen. Kompatibel mit Kränen, Gabelstaplern und Hubwagen.",
+    "fr": "Palette galvanisée pour empiler et transporter des composants de coffrage et d'échafaudage. Deux tailles : 80×120 cm et 80×150 cm. Empilable jusqu'à 4 unités, charge maximale 1,5 tonne. Compatible avec grues, chariots élévateurs et transpalettes.",
+    "pt": "Palete galvanizado para empilhar e transportar componentes de fôrma e andaime. Dois tamanhos: 80×120 cm e 80×150 cm. Empilhável até 4 unidades, carga máxima 1,5 tonelada. Compatível com guindastes, empilhadeiras e carrinhos de palete.",
+    "ar": "منصة نقالة مجلفنة لتكديس ونقل مكونات القوالب والسقالات. حجمان: 80×120 سم و 80×150 سم. قابلة للتكديس حتى 4 وحدات، حمولة قصوى 1.5 طن. متوافقة مع الرافعات والرافعات الشوكية وعربات المنصات."
+  },
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:bf97baa3-e492-48e6-b9be-fa60eb99f176/24682/%E6%89%98%E6%9E%B6.jpg",
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}

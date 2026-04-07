@@ -2,8 +2,8 @@
 
 **最后更新**: 2026-04-07  
 **总产品数**: 160  
-**已完成**: 44  
-**待处理**: 116
+**已完成**: 45  
+**待处理**: 115
 
 ---
 
@@ -55,6 +55,7 @@
 | 42 | peri-ankertechnik | PERI 拉杆技术 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 43 | rs-push-pull-props | RS 斜撑 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 44 | baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel | 工具组合 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
+| 45 | transportbehaelter | 材料运输工具 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 
 ---
 
