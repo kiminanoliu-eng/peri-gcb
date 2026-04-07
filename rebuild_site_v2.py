@@ -580,6 +580,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     product_projects = []
     pdf_url = None
     yt_id_from_json = None
+    desc_from_json = None
     complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
     if os.path.exists(complete_json_path):
         try:
@@ -588,8 +589,15 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
                 product_projects = product_data.get('projects', [])
                 pdf_url = product_data.get('pdf_link')  # Get direct PDF URL
                 yt_id_from_json = product_data.get('youtube_video_id')  # Get YouTube video ID
+                # Override desc_zh with Chinese description from complete JSON if available
+                if 'description' in product_data and 'zh' in product_data['description']:
+                    desc_from_json = product_data['description']['zh']
         except:
             pass
+
+    # Use description from complete JSON if available, otherwise use products_v2.json description
+    if desc_from_json:
+        desc_zh = desc_from_json
 
     # Fallback to product_pdf_links.json, then cn_url
     # Only fallback if pdf_url is None (not found in JSON), not if it's empty string ""
