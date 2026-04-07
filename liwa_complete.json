@@ -3,40 +3,17 @@
   "name_zh": "LIWA 钢框模板",
   "category": "建筑模板系统",
   "subcategory": "墙模",
-  "cn_url": "https://cn.peri.com/products/liwa-钢框模板.html",
-  "image": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-框式模板.jpg",
   "description": {
     "zh": "轻型钢框模板，高效经济。",
-    "en": "Lightweight steel-framed formwork, efficient and economical.",
+    "en": "Lightweight steel frame formwork, efficient and economical.",
     "es": "Encofrado de marco de acero ligero, eficiente y económico.",
     "de": "Leichte Stahlrahmenschalung, effizient und wirtschaftlich.",
-    "pt": "Fôrma de estrutura de aço leve, eficiente e econômica.",
-    "sr": "Lagana čelična oplata, efikasna i ekonomična.",
-    "hu": "Könnyű acélkeretes zsaluzat, hatékony és gazdaságos."
+    "fr": "Coffrage à cadre en acier léger, efficace et économique.",
+    "pt": "Cofragem de estrutura de aço leve, eficiente e econômica.",
+    "ar": "قوالب إطار فولاذي خفيف الوزن، فعالة واقتصادية."
   },
-  "projects": [
-    {
-      "name": "MTB机场航站楼",
-      "location": "阿拉伯联合酋长国",
-      "description": "共累计使用超过6000个台模 X型机场航站楼(Midfield Terminal Building MTB), 位于两条跑道之间，可以容纳65量大型飞机 主楼7层，高50米，面积达70万平方米 12000名施工人员采用轮班制进行施工 从2017年开始投入使用，每年客流量可达3千万人次",
-      "image": "https://cdn.peri.cloud/dam/jcr:6926d17c-2e0d-4c3d-b661-66d1d859ac2e/16462/mtb航站楼-超级工地.jpg",
-      "link": "https://cn.peri.com/projects/midfield-terminal-building.html"
-    },
-    {
-      "name": "Bandra Kurla Complex（BKC）地铁站",
-      "location": "印度，孟买",
-      "description": "Bandra Kurla Complex (BKC): 派利公司参建亚洲最大的地铁站 Bandra Kurla Complex (BKC)地铁站是印度孟买市新建的高速火车交通项目的组成部分，派利为修建该地铁站提供支持。 预计项目于2020年竣工，此地铁站将成为重要的交通枢纽-也是全亚洲最大的地铁站。 BKC地铁站是共计475米长，30米宽的两层地下建筑。 两层结构净空高度分别为8.4米和5.5米，顶板厚度分别为750毫米和1200毫米。",
-      "image": "https://cdn.peri.cloud/dam/jcr:18049ff9-45f9-4b87-bb06-5bb1cc40487b/26615/印度，孟买，bandra-kurla-complex-bkc-地铁站.jpg",
-      "link": "https://cn.peri.com/projects/mumbai-metro-bandra-kurla-complex-station-mumbai-india.html"
-    },
-    {
-      "name": "UTEC大学校园",
-      "location": "秘鲁",
-      "description": "在紧张的工期内完成看台式的校园建筑",
-      "image": "https://cdn.peri.cloud/dam/jcr:1a573104-35bd-4944-abca-8d2e4812f48b/17002/utec大学校园-建筑施工标准高，工期短.jpg",
-      "link": "https://cn.peri.com/projects/utec-university-campus.html"
-    }
-  ],
-  "pdf_link": "https://www.peri.co.th/dam/jcr:bf8b3cd6-eeb5-4529-bf7e-c1d5148f8a36/liwa.pdf",
-  "youtube_video_id": "v25MaKccw3k"
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": ""
 }
