@@ -2,8 +2,8 @@
 
 **最后更新**: 2026-04-07  
 **总产品数**: 160  
-**已完成**: 33  
-**待处理**: 127
+**已完成**: 34  
+**待处理**: 126
 
 ---
 
@@ -44,6 +44,7 @@
 | 31 | skymax-grosspaneel-deckenschalung | SKYMAX 大面积楼板模板 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 32 | variodeck-steel-waler-slab-table | VARIODECK 钢梁台模 | ❌ | ❌ | ✅ | ✅ | 2026-04-07 |
 | 33 | tischmodul-vt | TISCHMODUL VT 台模 | ❌ | ❌ | ✅ | ✅ | 2026-04-07 |
+| 34 | stripping-cart-asw465 | ASW 465 拆模车 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 
 ---
 
