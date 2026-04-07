@@ -2,8 +2,8 @@
 
 **最后更新**: 2026-04-07  
 **总产品数**: 160  
-**已完成**: 46  
-**待处理**: 114
+**已完成**: 48  
+**待处理**: 112
 
 ---
 
@@ -57,6 +57,8 @@
 | 44 | baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel | 工具组合 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 45 | transportbehaelter | 材料运输工具 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 46 | pallet | 托架 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
+| 47 | ptl-1250-2-table-lift | PTL 1250-2 台模升降机 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
+| 48 | unterzug-und-deckenabschalungen | 梁板、楼板的端模组件 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 
 ---
 
