@@ -2,8 +2,8 @@
 
 **最后更新**: 2026-04-07  
 **总产品数**: 160  
-**已完成**: 43  
-**待处理**: 117
+**已完成**: 44  
+**待处理**: 116
 
 ---
 
@@ -54,6 +54,7 @@
 | 41 | hardware-boxes | 小组件托架框 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 42 | peri-ankertechnik | PERI 拉杆技术 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 | 43 | rs-push-pull-props | RS 斜撑 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
+| 44 | baustellenwerkzeuge-spannstabschluessel-ankerschluessel-ausschalhebel | 工具组合 | ❌ | ❌ | ❌ | ✅ | 2026-04-07 |
 
 ---
 
