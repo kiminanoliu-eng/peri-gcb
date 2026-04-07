@@ -2,9 +2,9 @@
 
 **最后更新**: 2026-04-07  
 **总产品数**: 160  
-**已完成**: 30  
-**待处理**: 130  
-**完成率**: 18.75%
+**已完成**: 31  
+**待处理**: 129  
+**完成率**: 19.4%
 
 ---
 
@@ -35,11 +35,12 @@
 18. ✅ rapid-column-formwork - RAPID 柱模
 19. ✅ lico-column-formwork - LICO 柱模
 
-### 建筑模板系统 - 楼板模板（4个）
+### 建筑模板系统 - 楼板模板（5个）
 20. ✅ skydeck-slab-formwork - SKYDECK 模块化楼板模板
 21. ✅ multiflex-girder-slab-formwork - MULTIFLEX 木梁式楼板模板
 22. ✅ gridflex-deckenschalung - GRIDFLEX 框架楼板模板
 23. ✅ skytable-slab-formwork - SKYTABLE 台模
+24. ✅ skymax-grosspaneel-deckenschalung - SKYMAX 大面积楼板模板
 
 ### 建筑模板系统 - 通用配件（2个）
 24. ✅ prokit-ep-110-fall-protection - PROKIT EP 110 防坠落护栏

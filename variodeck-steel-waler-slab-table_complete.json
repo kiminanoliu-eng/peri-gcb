@@ -1,0 +1,48 @@
+{
+  "slug": "variodeck-steel-waler-slab-table",
+  "name_zh": "VARIODECK 钢梁台模",
+  "category": "建筑模板系统",
+  "subcategory": "楼板模板",
+  "description": {
+    "zh": "适用于浇筑大面积楼板或安装较重预制件的钢梁台模系统。",
+    "en": "Steel waler slab table system suitable for casting large-area slabs or installing heavy precast elements.",
+    "es": "Sistema de mesa de losa con largueros de acero adecuado para el hormigonado de losas de gran superficie o la instalación de elementos prefabricados pesados.",
+    "de": "Stahlträger-Deckentisch-System geeignet für das Betonieren großflächiger Decken oder die Montage schwerer Fertigteile.",
+    "fr": "Système de table de dalle à poutrelles en acier adapté au coulage de dalles de grande surface ou à l'installation d'éléments préfabriqués lourds.",
+    "pt": "Sistema de mesa de laje com vigas de aço adequado para concretagem de lajes de grande área ou instalação de elementos pré-fabricados pesados.",
+    "ar": "نظام طاولة بلاطة بعوارض فولاذية مناسب لصب البلاطات ذات المساحات الكبيرة أو تركيب العناصر الجاهزة الثقيلة."
+  },
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:336927cd-8a80-4b6a-83bb-af6021987028/23797/variodeck-%E9%92%A2%E6%A2%81%E5%8F%B0%E6%A8%A1.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "沙特阿拉伯，吉达之门 „E3 – Abraj Al-Hilal 2"",
+      "location": "沙特阿拉伯",
+      "description": "3天完成一个施工循环，减少了吊车的使用量 40万平方米的全新市中心设施，包括6000个公寓、商业建筑、医院、学校、火车站以及文化和休闲中心。",
+      "image": "https://cdn.peri.cloud/dam/jcr:6434b872-e4cd-47af-bf2e-9546dacf1cad/11885/%E5%90%89%E8%BE%BE%E4%B9%8B%E9%97%A8-e3-%E2%80%93-abraj-al-hilal-2.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/jeddah-gate-e3-saudi-arabia.html"
+    },
+    {
+      "name": "丹麦，哥本哈根，辉凌制药A/S研发中心",
+      "location": "丹麦，哥本哈根",
+      "description": "派利公司提供为项目定制的施工方案，满足复杂的建筑设计要求。三角形的建筑需要满足高质量的清水混凝土要求。",
+      "image": "https://cdn.peri.cloud/dam/jcr:f82f0544-ae5d-4bca-8c97-4d122be205c6/26880/%E4%B8%B9%E9%BA%A6%EF%BC%8C%E5%93%A5%E6%9C%AC%E5%93%88%E6%A0%B9%EF%BC%8C%E8%BE%89%E5%87%8C%E5%88%B6%E8%8D%AFa-s%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/research-and-development-centre-of-ferring-pharmaceuticals-a-s-copenhagen-denmark.html"
+    },
+    {
+      "name": "德国，MK4 "Friends" 鹿园城市住宅",
+      "location": "德国",
+      "description": "深思熟虑的模板方案确保了快速的施工流程，并提高了施工安全性。",
+      "image": "https://cdn.peri.cloud/dam/jcr:5f0ed9e2-7f2d-41f8-8d45-e0b7cddc415a/11305/%E6%B4%BE%E5%88%A9%E6%A8%A1%E6%9D%BF%E3%80%81%E6%89%BF%E9%87%8D%E6%94%AF%E6%9E%B6%E7%A1%AE%E4%BF%9D%E9%AB%98%E6%95%88%E5%92%8C%E5%AE%89%E5%85%A8%E6%96%BD%E5%B7%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/stadtquartier-am-hirschgarten-mk4-friends-germany-munich.html"
+    },
+    {
+      "name": "德国，沃达丰大厦",
+      "location": "德国",
+      "description": "使用为项目定制的模板方案和综合工程服务理念，缩短了工期。",
+      "image": "https://cdn.peri.cloud/dam/jcr:28b2e530-0205-4490-911c-15ee63745a00/11480/%E6%B2%83%E8%BE%BE%E4%B8%B0%E5%8A%9E%E5%85%AC%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/vodafone-campus-duesseldorf.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": ""
+}
