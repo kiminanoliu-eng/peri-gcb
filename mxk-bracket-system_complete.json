@@ -1,0 +1,29 @@
+{
+  "slug": "mxk-bracket-system",
+  "name_zh": "MAXIMO MXK 支架系统",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "description": {
+    "zh": "MXK支架系统可作为MAXIMO和TRIO模板系统的操作平台。模块化设计结合轻质组件，可徒手快速、经济地安装，并可与MXK踏脚板、防护侧栏PROKIT和PMB等部件进行预组装。系统提供0.90米、1.20米和2.40米三种平台宽度，可在平放状态下安全预组装支架、踏脚板及防护侧栏。",
+    "en": "The MXK Bracket System serves as a working platform for MAXIMO and TRIO formwork systems. Its modular design and lightweight components enable fast, economical manual assembly and allow pre-assembly with MXK planks, PROKIT side protection and PMB components. The system is available in platform widths of 0.90 m, 1.20 m and 2.40 m, allowing brackets, planks and guardrails to be safely pre-assembled while laid flat.",
+    "es": "El sistema de ménsulas MXK sirve como plataforma de trabajo para los sistemas de encofrado MAXIMO y TRIO. Su diseño modular y sus componentes ligeros permiten un montaje manual rápido y económico, así como el premontaje con tablones MXK, protección lateral PROKIT y componentes PMB. El sistema está disponible en anchos de plataforma de 0,90 m, 1,20 m y 2,40 m, lo que permite premontar de forma segura ménsulas, tablones y barandillas en posición horizontal.",
+    "de": "Das MXK Konsolensystem dient als Arbeitsplattform für die Schalungssysteme MAXIMO und TRIO. Der modulare Aufbau und die leichten Bauteile ermöglichen eine schnelle und wirtschaftliche Montage von Hand sowie die Vormontage mit MXK Belägen, PROKIT Seitenschutz und PMB Komponenten. Das System ist in Plattformbreiten von 0,90 m, 1,20 m und 2,40 m verfügbar, sodass Konsolen, Beläge und Seitenschutz im liegenden Zustand sicher vormontiert werden können.",
+    "fr": "Le système de consoles MXK sert de plate-forme de travail pour les systèmes de coffrage MAXIMO et TRIO. Sa conception modulaire et ses composants légers permettent un montage manuel rapide et économique, ainsi qu'un prémontage avec les platelages MXK, les protections latérales PROKIT et les composants PMB. Le système est disponible en largeurs de plate-forme de 0,90 m, 1,20 m et 2,40 m, ce qui permet de prémonter en toute sécurité les consoles, platelages et garde-corps à plat.",
+    "pt": "O sistema de consoles MXK funciona como plataforma de trabalho para os sistemas de fôrma MAXIMO e TRIO. Seu projeto modular e seus componentes leves permitem montagem manual rápida e econômica, além de pré-montagem com tábuas MXK, proteção lateral PROKIT e componentes PMB. O sistema está disponível em larguras de plataforma de 0,90 m, 1,20 m e 2,40 m, permitindo pré-montar com segurança consoles, pisos e guarda-corpos na posição horizontal.",
+    "ar": "يعمل نظام الحوامل MXK كمنصة عمل لأنظمة القوالب MAXIMO وTRIO. يتيح التصميم المعياري والمكونات خفيفة الوزن تجميعا يدويا سريعا واقتصاديا، كما يسمح بالتجميع المسبق مع ألواح MXK وحماية الجوانب PROKIT ومكونات PMB. يتوفر النظام بعروض منصات 0.90 متر و1.20 متر و2.40 متر، مما يتيح التجميع المسبق الآمن للحوامل والألواح والدرابزينات وهي في الوضع الأفقي."
+  },
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:90b3452b-ec38-453e-9445-ff5b0c4116c8/23954/mxk-%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
+  "projects": [
+    {
+      "name": "芬兰，Domino-Kortteli 住宅公寓",
+      "location": "锡博, 芬兰",
+      "description": "为冬季施工提供方案:确保在摄氏零下的温度环境下完成施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:12bef9b6-20a5-48df-9a80-fb7332fd39b7/12432/%E9%85%8D%E6%9C%89%E5%8A%A0%E7%83%AD%E5%8D%95%E5%85%83%E7%9A%84maximo%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/domino-kortteli-residential-complex-sipoo-finland.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.lv/dam/jcr%3A1e5d0d2f-dae2-41da-8e1c-c119e3626f87/maximo-bro%C5%A1%C5%ABra.pdf",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08"
+}
