@@ -1,0 +1,37 @@
+{
+  "slug": "handset-alpha",
+  "name_zh": "HANDSET Alpha 模块化模板系统",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "image": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg",
+  "description": {
+    "zh": "HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱的基础型模板系统。该系统价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统操作简单、直观。模板组装只需两人，不需吊车即可完成。",
+    "en": "HANDSET Alpha is a basic formwork system for concreting walls, building foundations, and columns. The system is highly competitive in price and excellent in performance. A small number of component types and versatile modules make the system simple and intuitive to operate. Formwork assembly requires only two people and can be completed without a crane.",
+    "es": "HANDSET Alpha es un sistema de encofrado básico para hormigonado de muros, cimientos de edificios y columnas. El sistema es altamente competitivo en precio y excelente en rendimiento. Un pequeño número de tipos de componentes y módulos versátiles hacen que el sistema sea simple e intuitivo de operar. El montaje del encofrado requiere solo dos personas y se puede completar sin grúa.",
+    "de": "HANDSET Alpha ist ein Basis-Schalungssystem für die Betonierung von Wänden, Gebäudefundamenten und Stützen. Das System ist preislich sehr wettbewerbsfähig und leistungsstark. Eine geringe Anzahl von Bauteiltypen und vielseitige Module machen das System einfach und intuitiv zu bedienen. Die Schalungsmontage erfordert nur zwei Personen und kann ohne Kran durchgeführt werden.",
+    "pt": "HANDSET Alpha é um sistema de cofragem básico para concretagem de paredes, fundações de edifícios e colunas. O sistema é altamente competitivo em preço e excelente em desempenho. Um pequeno número de tipos de componentes e módulos versáteis tornam o sistema simples e intuitivo de operar. A montagem da cofragem requer apenas duas pessoas e pode ser concluída sem guindaste.",
+    "sr": "HANDSET Alpha je osnovni sistem oplate za betoniranje zidova, temelja zgrada i stubova. Sistem je veoma konkurentan po ceni i odličan po performansama. Mali broj tipova komponenti i svestrani moduli čine sistem jednostavnim i intuitivnim za rad. Montaža oplate zahteva samo dve osobe i može se završiti bez dizalice.",
+    "hu": "A HANDSET Alpha egy alapvető zsaluzási rendszer falak, épületalapok és oszlopok betonozásához. A rendszer rendkívül versenyképes árú és kiváló teljesítményű. A kevés alkatrész típus és a sokoldalú modulok egyszerűvé és intuitívvá teszik a rendszer működtetését. A zsaluzat összeszerelése csak két személyt igényel és daru nélkül is elvégezhető."
+  },
+  "pdf_link": "https://www.peri.co.za/dam/jcr:61fe2e05-22de-4176-85ad-7663494b99d5/handset-alpha-brochure.pdf",
+  "youtube_video_id": "c3FOoHAjQEs",
+  "cn_url": "https://cn.peri.com/products/handset-alpha.html",
+  "projects": [
+    {
+      "name": "塞尔维亚，Kelebija，NOVI SAD 铁路立交桥",
+      "location": "Subotice, 塞尔维亚",
+      "description": "现代化改造Novog Sada 至 Kelebije高速铁路线",
+      "image": "https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/塞尔维亚，kelebija，novi-sad-铁路立交桥.jpg",
+      "link": "https://cn.peri.com/projects/nadvoznjaci-preko-pruge-novi-sad-kelebija.html"
+    },
+    {
+      "name": "大摩拉瓦河桥梁工程 （沿多瑙河高速公路-第一标段）",
+      "location": "Požarevac, 塞尔维亚",
+      "description": "使用派利多种系统为工程提供综合解决方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:6cedbd38-976c-4495-af93-2da098670879/20230/大摩拉瓦河桥梁工程-（沿多瑙河高速公路-第一标段）.jpg",
+      "link": "https://cn.peri.com/projects/大摩拉瓦河桥梁工程.html"
+    }
+  ],
+  "verified": true,
+  "verification_date": "2026-04-05"
+}
