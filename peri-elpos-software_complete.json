@@ -1,0 +1,32 @@
+{
+  "slug": "peri-elpos-software",
+  "name_zh": "PERI ELPOS 软件",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-elpos-software.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:ee4197ce-42af-4062-86fa-0520807871e6/25344/software-peri-elpos.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:ee4197ce-42af-4062-86fa-0520807871e6/25344/software-peri-elpos.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "使用ELPOS可以快速简单地对派利模板、脚手架系统进行规划。即使没有一点CAD-基础的用户，也可使用ELPOS对简单的地下室或者多层建筑进行规划，并绘制实用的图纸以及生成项目特定的材料清单。 技术信息 为派利日常模板、脚手架方案提供快速、简单的数字化支持。 具备电脑使用基础的用户即可使用。 自动生成，支持派利的标准系统和基本功能，必要时可手工补充、修改方案。 服务和培训 围绕Elpos提供服务 ELPIOS使用过程简单、直观。全面、易于理解的说明文档有助于用户了解使用该软件。为了让客户更",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-elpos-software.html",
+    "pdf_source": "",
+    "youtube_reason": "Only 0 official candidates were available, and none was a suitable English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-elpos-software.html",
+      "de_source": ""
+    }
+  }
+}

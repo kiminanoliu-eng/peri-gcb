@@ -10,10 +10,19 @@
     "de": "Stapelbares Palettengestell nach europäischen Palettenstandards für schwer stapelbare Komponenten. Abmessungen 80×120×50 cm, Volumen ~0,28 Kubikmeter, maximale Last 1,5 Tonnen.",
     "fr": "Cadre de palette empilable conforme aux normes européennes pour stocker des composants difficiles à empiler. Dimensions 80×120×50 cm, capacité ~0,28 mètres cubes, charge maximale 1,5 tonne.",
     "pt": "Estrutura de palete empilhável em conformidade com padrões europeus para armazenar componentes difíceis de empilhar. Dimensões 80×120×50 cm, capacidade ~0,28 metros cúbicos, carga máxima 1,5 tonelada.",
-    "ar": "إطار منصة نقالة قابل للتكديس متوافق مع معايير المنصات الأوروبية لتخزين المكونات الصعبة التكديس. الأبعاد 80×120×50 سم، السعة ~0.28 متر مكعب، الحمولة القصوى 1.5 طن."
+    "ar": "إطار منصة نقالة قابل للتكديس متوافق مع معايير المنصات الأوروبية لتخزين المكونات الصعبة التكديس. الأبعاد 80×120×50 سم، السعة ~0.28 متر مكعب، الحمولة القصوى 1.5 طن.",
+    "sr": "Slozivi paletni okvir uskladjen sa evropskim paletnim standardima za skladistenje komponenti koje je tesko slagati. Dimenzije 80x120x50 cm, zapremina oko 0,28 m3, maksimalno opterecenje 1,5 t.",
+    "hu": "Az europai raklapszabvanyoknak megfelelo, egymasra helyezheto raklapkeret a nehezen rakasozhato elemek tarolasahoz. Merete 80x120x50 cm, terfogata kb. 0,28 m3, maximalis teherbirasa 1,5 t."
   },
   "thumbnail": "https://cdn.peri.cloud/dam/jcr:5b06005d-845e-47e1-aa23-3104f5ebf673/24855/%E5%B0%8F%E7%BB%84%E4%BB%B6%E6%89%98%E6%9E%B6%E6%A1%86.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "image": "https://cdn.peri.cloud/dam/jcr:5b06005d-845e-47e1-aa23-3104f5ebf673/24855/%E5%B0%8F%E7%BB%84%E4%BB%B6%E6%89%98%E6%9E%B6%E6%A1%86.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "cn_url": "https://cn.peri.com/products/hardware-boxes.html",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/hardware-boxes.html",
+    "pdf_source": "",
+    "youtube_reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
 }

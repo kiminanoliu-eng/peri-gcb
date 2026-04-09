@@ -1,0 +1,32 @@
+{
+  "slug": "asset-tracking",
+  "name_zh": "PERI 材料定位器",
+  "category": "脚手架_支架系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/asset-tracking.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:d33a3f20-9947-4d9d-8744-fc51e5c3613f/25424/%E6%9D%90%E6%96%99%E5%AE%9A%E4%BD%8D%E5%99%A8.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:d33a3f20-9947-4d9d-8744-fc51e5c3613f/25424/%E6%9D%90%E6%96%99%E5%AE%9A%E4%BD%8D%E5%99%A8.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "使用派利材料定位器能够在发货到工地以及入库的过程中，快速、精确地定位材料。 产品特点： 能够在任何地点查询，优化项目流程 实时定位材料 合理调配材料，提高成本透明度 有效提高内部沟通和工作效率 防盗：最大限度减少丢失 更好地进行施工作业准备和材料清单管理 快速、精确定位材料 无论材料在任何位置:仓库、在前往下一个地点的途中,或是在施工现场：派利材料定位器能够随时随地为您提供可追溯的材料跟踪信息。 相关的App和Web 应用程序的使用界面清晰直观，您可以准确了解材料的实时位置以及历史位置",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/asset-tracking.html",
+    "pdf_source": "",
+    "youtube_reason": "Only 1 official candidates were available, and none was a suitable English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/asset-tracking.html",
+      "de_source": ""
+    }
+  }
+}

@@ -10,10 +10,19 @@
     "de": "Entwickelt für den Transport von Deckentischen bis 8 Meter Länge und bis 1,75 Tonnen Gewicht. Faltbares Design spart Transportraum, mit verstellbarer Breite und Länge für verschiedene Tischabmessungen. Bleibt am Kran waagerecht, ob leer oder beladen.",
     "fr": "Conçu pour transporter des tables de dalle jusqu'à 8 mètres de long et pesant jusqu'à 1,75 tonne. Conception pliable économise l'espace de transport, avec largeur et longueur réglables pour s'adapter à différentes dimensions de table. Reste à niveau sur la grue qu'elle soit vide ou chargée.",
     "pt": "Projetado para transportar mesas de laje de até 8 metros de comprimento e pesando até 1,75 tonelada. Design dobrável economiza espaço de transporte, com largura e comprimento ajustáveis para acomodar diferentes dimensões de mesa. Permanece nivelado no guindaste vazio ou carregado.",
-    "ar": "مصمم لنقل طاولات البلاطات حتى 8 أمتار طولاً وحتى 1.75 طن وزناً. تصميم قابل للطي يوفر مساحة النقل، مع عرض وطول قابلين للتعديل لاستيعاب أبعاد الطاولة المختلفة. يبقى مستوياً على الرافعة سواء كان فارغاً أو محملاً."
+    "ar": "مصمم لنقل طاولات البلاطات حتى 8 أمتار طولاً وحتى 1.75 طن وزناً. تصميم قابل للطي يوفر مساحة النقل، مع عرض وطول قابلين للتعديل لاستيعاب أبعاد الطاولة المختلفة. يبقى مستوياً على الرافعة سواء كان فارغاً أو محملاً.",
+    "sr": "Projektovan za transport stolova za oplatu duzine do 8 metara i mase do 1,75 tona. Sklopivi dizajn stedi prostor pri transportu, a sirina i duzina su podesive za razlicite dimenzije stolova. Na kranu ostaje u horizontalnom polozaju bilo da je prazan ili opterecen.",
+    "hu": "Legfeljebb 8 meter hosszu es 1,75 tonna tomegu fodemasztalok szallitasara keszult. Osszecsukhato kialakitasa helyet takarit meg szallitaskor, szelessege es hossza pedig kulonbozo asztalmeretekhez igazithato. Darun uresen es terhelten is vizszintben marad."
   },
   "thumbnail": "https://cdn.peri.cloud/dam/jcr:b257769d-97d0-4de9-8d42-116cdaa734ab/24690/peri-%E8%BD%AC%E8%BF%90%E5%8F%89.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "image": "https://cdn.peri.cloud/dam/jcr:b257769d-97d0-4de9-8d42-116cdaa734ab/24690/peri-%E8%BD%AC%E8%BF%90%E5%8F%89.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "cn_url": "https://cn.peri.com/products/table-lifting-fork.html",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/table-lifting-fork.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 9 candidates."
+  }
 }

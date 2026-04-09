@@ -1,0 +1,32 @@
+{
+  "slug": "peri-multiflex-configurator",
+  "name_zh": "MULTIFLEX 木梁楼板模板计算器",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-multiflex-configurator.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:99d64327-8639-4027-bce9-0195c9163cb3/25309/peri-multiflex-girder-slab-formwork-configurator.png",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:99d64327-8639-4027-bce9-0195c9163cb3/25309/peri-multiflex-girder-slab-formwork-configurator.png",
+  "description": {
+    "zh": "使用MULTIFLEX 木梁-楼板模板-计算器，用户可以对派利的木梁式楼板模板的梁、支撑间距以及支撑类型快速、轻松的进行配置和优化。 MULTIFLEX 木梁-楼板模板-计算器 功能说明 首先用户选择所需的梁进行组合，软件提供5种组合方式: GT 24/GT 24, GT 24/2xGT24, VT 20K/VT 20K, VT 20K/2xVT 20K und VT 20K/GT 24. 在输入楼板厚度以及横梁间距后，MULTIFLEX 木梁-楼板模板-计算器可计算出最大的主梁间距。确定",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-multiflex-configurator.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-multiflex-configurator.html",
+      "de_source": ""
+    }
+  }
+}

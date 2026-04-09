@@ -1,0 +1,61 @@
+{
+  "slug": "cb-climbing-formwork",
+  "name_zh": "CB 爬架系统",
+  "category": "市政工程系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/cb-climbing-formwork.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:28313b74-8ae0-4347-84dc-baf90915ef08/23447/cb-%E7%88%AC%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:28313b74-8ae0-4347-84dc-baf90915ef08/23447/cb-%E7%88%AC%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "CB爬架系统通常适用于面积较大、设计有穿墙拉杆的墙体模板。爬模单元由模板部分，操作平台，带有模板平移装置的支架、垂直钢梁以及下挂架组成。可使用吊车对爬模单元整体进行快速转运。 大型的爬模单元 高承载能力的支架系统提高了整个系统的承载能力。 快速地转运 平台和模板组成一个整体爬模单元，使用吊车一次性整体转运。 无绊脚的安全平台 在模板的前后两侧，平台踏脚板搭建在支架上（适用于CB 240）。",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "意大利，米兰忠利保险大厦",
+      "location": "米兰, 意大利",
+      "description": "扎哈哈迪德设计的旋转塔楼。",
+      "image": "https://cdn.peri.cloud/dam/jcr:fd3ee75f-325a-41d2-86cc-b82dd7b1cbe6/11327/%E6%84%8F%E5%A4%A7%E5%88%A9%EF%BC%8C%E7%B1%B3%E5%85%B0%E5%BF%A0%E5%88%A9%E4%BF%9D%E9%99%A9%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/generali-tower-mailand-italien.html"
+    },
+    {
+      "name": "墨西哥，巴鲁阿特大桥",
+      "location": "巴卢阿特, 墨西哥",
+      "description": "使用派利产品安全、精确地浇筑拉丁美洲的最高桥梁 为斜拉桥项目浇筑2个菱形的桥塔和9个中间用大型横梁加固的双支腿桥墩 项目施工期间巴鲁阿特大桥是世界上第三高的桥梁 桥塔高度: 169米和156米 双支腿桥墩高度: 最高145米 总长度: 1124米 主跨长度: 520米 桥梁上部结构宽度: 20米 跨越峡谷深度: 约400米 项目开始施工至竣工时间: 2008年至2012年",
+      "image": "https://cdn.peri.cloud/dam/jcr:83a4acfb-f55c-43ee-b065-a691afd0ae2e/16576/%E5%B7%B4%E9%B2%81%E9%98%BF%E7%89%B9%E5%A4%A7%E6%A1%A5-%E9%99%A4%E4%BA%86%E4%B8%A4%E4%B8%AA%E6%A1%A5%E5%A1%94%E7%BB%93%E6%9E%84%EF%BC%8C%E5%9C%A8%E5%B3%A1%E8%B0%B7%E4%B8%A4%E4%BE%A7%E8%BF%98%E6%B5%87%E7%AD%91%E4%BA%86%E6%80%BB%E5%85%B19%E4%B8%AA%E5%8F%8C%E6%94%AF%E8%85%BF%E6%A1%A5%E5%A2%A9.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/puente-baluarte.html"
+    },
+    {
+      "name": "俄罗斯，圣彼得堡，叶赫塔中心",
+      "location": "圣彼得堡, 俄罗斯",
+      "description": "为欧洲最高的大厦提供全套的模板、脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%EF%BC%8C%E5%8F%B6%E8%B5%AB%E5%A1%94%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
+    },
+    {
+      "name": "北马其顿， Kičevo Podvis 高速公路桥",
+      "location": "Kičevo Podvis, 北马其顿",
+      "description": "使用悬臂吊篮系统为北马其顿高速公路桥提供项目定制方案。 新建的桥梁工程是马其顿高速公路网扩建的重要部分。 桥梁全长381米，具有独立的桥面结构。 桥梁主跨跨度为165米。 GD Granit, Skopje, 北马其顿 SINOHYDRO 中国水电",
+      "image": "https://cdn.peri.cloud/dam/jcr:ffc0331a-97f2-4f07-ad3c-df8e399b4bfb/26763/%E5%8C%97%E9%A9%AC%E5%85%B6%E9%A1%BF%EF%BC%8Cki%C4%8Devo-podvis-%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E6%A1%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/autobahnbruecke-kicevo-podvis-nordmazedonien.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.co.za/dam/jcr:3d652372-08f6-3b82-9561-b9e1e0fbde03/cb-240-climbing-formwork-instructions-for-assembly-and-use.pdf",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/cb-climbing-formwork.html",
+    "pdf_source": "https://www.peri.co.za/products/cb-climbing-formwork.html",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/cb-climbing-formwork.html",
+      "de_source": ""
+    }
+  }
+}

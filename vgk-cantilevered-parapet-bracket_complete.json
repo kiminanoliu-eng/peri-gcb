@@ -1,0 +1,40 @@
+{
+  "slug": "vgk-cantilevered-parapet-bracket",
+  "name_zh": "VARIOKIT VGK 边梁支架",
+  "category": "市政工程系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/vgk-cantilevered-parapet-bracket.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:d5c408c9-7369-41ec-b0d5-726ffe21eb70/23931/vgk-%E8%BE%B9%E6%A2%81%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:d5c408c9-7369-41ec-b0d5-726ffe21eb70/23931/vgk-%E8%BE%B9%E6%A2%81%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
+  "description": {
+    "zh": "针对长度小于150米，没有必要使用模板台车及滑轨支架系统的桥梁上部结构，可选用VGK边梁支架系统。单片支架固定在桥梁悬臂板下方或桥台的侧面，然后铺设踏脚板，形成封闭的操作平台，在这个平台上可以安装模板，并进行立模调整。 技术细节 边梁尺寸最大为宽度/高度 = 60/100 厘米间距。 边梁支架最大间距为 1,84 米。 分离的作业平台和模板单元。 维护专用锚件具备很高的受力强度，保证了快速安装，并节省了拉杆数目。",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "塞尔维亚，Kelebija，NOVI SAD 铁路立交桥",
+      "location": "Subotice, 塞尔维亚",
+      "description": "在Novog Sada 至 Kelebije高速铁路线的改造升级项目中，包含了大量的交通主线的交叉路口，需要将这些交叉路口改建成立交桥。派利公司为Subotice附近163km以及169km处的两座结构相近的立交桥提供工程解决方案。立交桥为双车道结构，单车道宽度为3米，总长166米。",
+      "image": "https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%EF%BC%8Ckelebija%EF%BC%8Cnovi-sad-%E9%93%81%E8%B7%AF%E7%AB%8B%E4%BA%A4%E6%A1%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/nadvoznjaci-preko-pruge-novi-sad-kelebija.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/78347",
+  "youtube_video_id": "LDX70ajHH2o",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/vgk-cantilevered-parapet-bracket.html",
+    "pdf_source": "https://www.peri.ltd.uk/products/vgk-cantilevered-parapet-bracket.html",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/vgk-cantilevered-parapet-bracket.html",
+      "de_source": ""
+    }
+  }
+}

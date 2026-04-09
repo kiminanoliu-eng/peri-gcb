@@ -9,6 +9,11 @@ Run: python3 rebuild_site_v2.py
 """
 
 import os, json, re, urllib.parse
+from source_rules import (
+    is_direct_pdf_like,
+    is_official_peri_host,
+    pdf_matches_slug,
+)
 
 # YouTube video IDs for key products (from @perigroup channel)
 YT_IDS = {
@@ -59,6 +64,39 @@ try:
         PDF_LINKS = json.load(f)
 except:
     PDF_LINKS = {}
+
+try:
+    with open(os.path.join(BASE, 'pdf_overrides.json'), encoding='utf-8') as f:
+        PDF_OVERRIDES = json.load(f)
+except:
+    PDF_OVERRIDES = {}
+
+TRUSTED_PDF_LINKS = {}
+TRUSTED_PDF_LINKS.update(PDF_LINKS)
+TRUSTED_PDF_LINKS.update(PDF_OVERRIDES)
+
+def sanitize_pdf_url(url, slug):
+    if not isinstance(url, str):
+        return ''
+    url = url.strip()
+    if not url:
+        return ''
+
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in ('http', 'https') or not is_official_peri_host(parsed.netloc):
+        return ''
+
+    if not is_direct_pdf_like(url):
+        return ''
+
+    trusted_url = TRUSTED_PDF_LINKS.get(slug, '')
+    if trusted_url and url == trusted_url:
+        return url
+
+    if not pdf_matches_slug(url, slug):
+        return ''
+
+    return url
 
 PERI_RED   = '#e3000f'
 PERI_YELLOW= '#f5a800'
@@ -586,6 +624,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     desc_de = desc_zh
     desc_fr = desc_zh
     desc_pt = desc_zh
+    desc_sr = desc_zh
+    desc_hu = desc_zh
     desc_ar = desc_zh
     complete_json_path = os.path.join(BASE, f'{slug}_complete.json')
     if os.path.exists(complete_json_path):
@@ -604,6 +644,8 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
                     desc_de = descriptions.get('de', '')
                     desc_fr = descriptions.get('fr', '')
                     desc_pt = descriptions.get('pt', '')
+                    desc_sr = descriptions.get('sr', '')
+                    desc_hu = descriptions.get('hu', '')
                     desc_ar = descriptions.get('ar', '')
         except:
             pass
@@ -612,10 +654,16 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     if desc_from_json:
         desc_zh = desc_from_json
 
-    # Fallback to product_pdf_links.json, then cn_url
-    # Only fallback if pdf_url is None (not found in JSON), not if it's empty string ""
+    if pdf_url is not None:
+        raw_pdf_url = pdf_url
+        pdf_url = sanitize_pdf_url(pdf_url, slug)
+        if raw_pdf_url and not pdf_url:
+            print(f'  ⚠️ Ignoring non-verified PDF for {slug}: {raw_pdf_url}')
+
+    # Fallback only to verified direct PDF links.
+    # If complete JSON intentionally uses "", keep it hidden.
     if pdf_url is None:
-        pdf_url = PDF_LINKS.get(slug, cn_url)
+        pdf_url = sanitize_pdf_url(TRUSTED_PDF_LINKS.get(slug, ''), slug)
 
     # Determine back-link for breadcrumb
     if subcat:
@@ -754,7 +802,7 @@ def build_product_page(cat_key, cat, p, subcat_key=None, subcat=None):
     <h1>{name_zh}</h1>
     <p style="color:#444;line-height:1.8;margin-bottom:20px;font-size:15px"
        data-zh="{desc_zh}" data-en="{desc_en}" data-es="{desc_es}" data-de="{desc_de}"
-       data-pt="{desc_pt}" data-fr="{desc_fr}" data-ar="{desc_ar}">{desc_zh}</p>
+       data-pt="{desc_pt}" data-sr="{desc_sr}" data-hu="{desc_hu}" data-fr="{desc_fr}" data-ar="{desc_ar}">{desc_zh}</p>
     <div class="prod-cta">
       <a href="{cn_url}" target="_blank" class="btn btn-red"
          data-zh="↗ 前往中文官网查看" data-en="↗ View on PERI China" data-es="↗ Ver en PERI China" data-de="↗ Auf PERI China ansehen"
@@ -845,6 +893,7 @@ def build_search_page():
                 for p in sc['products']:
                     products_js.append({
                         'slug': p[0], 'name': p[1], 'desc': p[2],
+                        'image': p[3] if len(p) > 3 else '',
                         'cat_zh': f'{cat_display} › {sc_key}',
                         'cat_en': f'{cat["en"]} › {sc["en"]}',
                         'url': f'products/{p[0]}.html'
@@ -853,6 +902,7 @@ def build_search_page():
             for p in cat['products']:
                 products_js.append({
                     'slug': p[0], 'name': p[1], 'desc': p[2],
+                    'image': p[3] if len(p) > 3 else '',
                     'cat_zh': cat_display, 'cat_en': cat['en'],
                     'url': f'products/{p[0]}.html'
                 })
@@ -886,7 +936,9 @@ function doSearch(){{
   document.getElementById('results').innerHTML = res.length===0
     ? '<p style="padding:32px;color:#999">未找到相关产品</p>'
     : res.map(p=>`<div class="card" onclick="location.href='${{p.url}}'">
-        <div class="card-img-placeholder">🔧</div>
+        ${{p.image
+          ? `<img class="card-img" src="${{p.image}}" alt="${{p.name}}" loading="lazy">`
+          : '<div class="card-img-placeholder">🔧</div>'}}
         <div class="card-body">
           <div class="card-badge">${{p.cat_zh}}</div>
           <div class="card-title">${{p.name}}</div>

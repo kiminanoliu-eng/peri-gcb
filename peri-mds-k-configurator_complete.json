@@ -1,0 +1,32 @@
+{
+  "slug": "peri-mds-k-configurator",
+  "name_zh": "MDS K 塔架计算器",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-mds-k-configurator.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:396cb275-87ac-439f-889f-5a973b90e29c/25292/peri-mds-k-shoring-tower-configurator-icon.png",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:396cb275-87ac-439f-889f-5a973b90e29c/25292/peri-mds-k-shoring-tower-configurator-icon.png",
+  "description": {
+    "zh": "MDS K 塔架计算器可以帮助计算承重支架的参数。计算器可使用网页浏览器启动，让客户轻松、快速、准确的确定允许最大轴向承载能力以及最小的抗滑移荷载。计算结果基于派利. MDS K 支撑塔架的性能数值。 MDS K 塔架计算器 PERIpath可以模拟一个大型工程中的模板、脚手架的管理情况。 用户随时可以知道是否材料正在进行转运，在何处进行脚手架的装配或拆卸，以及多少施工人员正在参与施工。 服务 全方位的服务 SaaS (软件服务) 降低了企业IT的成本。我们负责所有任务，例如备份、数据安",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-mds-k-configurator.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-mds-k-configurator.html",
+      "de_source": ""
+    }
+  }
+}

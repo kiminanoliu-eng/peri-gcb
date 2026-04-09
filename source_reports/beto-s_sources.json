@@ -1,0 +1,34 @@
+{
+  "slug": "beto-s",
+  "name_zh": "Beto-S 板",
+  "category": "板材",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/beto-s.html",
+  "page_title": "Beto-S板",
+  "page_description": "Beto-S板由坚固的15-层桦木板材组成,使用BFU 100型胶(符合 DIN 68705标准)十字交叉胶合制成 , 并经欧洲标准的覆膜进行表面处理. 使用可单面少量透水的特殊覆膜，该模板可满足对于吸水板材的所有要求。 技术细节 木料类型: 所有木料均为俄罗斯桦木胶合板。 覆膜: 上表面使用可吸水的特殊覆膜处理，背面为120 g/m²酚醛树脂覆膜，深棕色。 胶合: DIN 68705 第三部分, BFU 100, EN 314-2 等级 3。 应用: 可少量吸水的模板板材，适用于亚光、少量",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:5ac34c41-184d-48df-807b-a75bff03bf2d/25213/beto-s-%E5%90%B8%E6%B0%B4%E7%9A%84%E6%A8%A1%E6%9D%BF%E6%9D%BF%E6%9D%90.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "Ur7PGCwMdW0",
+      "query": "beto",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=beto",
+      "watch_url": "https://www.youtube.com/watch?v=Ur7PGCwMdW0",
+      "title": "PRODUCTO | PERI Integrated Scaffolding Program (ES)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ur7PGCwMdW0/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 1,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
+}

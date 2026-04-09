@@ -1,0 +1,70 @@
+{
+  "slug": "pep-alpha-props",
+  "name_zh": "PEP Alpha 楼板模板支撑",
+  "category": "脚手架_支架系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/pep-alpha-props.html",
+  "page_title": "PEP Alpha 楼板模板支撑",
+  "page_description": "PERI PEP Alpha B和D支撑达到规范DIN EN 1065承载支架的标准。此支撑涵盖了常规住宅和轻型商业建筑中钢管支撑应用范围的80%。派利公司为客户提供 PEP Alpha出售服务-高性价比的产品。每根支撑轴向最大承载能力达36.1kN。 技术细节 产品规格 可伸长尺寸 自重 最大承载能力 PEP Alpha D-300 1,80 米 -",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:b0203f80-240a-4266-a461-bceea31e7b7e/26278/pep-alpha-slab-prop.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "英国，苏塞克斯，混凝土别墅",
+      "location": "苏塞克斯, 英国",
+      "description": "完全使用DUO系统，浇筑出色的清水混凝土结构",
+      "image": "https://cdn.peri.cloud/dam/jcr:95b78b0a-4fa2-41e9-a597-fafb6453c1f3/26629/%E8%8B%B1%E5%9B%BD%EF%BC%8C%E8%8B%8F%E5%A1%9E%E5%85%8B%E6%96%AF%EF%BC%8C%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%88%AB%E5%A2%85.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/concrete-house-sussex-united-kingdom.html"
+    }
+  ],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "HEyMnO9HzcE",
+      "query": "pep",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=pep",
+      "watch_url": "https://www.youtube.com/watch?v=HEyMnO9HzcE",
+      "title": "FORMWORK | PERI at Gotham 1&3 aka the JACX, New York (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/HEyMnO9HzcE/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "AyVfuh2H0lU",
+      "query": "pep",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=pep",
+      "watch_url": "https://www.youtube.com/watch?v=AyVfuh2H0lU",
+      "title": "GERÜST | PERI STS 300 Gerüsttransportsystem (DE)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/AyVfuh2H0lU/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "vjfJjiab9kU",
+      "query": "pep alpha props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=pep%20alpha%20props",
+      "watch_url": "https://www.youtube.com/watch?v=vjfJjiab9kU",
+      "title": "PROJECT | Lehké rámové bednění DUO – Montáž stropního bednění (CZ)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/vjfJjiab9kU/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 3,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 3 official candidates were available, and none was a suitable English product video."
+  }
+}

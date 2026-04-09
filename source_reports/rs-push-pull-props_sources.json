@@ -1,0 +1,267 @@
+{
+  "slug": "rs-push-pull-props",
+  "name_zh": "RS 斜撑",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "cn_url": "https://cn.peri.com/products/rs-push-pull-props.html",
+  "page_title": "RS 斜撑",
+  "page_description": "RS斜撑系统用于的模板垂直度矫正，以及承载墙模、柱模或预制件等结构所受的风载。它们使用寿命长、维护成本极低、操作简便。 也可用作底部斜撑支杆，因此无需其他额外的支杆配件。 快速、安全组装 在地面操作，手动转动斜撑，对长度进行粗调和微调，以达到所需长度。 适用于预制件 施工人员在安全的操作位置，使用斜撑适配件，快速组装系统。 耐用 镀锌的钢管和螺纹，提高了系统的防腐蚀性，延长了使用寿命。",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:f974a70b-eb54-4d1d-b818-2e50298d4526/24142/rs-%E6%96%9C%E6%92%91-%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%9C%E6%92%91%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "法国，乔治·蓬皮杜国家艺术文化中心",
+      "location": "Metz, 法国",
+      "description": "使用PERI UP系统为造型奇特的屋顶提供脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:b84c0c16-1ca4-40a1-9757-b9d478556a5e/16413/%E4%B9%94%E6%B2%BB%C2%B7%E8%93%AC%E7%9A%AE%E6%9D%9C%E8%89%BA%E6%9C%AF%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83-%E6%A2%85%E6%96%AF%EF%BC%8C%E6%B3%95%E5%9B%BD.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/乔治·蓬皮杜国家艺术文化中心.html"
+    },
+    {
+      "name": "乌克兰，Ivano-Frankowsk水泥厂",
+      "location": "Ivano-Frankowsk, 乌克兰",
+      "description": "施工要求高，在工厂运营期间施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:3736d838-82e7-4d65-ba1d-dda2e590c310/18442/ivano-frankowsk%E6%B0%B4%E6%B3%A5%E5%8E%82-%E6%89%A9%E5%BB%BA%E6%B0%B4%E6%B3%A5%E5%8E%82.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/cement-plant-ivano-frankowsk.html"
+    },
+    {
+      "name": "法国，拉斯科 IV - 国际中心 d’Art Pariétal",
+      "location": "蒙蒂尼亚克, 法国",
+      "description": "使用派利施工设备，重现旧石器时代洞穴旧址",
+      "image": "https://cdn.peri.cloud/dam/jcr:1d42fb63-1aa2-4544-9725-db5d6f2999ec/10888/%E6%8B%89%E6%96%AF%E7%A7%91-iv-d%E2%80%99art-pari%C3%A9tal-ciap-%E5%9B%BD%E9%99%85%E4%B8%AD%E5%BF%83-%E5%85%A8%E6%99%AF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/lascaux-iv.html"
+    },
+    {
+      "name": "法国，伍尔特博物馆",
+      "location": "Erstein, 法国",
+      "description": "14米高的清水混凝土墙体 ，艺术博物馆由两个70米长的清水混凝土方形结构以及中央带有玻璃幕墙的礼堂组成 施工时间: 至 2007年",
+      "image": "https://cdn.peri.cloud/dam/jcr:53e1bc64-8b5e-4cab-935d-2ad186c68a49/16374/mus%C3%A9e-w%C3%BCrth-vario-gt-24-%E5%A2%99%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/musee-wuerth.html"
+    }
+  ],
+  "pdf_candidates": [
+    {
+      "url": "https://www.peri.co.za/dam/jcr:5706c5d0-a22d-3891-8f11-64a516928139/rs-and-rss-push-pull-props-instructions-for-assembly-and-use.pdf",
+      "source": "https://www.peri.co.za/products/rs-push-pull-props.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.ltd.uk/.rest/downloads/76471",
+      "source": "https://www.peri.ltd.uk/products/rs-push-pull-props.html",
+      "score": 75,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": "RS_Push_Pull_Props-76471.pdf"
+    },
+    {
+      "url": "https://www.peri.ltd.uk/.rest/downloads/80461",
+      "source": "https://www.peri.ltd.uk/products/rs-push-pull-props.html",
+      "score": 75,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": "RS_and_RSS_Push-Pull_Props-80461.pdf"
+    }
+  ],
+  "youtube_candidates": [
+    {
+      "video_id": "8WM3BRjrwCg",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=8WM3BRjrwCg",
+      "title": "TRAINING | PERI TRIO mounting of push-pull props (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/8WM3BRjrwCg/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": true,
+      "score": 7
+    },
+    {
+      "video_id": "Ad0-F0jispc",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=Ad0-F0jispc",
+      "title": "TRAINING | PERI DOMINO mounting of push-pull props (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ad0-F0jispc/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": true,
+      "score": 7
+    },
+    {
+      "video_id": "CNdaxkkzuUY",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=CNdaxkkzuUY",
+      "title": "TRAINING | How to install the push-pull props of LIWA Wall Formwork (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/CNdaxkkzuUY/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": true,
+      "score": 7
+    },
+    {
+      "video_id": "c2LU3kSD8lg",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=c2LU3kSD8lg",
+      "title": "TRAINING | How to install the first panel with PERI LICO (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/c2LU3kSD8lg/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "7PKT5fdD760",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=7PKT5fdD760",
+      "title": "TRAINING | PERI MAXIMO Elementtikoot (FI)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/7PKT5fdD760/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "BGYGjr7u2FA",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=BGYGjr7u2FA",
+      "title": "TRAINING | PERI LICO  Element Sizes (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/BGYGjr7u2FA/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "CDXLSIEEL2g",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=CDXLSIEEL2g",
+      "title": "KOMPANIJA | PERI korporativni video: Gradite uspešno s firmom PERI (RS)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/CDXLSIEEL2g/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "Lm62X5RKG-c",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=Lm62X5RKG-c",
+      "title": "PROJECT | Sommerhusdrømme med Thomas Uhrskov (DK)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Lm62X5RKG-c/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "Opd0x8ZVDOs",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=Opd0x8ZVDOs",
+      "title": "TRAINING | PERI  MAXIMO connection of panels with BFD (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Opd0x8ZVDOs/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "i-DeFMM1V4s",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=i-DeFMM1V4s",
+      "title": "TRAINING | PERI MAXIMO Kulmat (FI)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/i-DeFMM1V4s/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "lEbp5-RMt5c",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=lEbp5-RMt5c",
+      "title": "TRAINING | How to install PERI LIWA Walll Formwork corner panels (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/lEbp5-RMt5c/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "nwqSpJkRMjs",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=nwqSpJkRMjs",
+      "title": "TRAINING | How to shutter slabs around DUO columns (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/nwqSpJkRMjs/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "s0gkjb-RgR4",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=s0gkjb-RgR4",
+      "title": "PROIZVOD  | PERI HANDSET Alpha lagani sistem panelne oplate (RS)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/s0gkjb-RgR4/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "vsj78PXUZKU",
+      "query": "rs push pull props",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=rs%20push%20pull%20props",
+      "watch_url": "https://www.youtube.com/watch?v=vsj78PXUZKU",
+      "title": "PRODUKT | MAXIMO rámové debnenie (SK)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/vsj78PXUZKU/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 14,
+    "selected_video_id": "8WM3BRjrwCg",
+    "selected_watch_url": "https://www.youtube.com/watch?v=8WM3BRjrwCg",
+    "reason": "Found a suitable official PERI English product video."
+  }
+}

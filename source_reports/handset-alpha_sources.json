@@ -1,0 +1,260 @@
+{
+  "slug": "handset-alpha",
+  "name_zh": "HANDSET Alpha 模块化模板系统",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/handset-alpha.html",
+  "page_title": "HANDSET Alpha 模块化模板系统",
+  "page_description": "不依赖吊车、经久耐用、经济的模板系统 HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱强大的基础型模板系统。该系统的价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统的操作简单、直观。精简的系统组件将施工团队的培训需求降至最低，不仅节省了宝贵的时间，也节约了成本投入。模板组装过程只需要两个人，不需要吊车即可完成。优质的钢框型材和粉末喷涂表面确保了HANDSET Alpha模板系统经久耐用，同时降低了维护成本。 灵活性极高 适用于浇筑墙体、建筑基础和立柱。 材料管理简",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "塞尔维亚，Kelebija，NOVI SAD 铁路立交桥",
+      "location": "Subotice, 塞尔维亚",
+      "description": "在Novog Sada 至 Kelebije高速铁路线的改造升级项目中，包含了大量的交通主线的交叉路口，需要将这些交叉路口改建成立交桥。派利公司为Subotice附近163km以及169km处的两座结构相近的立交桥提供工程解决方案。立交桥为双车道结构，单车道宽度为3米，总长166米。",
+      "image": "https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%EF%BC%8Ckelebija%EF%BC%8Cnovi-sad-%E9%93%81%E8%B7%AF%E7%AB%8B%E4%BA%A4%E6%A1%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/nadvoznjaci-preko-pruge-novi-sad-kelebija.html"
+    },
+    {
+      "name": "大摩拉瓦河桥梁工程 （沿多瑙河高速公路-第一标段）",
+      "location": "Požarevac",
+      "description": "大摩拉瓦河桥梁工程是沿多瑙河高速公路-第一标段的一个组成部分。该高速工路项目共分为三个标段，全长67.94公里，包含了52座桥梁/立交桥，5个交通枢纽节点和16个环岛等设施。第一标段（km 0+000 - km 23.075）从贝尔格莱德至尼什(Belgrade - Niš )E75高速公路上现有的“Požarevac”立交桥开始，沿着在扩建的IB33号国道延伸至“Požarevac”（km11+900）位置，然后沿IB34（环“波扎雷瓦茨”市北部的国道，此段高速公路也正在扩建施工）继续施工。第",
+      "image": "https://cdn.peri.cloud/dam/jcr:6cedbd38-976c-4495-af93-2da098670879/20230/%E5%A4%A7%E6%91%A9%E6%8B%89%E7%93%A6%E6%B2%B3%E6%A1%A5%E6%A2%81%E5%B7%A5%E7%A8%8B-%EF%BC%88%E6%B2%BF%E5%A4%9A%E7%91%99%E6%B2%B3%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%A0%87%E6%AE%B5%EF%BC%89.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/大摩拉瓦河桥梁工程.html"
+    }
+  ],
+  "pdf_candidates": [
+    {
+      "url": "https://www.peri.co.za/dam/jcr:61fe2e05-22de-4176-85ad-7663494b99d5/handset-alpha-brochure.pdf",
+      "source": "current_json",
+      "score": 95,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.co.za/dam/jcr:63da1c42-aaee-4d85-9a89-c140f8d9dff4/crane-hook-handset-alpha.pdf",
+      "source": "https://www.peri.co.za/products/handset-alpha.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.co.za/dam/jcr:78a206dd-c483-4e91-a928-f9e570536c5d/handset-alpha-panel-formwork-instructions-for-assembly-and-use.pdf",
+      "source": "https://www.peri.co.za/products/handset-alpha.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.co.za/dam/jcr:796a9fca-c23f-4219-ab91-9d9dfe0b12f2/handset-alpha-flyer.pdf",
+      "source": "https://www.peri.co.za/products/handset-alpha.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    }
+  ],
+  "youtube_candidates": [
+    {
+      "video_id": "7Gu2aT_nhMk",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=7Gu2aT_nhMk",
+      "title": "PRODUCT | PERI HANDSET Alpha Lightweight panel wall formwork Training Film (KR)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/7Gu2aT_nhMk/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 7
+    },
+    {
+      "video_id": "U-OQySX8UsA",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=U-OQySX8UsA",
+      "title": "FORMWORK | Hotel construction in Sicily (Italy) with HANDSET Alpha and ALPHADECK (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/U-OQySX8UsA/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": true,
+      "score": 7
+    },
+    {
+      "video_id": "c3FOoHAjQEs",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=c3FOoHAjQEs",
+      "title": "FORMWORK | PERI HANDSET Alpha Lightweight Panel Wall Formwork System (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/c3FOoHAjQEs/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": true,
+      "score": 7
+    },
+    {
+      "video_id": "GfA-mOZHyRo",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=GfA-mOZHyRo",
+      "title": "FORMWORK | PERI ALPHADECK Slab Formwork (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/GfA-mOZHyRo/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "Rqmo31ZGr-k",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=Rqmo31ZGr-k",
+      "title": "FORMWORK | ALPHADECK Slab Formwork - Intuitive handling (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Rqmo31ZGr-k/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "UtZ9YdCVpq8",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=UtZ9YdCVpq8",
+      "title": "PRODUCTO | PERI HANDSET Alpha: Nuevo sistema ligero de encofrados por paneles (ES)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/UtZ9YdCVpq8/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "a48MpWMhyww",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=a48MpWMhyww",
+      "title": "FORMWORK | ALPHADECK Slab Formwork - Efficient material management (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/a48MpWMhyww/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "i9HLZRJf9ns",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=i9HLZRJf9ns",
+      "title": "TERMÉK | PERI Handset Alpha bemutató film (HU)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/i9HLZRJf9ns/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "s0gkjb-RgR4",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=s0gkjb-RgR4",
+      "title": "PROIZVOD  | PERI HANDSET Alpha lagani sistem panelne oplate (RS)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/s0gkjb-RgR4/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 6
+    },
+    {
+      "video_id": "Ic_Lv3sZCEg",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=Ic_Lv3sZCEg",
+      "title": "PERI ALPHA Column (US)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ic_Lv3sZCEg/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "ObKIx06YYg4",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=ObKIx06YYg4",
+      "title": "TRAINING | How to extend the panel height with PERI LICO (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/ObKIx06YYg4/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "cpjpYhXXZjM",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=cpjpYhXXZjM",
+      "title": "TRAINING | PERI  MAXIMO assembly of stopend formwork (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/cpjpYhXXZjM/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "fk6BDoJIA3I",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=fk6BDoJIA3I",
+      "title": "TRAINING | PERI  MAXIMO: How to concrete shafts (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/fk6BDoJIA3I/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "xTddypkBitU",
+      "query": "handset alpha",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=handset%20alpha",
+      "watch_url": "https://www.youtube.com/watch?v=xTddypkBitU",
+      "title": "TRAINING | PERI TRIO assembly of stopend formwork (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/xTddypkBitU/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 14,
+    "selected_video_id": "U-OQySX8UsA",
+    "selected_watch_url": "https://www.youtube.com/watch?v=U-OQySX8UsA",
+    "reason": "Found a suitable official PERI English product video."
+  }
+}

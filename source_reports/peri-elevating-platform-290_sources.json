@@ -1,0 +1,34 @@
+{
+  "slug": "peri-elevating-platform-290",
+  "name_zh": "PERI 290 升降平台",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "cn_url": "https://cn.peri.com/products/peri-elevating-platform-290.html",
+  "page_title": "PERI 290 升降平台",
+  "page_description": "可移动的升降平台 290 ，高效安全地取代了滚轮式脚手架以及爬梯。 该紧凑的设备可平稳升至5米的作业高度，适用于狭小的室内和室外场地。除了经济、省时的立模、拆模外，它还可以应用在后处理、混凝土表面修饰、以及支架的拆除等施工流程上。升降平台290有较轻的自重，可轻易在35%坡度的斜面上行驶。此外升降平台还配有坚固的操纵杆、无需维护的升降技术、尺寸可调的钢制底盘以及耐磨实心橡胶轮胎。符合欧洲标准的托架尺寸，便于用货车运输。 技术细节 约 5米高的作业高度，平台最高至2.9米。 最大承载能力为18",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:683d82cb-2e97-4f95-8dc4-897319af96a0/24734/peri-290%E5%8D%87%E9%99%8D%E5%B9%B3%E5%8F%B0%E4%B8%8Eskydeck-%E6%A8%A1%E5%9D%97%E6%94%AF%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "ZkmGzyxe1f0",
+      "query": "elevating",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=elevating",
+      "watch_url": "https://www.youtube.com/watch?v=ZkmGzyxe1f0",
+      "title": "Elevating High-Rise Construction 💪",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZkmGzyxe1f0/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 5
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 1,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
+}

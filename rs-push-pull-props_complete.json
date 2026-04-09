@@ -10,10 +10,48 @@
     "de": "Zur Vertikalitätskorrektur von Schalungen und Abstützung von Windlasten bei Wand-, Stützen- oder Fertigteilschalungen. Komplettes System mit maximaler Länge von 14 Metern, lange Lebensdauer, niedrige Wartungskosten, einfache Bedienung. Kann als untere Abstützstreben fungieren.",
     "fr": "Pour la correction de verticalité des coffrages et le support des charges de vent sur les coffrages de murs, colonnes ou éléments préfabriqués. Système complet avec longueur maximale de 14 mètres, longue durée de vie, faibles coûts de maintenance, opération simple. Peut fonctionner comme étais d'appui inférieurs.",
     "pt": "Para correção de verticalidade de fôrmas e suporte de cargas de vento em fôrmas de parede, coluna ou elementos pré-fabricados. Sistema completo com comprimento máximo de 14 metros, longa vida útil, baixos custos de manutenção, operação simples. Pode funcionar como escoras de contraventamento inferior.",
-    "ar": "لتصحيح عمودية القوالب ودعم أحمال الرياح على قوالب الجدران أو الأعمدة أو العناصر الجاهزة. نظام كامل بطول أقصى 14 متراً، عمر خدمة طويل، تكاليف صيانة منخفضة، تشغيل بسيط. يمكن أن يعمل كدعامات تدعيم سفلية."
+    "ar": "لتصحيح عمودية القوالب ودعم أحمال الرياح على قوالب الجدران أو الأعمدة أو العناصر الجاهزة. نظام كامل بطول أقصى 14 متراً، عمر خدمة طويل، تكاليف صيانة منخفضة، تشغيل بسيط. يمكن أن يعمل كدعامات تدعيم سفلية.",
+    "sr": "Za korekciju vertikalnosti oplate i preuzimanje vetrovnih opterecenja na zidnim oplatama, oplatama stubova ili prefabrikovanim elementima. Kompletan sistem maksimalne duzine 14 metara, sa dugim radnim vekom, niskim troskovima odrzavanja i jednostavnom upotrebom. Moze se koristiti i kao donji ukosni podupirac.",
+    "hu": "A zsaluzat fuggolegessegenek beallitasara, valamint falzsaluzatok, oszlopzsaluzatok vagy eloregyartott elemek szelterheinek felvetelere szolgal. A teljes rendszer maximalis hossza 14 meter, hosszu elettartammal, alacsony karbantartasi koltseggel es egyszeru kezelessel. Also ferde tamaszkent is hasznalhato."
   },
   "thumbnail": "https://cdn.peri.cloud/dam/jcr:f974a70b-eb54-4d1d-b818-2e50298d4526/24142/rs-%E6%96%9C%E6%92%91-%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%9C%E6%92%91%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
-  "projects": [],
-  "pdf_link": "",
-  "youtube_video_id": ""
+  "projects": [
+    {
+      "name": "法国，乔治·蓬皮杜国家艺术文化中心",
+      "location": "Metz, 法国",
+      "description": "使用PERI UP系统为造型奇特的屋顶提供脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:b84c0c16-1ca4-40a1-9757-b9d478556a5e/16413/%E4%B9%94%E6%B2%BB%C2%B7%E8%93%AC%E7%9A%AE%E6%9D%9C%E8%89%BA%E6%9C%AF%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83-%E6%A2%85%E6%96%AF%EF%BC%8C%E6%B3%95%E5%9B%BD.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/乔治·蓬皮杜国家艺术文化中心.html"
+    },
+    {
+      "name": "乌克兰，Ivano-Frankowsk水泥厂",
+      "location": "Ivano-Frankowsk, 乌克兰",
+      "description": "施工要求高，在工厂运营期间施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:3736d838-82e7-4d65-ba1d-dda2e590c310/18442/ivano-frankowsk%E6%B0%B4%E6%B3%A5%E5%8E%82-%E6%89%A9%E5%BB%BA%E6%B0%B4%E6%B3%A5%E5%8E%82.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/cement-plant-ivano-frankowsk.html"
+    },
+    {
+      "name": "法国，拉斯科 IV - 国际中心 d’Art Pariétal",
+      "location": "蒙蒂尼亚克, 法国",
+      "description": "使用派利施工设备，重现旧石器时代洞穴旧址",
+      "image": "https://cdn.peri.cloud/dam/jcr:1d42fb63-1aa2-4544-9725-db5d6f2999ec/10888/%E6%8B%89%E6%96%AF%E7%A7%91-iv-d%E2%80%99art-pari%C3%A9tal-ciap-%E5%9B%BD%E9%99%85%E4%B8%AD%E5%BF%83-%E5%85%A8%E6%99%AF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/lascaux-iv.html"
+    },
+    {
+      "name": "法国，伍尔特博物馆",
+      "location": "Erstein, 法国",
+      "description": "14米高的清水混凝土墙体 ，艺术博物馆由两个70米长的清水混凝土方形结构以及中央带有玻璃幕墙的礼堂组成 施工时间: 至 2007年",
+      "image": "https://cdn.peri.cloud/dam/jcr:53e1bc64-8b5e-4cab-935d-2ad186c68a49/16374/mus%C3%A9e-w%C3%BCrth-vario-gt-24-%E5%A2%99%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/musee-wuerth.html"
+    }
+  ],
+  "pdf_link": "https://www.peri.co.za/dam/jcr:5706c5d0-a22d-3891-8f11-64a516928139/rs-and-rss-push-pull-props-instructions-for-assembly-and-use.pdf",
+  "youtube_video_id": "8WM3BRjrwCg",
+  "image": "https://cdn.peri.cloud/dam/jcr:f974a70b-eb54-4d1d-b818-2e50298d4526/24142/rs-%E6%96%9C%E6%92%91-%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%9C%E6%92%91%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "cn_url": "https://cn.peri.com/products/rs-push-pull-props.html",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/rs-push-pull-props.html",
+    "pdf_source": "https://www.peri.co.za/products/rs-push-pull-props.html",
+    "youtube_reason": "Found a suitable official PERI English product video."
+  }
 }

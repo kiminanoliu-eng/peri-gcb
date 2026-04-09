@@ -1,0 +1,19 @@
+{
+  "slug": "ausschreibungstexte",
+  "name_zh": "模板脚手架文案系统",
+  "category": "工程技术服务",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/ausschreibungstexte.html",
+  "page_title": "模板、脚手架领域内相关的文案系统",
+  "page_description": "每个方案设计者必读的资料。我们的文案系统帮助您快速、高效地实现您的目标",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:6b5afc23-28d3-452f-b69d-e966abb7a55c/26375/%E6%9C%89%E5%85%B3%E8%84%9A%E6%89%8B%E6%9E%B6%E4%BA%A7%E5%93%81%E7%9A%84%E6%96%87%E6%9C%AC%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [],
+  "youtube_decision": {
+    "attempted_candidates": 0,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 0 official candidates were available, and none was a suitable English product video."
+  }
+}

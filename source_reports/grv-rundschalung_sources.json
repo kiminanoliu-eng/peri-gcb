@@ -1,0 +1,64 @@
+{
+  "slug": "grv-rundschalung",
+  "name_zh": "GRV 曲面模板",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/grv-rundschalung.html",
+  "page_title": "GRV-曲面模板",
+  "page_description": "GRV钢梁铰接曲面模板在施工过程中，外部模板所受拉力以及内部模板所受压力均被闭合的环形钢梁承受。因此系统可以在不用穿墙拉杆的情况下为桶形结构建筑立模。这在很大程度上节约了成本、简略了工序。例如在大型容器中，不需要对穿墙拉杆孔进行密水处理。 无穿墙拉杆浇筑 模板使用闭合的环形钢梁。 半径无级调整 内圈半径最小为0.9米，无级进行半径调整。 广泛的应用范围 用于大型容器或各种类型的拱桥。 技术细节 适用于桶形建筑或拱形桥梁项目，省略了穿墙拉杆。可浇筑的最小内半径为0.9米.",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:26bdff4b-2ce4-4728-a122-5cc84a30734f/23078/grv-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "瑞典，Turning Torso",
+      "location": "马尔默, 瑞典",
+      "description": "来自雕塑的灵感，使用ACS自动爬架系统施工。",
+      "image": "https://cdn.peri.cloud/dam/jcr:3b432b56-eef1-477b-94fb-461d65518c11/17433/%E7%91%9E%E5%85%B8%EF%BC%8Cturning-torso.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/turning-torso.html"
+    },
+    {
+      "name": "捷克共和国，Zehun生态桥",
+      "location": "Zehun, 捷克共和国",
+      "description": "短时间内提供模板、脚手架材料，施工材料能够完美调整",
+      "image": "https://cdn.peri.cloud/dam/jcr:b5e4934a-030e-4b7a-bc9a-2d9c4dd5eea4/16218/zehun%E7%94%9F%E6%80%81%E6%A1%A5-%E4%BD%BF%E7%94%A8peri-up%E7%9B%98%E6%89%A3%E5%BC%8F%E8%84%9A%E6%89%8B%E6%9E%B6%E7%B3%BB%E7%BB%9F%E6%8C%89%E5%AE%9A%E5%9E%8B%E6%B5%8B%E8%AF%95%E7%9A%84%E6%A0%87%E5%87%86%E6%90%AD%E5%BB%BA%E6%89%BF%E9%87%8D%E6%94%AF%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/deer-crossing-bridge-zehun.html"
+    },
+    {
+      "name": "比利时，拉纳耶水闸桥",
+      "location": "拉纳耶, 比利时",
+      "description": "使用VARIOKIT系统浇筑水闸桥",
+      "image": "https://cdn.peri.cloud/dam/jcr:3599d0cc-06ef-44e5-901a-0f8f14a5829c/16520/%E6%8B%89%E7%BA%B3%E8%80%B6%E6%B0%B4%E9%97%B8%E6%A1%A5-%E6%82%AC%E8%87%82%E6%94%AF%E6%9E%B6%E7%9A%84%E9%9B%86%E4%B8%AD%E8%8D%B7%E8%BD%BD%E8%83%BD%E5%A4%9F%E4%BC%A0%E9%80%92%E8%87%B3%E5%B7%B2%E7%BB%8F%E6%B5%87%E7%AD%91%E5%AE%8C%E6%88%90%E7%9A%84%E6%A1%A5%E5%A2%A9.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/schleusenbruecke-lanaye.html"
+    }
+  ],
+  "pdf_candidates": [
+    {
+      "url": "https://www.peri.ltd.uk/.rest/downloads/79925",
+      "source": "current_json",
+      "score": 95,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": "GRV_Circular_Formwork-79925.pdf"
+    }
+  ],
+  "youtube_candidates": [
+    {
+      "video_id": "T2RhiWW16bk",
+      "query": "grv",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=grv",
+      "watch_url": "https://www.youtube.com/watch?v=T2RhiWW16bk",
+      "title": "COMPANY | PERI Innovation Disruption - Solutions for the construction world of tomorrow (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/T2RhiWW16bk/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 1,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
+}

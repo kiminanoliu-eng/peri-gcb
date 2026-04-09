@@ -4,7 +4,7 @@
   "category": "建筑模板系统",
   "subcategory": "通用配件",
   "cn_url": "https://cn.peri.com/products/crate-pallet.html",
-  "image": "https://cdn.peri.cloud/dam/jcr:5e9e7b6e-e274-4d9d-a4af-f707c3982c66/24681/%E6%A0%BC%E5%BC%8F%E6%89%98%E6%9E%B6%E6%A1%86.jpg",
+  "image": "https://cdn.peri.cloud/dam/jcr:5e9e7b6e-e274-4d9d-a4af-f707c3982c66/24681/%E6%A0%BC%E5%BC%8F%E6%89%98%E6%9E%B6%E6%A1%86.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
   "description": {
     "zh": "格式托架框用于运输难以堆放的组件。",
     "en": "Format support frames are used for transporting components that are difficult to stack.",
@@ -16,5 +16,11 @@
   },
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:5e9e7b6e-e274-4d9d-a4af-f707c3982c66/24681/%E6%A0%BC%E5%BC%8F%E6%89%98%E6%9E%B6%E6%A1%86.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/crate-pallet.html",
+    "pdf_source": "",
+    "youtube_reason": "Only 0 official candidates were available, and none was a suitable English product video."
+  }
 }

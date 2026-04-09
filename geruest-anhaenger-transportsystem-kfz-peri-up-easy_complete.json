@@ -4,7 +4,7 @@
   "category": "脚手架_支架系统",
   "subcategory": null,
   "cn_url": "https://cn.peri.com/products/geruest-anhaenger-transportsystem-kfz-peri-up-easy.html",
-  "image": "https://cdn.peri.cloud/dam/jcr:b0ee5fac-a643-4a48-9c5a-3d5c619b0a2e/25692/67%E5%9E%8B-peri-up-easy-%E8%84%9A%E6%89%8B%E6%9E%B6%E8%BF%90%E8%BE%93%E6%8C%82%E6%9E%B6.jpg",
+  "image": "https://cdn.peri.cloud/dam/jcr:b0ee5fac-a643-4a48-9c5a-3d5c619b0a2e/25692/67%E5%9E%8B-peri-up-easy-%E8%84%9A%E6%89%8B%E6%9E%B6%E8%BF%90%E8%BE%93%E6%8C%82%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
   "description": {
     "zh": "脚手架运输系统是67型PERI UP Easy外装修脚手架理想的运输和储存方案。",
     "en": "The scaffolding transport system is the ideal transport and storage solution for the 67 type PERI UP Easy facade scaffolding.",
@@ -16,5 +16,11 @@
   },
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:b0ee5fac-a643-4a48-9c5a-3d5c619b0a2e/25692/67%E5%9E%8B-peri-up-easy-%E8%84%9A%E6%89%8B%E6%9E%B6%E8%BF%90%E8%BE%93%E6%8C%82%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/geruest-anhaenger-transportsystem-kfz-peri-up-easy.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates."
+  }
 }

@@ -5,45 +5,57 @@
   "subcategory": "柱模",
   "cn_url": "https://cn.peri.com/products/quattro-column-formwork.html",
   "image": "https://cdn.peri.cloud/dam/jcr:7fc83f78-bbba-451b-94a2-b3d1f7c395c9/23655/quattro-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:7fc83f78-bbba-451b-94a2-b3d1f7c395c9/23655/quattro-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg",
   "description": {
     "zh": "模板、斜撑和平台可整体转运",
-    "en": "Formwork, bracing and platform can be transported as a complete unit",
-    "es": "El encofrado, los puntales y la plataforma se pueden transportar como una unidad completa",
-    "de": "Schalung, Abstützung und Plattform können als Ganzes transportiert werden",
-    "pt": "A cofragem, o escoramento e a plataforma podem ser transportados como uma unidade completa",
-    "sr": "Oplata, podupirači i platforma mogu se transportovati kao celina",
-    "hu": "A zsaluzat, merevítés és platform egyben szállítható"
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
   },
   "projects": [
     {
-      "name": "梦露大厦",
-      "location": "加拿大，密西沙加",
-      "description": "两座153米和178米的超高层建筑，在派利RCS爬架系统保护下以每周一层的速度螺旋性增高。",
-      "image": "https://cdn.peri.cloud/dam/jcr:c84a9337-55c4-4b49-b142-df0ad20e00fb/17542/%E5%8A%A0%E6%8B%BF%E5%A4%A7%EF%BC%8C%E6%A2%A6%E9%9C%B2%E5%A4%A7%E5%8E%A6.jpg",
+      "name": "加拿大，梦露大厦",
+      "location": "密西沙加, 加拿大",
+      "description": "北美洲的旋转世界: 一个爬架系统 – 两种不同应用。两座153米和178米的超高层建筑 南楼楼层：56层 北楼楼层：50层 施工时间：2008-2011年",
+      "image": "https://cdn.peri.cloud/dam/jcr:c84a9337-55c4-4b49-b142-df0ad20e00fb/17542/%E5%8A%A0%E6%8B%BF%E5%A4%A7%EF%BC%8C%E6%A2%A6%E9%9C%B2%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/absolute-world.html"
     },
     {
-      "name": "柏林勃兰登堡州机场",
-      "location": "德国，柏林",
-      "description": "柏林勃兰登堡新建国际机场航站楼主体工程，施工现场面积约为2000个足球场的总和。",
-      "image": "https://cdn.peri.cloud/dam/jcr:6cf86261-a526-4199-8aa8-d7e144c335da/15817/%E6%9F%8F%E6%9E%97%E5%8B%83%E5%85%B0%E7%99%BB%E5%A0%A1%E6%9C%BA%E5%9C%BA-%E5%8D%A0%E5%9C%B0%E9%9D%A2%E7%A7%AF%E7%BA%A6%E4%B8%BA2000%E4%B8%AA%E8%B6%B3%E7%90%83%E5%9C%BA%E7%9A%84%E6%80%BB%E5%92%8C.jpg",
-      "link": "https://cn.peri.com/projects/bbi-airport-berlin-brandenburg.html"
+      "name": "德国，MK4 “Friends” 鹿园城市住宅",
+      "location": "慕尼黑, 德国",
+      "description": "深思熟虑的模板方案确保了快速的施工流程，并提高了施工安全性",
+      "image": "https://cdn.peri.cloud/dam/jcr:5f0ed9e2-7f2d-41f8-8d45-e0b7cddc415a/11305/%E6%B4%BE%E5%88%A9%E6%A8%A1%E6%9D%BF%E3%80%81%E6%89%BF%E9%87%8D%E6%94%AF%E6%9E%B6%E7%A1%AE%E4%BF%9D%E9%AB%98%E6%95%88%E5%92%8C%E5%AE%89%E5%85%A8%E6%96%BD%E5%B7%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/stadtquartier-am-hirschgarten-mk4-friends-germany-munich.html"
     },
     {
-      "name": "SKY PARK 公寓",
-      "location": "斯洛伐克，布拉迪斯拉发",
-      "description": "布拉迪斯拉发新文化中心的三座现代多功能公寓大厦，共31层，包含700多个公寓单位。",
-      "image": "https://cdn.peri.cloud/dam/jcr:7cdd19f8-750f-4bfa-b89d-8e01979058ab/26818/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%EF%BC%8C%E5%B8%83%E6%8B%89%E8%BF%AA%E6%96%AF%E6%8B%89%E5%8F%91%EF%BC%8Csky-park-%E5%85%AC%E5%AF%93%E5%A4%A7%E5%8E%A6.jpg",
+      "name": "斯洛伐克，布拉迪斯拉发，SKY PARK 公寓",
+      "location": "布拉迪斯拉发, 斯洛伐克",
+      "description": "为布拉迪斯拉发市新文化中心的三座公寓大厦提供脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:7cdd19f8-750f-4bfa-b89d-8e01979058ab/26818/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%EF%BC%8C%E5%B8%83%E6%8B%89%E8%BF%AA%E6%96%AF%E6%8B%89%E5%8F%91%EF%BC%8Csky-park-%E5%85%AC%E5%AF%93%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/sky-park-residence-bratislava-slovakia.html"
     },
     {
-      "name": "MK4 "Friends" 鹿园城市住宅",
-      "location": "德国，慕尼黑",
-      "description": "两座53米高、16层的高层建筑，包含260套公寓、办公室和酒店套间，外立面由三角型凸起结构组成。",
-      "image": "https://cdn.peri.cloud/dam/jcr:5f0ed9e2-7f2d-41f8-8d45-e0b7cddc415a/11305/%E6%B4%BE%E5%88%A9%E6%A8%A1%E6%9D%BF%E3%80%81%E6%89%BF%E9%87%8D%E6%94%AF%E6%9E%B6%E7%A1%AE%E4%BF%9D%E9%AB%98%E6%95%88%E5%92%8C%E5%AE%89%E5%85%A8%E6%96%BD%E5%B7%A5.jpg",
-      "link": "https://cn.peri.com/projects/stadtquartier-am-hirschgarten-mk4-friends-germany-munich.html"
+      "name": "德国，柏林勃兰登堡州机场",
+      "location": "德国",
+      "description": "一年内完成航站楼的主体施工 柏林勃兰登堡新建国际机场航站楼主体工程 扩建面积: 970公顷",
+      "image": "https://cdn.peri.cloud/dam/jcr:6cf86261-a526-4199-8aa8-d7e144c335da/15817/%E6%9F%8F%E6%9E%97%E5%8B%83%E5%85%B0%E7%99%BB%E5%A0%A1%E6%9C%BA%E5%9C%BA-%E5%8D%A0%E5%9C%B0%E9%9D%A2%E7%A7%AF%E7%BA%A6%E4%B8%BA2000%E4%B8%AA%E8%B6%B3%E7%90%83%E5%9C%BA%E7%9A%84%E6%80%BB%E5%92%8C.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/bbi-airport-berlin-brandenburg.html"
     }
   ],
   "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/76458",
-  "youtube_video_id": ""
+  "youtube_video_id": "7Js90cVYZXg",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/quattro-column-formwork.html",
+    "pdf_source": "current_json",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/quattro-column-formwork.html",
+      "de_source": ""
+    }
+  }
 }

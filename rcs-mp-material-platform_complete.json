@@ -1,0 +1,47 @@
+{
+  "slug": "rcs-mp-material-platform",
+  "name_zh": "RCS MP 卸料平台",
+  "category": "市政工程系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/rcs-mp-material-platform.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:5504e561-046a-4eb8-b0c1-2e7546d521ce/23923/rcs-mp-%E5%8D%B8%E6%96%99%E5%B9%B3%E5%8F%B0.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:5504e561-046a-4eb8-b0c1-2e7546d521ce/23923/rcs-mp-%E5%8D%B8%E6%96%99%E5%B9%B3%E5%8F%B0.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "在高层建筑施工时，使用RCS MP卸料平台可快速、安全的将模板及其材料运送至下一施工层。覆盖钢板的平台既可以通过锚固组件固定在楼板上，也可使用MULTIPROP支柱将平台顶固在两相邻楼板间。平台周围的防护栏以及额外的脚手架管，保证了台模发生碰撞时的安全工作环境。 灵活地布置，多样的固定方式 平台可灵活布置在建筑物的任何地方，可通过锚固组件固定或顶固在相邻楼板间。 全方位的安全保护 带有防滑设计的踏脚板以及LPS防护网组成的平台防护侧栏系统。 快速装配 预组装后运送至施工现场，防护网可使用销",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "意大利，米兰忠利保险大厦",
+      "location": "米兰, 意大利",
+      "description": "扎哈哈迪德设计的旋转塔楼。",
+      "image": "https://cdn.peri.cloud/dam/jcr:fd3ee75f-325a-41d2-86cc-b82dd7b1cbe6/11327/%E6%84%8F%E5%A4%A7%E5%88%A9%EF%BC%8C%E7%B1%B3%E5%85%B0%E5%BF%A0%E5%88%A9%E4%BF%9D%E9%99%A9%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/generali-tower-mailand-italien.html"
+    },
+    {
+      "name": "意大利，米兰，GIOIA 22",
+      "location": "米兰, 意大利",
+      "description": "创新与节能：派利为米兰市的GIOIA 22 办公综合建筑提供施工方案 为位于米兰Porta Nuova地区120米高的办公大厦施工提供技术支持。 意大利境内首个如此规模的、零碳排放量概念的建筑项目（接近零碳建筑）。 使用创新方法充分利用室内外空间：总共安装了22.5万块光伏太阳能板，为整个建筑提供全年能源需求量的65%。 共30层，总建筑面积为68500平方米，可容纳2700名人员，提供350个停车位，并备有13部电梯。",
+      "image": "https://cdn.peri.cloud/dam/jcr:e0911a13-8ee5-4f6c-a427-b34e55da40d6/26666/%E6%84%8F%E5%A4%A7%E5%88%A9%EF%BC%8C%E7%B1%B3%E5%85%B0%EF%BC%8Cgioia-22.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/gioia-22-milan-italy.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/rcs-mp-material-platform.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/rcs-mp-material-platform.html",
+      "de_source": ""
+    }
+  }
+}

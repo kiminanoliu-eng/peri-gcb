@@ -1,0 +1,34 @@
+{
+  "slug": "asset-tracking",
+  "name_zh": "PERI 材料定位器",
+  "category": "脚手架_支架系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/asset-tracking.html",
+  "page_title": "PERI 材料定位器",
+  "page_description": "使用派利材料定位器能够在发货到工地以及入库的过程中，快速、精确地定位材料。 产品特点： 能够在任何地点查询，优化项目流程 实时定位材料 合理调配材料，提高成本透明度 有效提高内部沟通和工作效率 防盗：最大限度减少丢失 更好地进行施工作业准备和材料清单管理 快速、精确定位材料 无论材料在任何位置:仓库、在前往下一个地点的途中,或是在施工现场：派利材料定位器能够随时随地为您提供可追溯的材料跟踪信息。 相关的App和Web 应用程序的使用界面清晰直观，您可以准确了解材料的实时位置以及历史位置",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:d33a3f20-9947-4d9d-8744-fc51e5c3613f/25424/%E6%9D%90%E6%96%99%E5%AE%9A%E4%BD%8D%E5%99%A8.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "yfzqD9C8ZJ8",
+      "query": "asset tracking",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=asset%20tracking",
+      "watch_url": "https://www.youtube.com/watch?v=yfzqD9C8ZJ8",
+      "title": "PERI tracking of formwork and construction equipment (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/yfzqD9C8ZJ8/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 6
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 1,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
+}

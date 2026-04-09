@@ -3,7 +3,7 @@
   "name_zh": "VARIO GT 24 木梁式墙模",
   "category": "建筑模板系统",
   "subcategory": "墙模",
-  "image": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-木梁式墙模.jpg",
+  "image": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-%E6%9C%A8%E6%A2%81%E5%BC%8F%E5%A2%99%E6%A8%A1.jpg",
   "description": {
     "zh": "久经考验的GT 24木梁模板系统，适用于任何类型的工程。",
     "en": "The proven GT 24 girder formwork system, suitable for any type of project.",
@@ -40,5 +40,6 @@
     }
   ],
   "verified": true,
-  "verification_date": "2026-04-05"
+  "verification_date": "2026-04-05",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-%E6%9C%A8%E6%A2%81%E5%BC%8F%E5%A2%99%E6%A8%A1.jpg"
 }

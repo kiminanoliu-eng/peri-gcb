@@ -1,0 +1,27 @@
+{
+  "slug": "vgw-cantilevered-parapet-carriage",
+  "name_zh": "VARIOKIT VGW 边梁模板车",
+  "category": "市政工程系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/vgw-cantilevered-parapet-carriage.html",
+  "page_title": "VARIOKIT VGW 边梁模板车",
+  "page_description": "VGW 边梁模板车适用跨度大于150米的桥梁项目，用于浇筑和修缮位于桥梁外侧或两并列桥梁中间处的边梁构结。模板车可在预制好的桥面上移动，通常搭载22米长的模板单元。可灵活的适用在桥梁各种的悬挑板，无论是否存在障碍。 技术细节 通常使用4套5.5米的模板车。 可浇筑侧梁的几何尺寸为 宽度/高度: 50/80 厘米. 也需要对压载进行相应的调整。 凭借VARIOKIT模块化设计，可通过改变模板车的几何形状，浇筑更大尺寸的边梁。",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:aa34dd5a-b19a-493e-8f98-2124109d73c3/24087/vgw-%E8%BE%B9%E6%A2%81%E6%A8%A1%E6%9D%BF%E5%8F%B0%E8%BD%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "克罗地亚，德拉瓦-奥西耶克大桥",
+      "location": "奥西耶克, 克罗地亚",
+      "description": "为桥塔和桥梁上部结构提供模板方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:9ce6ec48-8e6b-454a-8bb2-91840f0cd159/15752/%E5%BE%B7%E6%8B%89%E7%93%A6%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E6%A1%A5%EF%BC%8Cvariokit-%E8%BE%B9%E6%A2%81%E6%A8%A1%E6%9D%BF%E8%BD%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/德拉瓦-奥西耶克大桥.html"
+    }
+  ],
+  "pdf_candidates": [],
+  "youtube_candidates": [],
+  "youtube_decision": {
+    "attempted_candidates": 0,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 0 official candidates were available, and none was a suitable English product video."
+  }
+}

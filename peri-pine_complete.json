@@ -1,0 +1,32 @@
+{
+  "slug": "peri-pine",
+  "name_zh": "PERI Pine 板",
+  "category": "板材",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-pine.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:7379cc0a-3880-4d3d-9b62-60c49dea3d7d/25184/peri-pine-%E6%A8%A1%E6%9D%BF%E6%9D%BF%E6%9D%90.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:7379cc0a-3880-4d3d-9b62-60c49dea3d7d/25184/peri-pine-%E6%A8%A1%E6%9D%BF%E6%9D%BF%E6%9D%90.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "PERI Pine模板板材为9层松木板，使用符合 DIN-68705标准的BFU 100胶合剂胶合。双面为大约170 g/m² 的酚醛覆膜。PERI Pine适用于对表面要求较高的混凝土结构。 技术细节 木料类型: 西班牙松木胶合板。 覆膜: 双面为170 g/m² 覆膜，深褐色。 胶合剂: BFU-100, EN 314-2 等级 3，DIN 68705 第三部分。 应用: 通常作为楼板模板板材。 标定厚度 尺寸",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-pine.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 9 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-pine.html",
+      "de_source": ""
+    }
+  }
+}

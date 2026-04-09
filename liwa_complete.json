@@ -3,17 +3,30 @@
   "name_zh": "LIWA 钢框模板",
   "category": "建筑模板系统",
   "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/liwa.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
   "description": {
     "zh": "轻型钢框模板，高效经济。",
-    "en": "Lightweight steel frame formwork, efficient and economical.",
+    "en": "Lightweight steel-framed formwork, efficient and economical.",
     "es": "Encofrado de marco de acero ligero, eficiente y económico.",
     "de": "Leichte Stahlrahmenschalung, effizient und wirtschaftlich.",
-    "fr": "Coffrage à cadre en acier léger, efficace et économique.",
     "pt": "Cofragem de estrutura de aço leve, eficiente e econômica.",
-    "ar": "قوالب إطار فولاذي خفيف الوزن، فعالة واقتصادية."
+    "sr": "Lagana čelična ramovska oplata, efikasna i ekonomična.",
+    "hu": "Könnyű acélkeretes zsaluzat, hatékony és gazdaságos."
   },
-  "thumbnail": "https://cdn.peri.cloud/dam/jcr:17c6243c-c99e-4588-b591-00d42b7289a2/23002/liwa-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "JfSTEZ-Yck0",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/liwa.html",
+    "pdf_source": "",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/liwa.html",
+      "de_source": ""
+    }
+  }
 }

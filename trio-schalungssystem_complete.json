@@ -4,46 +4,58 @@
   "category": "建筑模板系统",
   "subcategory": "柱模",
   "cn_url": "https://cn.peri.com/products/trio-schalungssystem.html",
-  "image": "https://cdn.peri.cloud/dam/jcr:c2da98c8-c87d-4dfb-84d5-483fa884fd95/23834/trio-柱模系统.jpg",
+  "image": "https://cdn.peri.cloud/dam/jcr:c2da98c8-c87d-4dfb-84d5-483fa884fd95/23834/trio-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:c2da98c8-c87d-4dfb-84d5-483fa884fd95/23834/trio-%E6%9F%B1%E6%A8%A1%E7%B3%BB%E7%BB%9F.jpg",
   "description": {
-    "zh": "宽度为90厘米的TRIO柱型模块可为截面为正方形、矩形的柱子立模。以5厘米为模数，可对截面20x20厘米至75x75厘米的柱子进行立模。",
-    "en": "The 90 cm wide TRIO column modules can form square and rectangular columns. With a 5 cm module, columns with cross-sections from 20x20 cm to 75x75 cm can be formed.",
-    "es": "Los módulos de columna TRIO de 90 cm de ancho pueden formar columnas cuadradas y rectangulares. Con un módulo de 5 cm, se pueden formar columnas con secciones transversales de 20x20 cm a 75x75 cm.",
-    "de": "Die 90 cm breiten TRIO-Stützenmodule können quadratische und rechteckige Stützen schalen. Mit einem 5-cm-Modul können Stützen mit Querschnitten von 20x20 cm bis 75x75 cm geschalt werden.",
-    "pt": "Os módulos de coluna TRIO de 90 cm de largura podem formar colunas quadradas e retangulares. Com um módulo de 5 cm, colunas com seções transversais de 20x20 cm a 75x75 cm podem ser formadas.",
-    "sr": "TRIO moduli za stubove širine 90 cm mogu formirati kvadratne i pravougaone stubove. Sa modulom od 5 cm, mogu se formirati stubovi sa poprečnim presecima od 20x20 cm do 75x75 cm.",
-    "hu": "A 90 cm széles TRIO oszlopmodulok négyzet és téglalap alakú oszlopokat tudnak zsaluzni. 5 cm-es modullal 20x20 cm-től 75x75 cm-ig terjedő keresztmetszetű oszlopok zsaluzhatók."
+    "zh": "宽度为90厘米的TRIO柱型模块可为截面为正方形、矩形的柱子立模。柱模模块钢框上的穿墙拉杆孔，确保了模块可与TRIO墙模系统组合使用。因此，它是TRIO墙模系统有效的补充。 简单连接 可靠的BFD夹具用于对模块进行连接、增高。 固定的三角倒角条，无需铆钉 派利倒角条以及夹固机制取代了传统的铁钉固定。 使用寿命极长 高强度、高质量的柱模结构。 技术细节 以5厘米为模数，可对截面20x20厘米至75x75厘米的正方形、矩形柱子进行立模。 高度方向以30厘米为模数，最大可至8.",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
   },
   "projects": [
     {
-      "name": "Gazenica港口客运码头 运营大厅",
-      "location": "克罗地亚，扎达尔",
+      "name": "克罗地亚，扎达尔，Gazenica港口客运码头 运营大厅",
+      "location": "扎达尔, 克罗地亚",
       "description": "相互协调确定的模板、脚手架方案，加快了施工",
-      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/克罗地亚，扎达尔，gazenica客运码头，运营大厅.jpg",
+      "image": "https://cdn.peri.cloud/dam/jcr:4dae6a1e-7cc0-4ca9-944d-f7e6a89d3773/25926/%E5%85%8B%E7%BD%97%E5%9C%B0%E4%BA%9A%EF%BC%8C%E6%89%8E%E8%BE%BE%E5%B0%94%EF%BC%8Cgazenica%E5%AE%A2%E8%BF%90%E7%A0%81%E5%A4%B4%EF%BC%8C%E8%BF%90%E8%90%A5%E5%A4%A7%E5%8E%85.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/terminal-building-gazenica-passenger-port-zadar-croatia.html"
     },
     {
-      "name": "巴瓦商业街",
-      "location": "卡塔尔，多哈",
+      "name": "卡塔尔，巴瓦商业街",
+      "location": "多哈, 卡塔尔",
       "description": "为8公里长的商业中心提供综合模板方案",
-      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/卡塔尔，多哈，巴瓦商业街.jpg",
+      "image": "https://cdn.peri.cloud/dam/jcr:8949a186-438e-498b-9dc0-104079d24a7f/11566/%E5%8D%A1%E5%A1%94%E5%B0%94%EF%BC%8C%E5%A4%9A%E5%93%88%EF%BC%8C%E5%B7%B4%E7%93%A6%E5%95%86%E4%B8%9A%E8%A1%97.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/barwa-commercial-avenue-doha-qatar.html"
     },
     {
-      "name": "ZepTerra-住宅、办公综合楼",
-      "location": "塞尔维亚，贝尔格莱德",
-      "description": "按时交付设备是当务之急",
-      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra住宅商业综合楼.jpg",
+      "name": "ZepTerra-住宅、办公综合楼 , 新贝尔格莱德",
+      "location": "Novi Beograd, Србија",
+      "description": "ZepTerra是一个集豪华住宅和商业的综合综合项目，地处新贝尔格莱德第 65 街区，位于Bulevar Heroja sa Košar街区与Tadija Sondermajera街区之间。这个现代化的建筑项目分阶段施工。一期工程为10个楼层，总面积三万两千平方米，包括227套公寓及一个两层的地下停车场。",
+      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra%E4%BD%8F%E5%AE%85%E5%95%86%E4%B8%9A%E7%BB%BC%E5%90%88%E6%A5%BC.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/zepterra.html"
     },
     {
-      "name": "叶赫塔中心",
-      "location": "俄罗斯，圣彼得堡",
+      "name": "俄罗斯，圣彼得堡，叶赫塔中心",
+      "location": "圣彼得堡, 俄罗斯",
       "description": "为欧洲最高的大厦提供全套的模板、脚手架方案",
-      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/圣彼得堡，叶赫塔中心.jpg",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%EF%BC%8C%E5%8F%B6%E8%B5%AB%E5%A1%94%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
     }
   ],
   "pdf_link": "https://www.peri.rs/dam/jcr:f6d5b145-c42b-4bc6-83d5-013e1068b23f/trio-uputstvo-za-upotrebu.pdf",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/trio-schalungssystem.html",
+    "pdf_source": "current_json",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/trio-schalungssystem.html",
+      "de_source": ""
+    }
+  }
 }

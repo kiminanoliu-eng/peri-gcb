@@ -1,0 +1,32 @@
+{
+  "slug": "peri-duo-planner",
+  "name_zh": "PERI QuickSolve DUO 设计程序",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-duo-planner.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:a2f3568c-99a7-41c1-93e0-071e9e4ded51/25485/peri-duo-%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F.png",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:a2f3568c-99a7-41c1-93e0-071e9e4ded51/25485/peri-duo-%E8%AE%BE%E8%AE%A1%E7%A8%8B%E5%BA%8F.png",
+  "description": {
+    "zh": "该设计程序可以帮助用户使用DUO模板系统为简单的平面造型设计立模并划分浇筑段。 点击这里进入DUO设计程序 首先，用户需要建立一个新的文件并输入墙厚和墙高等信息；然后，需要提供平面图信息，在以上步骤完成后，该程序即可成功划分浇筑段，并在此基础上自动生成模板方案。用户只需点击一下鼠标，即可将简单明了的设计方案以及材料清单保存为PDF格式。最后可以打印或以邮件的形式发送。 软件优势: 无论在办公室还是工地都可以快速、便捷的打开文件 操作界面简单、明了，操作过程直观、合理 不需要安装程序 有关该",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "",
+  "youtube_video_id": "60v1xasPjE4",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-duo-planner.html",
+    "pdf_source": "",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-duo-planner.html",
+      "de_source": ""
+    }
+  }
+}

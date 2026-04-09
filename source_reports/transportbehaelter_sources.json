@@ -1,0 +1,48 @@
+{
+  "slug": "transportbehaelter",
+  "name_zh": "材料运输工具",
+  "category": "建筑模板系统",
+  "subcategory": "通用配件",
+  "cn_url": "https://cn.peri.com/products/transportbehaelter.html",
+  "page_title": "材料运输工具",
+  "page_description": "派利提供多种可重复使用的材料运输工具，能够快速、安全、经济地运输材料。包括格构式托架框、小型组件托架框以及托架。所有的工具不仅能够有序的储存材料、节省材料堆放空间、而且能保证材料快速的存取、安全运输、堆叠或使用吊车吊运。 格构式托架框 格构式托加框用于运输难以堆放的组件，有喷漆或镀锌两种规格可选。托架尺寸为欧洲规范尺寸，能够相互堆放。托加框一侧设计为可开合的形式，也可以方便存取材料-即使在托加框上下堆放的状态下。承载能力为1.5吨。 小组件托架框 小组件托加框用于存放难以堆放或不可堆放的小型",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:1c8ddcbe-16a5-48e5-ab06-99179fefc05b/26335/%E6%B4%BE%E5%88%A9%E8%BF%90%E8%BE%93%E5%B7%A5%E5%85%B7.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "AE-9bRIZcDU",
+      "query": "transportbehaelter",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=transportbehaelter",
+      "watch_url": "https://www.youtube.com/watch?v=AE-9bRIZcDU",
+      "title": "SCHALUNG | GERÜST | Erweiterung Panamakanal | Das PERI Jahrhundertprojekt  (DE)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/AE-9bRIZcDU/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "pFxpzXy4ceY",
+      "query": "transportbehaelter",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=transportbehaelter",
+      "watch_url": "https://www.youtube.com/watch?v=pFxpzXy4ceY",
+      "title": "SCHALUNH | GERÜST | Erweiterung Panamakanal | Herausforderung und Abwicklung (DE)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/pFxpzXy4ceY/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 2,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 2 official candidates were available, and none was a suitable English product video."
+  }
+}

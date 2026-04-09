@@ -2,45 +2,60 @@
   "slug": "vario-gt-24-girder-wall-formwork",
   "name_zh": "VARIO GT 24 木梁式墙模",
   "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/vario-gt-24-girder-wall-formwork.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-%E6%9C%A8%E6%A2%81%E5%BC%8F%E5%A2%99%E6%A8%A1.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:e22053b4-47e6-4fb6-ae08-e9bf95810a6f/23627/vario-gt-24-%E6%9C%A8%E6%A2%81%E5%BC%8F%E5%A2%99%E6%A8%A1.jpg",
   "description": {
-    "zh": "久经考验的GT 24木梁模板系统，适用于任何类型的工程。",
-    "en": "The proven GT 24 girder formwork system, suitable for any type of project.",
-    "es": "El probado sistema de encofrado de vigas GT 24, adecuado para cualquier tipo de proyecto.",
-    "de": "Das bewährte GT 24 Trägerschalungssystem, geeignet für jede Art von Projekt.",
-    "pt": "O comprovado sistema de cofragem de vigas GT 24, adequado para qualquer tipo de projeto.",
-    "sr": "Проверени систем оплате са носачима GT 24, погодан за било коју врсту пројекта.",
-    "hu": "A bevált GT 24 gerendás zsaluzási rendszer, amely bármilyen típusú projekthez alkalmas."
+    "zh": "木梁式墙模所有的系统组件都可以自由选择。因此VARIO GT 24可满足任何的几何造型以及其他要求。例如穿墙拉杆的布局、可承载的最大混凝土侧压力等要求。该系统可用于工业设施建筑、民用建筑、桥墩、挡土墙，尤其适用于清水混凝土等工程项目。 广泛的适应性 格构式木梁以及横钢梁的多样化组合保证了系统的安全性。 特别适用于清水混凝土 可以完全根据建筑设计的要求，布置拉杆与模板接缝的位置。 没有尺寸限制的补模方案 钢梁以及连接板上的腰型孔保证了模块间横平、竖直、紧密地连接。 技术细节",
+    "en": "Proven GT 24 girder formwork system, suitable for any type of project.",
+    "es": "Sistema de encofrado de vigas GT 24 probado, adecuado para cualquier tipo de proyecto.",
+    "de": "Bewährtes GT 24 Trägerschalungssystem, geeignet für jede Art von Projekt.",
+    "pt": "Sistema de cofragem de vigas GT 24 comprovado, adequado para qualquer tipo de projeto.",
+    "sr": "Provereni GT 24 sistem gredne oplate, pogodan za bilo koji tip projekta.",
+    "hu": "Bevált GT 24 gerendazsaluzási rendszer, bármilyen típusú projekthez alkalmas."
   },
   "projects": [
     {
       "name": "阿拉伯联合酋长国，沙迦，Bee'ah总部",
-      "location": "阿拉伯联合酋长国，沙迦",
-      "description": "Bee'ah总部项目",
+      "location": "沙迦, 阿拉伯联合酋长国",
+      "description": "扎哈哈迪德将建筑融合在阿联酋东部的沙漠中",
       "image": "https://cdn.peri.cloud/dam/jcr:b7824d25-8304-481e-aaf6-31ba1cae36b9/26038/%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%EF%BC%8C%E6%B2%99%E8%BF%A6%EF%BC%8Cbee-ah%E6%80%BB%E9%83%A8.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/bee-ah-headquarters-sharjah-united-arab-emirates.html"
     },
     {
-      "name": "白俄罗斯，道加瓦河水电站",
-      "location": "白俄罗斯",
-      "description": "道加瓦河水电站项目",
-      "image": "https://cdn.peri.cloud/dam/jcr:37ae80f9-8203-4f2d-b73b-9db3f80e72ab/12384/%E6%A8%A1%E6%9D%BF%E3%80%81%E8%84%9A%E6%89%8B%E6%9E%B6%E5%85%A8%E9%9D%A2%E6%96%B9%E6%A1%88.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
-      "link": "https://cn.peri.com/projects/duena-wasserkraftwerk-polotsk-weissrussland.html"
-    },
-    {
       "name": "德国，柏林，联邦总理府",
-      "location": "德国，柏林",
-      "description": "联邦总理府项目",
+      "location": "柏林, 德国",
+      "description": "大型的脚手架、台模系统。",
       "image": "https://cdn.peri.cloud/dam/jcr:518a90f9-0b80-49b4-8110-9ef4d73d257d/16753/%E5%BE%B7%E5%9B%BD%EF%BC%8C%E6%9F%8F%E6%9E%97%EF%BC%8C%E8%81%94%E9%82%A6%E6%80%BB%E7%90%86%E5%BA%9C.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/federal-chancellery-berlin.html"
     },
     {
       "name": "阿拉伯联合酋长国，朱美拉-棕榈岛隧道",
-      "location": "阿拉伯联合酋长国",
-      "description": "朱美拉-棕榈岛隧道项目",
+      "location": "迪拜, 阿拉伯联合酋长国",
+      "description": "隧道长度: 996 米 总长: 1,4 公里 截面宽/高: 38 米 / 9.16 米 结构:隧道采用明挖式施工方法，隧道截面为矩形，在高度方向上分三次浇筑",
       "image": "https://cdn.peri.cloud/dam/jcr:66c9eee3-1468-4da9-885d-79f5b4a8fd98/16635/%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%EF%BC%8C%E6%9C%B1%E7%BE%8E%E6%8B%89-%E6%A3%95%E6%A6%88%E5%B2%9B%E9%9A%A7%E9%81%93.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/tunnel-jumeirah-palm-island.html"
+    },
+    {
+      "name": "白俄罗斯，道加瓦河水电站",
+      "location": "波洛茨克, 白俄罗斯",
+      "description": "白俄罗斯北部波洛茨克附近新建的水利发电站的功率可达22MW，是道加瓦河上规划的4个水坝之一。工期为6年，将在61公顷的建筑工地上共计浇筑14万立方米混凝土。这一复杂的建筑项目包含大型的钢筋混凝土结构，高达29米，对于项目所有参与者而言都是巨大的挑战。",
+      "image": "https://cdn.peri.cloud/dam/jcr:37ae80f9-8203-4f2d-b73b-9db3f80e72ab/12384/%E6%A8%A1%E6%9D%BF%E3%80%81%E8%84%9A%E6%89%8B%E6%9E%B6%E5%85%A8%E9%9D%A2%E6%96%B9%E6%A1%88.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/duena-wasserkraftwerk-polotsk-weissrussland.html"
     }
   ],
   "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/80534",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/vario-gt-24-girder-wall-formwork.html",
+    "pdf_source": "current_json",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/vario-gt-24-girder-wall-formwork.html",
+      "de_source": ""
+    }
+  }
 }

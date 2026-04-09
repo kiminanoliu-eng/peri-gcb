@@ -3,17 +3,30 @@
   "name_zh": "SKYMAX 大面积楼板模板",
   "category": "建筑模板系统",
   "subcategory": "楼板模板",
+  "cn_url": "https://cn.peri.com/products/skymax-grosspaneel-deckenschalung.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:71b51f51-0183-4d2d-b9ed-59a0b218b7ea/25646/skymax-large-panel-slab-formwork.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:71b51f51-0183-4d2d-b9ed-59a0b218b7ea/25646/skymax-large-panel-slab-formwork.jpg",
   "description": {
-    "zh": "轻质的模板系统确保快速、轻松立模。",
-    "en": "Lightweight formwork system ensures fast and easy assembly.",
-    "es": "Sistema de encofrado ligero garantiza un montaje rápido y fácil.",
-    "de": "Leichtes Schalungssystem gewährleistet schnellen und einfachen Aufbau.",
-    "fr": "Système de coffrage léger garantit un montage rapide et facile.",
-    "pt": "Sistema de fôrma leve garante montagem rápida e fácil.",
-    "ar": "نظام قوالب خفيف يضمن تجميعًا سريعًا وسهلاً."
+    "zh": "SKYMAX大面积楼板模板能够在下层完成组装,确保施工现场满足高安全标准。铝合金和高聚合物的组件让楼板系统在技术和安全方面非常灵活地选择，轻型材料在施工作业中的优势也是非常显著的。 铝合金SKYMAX 模块 铝合金SKYMAX模块能够为您提供最高的安全性。2.00米x1.00米 和 2.00米x0.67米模块重量分别为32公斤和26公斤，能够非常好的适合徒手操作。确保了省时、省力的工作， 并节省了人力资源的方式。铝合金模块还能够组装成台模进行使用。 高聚合物SKYMAX模块 相比SKYMAX",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "Die SKYMAX Großpaneel-Deckenschalung macht das Deckenschalen wirtschaftlich und maximal sicher. Dank des Aufbaus von der Standfläche aus, sorgt die SKYMAX für einen besonders hohen Sicherheitsstandart.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
   },
-  "thumbnail": "https://cdn.peri.cloud/dam/jcr:71b51f51-0183-4d2d-b9ed-59a0b218b7ea/25646/skymax-large-panel-slab-formwork.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
   "projects": [],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/skymax-grosspaneel-deckenschalung.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/skymax-grosspaneel-deckenschalung.html",
+      "de_source": "https://www.peri.de/produkte/skymax-grosspaneel-deckenschalung.html"
+    }
+  }
 }

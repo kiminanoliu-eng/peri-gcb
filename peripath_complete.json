@@ -1,0 +1,32 @@
+{
+  "slug": "peripath",
+  "name_zh": "PERIpath",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peripath.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:a398ecfb-c463-4fa9-9fbb-8afcdb79e76f/25336/peripath.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:a398ecfb-c463-4fa9-9fbb-8afcdb79e76f/25336/peripath.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "PERIpath可以模拟一个大型工程中的模板、脚手架的管理情况。 用户随时可以知道是否材料正在进行转运，在何处进行脚手架的装配或拆卸，以及多少施工人员正在参与施工。 服务 我们全方位的服务 SaaS (软件服务) 降低了企业IT的成本。我们负责所有任务，例如备份、数据安全、管理、维护和更新。 如果出现问题，我们提供持续的服务支持。同时我们随时乐意对客户问题进行解答。 由专业的派利员工对用户进行专业培训。 凭借丰富的施工经验，对施工过程进行最佳的分析和指导。 关于 CENTRIO CE",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [],
+  "pdf_link": "https://www.peri.co.za/dam/jcr:a9f476bf-cf94-4b6b-9312-afb5d1045695/peripath.pdf",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peripath.html",
+    "pdf_source": "https://www.peri.co.za/products/peripath.html",
+    "youtube_reason": "Only 4 official candidates were available, and none was a suitable English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peripath.html",
+      "de_source": ""
+    }
+  }
+}

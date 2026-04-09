@@ -3,35 +3,45 @@
   "name_zh": "HANDSET Alpha 模块化模板系统",
   "category": "建筑模板系统",
   "subcategory": "墙模",
-  "image": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg",
-  "description": {
-    "zh": "HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱的基础型模板系统。该系统价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统操作简单、直观。模板组装只需两人，不需吊车即可完成。",
-    "en": "HANDSET Alpha is a basic formwork system for concreting walls, building foundations, and columns. The system is highly competitive in price and excellent in performance. A small number of component types and versatile modules make the system simple and intuitive to operate. Formwork assembly requires only two people and can be completed without a crane.",
-    "es": "HANDSET Alpha es un sistema de encofrado básico para hormigonado de muros, cimientos de edificios y columnas. El sistema es altamente competitivo en precio y excelente en rendimiento. Un pequeño número de tipos de componentes y módulos versátiles hacen que el sistema sea simple e intuitivo de operar. El montaje del encofrado requiere solo dos personas y se puede completar sin grúa.",
-    "de": "HANDSET Alpha ist ein Basis-Schalungssystem für die Betonierung von Wänden, Gebäudefundamenten und Stützen. Das System ist preislich sehr wettbewerbsfähig und leistungsstark. Eine geringe Anzahl von Bauteiltypen und vielseitige Module machen das System einfach und intuitiv zu bedienen. Die Schalungsmontage erfordert nur zwei Personen und kann ohne Kran durchgeführt werden.",
-    "pt": "HANDSET Alpha é um sistema de cofragem básico para concretagem de paredes, fundações de edifícios e colunas. O sistema é altamente competitivo em preço e excelente em desempenho. Um pequeno número de tipos de componentes e módulos versáteis tornam o sistema simples e intuitivo de operar. A montagem da cofragem requer apenas duas pessoas e pode ser concluída sem guindaste.",
-    "sr": "HANDSET Alpha je osnovni sistem oplate za betoniranje zidova, temelja zgrada i stubova. Sistem je veoma konkurentan po ceni i odličan po performansama. Mali broj tipova komponenti i svestrani moduli čine sistem jednostavnim i intuitivnim za rad. Montaža oplate zahteva samo dve osobe i može se završiti bez dizalice.",
-    "hu": "A HANDSET Alpha egy alapvető zsaluzási rendszer falak, épületalapok és oszlopok betonozásához. A rendszer rendkívül versenyképes árú és kiváló teljesítményű. A kevés alkatrész típus és a sokoldalú modulok egyszerűvé és intuitívvá teszik a rendszer működtetését. A zsaluzat összeszerelése csak két személyt igényel és daru nélkül is elvégezhető."
-  },
-  "pdf_link": "https://www.peri.co.za/dam/jcr:61fe2e05-22de-4176-85ad-7663494b99d5/handset-alpha-brochure.pdf",
-  "youtube_video_id": "c3FOoHAjQEs",
   "cn_url": "https://cn.peri.com/products/handset-alpha.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:157d2900-434a-4b41-92bb-e02c7f60c257/26299/handset-alpha.jpg",
+  "description": {
+    "zh": "不依赖吊车、经久耐用、经济的模板系统 HANDSET Alpha是适用于浇筑墙体、建筑基础、立柱强大的基础型模板系统。该系统的价格极富竞争力，性能优秀。少量的组件种类以及多用的模块让系统的操作简单、直观。精简的系统组件将施工团队的培训需求降至最低，不仅节省了宝贵的时间，也节约了成本投入。模板组装过程只需要两个人，不需要吊车即可完成。优质的钢框型材和粉末喷涂表面确保了HANDSET Alpha模板系统经久耐用，同时降低了维护成本。 灵活性极高 适用于浇筑墙体、建筑基础和立柱。 材料管理简",
+    "en": "Easy-to-handle, flexible, lightweight formwork system",
+    "es": "Sistema de encofrado flexible y ligero, fácil de manejar",
+    "de": "Handliches, flexibles, leichtes Schalungssystem",
+    "pt": "Sistema de cofragem flexível e leve, fácil de manusear",
+    "sr": "Fleksibilan, lagan sistem oplate, lak za rukovanje",
+    "hu": "Könnyen kezelhető, rugalmas, könnyű zsaluzási rendszer"
+  },
   "projects": [
     {
       "name": "塞尔维亚，Kelebija，NOVI SAD 铁路立交桥",
       "location": "Subotice, 塞尔维亚",
-      "description": "现代化改造Novog Sada 至 Kelebije高速铁路线",
-      "image": "https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/塞尔维亚，kelebija，novi-sad-铁路立交桥.jpg",
+      "description": "在Novog Sada 至 Kelebije高速铁路线的改造升级项目中，包含了大量的交通主线的交叉路口，需要将这些交叉路口改建成立交桥。派利公司为Subotice附近163km以及169km处的两座结构相近的立交桥提供工程解决方案。立交桥为双车道结构，单车道宽度为3米，总长166米。",
+      "image": "https://cdn.peri.cloud/dam/jcr:3eca9d59-6cf8-4eb6-8ad7-0aa2f1031ac8/25805/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%EF%BC%8Ckelebija%EF%BC%8Cnovi-sad-%E9%93%81%E8%B7%AF%E7%AB%8B%E4%BA%A4%E6%A1%A5.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/nadvoznjaci-preko-pruge-novi-sad-kelebija.html"
     },
     {
       "name": "大摩拉瓦河桥梁工程 （沿多瑙河高速公路-第一标段）",
-      "location": "Požarevac, 塞尔维亚",
-      "description": "使用派利多种系统为工程提供综合解决方案",
-      "image": "https://cdn.peri.cloud/dam/jcr:6cedbd38-976c-4495-af93-2da098670879/20230/大摩拉瓦河桥梁工程-（沿多瑙河高速公路-第一标段）.jpg",
+      "location": "Požarevac",
+      "description": "大摩拉瓦河桥梁工程是沿多瑙河高速公路-第一标段的一个组成部分。该高速工路项目共分为三个标段，全长67.94公里，包含了52座桥梁/立交桥，5个交通枢纽节点和16个环岛等设施。第一标段（km 0+000 - km 23.075）从贝尔格莱德至尼什(Belgrade - Niš )E75高速公路上现有的“Požarevac”立交桥开始，沿着在扩建的IB33号国道延伸至“Požarevac”（km11+900）位置，然后沿IB34（环“波扎雷瓦茨”市北部的国道，此段高速公路也正在扩建施工）继续施工。第",
+      "image": "https://cdn.peri.cloud/dam/jcr:6cedbd38-976c-4495-af93-2da098670879/20230/%E5%A4%A7%E6%91%A9%E6%8B%89%E7%93%A6%E6%B2%B3%E6%A1%A5%E6%A2%81%E5%B7%A5%E7%A8%8B-%EF%BC%88%E6%B2%BF%E5%A4%9A%E7%91%99%E6%B2%B3%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%A0%87%E6%AE%B5%EF%BC%89.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/大摩拉瓦河桥梁工程.html"
     }
   ],
+  "pdf_link": "https://www.peri.co.za/dam/jcr:61fe2e05-22de-4176-85ad-7663494b99d5/handset-alpha-brochure.pdf",
+  "youtube_video_id": "U-OQySX8UsA",
   "verified": true,
-  "verification_date": "2026-04-05"
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/handset-alpha.html",
+    "pdf_source": "current_json",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/handset-alpha.html",
+      "de_source": ""
+    }
+  }
 }

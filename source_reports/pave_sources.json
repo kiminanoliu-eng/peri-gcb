@@ -1,0 +1,48 @@
+{
+  "slug": "pave",
+  "name_zh": "Pave 板",
+  "category": "板材",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/pave.html",
+  "page_title": "Pave 板",
+  "page_description": "混凝土地砖工业采用高标准的生产设备，即使大批量生产，也可以保证多年始终如一的高质量、是可复制性的混凝土产品。因此性能卓越的派利Pave板材是国际混凝土地砖产品群中可靠的组成部分。 派利Pave板材构成 Pave的板材选自可持续管理的林区，木材为硬木，生产时使用多层板十字交叉胶合而成。专门为混凝土地砖配置的聚丙烯覆膜提高了整体的抗冲击性和耐磨性，从而确保PERI Pave板材较长的使用寿命。 技术信息 厚度: 24 – 53 mm 尺寸: 最大 1500 x 3600 mm 重量: 大约",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:c60b2e2b-f5d6-484b-b8ce-b9d9c2493844/25252/peri-pave-%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%9C%B0%E7%A0%96%E5%9E%AB%E6%9D%BF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "kdmDK10dxSs",
+      "query": "pave",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=pave",
+      "watch_url": "https://www.youtube.com/watch?v=kdmDK10dxSs",
+      "title": "PRODUIT | Pourquoi PERI UP ? : # 2: Plateau autobloquant (FR)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/kdmDK10dxSs/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "xwrGNCmE1_A",
+      "query": "pave",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=pave",
+      "watch_url": "https://www.youtube.com/watch?v=xwrGNCmE1_A",
+      "title": "COMPANY | PERI und der Bau des V&A MUSEUM OF DESIGN DUNDEE",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/xwrGNCmE1_A/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 2,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 2 official candidates were available, and none was a suitable English product video."
+  }
+}

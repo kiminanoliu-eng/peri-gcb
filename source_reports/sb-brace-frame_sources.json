@@ -1,0 +1,211 @@
+{
+  "slug": "sb-brace-frame",
+  "name_zh": "SB 单侧支架",
+  "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/sb-brace-frame.html",
+  "page_title": "SB 单侧支架",
+  "page_description": "SB单侧支架系统可将由单侧模板传来混凝土侧压力传递至下部结构或基础上。该系统能够与派利公司所有墙体模板产品配合使用，此外SB单侧支架系统还可以作为承重能力较强的、水平方向上的平台支架。 多功能性 能够与所有派利墙模系统组合使用，还可以用作高强水平支架。 快速安装，无需额外组件 所有连接部件可直接安装在单侧支架系统上。 简单物流 使用与产品几何外形匹配的集装箱及卡车对其运送。",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:4bfd5515-7915-4e45-a794-9101e8f2be24/23693/sb-%E5%8D%95%E4%BE%A7%E6%94%AF%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "丹麦，哥本哈根，辉凌制药A/S研发中心",
+      "location": "哥本哈根, 丹麦",
+      "description": "派利公司提供为项目定制的施工方案，满足复杂的建筑设计要求 在丹麦哥本哈根市，新建辉凌制药A/S研发中心 三角形的建筑需要满足高质量的清水混凝土要求 建筑位于哥本哈根市与马尔默市间的厄勒交叉口旁边海滨的中心位置 建筑共八层，地下2层，地上6层",
+      "image": "https://cdn.peri.cloud/dam/jcr:f82f0544-ae5d-4bca-8c97-4d122be205c6/26880/%E4%B8%B9%E9%BA%A6%EF%BC%8C%E5%93%A5%E6%9C%AC%E5%93%88%E6%A0%B9%EF%BC%8C%E8%BE%89%E5%87%8C%E5%88%B6%E8%8D%AFa-s%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/research-and-development-centre-of-ferring-pharmaceuticals-a-s-copenhagen-denmark.html"
+    },
+    {
+      "name": "阿拉伯联合酋长国，迪拜之窗",
+      "location": "迪拜, 阿拉伯联合酋长国",
+      "description": "为巨型倾斜的画框式建筑提供爬模方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:14afaa5d-11fd-44b4-bada-419c27002112/11275/%E9%98%BF%E8%81%94%E9%85%8B%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%EF%BC%8C%E8%BF%AA%E6%8B%9C%E4%B9%8B%E7%AA%97.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/dubai-frame-united-arab-emirates.html"
+    },
+    {
+      "name": "德国，波茨坦广场",
+      "location": "德国",
+      "description": "该项目是柏林市中心新开发项目的一部分，包括办公室、商业和住宅楼、火车站",
+      "image": "https://cdn.peri.cloud/dam/jcr:ace46a76-b8f7-447e-bade-4cf83e9d290e/16885/%E6%B3%A2%E8%8C%A8%E5%9D%A6%E5%B9%BF%E5%9C%BA%EF%BC%8C%E6%9F%8F%E6%9E%97%EF%BC%8C%E4%B8%80%E4%B8%AA%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%9F%8E%E5%B8%82.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/potsdamer-platz.html"
+    },
+    {
+      "name": "俄罗斯 VTB竞技体育场",
+      "location": "莫斯科",
+      "description": "VTB竞技体育场是俄罗斯足球俱乐部莫斯科FK 迪那摩的主场。该体育场最多可容纳两万六千名观众，并且采用了多种顶尖的技术，是一个先进的多功能球场。该球场为不同体育项目和用途设计，因此利用率非常高。仅用几个小时就可以将体育馆从足球场和冰球场变为篮球场或举办音乐会的场馆。",
+      "image": "https://cdn.peri.cloud/dam/jcr:f6e5e0c7-36eb-4b33-b160-6e4ca2b56f2f/12005/%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%9A%84%E8%BF%90%E5%8A%A8%E5%9C%BA%E3%80%81%E9%9B%86%E4%BC%9A%E5%9C%BA%E5%9C%B0.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/vtb-arena-moscow-russia.html"
+    }
+  ],
+  "pdf_candidates": [
+    {
+      "url": "https://www.peri.id/dam/jcr:9f85565f-4040-3033-a38d-1932648984cc/sb-brace-frame.pdf",
+      "source": "current_json",
+      "score": 95,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.co.za/dam/jcr:77ccf29d-accb-318b-a66a-968a087821e5/sb-brace-frame.pdf",
+      "source": "https://www.peri.co.za/products/sb-brace-frame.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.co.za/dam/jcr:ab03b5a5-e124-3d72-a263-94b9d7329b51/sb-brace-frame-for-single-sided-walls-instructions-for-assembly-and-use.pdf",
+      "source": "https://www.peri.co.za/products/sb-brace-frame.html",
+      "score": 80,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": ""
+    },
+    {
+      "url": "https://www.peri.ltd.uk/.rest/downloads/76474",
+      "source": "https://www.peri.ltd.uk/products/sb-brace-frame.html",
+      "score": 75,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": "SB_Brace_Frame-76474.pdf"
+    },
+    {
+      "url": "https://www.peri.ltd.uk/.rest/downloads/80463",
+      "source": "https://www.peri.ltd.uk/products/sb-brace-frame.html",
+      "score": 75,
+      "content_type": "application/pdf;charset=UTF-8",
+      "filename": "SB_Brace_Frame-80463.pdf"
+    }
+  ],
+  "youtube_candidates": [
+    {
+      "video_id": "LJ5M_nx5HK8",
+      "query": "sb brace frame",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb%20brace%20frame",
+      "watch_url": "https://www.youtube.com/watch?v=LJ5M_nx5HK8",
+      "title": "SCAFFOLDING |  Construction on the Moselle Lock Trier with PERI, Germany (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/LJ5M_nx5HK8/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "Opd0x8ZVDOs",
+      "query": "sb",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb",
+      "watch_url": "https://www.youtube.com/watch?v=Opd0x8ZVDOs",
+      "title": "TRAINING | PERI  MAXIMO connection of panels with BFD (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/Opd0x8ZVDOs/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "W5AqEENVfU8",
+      "query": "sb brace",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb%20brace",
+      "watch_url": "https://www.youtube.com/watch?v=W5AqEENVfU8",
+      "title": "TRAINING | PERI  MAXIMO forming foundations (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/W5AqEENVfU8/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "XBSvHV9op04",
+      "query": "sb brace frame",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb%20brace%20frame",
+      "watch_url": "https://www.youtube.com/watch?v=XBSvHV9op04",
+      "title": "FORMWORK | Construction of SCL 1122 Shatin to Central Link, Admiralty South Overrun Tunnel, HK (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/XBSvHV9op04/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "fk6BDoJIA3I",
+      "query": "sb brace frame",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb%20brace%20frame",
+      "watch_url": "https://www.youtube.com/watch?v=fk6BDoJIA3I",
+      "title": "TRAINING | PERI  MAXIMO: How to concrete shafts (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/fk6BDoJIA3I/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "n4fKfxlzJ3E",
+      "query": "sb",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb",
+      "watch_url": "https://www.youtube.com/watch?v=n4fKfxlzJ3E",
+      "title": "FORMWORK | PERI VARIOKIT VTC Tunnel Carriage (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/n4fKfxlzJ3E/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "_7n--WOYu50",
+      "query": "sb",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb",
+      "watch_url": "https://www.youtube.com/watch?v=_7n--WOYu50",
+      "title": "Проект | АМ Хемус – Боаза, Дерманци (BG)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/_7n--WOYu50/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "n7MfDxyo-Yc",
+      "query": "sb",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb",
+      "watch_url": "https://www.youtube.com/watch?v=n7MfDxyo-Yc",
+      "title": "SCHALUNG| Bau des SCL 1122 Shatin to Central Link mit PERI, Admiralty South Überlauftunnels, HK (DE)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/n7MfDxyo-Yc/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "wnT8atxKcu0",
+      "query": "sb",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=sb",
+      "watch_url": "https://www.youtube.com/watch?v=wnT8atxKcu0",
+      "title": "沙田至中環線合約1122, 金鐘站越位隧道 (CN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/wnT8atxKcu0/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 9,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "No suitable official PERI English product video found in the first 9 candidates."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "peri-st-100-configurator",
+  "name_zh": "ST 100 塔架计算器",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-st-100-configurator.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:743bd803-7547-4b47-89e0-8b63c85cfa8a/25307/st-100-stacking-tower-configurator.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:743bd803-7547-4b47-89e0-8b63c85cfa8a/25307/st-100-stacking-tower-configurator.png?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "ST 100塔架计算器可以帮助用户获得支架系统的特性值。用户使用网页浏览器可启动程序，简单、快速、精确的确定支撑可承受最大的轴向荷载以及最小的防滑动荷载。派利产品的计标数据的计标依据经过德国建筑监督局（DIBT）的定型认证。 ST 100塔架计算器 功能说明 在输入独立式塔架或柱头锚固塔架的参数配置后，用户可以得到相关的计算结果。结果包括整个系统的力学模型，以及相应的派利 ST 100塔架的搭建可能性，最大螺杆伸长量，以及最大允许的竖直方向轴向荷载 Fv ，单位为kN。 应用程序支持计算",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "俄罗斯 VTB竞技体育场",
+      "location": "莫斯科",
+      "description": "VTB竞技体育场是俄罗斯足球俱乐部莫斯科FK 迪那摩的主场。该体育场最多可容纳两万六千名观众，并且采用了多种顶尖的技术，是一个先进的多功能球场。该球场为不同体育项目和用途设计，因此利用率非常高。仅用几个小时就可以将体育馆从足球场和冰球场变为篮球场或举办音乐会的场馆。",
+      "image": "https://cdn.peri.cloud/dam/jcr:f6e5e0c7-36eb-4b33-b160-6e4ca2b56f2f/12005/%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%9A%84%E8%BF%90%E5%8A%A8%E5%9C%BA%E3%80%81%E9%9B%86%E4%BC%9A%E5%9C%BA%E5%9C%B0.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/vtb-arena-moscow-russia.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": "sScF5wIyxMQ",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-st-100-configurator.html",
+    "pdf_source": "",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-st-100-configurator.html",
+      "de_source": ""
+    }
+  }
+}

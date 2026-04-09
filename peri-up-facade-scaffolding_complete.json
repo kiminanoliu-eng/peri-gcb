@@ -1,0 +1,54 @@
+{
+  "slug": "peri-up-facade-scaffolding",
+  "name_zh": "PERI UP Flex 外装修脚手架",
+  "category": "脚手架_支架系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/peri-up-facade-scaffolding.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:b889c55e-c0b7-47d8-a64a-67d964f7d64c/24515/peri-up-flex-%E5%A4%96%E8%A3%85%E4%BF%AE%E8%84%9A%E6%89%8B%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:b889c55e-c0b7-47d8-a64a-67d964f7d64c/24515/peri-up-flex-%E5%A4%96%E8%A3%85%E4%BF%AE%E8%84%9A%E6%89%8B%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "PERI UP Flex 可搭建极高承载能力的外装修脚手架。踏脚板直接安装在水平连接杆上，系统在水平方向上以25厘米为模数；垂直支撑方向以50厘米为间距布置连接节点，连接其他的系统组件。踏脚板的防上翻设计、水平连接杆上的重力锁都加速了安装过程，水平连接杆可以在安全平台上提前组装。 技术细节 系统常规应用宽度 75 厘米或 100 厘米。 系统宽度= 75 厘米 荷载等级 1 至 4 (0,75 kN/m² – 3,00 kN/m²)。 系统宽度 = 100 厘米 荷载等级 1 bis 6",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "德国，9号除尘高炉",
+      "location": "杜伊斯堡, 德国",
+      "description": "在暂停使用的状态下，根据最新的技术标准，现代化整修高炉 在杜伊斯堡市的蒂森克虏伯欧洲钢铁公司厂区内共有4个大型高炉，9号高炉建于1962年，并在1987年进行了全面的整修和扩建。2012年，暂停9号高炉的使用，对该高炉进行现代化改造，使其达到了最先进的技术标准。在施工过程中还为除尘装置安装了新的保温层。9号高炉于2015年重新投入使用。",
+      "image": "https://cdn.peri.cloud/dam/jcr:5a99d5d7-dc57-401c-b572-dd5b736c3393/11239/peri-up-flex%E7%9B%98%E6%89%A3%E5%BC%8F%E8%84%9A%E6%89%8B%E6%9E%B6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/dedusting-system-for-blast-furnace-9-thyssenkrupp-duisburg-germany.html"
+    },
+    {
+      "name": "斯洛伐克，布拉迪斯拉发，SKY PARK 公寓",
+      "location": "布拉迪斯拉发, 斯洛伐克",
+      "description": "为布拉迪斯拉发市新文化中心的三座公寓大厦提供脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:7cdd19f8-750f-4bfa-b89d-8e01979058ab/26818/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%EF%BC%8C%E5%B8%83%E6%8B%89%E8%BF%AA%E6%96%AF%E6%8B%89%E5%8F%91%EF%BC%8Csky-park-%E5%85%AC%E5%AF%93%E5%A4%A7%E5%8E%A6.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/sky-park-residence-bratislava-slovakia.html"
+    },
+    {
+      "name": "德国，新天鹅堡的修复",
+      "location": "富森, 德国",
+      "description": "考虑全面，可在冬天加热的方案。 新天鹅堡（Neuschwanstein Castle）是德国最着名的景点之一，拥有来自世界各地的约150万游客，需要对其定期进行复杂的维护。 在不断的维修工作中，需要为整个东门楼搭建脚手架，城堡入口顶部用临时顶棚覆盖。",
+      "image": "https://cdn.peri.cloud/dam/jcr:2a312b1f-ed21-4476-beaf-e3f267b4679f/12500/%E5%BE%B7%E5%9B%BD%EF%BC%8C%E6%96%B0%E5%A4%A9%E9%B9%85%E5%A0%A1%E7%9A%84%E4%BF%AE%E5%A4%8D.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/gate-building-renovation-neuschwanstein-castle.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": "VeYdRZXjhfY",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/peri-up-facade-scaffolding.html",
+    "pdf_source": "",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/peri-up-facade-scaffolding.html",
+      "de_source": ""
+    }
+  }
+}

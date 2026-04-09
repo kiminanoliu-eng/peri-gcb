@@ -2,24 +2,39 @@
   "slug": "rundflex-plus-rundschalung",
   "name_zh": "RUNDFLEX Plus 曲面模板",
   "category": "建筑模板系统",
+  "subcategory": "墙模",
+  "cn_url": "https://cn.peri.com/products/rundflex-plus-rundschalung.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:c8737c1e-d50b-4451-ad04-331d84b7589a/23704/peri-rundflex-plus-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:c8737c1e-d50b-4451-ad04-331d84b7589a/23704/peri-rundflex-plus-%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg",
   "description": {
-    "zh": "用于浇筑圆形或弧形结构的曲面模板系统。",
-    "en": "Circular formwork system for casting circular or curved structures.",
-    "es": "Sistema de encofrado circular para estructuras circulares o curvas.",
-    "de": "Rundschalungssystem für kreisförmige oder gebogene Strukturen.",
-    "pt": "Sistema de cofragem circular para estruturas circulares ou curvas.",
-    "sr": "Систем кружне оплате за кружне или закривљене структуре.",
-    "hu": "Körkörös zsaluzási rendszer kör alakú vagy ívelt szerkezetek öntéséhez."
+    "zh": "RUNDFLEX Plus包括操作平台，护栏及爬梯，使用此系统能够可靠地浇筑曲面墙体。 使用螺丝在背面固定板材，因此混凝土墙面质量非常高。半径2.5米以上的墙面都可使用RUNDFLEX Plus，系统无级调节半径，避免了模板的改装工作，降低施工成本。 技术细节 预组装的曲面模板应用于半径大于2.5米的曲面墙体。 模块尺寸高度可达3.6米、宽度可达2.5米（外半径）。 最大允许混凝土侧压力： 60 kN/m²。 模块与模块之间，包括最大宽至10厘米的补模区域，全部可以通过BFD夹具进行连接。",
+    "en": "Curved formwork system for concreting circular or curved structures.",
+    "es": "Sistema de encofrado curvo para hormigonado de estructuras circulares o curvas.",
+    "de": "Rundschalungssystem für Betonierung von runden oder gebogenen Strukturen.",
+    "pt": "Sistema de cofragem curva para concretagem de estruturas circulares ou curvas.",
+    "sr": "Sistem zakrivljene oplate za betoniranje kružnih ili zakrivljenih struktura.",
+    "hu": "Ívelt zsaluzási rendszer kör alakú vagy ívelt szerkezetek betonozásához."
   },
   "projects": [
     {
-      "name": "Sandelermöns水库",
-      "location": "德国，Jever",
-      "description": "Sandelermöns水库项目",
+      "name": "德国，Sandelermöns水库",
+      "location": "Sandelermöns, 德国",
+      "description": "使用RUNDFLEX Plus系统精确、高效浇筑桶形蓄水池",
       "image": "https://cdn.peri.cloud/dam/jcr:04eb1c9e-9db6-4063-9977-a76051e96747/17195/sandelerm%C3%B6ns-%E6%B0%B4%E5%BA%93-jever-%E5%BE%B7%E5%9B%BD-%E6%B4%BE%E5%88%A9%E9%A1%B9%E7%9B%AE.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/sandelermoens-waterworks.html"
     }
   ],
   "pdf_link": "",
-  "youtube_video_id": ""
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/rundflex-plus-rundschalung.html",
+    "pdf_source": "",
+    "youtube_reason": "No suitable official PERI English product video found in the first 14 candidates.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/rundflex-plus-rundschalung.html",
+      "de_source": ""
+    }
+  }
 }

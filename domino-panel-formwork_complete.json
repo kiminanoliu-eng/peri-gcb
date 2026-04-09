@@ -3,49 +3,59 @@
   "name_zh": "DOMINO 框式模板",
   "category": "建筑模板系统",
   "subcategory": "墙模",
-  "image": "https://cdn.peri.cloud/dam/jcr:02a159fc-6321-47ce-9019-7083d8dec5d6/23091/domino-框式模板.jpg",
-  "description": {
-    "zh": "模块化框式模板，灵活适用于各种工程。",
-    "en": "Modular panel formwork, flexibly applicable to various projects.",
-    "es": "Encofrado de paneles modular, aplicable de forma flexible a varios proyectos.",
-    "de": "Modulare Rahmenschalung, flexibel einsetzbar für verschiedene Projekte.",
-    "pt": "Cofragem de painéis modular, aplicável de forma flexível a vários projetos.",
-    "sr": "Modularna panelna oplata, fleksibilno primenljiva na različite projekte.",
-    "hu": "Moduláris panelzsaluzás, rugalmasan alkalmazható különböző projektekhez."
-  },
-  "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/85752",
-  "youtube_video_id": "JkRVhXSvIV8",
   "cn_url": "https://cn.peri.com/products/domino-panel-formwork.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:02a159fc-6321-47ce-9019-7083d8dec5d6/23091/domino-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:02a159fc-6321-47ce-9019-7083d8dec5d6/23091/domino-%E6%A1%86%E5%BC%8F%E6%A8%A1%E6%9D%BF.jpg",
+  "description": {
+    "zh": "DOMINO系统的特点是重量轻、几何尺寸较小，可使用吊车转运。整套系统尤其适用于住宅建筑、地下建筑和建筑维护。穿墙拉杆的多功能性让使用该系统对独立基础、护墙、挡土墙以及梁进行浇筑，变得简单快速。此外铝制DOMINO-Alu是DOMINO的另外扩展系统，可以不依赖吊车施工。DRS夹具保证了模板间横平、竖直、紧密地连接。 操作简单 采用较小尺寸的模块, 较小的自重，使铝框DOMINO更具优势。 基础施工的最佳选择 使用穿墙拉杆以及相关的配件为基础立模。 快速地模板连接 仅使用DRS一种夹具，即",
+    "en": "Modular framed formwork, flexibly applicable to various projects.",
+    "es": "Encofrado enmarcado modular, aplicable de forma flexible a varios proyectos.",
+    "de": "Modulare Rahmenschalung, flexibel einsetzbar für verschiedene Projekte.",
+    "pt": "Cofragem emoldurada modular, aplicável de forma flexível a vários projetos.",
+    "sr": "Modularna ramovska oplata, fleksibilno primenljiva na različite projekte.",
+    "hu": "Moduláris keretes zsaluzat, rugalmasan alkalmazható különböző projektekhez."
+  },
   "projects": [
     {
-      "name": "哈波布鲁大桥",
-      "location": "挪威，索尔弗龙",
-      "description": "斜拉桥，总长320米，两塔之间主跨100米。采用PERI的VBC平衡悬臂挂篮和PERI UP模块化脚手架系统。",
-      "image": "https://cdn.peri.cloud/dam/jcr:cab03454-6d28-4393-b39a-6dd664ccb68f/16135/哈波布鲁大桥-–-variokit和peri-up系统.jpg",
+      "name": "挪威，哈波布鲁大桥",
+      "location": "挪威",
+      "description": "派利公司提供的悬臂式施工方案，减少了作业量，加速了施工",
+      "image": "https://cdn.peri.cloud/dam/jcr:cab03454-6d28-4393-b39a-6dd664ccb68f/16135/%E5%93%88%E6%B3%A2%E5%B8%83%E9%B2%81%E5%A4%A7%E6%A1%A5-%E2%80%93-variokit%E5%92%8Cperi-up%E7%B3%BB%E7%BB%9F.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/harpe-bru-bridge.html"
     },
     {
-      "name": "ZepTerra-住宅、办公综合楼",
-      "location": "塞尔维亚，新贝尔格莱德",
-      "description": "混合用途住宅和商业开发项目，10层，总面积3.2万平方米。第一期包括227套公寓和两层地下停车场。",
-      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra住宅商业综合楼.jpg",
+      "name": "ZepTerra-住宅、办公综合楼 , 新贝尔格莱德",
+      "location": "Novi Beograd, Србија",
+      "description": "ZepTerra是一个集豪华住宅和商业的综合综合项目，地处新贝尔格莱德第 65 街区，位于Bulevar Heroja sa Košar街区与Tadija Sondermajera街区之间。这个现代化的建筑项目分阶段施工。一期工程为10个楼层，总面积三万两千平方米，包括227套公寓及一个两层的地下停车场。",
+      "image": "https://cdn.peri.cloud/dam/jcr:0a4b0c90-2484-45f1-94c8-648d718ce58a/25865/zepterra%E4%BD%8F%E5%AE%85%E5%95%86%E4%B8%9A%E7%BB%BC%E5%90%88%E6%A5%BC.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/zepterra.html"
     },
     {
-      "name": "叶赫塔中心",
-      "location": "俄罗斯，圣彼得堡",
-      "description": "462米高的混合用途综合体，作为俄罗斯天然气工业股份公司总部。87层，40万平方米，包括办公空间、科学展览馆、教育机构和体育休闲设施。",
-      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/圣彼得堡，叶赫塔中心.jpg",
+      "name": "俄罗斯，圣彼得堡，叶赫塔中心",
+      "location": "圣彼得堡, 俄罗斯",
+      "description": "为欧洲最高的大厦提供全套的模板、脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%EF%BC%8C%E5%8F%B6%E8%B5%AB%E5%A1%94%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
     },
     {
-      "name": "BSR 中心 TLV Alon 大厦",
-      "location": "以色列，特拉维夫",
-      "description": "现代办公综合体，两座对称的双子塔，各高164米。建筑展示X形立面设计，从地面到中部逐渐收窄，然后向顶部扩展。",
-      "image": "https://cdn.peri.cloud/dam/jcr:1d8ae2fa-03c5-4327-bb8a-24bfbae9f0de/10696/以色列，特拉维夫，-bsr中心tlv-alon大厦-alon大厦的施工现场组成了特拉维夫的天际线.jpg",
+      "name": "以色列，特拉维夫，“BSR 中心 TLV“ Alon 大厦",
+      "location": "特拉维夫, 以色列",
+      "description": "根据施工条件确定经济的爬模系统",
+      "image": "https://cdn.peri.cloud/dam/jcr:1d8ae2fa-03c5-4327-bb8a-24bfbae9f0de/10696/%E4%BB%A5%E8%89%B2%E5%88%97%EF%BC%8C%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%EF%BC%8C-bsr%E4%B8%AD%E5%BF%83tlv-alon%E5%A4%A7%E5%8E%A6-alon%E5%A4%A7%E5%8E%A6%E7%9A%84%E6%96%BD%E5%B7%A5%E7%8E%B0%E5%9C%BA%E7%BB%84%E6%88%90%E4%BA%86%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%E7%9A%84%E5%A4%A9%E9%99%85%E7%BA%BF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
       "link": "https://cn.peri.com/projects/alon-towers-bsr-center-tlv-tel-aviv-israel.html"
     }
   ],
+  "pdf_link": "https://www.peri.ltd.uk/.rest/downloads/85752",
+  "youtube_video_id": "84HLKWiFQn4",
   "verified": true,
-  "verification_date": "2026-04-05"
+  "verification_date": "2026-04-09",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/domino-panel-formwork.html",
+    "pdf_source": "current_json",
+    "youtube_reason": "Found a suitable official PERI English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/domino-panel-formwork.html",
+      "de_source": ""
+    }
+  }
 }

@@ -1,0 +1,61 @@
+{
+  "slug": "rental-park-and-distribution",
+  "name_zh": "租赁服务及材料配送",
+  "category": "工程技术服务",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/rental-park-and-distribution.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:113fad93-c2c5-4f77-a25e-63f343f4e9d2/25019/%E7%A7%9F%E8%B5%81%E4%BB%93%E5%BA%93%E4%B8%8E%E6%9D%90%E6%96%99%E8%B0%83%E9%85%8D.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "thumbnail": "https://cdn.peri.cloud/dam/jcr:113fad93-c2c5-4f77-a25e-63f343f4e9d2/25019/%E7%A7%9F%E8%B5%81%E4%BB%93%E5%BA%93%E4%B8%8E%E6%9D%90%E6%96%99%E8%B0%83%E9%85%8D.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "description": {
+    "zh": "产品租赁，不仅保证了材料使用高峰期的经济性，而且对于使用频率较低的产品设备也是经济的选择。派利全球拥有120多家物流服务站，备有大量的高品质材料。 通过合理的、有效的组织材料调配，即使特殊订单中的极高的材料需求量，也可保证供应。因此派利公司为客户了承担材料使用率的风险。 服务范围 供应模板及脚手架材料，管理必要的仓库空间。 物流及商务订单的处理。 对常规材料的磨损进行维修，尤其是模板板材的更换。 派利租赁服务站点承担技术创新风险。",
+    "en": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "es": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "de": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "pt": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "sr": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected.",
+    "hu": "We have changed our content concept. From now on you will find the content you were looking for on the PERI website of your country. You will be redirected."
+  },
+  "projects": [
+    {
+      "name": "意大利，2015年意大利世博会场馆",
+      "location": "米兰, 意大利",
+      "description": "在米兰举办的世博会上，东道主意大利将世博会场馆''Palazzo Italia'' 作为建筑设计上的一个亮点，向全世界展示：它是一栋高35米、6层结构、造型复杂的钢筋混凝土建筑，此外它还包含了光电玻璃屋顶结构，整个建筑由拉丝状的外壳覆盖。该建筑是唯一一个能够在2015年世博会后保留的场馆建筑。",
+      "image": "https://cdn.peri.cloud/dam/jcr:8af85b6c-c669-49e9-a5fc-f674eabe1066/11678/palazzo-italia.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/意大利，米兰，2015年意大利世博会场馆.html"
+    },
+    {
+      "name": "俄罗斯，圣彼得堡，叶赫塔中心",
+      "location": "圣彼得堡, 俄罗斯",
+      "description": "为欧洲最高的大厦提供全套的模板、脚手架方案",
+      "image": "https://cdn.peri.cloud/dam/jcr:ccacf53d-06a2-4cc0-b562-28545aa92a1f/12294/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%EF%BC%8C%E5%8F%B6%E8%B5%AB%E5%A1%94%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/lakhta-center-saint-petersburg-russia.html"
+    },
+    {
+      "name": "以色列，特拉维夫，“BSR 中心 TLV“ Alon 大厦",
+      "location": "特拉维夫, 以色列",
+      "description": "根据施工条件确定经济的爬模系统",
+      "image": "https://cdn.peri.cloud/dam/jcr:1d8ae2fa-03c5-4327-bb8a-24bfbae9f0de/10696/%E4%BB%A5%E8%89%B2%E5%88%97%EF%BC%8C%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%EF%BC%8C-bsr%E4%B8%AD%E5%BF%83tlv-alon%E5%A4%A7%E5%8E%A6-alon%E5%A4%A7%E5%8E%A6%E7%9A%84%E6%96%BD%E5%B7%A5%E7%8E%B0%E5%9C%BA%E7%BB%84%E6%88%90%E4%BA%86%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%E7%9A%84%E5%A4%A9%E9%99%85%E7%BA%BF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/alon-towers-bsr-center-tlv-tel-aviv-israel.html"
+    },
+    {
+      "name": "德国，Sandelermöns水库",
+      "location": "Sandelermöns, 德国",
+      "description": "使用RUNDFLEX Plus系统精确、高效浇筑桶形蓄水池",
+      "image": "https://cdn.peri.cloud/dam/jcr:04eb1c9e-9db6-4063-9977-a76051e96747/17195/sandelerm%C3%B6ns-%E6%B0%B4%E5%BA%93-jever-%E5%BE%B7%E5%9B%BD-%E6%B4%BE%E5%88%A9%E9%A1%B9%E7%9B%AE.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/sandelermoens-waterworks.html"
+    }
+  ],
+  "pdf_link": "",
+  "youtube_video_id": "",
+  "verified": true,
+  "verification_date": "2026-04-08",
+  "sources": {
+    "cn_url": "https://cn.peri.com/products/rental-park-and-distribution.html",
+    "pdf_source": "",
+    "youtube_reason": "Only 4 official candidates were available, and none was a suitable English product video.",
+    "description_sources": {
+      "en_source": "https://www.peri.com/en/products/rental-park-and-distribution.html",
+      "de_source": ""
+    }
+  }
+}

@@ -3,6 +3,8 @@
   "name_zh": "MAXIMO MXK 支架系统",
   "category": "建筑模板系统",
   "subcategory": "通用配件",
+  "cn_url": "https://cn.peri.com/products/mxk-bracket-system.html",
+  "image": "https://cdn.peri.cloud/dam/jcr:90b3452b-ec38-453e-9445-ff5b0c4116c8/23954/mxk-%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
   "description": {
     "zh": "MXK支架系统可作为MAXIMO和TRIO模板系统的操作平台。模块化设计结合轻质组件，可徒手快速、经济地安装，并可与MXK踏脚板、防护侧栏PROKIT和PMB等部件进行预组装。系统提供0.90米、1.20米和2.40米三种平台宽度，可在平放状态下安全预组装支架、踏脚板及防护侧栏。",
     "en": "The MXK Bracket System serves as a working platform for MAXIMO and TRIO formwork systems. Its modular design and lightweight components enable fast, economical manual assembly and allow pre-assembly with MXK planks, PROKIT side protection and PMB components. The system is available in platform widths of 0.90 m, 1.20 m and 2.40 m, allowing brackets, planks and guardrails to be safely pre-assembled while laid flat.",
@@ -10,6 +12,8 @@
     "de": "Das MXK Konsolensystem dient als Arbeitsplattform für die Schalungssysteme MAXIMO und TRIO. Der modulare Aufbau und die leichten Bauteile ermöglichen eine schnelle und wirtschaftliche Montage von Hand sowie die Vormontage mit MXK Belägen, PROKIT Seitenschutz und PMB Komponenten. Das System ist in Plattformbreiten von 0,90 m, 1,20 m und 2,40 m verfügbar, sodass Konsolen, Beläge und Seitenschutz im liegenden Zustand sicher vormontiert werden können.",
     "fr": "Le système de consoles MXK sert de plate-forme de travail pour les systèmes de coffrage MAXIMO et TRIO. Sa conception modulaire et ses composants légers permettent un montage manuel rapide et économique, ainsi qu'un prémontage avec les platelages MXK, les protections latérales PROKIT et les composants PMB. Le système est disponible en largeurs de plate-forme de 0,90 m, 1,20 m et 2,40 m, ce qui permet de prémonter en toute sécurité les consoles, platelages et garde-corps à plat.",
     "pt": "O sistema de consoles MXK funciona como plataforma de trabalho para os sistemas de fôrma MAXIMO e TRIO. Seu projeto modular e seus componentes leves permitem montagem manual rápida e econômica, além de pré-montagem com tábuas MXK, proteção lateral PROKIT e componentes PMB. O sistema está disponível em larguras de plataforma de 0,90 m, 1,20 m e 2,40 m, permitindo pré-montar com segurança consoles, pisos e guarda-corpos na posição horizontal.",
+    "sr": "MXK sistem konzola služi kao radna platforma za MAXIMO i TRIO sisteme oplate. Modularna konstrukcija i lagane komponente omogućavaju brzu i ekonomičnu ručnu montažu, kao i prethodnu montažu sa MXK gazištima, PROKIT bočnom zaštitom i PMB komponentama. Sistem je dostupan u širinama platforme od 0,90 m, 1,20 m i 2,40 m, što omogućava bezbednu prethodnu montažu konzola, gazišta i zaštitnih ograda u horizontalnom položaju.",
+    "hu": "Az MXK konzolrendszer munkaplatformként szolgál a MAXIMO és TRIO zsalurendszerekhez. A moduláris kialakítás és a könnyű alkatrészek gyors és gazdaságos kézi összeszerelést tesznek lehetővé, valamint előre szerelhetők MXK járófelületekkel, PROKIT oldalvédelemmel és PMB elemekkel. A rendszer 0,90 m, 1,20 m és 2,40 m platformszélességekben érhető el, így a konzolok, járófelületek és korlátok fekvő helyzetben biztonságosan előre összeszerelhetők.",
     "ar": "يعمل نظام الحوامل MXK كمنصة عمل لأنظمة القوالب MAXIMO وTRIO. يتيح التصميم المعياري والمكونات خفيفة الوزن تجميعا يدويا سريعا واقتصاديا، كما يسمح بالتجميع المسبق مع ألواح MXK وحماية الجوانب PROKIT ومكونات PMB. يتوفر النظام بعروض منصات 0.90 متر و1.20 متر و2.40 متر، مما يتيح التجميع المسبق الآمن للحوامل والألواح والدرابزينات وهي في الوضع الأفقي."
   },
   "thumbnail": "https://cdn.peri.cloud/dam/jcr:90b3452b-ec38-453e-9445-ff5b0c4116c8/23954/mxk-%E6%94%AF%E6%9E%B6%E7%B3%BB%E7%BB%9F.jpg",
@@ -22,8 +26,8 @@
       "link": "https://cn.peri.com/projects/domino-kortteli-residential-complex-sipoo-finland.html"
     }
   ],
-  "pdf_link": "https://www.peri.lv/dam/jcr%3A1e5d0d2f-dae2-41da-8e1c-c119e3626f87/maximo-bro%C5%A1%C5%ABra.pdf",
-  "youtube_video_id": "",
+  "pdf_link": "https://www.peri.be/dam/jcr:8dfd2624-6cb6-46fa-901b-e38a19ab82db/maximo-bracket-system-mxk.pdf",
+  "youtube_video_id": "HwN1u7HiI94",
   "verified": true,
   "verification_date": "2026-04-08"
 }

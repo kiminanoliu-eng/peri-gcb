@@ -1,0 +1,90 @@
+{
+  "slug": "centrio-clm-software",
+  "name_zh": "CENTRIO CLM",
+  "category": "软件与Apps",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/centrio-clm-software.html",
+  "page_title": "CENTRIO CLM",
+  "page_description": "使用CENTRIO CLM 能够将建筑施工周期中所有的信息、文档以结构化的方式整合，建立一个数字化的施工数据库。用户可以对所有的信息和数据进行搜索查找，并对其进行高效、可靠的管理。 服务 CENTRIO CLM 的功能 可在同一系统中管理所有类型的文档，例如信件、合同、工程图、图片或者通信记录。 整合主数据，例如客户、供应商、潜在的客户或者联系人等，形成清晰的组织结构。 对所有的信息，如: 信件及其联系人、供应商机及其合同，或客户及其图纸进行网络化管理。 可发送文档的连接或自动生成的PDF",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:a58bc38d-8e54-41f0-ad05-a300e373736d/25325/centrio-clm-software.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "LAnHuuj1QsI",
+      "query": "centrio clm",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=centrio%20clm",
+      "watch_url": "https://www.youtube.com/watch?v=LAnHuuj1QsI",
+      "title": "SCAFFOLDING | Jackson Memorial Hospital Miami USA with PERI solutions (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/LAnHuuj1QsI/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "tyxDlVNS7JM",
+      "query": "centrio clm",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=centrio%20clm",
+      "watch_url": "https://www.youtube.com/watch?v=tyxDlVNS7JM",
+      "title": "FORMWORK | Lawrence Ave project Nowra Australia with PERI DUO (EN)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/tyxDlVNS7JM/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": true,
+      "matches_product": false,
+      "score": 5
+    },
+    {
+      "video_id": "9mePaWyeOJg",
+      "query": "centrio clm",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=centrio%20clm",
+      "watch_url": "https://www.youtube.com/watch?v=9mePaWyeOJg",
+      "title": "PROYECTO | Construcción de un Puente Peatonal Chile Proyecto de Referencia (ES)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/9mePaWyeOJg/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "BjSYoqXCTi0",
+      "query": "centrio clm",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=centrio%20clm",
+      "watch_url": "https://www.youtube.com/watch?v=BjSYoqXCTi0",
+      "title": "GERÜST | Gasverdichterstation CA-KU-A1 mit PERI, Altamira, Instrustriegerüst (DE)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/BjSYoqXCTi0/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    },
+    {
+      "video_id": "UtZ9YdCVpq8",
+      "query": "centrio clm",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=centrio%20clm",
+      "watch_url": "https://www.youtube.com/watch?v=UtZ9YdCVpq8",
+      "title": "PRODUCTO | PERI HANDSET Alpha: Nuevo sistema ligero de encofrados por paneles (ES)",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/UtZ9YdCVpq8/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 5,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "No suitable official PERI English product video found in the first 5 candidates."
+  }
+}

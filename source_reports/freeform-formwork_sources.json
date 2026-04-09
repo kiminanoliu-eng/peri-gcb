@@ -1,0 +1,63 @@
+{
+  "slug": "freeform-formwork",
+  "name_zh": "复杂曲面模板",
+  "category": "市政工程系统",
+  "subcategory": null,
+  "cn_url": "https://cn.peri.com/products/freeform-formwork.html",
+  "page_title": "复杂曲面模板",
+  "page_description": "针对造型多变，多曲面的钢筋混凝土建筑，派利公司提供高精度的定制复杂曲面模板。基于3D-建筑模型的曲面特性来设计、生产并组装复杂曲面模板。复杂曲面模板在工地上的组装过程与系统模板相似。通常系统的承重组件为木梁GT24，因此在项目结束后，大量组件可以被回收，并再次投入使用。",
+  "page_image": "https://cdn.peri.cloud/dam/jcr:63f0a096-8526-4554-ac65-92abd48fd2f3/23402/%E5%A4%8D%E6%9D%82%E6%9B%B2%E9%9D%A2%E6%A8%A1%E6%9D%BF.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+  "projects": [
+    {
+      "name": "白俄罗斯，道加瓦河水电站",
+      "location": "波洛茨克, 白俄罗斯",
+      "description": "白俄罗斯北部波洛茨克附近新建的水利发电站的功率可达22MW，是道加瓦河上规划的4个水坝之一。工期为6年，将在61公顷的建筑工地上共计浇筑14万立方米混凝土。这一复杂的建筑项目包含大型的钢筋混凝土结构，高达29米，对于项目所有参与者而言都是巨大的挑战。",
+      "image": "https://cdn.peri.cloud/dam/jcr:37ae80f9-8203-4f2d-b73b-9db3f80e72ab/12384/%E6%A8%A1%E6%9D%BF%E3%80%81%E8%84%9A%E6%89%8B%E6%9E%B6%E5%85%A8%E9%9D%A2%E6%96%B9%E6%A1%88.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/duena-wasserkraftwerk-polotsk-weissrussland.html"
+    },
+    {
+      "name": "科威特，Al-Shadadiya，科威特大学，室内网球中心",
+      "location": "Al-Shadadiya, 科威特",
+      "description": "独特的建筑造型，结合了现代与传统元素 三层结构的网球中心高达25米，可容纳约2000名观众 独特的建筑造型，结合了现代与传统元素 三层结构的网球中心高达25米，可容纳约2000名观众 独特的建筑造型，结合了现代与传统元素",
+      "image": "https://cdn.peri.cloud/dam/jcr:903e6195-c103-44e8-a8a0-1aca108edcb8/26703/%E7%A7%91%E5%A8%81%E7%89%B9%EF%BC%8Cal-shadadiya%EF%BC%8C%E7%A7%91%E5%A8%81%E7%89%B9%E5%A4%A7%E5%AD%A6%EF%BC%8C%E5%AE%A4%E5%86%85%E7%BD%91%E7%90%83%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/indoor-tennis-centre-kuwait-university-al-shadadiya-kuwait.html"
+    },
+    {
+      "name": "意大利，“南门”火车站",
+      "location": "那不勒斯 Afragola, 意大利",
+      "description": "派利为意大利“南门”火车站提供整套工程解决方案。",
+      "image": "https://cdn.peri.cloud/dam/jcr:8a7aa960-43d4-415d-a4bb-ab2d3296ed38/12118/%E6%84%8F%E5%A4%A7%E5%88%A9%EF%BC%8C-%E5%8D%97%E9%97%A8%E2%80%9D%E7%81%AB%E8%BD%A6%E7%AB%99.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/bahnhof-porta-del-sud.html"
+    },
+    {
+      "name": "英国，水上运动中心",
+      "location": "伦敦, 英国",
+      "description": "独特的造型设计、顶级质量的清水混凝土。",
+      "image": "https://cdn.peri.cloud/dam/jcr:4e2d9440-fad9-4eed-a9e3-45ae4048748e/11577/%E8%8B%B1%E5%9B%BD%EF%BC%8C%E6%B0%B4%E4%B8%8A%E8%BF%90%E5%8A%A8%E4%B8%AD%E5%BF%83.jpg?width=470&height=264&fit=bounds&format=pjpg&auto=webp&optimize=medium",
+      "link": "https://cn.peri.com/projects/aquatics-centre-london.html"
+    }
+  ],
+  "pdf_candidates": [],
+  "youtube_candidates": [
+    {
+      "video_id": "voo28dISuqI",
+      "query": "freeform formwork",
+      "search_url": "https://www.youtube.com/@perigroup/search?query=freeform%20formwork",
+      "watch_url": "https://www.youtube.com/watch?v=voo28dISuqI",
+      "title": "Engineering support for affordable Homes",
+      "author_name": "PERI Group",
+      "author_url": "https://www.youtube.com/@perigroup",
+      "thumbnail_url": "https://i.ytimg.com/vi/voo28dISuqI/hqdefault.jpg",
+      "is_official_channel": true,
+      "is_english": false,
+      "matches_product": false,
+      "score": 4
+    }
+  ],
+  "youtube_decision": {
+    "attempted_candidates": 1,
+    "selected_video_id": "",
+    "selected_watch_url": "",
+    "reason": "Only 1 official candidates were available, and none was a suitable English product video."
+  }
+}
