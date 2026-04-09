@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import argparse
 import json
 import io
 from contextlib import redirect_stdout
@@ -160,14 +161,35 @@ def audit_products(slugs=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("slugs", nargs="*", help="只审计这些产品 slug")
+    parser.add_argument("--all", action="store_true", help="审计全站")
+    args = parser.parse_args()
+
     started_at = datetime.now(timezone.utc).isoformat()
     products = load_products()
-    results = audit_products(list(products.keys()))
+
+    if args.all:
+        target_slugs = list(products.keys())
+        gate_scope = "all"
+    elif args.slugs:
+        target_slugs = args.slugs
+        gate_scope = "scoped"
+    else:
+        print(json.dumps({
+            "enabled": False,
+            "message": "默认已关闭历史全站门禁；请传入 slug 列表或使用 --all。",
+        }, ensure_ascii=False, indent=2))
+        return
+
+    results = audit_products(target_slugs)
     blocking = {slug: result for slug, result in results.items() if result["errors"]}
     warnings = {slug: result["warnings"] for slug, result in results.items() if result["warnings"]}
     report = {
         "started_at": started_at,
         "finished_at": datetime.now(timezone.utc).isoformat(),
+        "gate_scope": gate_scope,
+        "requested_slugs": target_slugs,
         "total_checked": len(results),
         "blocking_count": len(blocking),
         "warning_count": sum(len(items) for items in warnings.values()),

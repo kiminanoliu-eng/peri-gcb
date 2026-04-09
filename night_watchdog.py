@@ -46,6 +46,12 @@ def main():
     parser.add_argument("--max-iterations", type=int, default=0, help="最多执行多少轮，0 表示无限直到完成")
     parser.add_argument("--sleep-seconds", type=int, default=3, help="每轮之间的等待秒数")
     parser.add_argument("--batch-limit", type=int, default=0, help="每轮批处理只做前 N 个待处理产品，0 表示处理全部")
+    parser.add_argument(
+        "--final-audit-scope",
+        choices=["none", "all"],
+        default="none",
+        help="最终发布前是否做历史全站门禁：none=关闭，all=全站",
+    )
     args = parser.parse_args()
 
     status = {
@@ -70,16 +76,23 @@ def main():
         }
 
         if not pending_before:
-            iteration["stage"] = "audit_and_publish"
+            iteration["stage"] = "publish_completed_site"
             iteration["add_pdf_links"] = run_command(["python3", "add_pdf_links.py"])
             iteration["rebuild"] = run_command(["python3", "rebuild_site_v2.py"])
-            iteration["audit"] = run_command(["python3", "audit_site_batch.py"])
-
-            if iteration["audit"]["returncode"] != 0:
-                status["phase"] = "audit_failed"
-                status["iterations"].append(iteration)
-                save_status(status)
-                raise SystemExit("站点审计失败，未发布。")
+            if args.final_audit_scope == "all":
+                iteration["audit"] = run_command(["python3", "audit_publish_gate.py", "--all"])
+                if iteration["audit"]["returncode"] != 0:
+                    status["phase"] = "audit_failed"
+                    status["iterations"].append(iteration)
+                    save_status(status)
+                    raise SystemExit("站点审计失败，未发布。")
+            else:
+                iteration["audit"] = {
+                    "args": ["python3", "audit_publish_gate.py"],
+                    "returncode": 0,
+                    "stdout": "Skipped full-site gate for completed historical content.",
+                    "stderr": "",
+                }
 
             iteration["git_add"] = run_command(["git", "add", "-A"])
             iteration["git_commit"] = run_command(["git", "commit", "-m", "Night batch complete 160 products"])

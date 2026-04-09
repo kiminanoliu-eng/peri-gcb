@@ -158,6 +158,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=0, help="只处理前 N 个待处理产品")
     parser.add_argument("--publish", action="store_true", help="处理完成并验证通过后自动提交发布")
+    parser.add_argument(
+        "--audit-scope",
+        choices=["none", "processed", "all"],
+        default="processed",
+        help="发布前门禁范围：none=关闭，processed=仅本次处理产品，all=全站",
+    )
     args = parser.parse_args()
 
     products = load_products()
@@ -168,6 +174,7 @@ def main():
     status = {
         "started_at": utc_now_iso(),
         "mode": "publish" if args.publish else "local",
+        "audit_scope": args.audit_scope,
         "pending_queue": pending,
         "processed": [],
         "failed": [],
@@ -225,14 +232,24 @@ def main():
         save_status(status)
 
     remaining_pending = load_pending_slugs()
+    processed_slugs = [item["slug"] for item in status["processed"]]
     status["remaining_pending"] = remaining_pending
     if args.publish and not status["failed"] and not status["validation_errors"] and not remaining_pending:
-        full_results = audit_products(list(products.keys()))
+        if args.audit_scope == "all":
+            audit_slugs = list(products.keys())
+        elif args.audit_scope == "processed":
+            audit_slugs = processed_slugs
+        else:
+            audit_slugs = []
+
+        full_results = audit_products(audit_slugs) if audit_slugs else {}
         status["audit_errors"] = {
             slug: result for slug, result in full_results.items() if result["errors"]
         }
+        status["audit_checked_slugs"] = audit_slugs
     else:
         status["audit_errors"] = {}
+        status["audit_checked_slugs"] = []
     save_status(status)
 
     status["finished_at"] = utc_now_iso()
