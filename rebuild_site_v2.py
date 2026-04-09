@@ -98,6 +98,42 @@ def sanitize_pdf_url(url, slug):
 
     return url
 
+
+def normalize_project_key(value):
+    value = (value or '').strip().lower()
+    value = re.sub(r'\s+', ' ', value)
+    return value
+
+
+def dedupe_homepage_projects(projects):
+    """Keep homepage China projects stable and remove obvious duplicate variants."""
+    unique = []
+    seen = set()
+
+    for project in projects:
+        primary_key = normalize_project_key(project.get('name_en'))
+        fallback_keys = [
+            normalize_project_key(project.get('link')),
+            normalize_project_key(project.get('name_zh')),
+        ]
+
+        dedupe_key = None
+        if primary_key:
+            dedupe_key = f"name_en:{primary_key}"
+        else:
+            for key in fallback_keys:
+                if key:
+                    dedupe_key = f"fallback:{key}"
+                    break
+
+        if not dedupe_key or dedupe_key in seen:
+            continue
+
+        seen.add(dedupe_key)
+        unique.append(project)
+
+    return unique
+
 PERI_RED   = '#e3000f'
 PERI_YELLOW= '#f5a800'
 
@@ -335,8 +371,9 @@ def build_homepage():
     </div>'''
 
     # Generate China projects cards
+    homepage_projects = dedupe_homepage_projects(CHINA_PROJECTS)
     china_projects_html = ''
-    for proj in CHINA_PROJECTS:
+    for proj in homepage_projects:
         china_projects_html += f'''
     <div class="card" onclick="window.open('{proj['link']}', '_blank')" style="cursor:pointer">
       <img class="card-img" src="{proj['image']}" alt="{proj['name_zh']}" loading="lazy">
@@ -388,27 +425,11 @@ def build_homepage():
     <p data-zh="PERI 在中国的标志性工程项目" data-en="PERI's landmark projects in China" data-es="Proyectos emblemáticos de PERI en China" data-de="PERIs Leuchtturmprojekte in China" data-pt="Projetos emblemáticos da PERI na China" data-sr="PERI-jevi značajni projekti u Kini" data-hu="PERI mérföldkő projektjei Kínában">PERI 在中国的标志性工程项目</p>
   </div>
 
-  <!-- Carousel Container -->
-  <div style="max-width:1200px;margin:0 auto;padding:0 32px;position:relative;overflow:hidden">
-    <div id="projectCarousel" class="grid grid-3" style="transition:transform 0.5s ease">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px">
+    <div class="grid grid-3" style="padding-left:0;padding-right:0">
       {china_projects_html}
     </div>
-    <button onclick="scrollCarousel(-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:rgba(227,0,15,0.9);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:20px;z-index:10">‹</button>
-    <button onclick="scrollCarousel(1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:rgba(227,0,15,0.9);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:20px;z-index:10">›</button>
   </div>
-
-  <script>
-  let carouselIndex = 0;
-  function scrollCarousel(dir) {{
-    const carousel = document.getElementById('projectCarousel');
-    const cards = carousel.children;
-    const totalCards = cards.length;
-    carouselIndex = (carouselIndex + dir + totalCards) % totalCards;
-    const cardWidth = cards[0].offsetWidth + 24;
-    carousel.style.transform = 'translateX(-' + (carouselIndex * cardWidth) + 'px)';
-  }}
-  setInterval(() => scrollCarousel(1), 5000);
-  </script>
 
   <div style="text-align:center;padding:32px">
     <a href="https://cn.peri.com/projects/projects-overview/chinesecustomerprojects.html" target="_blank" class="btn btn-outline"
