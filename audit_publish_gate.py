@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import json
+import io
+from contextlib import redirect_stdout
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
@@ -10,6 +13,7 @@ from verify_product import verify_product
 
 BASE_DIR = Path(__file__).resolve().parent
 REPORTS_DIR = BASE_DIR / "source_reports"
+PUBLISH_GATE_REPORT_PATH = BASE_DIR / "publish_gate_audit.json"
 
 
 def read_json(path):
@@ -80,7 +84,8 @@ def audit_slug(slug, products_meta):
     search_html = search_path.read_text(encoding="utf-8") if search_path.exists() else ""
 
     # Reuse the live validator as the baseline gate.
-    verify_errors, verify_warnings = verify_product(slug)
+    with redirect_stdout(io.StringIO()):
+        verify_errors, verify_warnings = verify_product(slug)
     errors.extend(verify_errors)
     warnings.extend(verify_warnings)
 
@@ -155,10 +160,31 @@ def audit_products(slugs=None):
 
 
 def main():
+    started_at = datetime.now(timezone.utc).isoformat()
     products = load_products()
     results = audit_products(list(products.keys()))
     blocking = {slug: result for slug, result in results.items() if result["errors"]}
-    print(json.dumps({"blocking": blocking, "results": results}, ensure_ascii=False, indent=2))
+    warnings = {slug: result["warnings"] for slug, result in results.items() if result["warnings"]}
+    report = {
+        "started_at": started_at,
+        "finished_at": datetime.now(timezone.utc).isoformat(),
+        "total_checked": len(results),
+        "blocking_count": len(blocking),
+        "warning_count": sum(len(items) for items in warnings.values()),
+        "blocking_slugs": sorted(blocking.keys()),
+        "warning_slugs": sorted(warnings.keys()),
+        "summary_by_slug": results,
+    }
+    PUBLISH_GATE_REPORT_PATH.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(json.dumps({
+        "blocking_count": report["blocking_count"],
+        "warning_count": report["warning_count"],
+        "blocking_slugs": report["blocking_slugs"],
+        "report_path": str(PUBLISH_GATE_REPORT_PATH),
+    }, ensure_ascii=False, indent=2))
     raise SystemExit(1 if blocking else 0)
 
 

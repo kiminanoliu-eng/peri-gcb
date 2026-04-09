@@ -37,6 +37,9 @@ from source_rules import (
 BASE_DIR = Path(__file__).resolve().parent
 REPORTS_DIR = BASE_DIR / "source_reports"
 REQUEST_TIMEOUT = 20
+CN_URL_OVERRIDES = {
+    "liwa": "https://cn.peri.com/products/liwa-%E9%92%A2%E6%A1%86%E6%A8%A1%E6%9D%BF.html",
+}
 
 REGION_PRODUCT_PAGES = [
     "https://cn.peri.com/products/{slug}.html",
@@ -401,7 +404,7 @@ def build_report(slug):
         raise SystemExit(f"未知 slug: {slug}")
 
     product = products[slug]
-    cn_url = f"https://cn.peri.com/products/{slug}.html"
+    cn_url = CN_URL_OVERRIDES.get(slug, f"https://cn.peri.com/products/{slug}.html")
     product_html = fetch_text(cn_url)
     product_title = first_group(r"<title>(.*?)</title>", product_html)
     product_desc = first_group(r'<meta name="description" content="([^"]+)"', product_html)

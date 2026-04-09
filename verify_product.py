@@ -24,6 +24,7 @@ from source_rules import (
 from http_helpers import http_get, http_head
 
 BASE_DIR = Path(__file__).resolve().parent
+REPORTS_DIR = BASE_DIR / "source_reports"
 
 
 def load_trusted_pdf_links():
@@ -38,6 +39,21 @@ def load_trusted_pdf_links():
 
 
 TRUSTED_PDF_LINKS = load_trusted_pdf_links()
+
+
+def load_source_report(slug):
+    path = REPORTS_DIR / f"{slug}_sources.json"
+    if not path.exists():
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def same_url(left, right):
+    return (left or "").replace("&amp;", "&").strip() == (right or "").replace("&amp;", "&").strip()
 
 def verify_product(slug):
     """验证产品数据的完整性和正确性"""
@@ -68,6 +84,7 @@ def verify_product(slug):
         return errors, warnings
 
     print(f"✅ JSON格式正确")
+    source_report = load_source_report(slug)
 
     # 3. 验证必需字段
     required_fields = [
@@ -135,8 +152,12 @@ def verify_product(slug):
         print(f"⚠️  无法获取原始产品页验证项目来源: {e}")
 
     if len(projects) == 0:
-        warnings.append("没有项目案例，请确认该产品确实没有项目案例")
-        print(f"⚠️  没有项目案例")
+        report_projects = source_report.get("projects")
+        if isinstance(report_projects, list) and len(report_projects) == 0:
+            print(f"ℹ️  源报告确认该产品没有项目案例")
+        else:
+            warnings.append("没有项目案例，请确认该产品确实没有项目案例")
+            print(f"⚠️  没有项目案例")
 
     for i, project in enumerate(projects, 1):
         print(f"\n验证项目 {i}/{len(projects)}: {project.get('name', 'N/A')}")
@@ -181,13 +202,19 @@ def verify_product(slug):
             if status_code == 200:
                 content_type = header_value(headers, "content-type")
                 trusted_pdf = TRUSTED_PDF_LINKS.get(slug, "")
+                report_pdf_candidates = source_report.get("pdf_candidates") or []
+                report_expected_pdf = report_pdf_candidates[0]["url"] if report_pdf_candidates else ""
+                pdf_is_audited = same_url(pdf_link, trusted_pdf) or same_url(pdf_link, report_expected_pdf)
                 if not is_verified_pdf_url(pdf_link, slug, headers=headers, trusted_url=trusted_pdf):
                     errors.append(f"PDF链接与产品slug或已验证映射不匹配: {pdf_link}")
                     print(f"❌ PDF链接与产品slug或可信映射不匹配")
                 elif 'pdf' in content_type.lower() or '/.rest/downloads/' in pdf_link:
                     print(f"✅ PDF链接有效: {pdf_link[:60]}...")
-                    warnings.append(f"⚠️  请人工确认PDF内容是该产品的手册: {pdf_link}")
-                    print(f"⚠️  请人工确认PDF内容是该产品的手册")
+                    if pdf_is_audited:
+                        print(f"✅ PDF已由可信映射/源报告确认")
+                    else:
+                        warnings.append(f"⚠️  请人工确认PDF内容是该产品的手册: {pdf_link}")
+                        print(f"⚠️  请人工确认PDF内容是该产品的手册")
                 else:
                     errors.append(f"PDF链接的Content-Type不是application/pdf: {content_type}")
                     print(f"❌ Content-Type不是application/pdf: {content_type}")
@@ -232,8 +259,18 @@ def verify_product(slug):
                     elif title:
                         print(f"✅ 视频标题: {title}")
 
-                    warnings.append(f"⚠️  请人工确认视频是该产品的英语介绍: {watch_url}")
-                    print(f"⚠️  请人工确认视频是该产品的英语介绍")
+                    report_decision = source_report.get("youtube_decision") or {}
+                    report_selected_video_id = report_decision.get("selected_video_id", "")
+                    if (
+                        report_selected_video_id == video_id
+                        and is_official_peri_youtube(author_name=author_name, author_url=author_url)
+                        and title
+                        and slug_match_count(title, slug) >= required_match_count
+                    ):
+                        print(f"✅ YouTube已由源报告确认")
+                    else:
+                        warnings.append(f"⚠️  请人工确认视频是该产品的英语介绍: {watch_url}")
+                        print(f"⚠️  请人工确认视频是该产品的英语介绍")
             except Exception as e:
                 errors.append(f"YouTube视频验证失败: {e}")
                 print(f"❌ YouTube视频验证失败: {e}")
